@@ -1,0 +1,129 @@
+{
+  "name": "fear_greed",
+  "version": "1.0.0",
+  "author": "Yamiru",
+  "description": "Crypto Fear & Greed Index: the /feargreed command and an optional scheduled post to a channel",
+  "main": "index.js",
+  "enabled": true,
+  "github": "https://github.com/Yamiru/Vorqul-DS-BOT",
+  "license": "Vorqul DS BOT License (proprietary)",
+  "guildSettings": [
+    {
+      "key": "enabled",
+      "type": "boolean",
+      "default": false,
+      "label": {
+        "en": "Post automatically",
+        "sk": "Zverejňovať automaticky",
+        "cs": "Zveřejňovat automaticky",
+        "de": "Automatisch posten",
+        "pl": "Publikuj automatycznie",
+        "ru": "Публиковать автоматически",
+        "es": "Publicar automáticamente",
+        "ja": "自動で投稿",
+        "tr": "Otomatik paylaş"
+      },
+      "description": {
+        "en": "Post the index to the channel below on a schedule.",
+        "sk": "Zverejňovať index do kanála nižšie podľa plánu.",
+        "cs": "Zveřejňovat index do kanálu níže podle plánu.",
+        "de": "Den Index planmäßig im Kanal unten posten.",
+        "pl": "Publikuj indeks w kanale poniżej według harmonogramu.",
+        "ru": "Публиковать индекс в канале ниже по расписанию.",
+        "es": "Publicar el índice en el canal de abajo según un horario.",
+        "ja": "下のチャンネルにスケジュールで指数を投稿します。",
+        "tr": "Endeksi aşağıdaki kanala zamanlanmış olarak gönderir."
+      }
+    },
+    {
+      "key": "channel",
+      "type": "channel",
+      "kinds": [
+        "text"
+      ],
+      "label": {
+        "en": "Channel",
+        "sk": "Kanál",
+        "cs": "Kanál",
+        "de": "Kanal",
+        "pl": "Kanał",
+        "ru": "Канал",
+        "es": "Canal",
+        "ja": "チャンネル",
+        "tr": "Kanal"
+      }
+    },
+    {
+      "key": "intervalHours",
+      "type": "number",
+      "default": 24,
+      "min": 1,
+      "max": 168,
+      "label": {
+        "en": "Post every (hours)",
+        "sk": "Zverejniť každých (hodín)",
+        "cs": "Zveřejnit každých (hodin)",
+        "de": "Alle (Stunden) posten",
+        "pl": "Publikuj co (godziny)",
+        "ru": "Публиковать каждые (часы)",
+        "es": "Publicar cada (horas)",
+        "ja": "投稿間隔（時間）",
+        "tr": "Paylaşma sıklığı (saat)"
+      }
+    },
+    {
+      "key": "language",
+      "type": "select",
+      "default": "en",
+      "label": {
+        "en": "Language of the message",
+        "sk": "Jazyk správy",
+        "cs": "Jazyk zprávy",
+        "de": "Sprache der Nachricht",
+        "pl": "Język wiadomości",
+        "ru": "Язык сообщения",
+        "es": "Idioma del mensaje",
+        "ja": "メッセージの言語",
+        "tr": "Mesajın dili"
+      },
+      "options": [
+        {
+          "value": "en",
+          "label": "English"
+        },
+        {
+          "value": "sk",
+          "label": "Slovenčina"
+        },
+        {
+          "value": "cs",
+          "label": "Čeština"
+        },
+        {
+          "value": "de",
+          "label": "Deutsch"
+        },
+        {
+          "value": "pl",
+          "label": "Polski"
+        },
+        {
+          "value": "ru",
+          "label": "Русский"
+        },
+        {
+          "value": "es",
+          "label": "Español"
+        },
+        {
+          "value": "ja",
+          "label": "日本語"
+        },
+        {
+          "value": "tr",
+          "label": "Türkçe"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2143 @@
+{
+  "common": {
+    "yes": "はい",
+    "no": "いいえ",
+    "enabled": "有効",
+    "disabled": "無効",
+    "success": "成功",
+    "error": "エラー",
+    "warning": "警告",
+    "info": "情報",
+    "loading": "読み込み中...",
+    "refreshHint": "このデータを更新",
+    "clearCacheHint": "ローカルキャッシュを消去して再読み込み",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "back": "戻る",
+    "next": "次へ",
+    "page": "ページ",
+    "of": "/",
+    "noPermission": "このコマンドを使用する権限がありません。",
+    "botNoPermission": "その操作を行う権限がありません。",
+    "invalidUser": "ユーザーの指定が正しくありません。",
+    "invalidChannel": "チャンネルの指定が正しくありません。",
+    "invalidRole": "ロールの指定が正しくありません。",
+    "cooldown": "このコマンドを再度使用するには {time} お待ちください。",
+    "unknownError": "不明なエラーが発生しました。",
+    "wrongChannel": "このコマンドはこのチャンネルでは使用できません。"
+  },
+  "welcome": {
+    "title": "ようこそ！",
+    "defaultMessage": "**{server}** へようこそ、{user} さん！🎉",
+    "goodbyeMessage": "さようなら **{user}** さん、また会いましょう！",
+    "memberCount": "あなたは {count} 人目のメンバーです",
+    "joinedAt": "アカウント作成日：{date}"
+  },
+  "moderation": {
+    "kick": {
+      "success": "**{user}** をキックしました。",
+      "reason": "理由：{reason}",
+      "noReason": "理由の記載なし",
+      "dmNotify": "**{server}** からキックされました。",
+      "cannotKick": "このユーザーをキックできません。",
+      "higherRole": "自分と同等以上のロールを持つ相手はキックできません。"
+    },
+    "ban": {
+      "success": "**{user}** をBANしました。",
+      "reason": "理由：{reason}",
+      "noReason": "理由の記載なし",
+      "dmNotify": "**{server}** からBANされました。",
+      "cannotBan": "このユーザーをBANできません。",
+      "higherRole": "自分と同等以上のロールを持つ相手はBANできません。"
+    },
+    "unban": {
+      "success": "**{user}** のBANを解除しました。",
+      "notBanned": "このユーザーはBANされていません。"
+    },
+    "mute": {
+      "success": "**{user}** を {duration} ミュートしました。",
+      "reason": "理由：{reason}",
+      "dmNotify": "**{server}** で {duration} ミュートされました。"
+    },
+    "unmute": {
+      "success": "**{user}** のミュートを解除しました。",
+      "notMuted": "このユーザーはミュートされていません。"
+    },
+    "timeout": {
+      "success": "**{user}** を {duration} タイムアウトしました。",
+      "removed": "**{user}** のタイムアウトを解除しました。"
+    },
+    "warn": {
+      "success": "**{user}** に警告しました。",
+      "count": "これは {count} 回目の警告です。",
+      "dmNotify": "**{server}** で警告を受けました。"
+    },
+    "clear": {
+      "success": "{count} 件のメッセージを削除しました。",
+      "tooMany": "一度に削除できるのは100件までです。",
+      "tooOld": "14日より古いメッセージは削除できません。"
+    },
+    "slowmode": {
+      "set": "低速モードを {seconds} 秒に設定しました。",
+      "disabled": "低速モードを解除しました。"
+    },
+    "lockdown": {
+      "enabled": "🔒 チャンネルをロックしました。",
+      "disabled": "🔓 チャンネルのロックを解除しました。"
+    }
+  },
+  "leveling": {
+    "levelUp": "🎉 おめでとうございます {user} さん！**レベル {level}** に到達しました！",
+    "rank": "ランク",
+    "level": "レベル",
+    "xp": "経験値",
+    "progress": "進捗",
+    "leaderboard": "ランキング",
+    "noData": "レベルのデータが見つかりません。"
+  },
+  "economy": {
+    "balance": "残高",
+    "daily": {
+      "claimed": "デイリー報酬 {amount} を受け取りました！",
+      "cooldown": "デイリー報酬は受け取り済みです。{time} 後にまたどうぞ。"
+    },
+    "transfer": {
+      "success": "{user} さんに {amount} を送金しました。",
+      "insufficient": "{currency} が足りません。",
+      "self": "自分自身には送金できません。"
+    },
+    "shop": {
+      "title": "ショップ",
+      "empty": "ショップは空です。",
+      "bought": "**{item}** を {price} で購入しました。",
+      "cantAfford": "このアイテムを購入するには残高が足りません。"
+    },
+    "leaderboard": "経済ランキング"
+  },
+  "crypto": {
+    "price": "**{coin}** の現在価格：${price}",
+    "change24h": "24時間の変動：{change}%",
+    "alertSet": "**{coin}** の価格アラートを ${price} に設定しました。",
+    "alertTriggered": "🚨 **{coin}** が ${price} に到達しました！",
+    "invalidCoin": "暗号資産の指定が正しくありません。",
+    "apiError": "暗号資産のデータを取得できませんでした。"
+  },
+  "automod": {
+    "spam": "🛡️ {user} のスパムを検出しました。",
+    "links": "🔗 {user} の許可されていないリンクを削除しました。",
+    "invites": "📨 {user} のDiscord招待リンクを削除しました。",
+    "caps": "🔠 {user} の過剰な大文字を削除しました。",
+    "mentions": "📢 {user} の大量メンションをブロックしました。",
+    "blacklist": "🚫 {user} の禁止ワードを検出しました。",
+    "repeatedText": "🔁 {user} の繰り返しテキストを削除しました。",
+    "emojis": "😀 {user} の過剰な絵文字を削除しました。",
+    "spoilers": "🙈 {user} の過剰なネタバレタグを削除しました。",
+    "zalgo": "🌀 {user} のザルゴテキストを削除しました。",
+    "userWarning": "⚠️ {user}さん、あなたのメッセージはAutoModによって削除されました。"
+  },
+  "verification": {
+    "title": "認証が必要です",
+    "instructions": "アクセスするには下のキャプチャを完了してください。",
+    "success": "✅ 認証が完了しました！",
+    "failed": "❌ 認証に失敗しました。もう一度お試しください。",
+    "expired": "⏰ 認証の有効期限が切れました。もう一度リクエストしてください。"
+  },
+  "logging": {
+    "messageDeleted": "メッセージ削除",
+    "messageEdited": "メッセージ編集",
+    "memberJoined": "メンバー参加",
+    "memberLeft": "メンバー退出",
+    "memberBanned": "メンバーBAN",
+    "memberUnbanned": "メンバーBAN解除",
+    "roleAdded": "ロール付与",
+    "roleRemoved": "ロール剥奪",
+    "channelCreated": "チャンネル作成",
+    "channelDeleted": "チャンネル削除",
+    "moderatorAction": "モデレーター操作"
+  },
+  "reminders": {
+    "set": "⏰ {time} にリマインダーを設定しました。",
+    "triggered": "⏰ リマインダー：{message}",
+    "list": "あなたのリマインダー",
+    "noReminders": "有効なリマインダーはありません。",
+    "deleted": "リマインダーを削除しました。"
+  },
+  "polls": {
+    "created": "投票を作成しました！",
+    "ended": "投票を終了しました。",
+    "results": "投票結果",
+    "votes": "票"
+  },
+  "suggestions": {
+    "submitted": "提案を送信しました！",
+    "approved": "✅ 提案が承認されました",
+    "denied": "❌ 提案が却下されました",
+    "implemented": "🎉 提案が実装されました"
+  },
+  "starboard": {
+    "starred": "⭐ メッセージがスターされました！"
+  },
+  "inviteTracker": {
+    "invite": "{user} さんが {inviter} さんの招待で参加しました。",
+    "invites": "{user} さんの招待数は {count} になりました。",
+    "unknown": "招待元を特定できませんでした。"
+  },
+  "music": {
+    "nowPlaying": "再生中",
+    "queued": "キューに追加しました",
+    "queue": "キュー",
+    "skipped": "現在の曲をスキップしました。",
+    "stopped": "再生を停止しました。",
+    "paused": "再生を一時停止しました。",
+    "resumed": "再生を再開しました。",
+    "volume": "音量を {volume}% に設定しました。",
+    "noResults": "結果が見つかりませんでした。",
+    "notInVoice": "ボイスチャンネルに参加している必要があります。",
+    "alreadyPlaying": "別のチャンネルで再生中です。"
+  },
+  "events": {
+    "created": "イベントを作成しました！",
+    "reminder": "📅 イベント **{name}** が {time} 後に始まります！",
+    "rsvp": {
+      "going": "**{event}** に参加します！",
+      "maybe": "**{event}** を「未定」にしました。",
+      "notGoing": "**{event}** には参加しません。"
+    }
+  },
+  "dashboard": {
+    "title": "Vorqul DS BOT ダッシュボード",
+    "login": "Discord でログイン",
+    "logout": "ログアウト",
+    "home": "ホーム",
+    "servers": "あなたのサーバー",
+    "settings": "設定",
+    "modules": "モジュール",
+    "logs": "ログ",
+    "analytics": "統計",
+    "plugins": "プラグイン",
+    "embedBuilder": "埋め込みビルダー",
+    "noServers": "このボットが入っている管理対象サーバーがありません。",
+    "saveSuccess": "設定を保存しました！",
+    "saveError": "設定を保存できませんでした。"
+  },
+  "giveaway": {
+    "title": "🎉 プレゼント企画 🎉",
+    "endedTitle": "🎉 プレゼント企画 終了 🎉",
+    "activeTitle": "🎉 開催中のプレゼント企画",
+    "won": "🎉 おめでとうございます {winners} さん！**{prize}** を獲得しました！",
+    "rerolled": "🎉 **{prize}** の新しい当選者：{winners} さん！おめでとうございます！",
+    "noEntries": "**{prize}** のプレゼント企画に参加者はいませんでした。",
+    "prize": "賞品",
+    "winnersLabel": "当選者",
+    "endsAt": "終了",
+    "hostedBy": "主催",
+    "howToEnter": "下のボタンから参加してください。"
+  },
+  "ui": {
+    "nav": {
+      "back": "サーバー一覧に戻る",
+      "overview": "概要",
+      "modules": "モジュール",
+      "welcome": "ようこそ",
+      "automod": "AutoMod",
+      "serverstatus": "サーバー状態",
+      "channels": "チャンネル",
+      "games": "ゲーム",
+      "settings": "設定",
+      "links": "リンク",
+      "menu": "メニューを開く",
+      "menuClose": "メニューを閉じる",
+      "config": "設定"
+    },
+    "common": {
+      "save": "変更を保存",
+      "saving": "保存中…",
+      "saved": "保存しました",
+      "enabled": "オン",
+      "disabled": "オフ",
+      "search": "検索…",
+      "retry": "再試行",
+      "selectAll": "すべて選択",
+      "clear": "選択を解除",
+      "language": "言語",
+      "unknown": "不明",
+      "searching": "検索...",
+      "nothingSelected": "未選択"
+    },
+    "scope": {
+      "all": "すべての場所",
+      "only": "ここだけ",
+      "except": "ここ以外",
+      "title": "チャンネル",
+      "subtitle": "各機能を動かすチャンネルを選びます。",
+      "hintModes": "ここだけ - 選んだチャンネルでのみ動作します。ここ以外 - 選んだチャンネル以外すべてで動作します。",
+      "hintCategory": "カテゴリを選ぶと、その中のすべてのチャンネルが対象になります。スレッドは親チャンネルの設定を引き継ぎます。",
+      "nothingRestricted": "制限なし",
+      "restricted": "制限あり",
+      "pick": "チャンネルを選ぶ",
+      "hide": "チャンネルを隠す",
+      "categories": "カテゴリ",
+      "channels": "チャンネル",
+      "emptyWarning": "チャンネルが未選択です。追加するまで、この機能はすべての場所で有効のままです。",
+      "noChannels": "該当するチャンネルが見つかりません。",
+      "onlyPrefix": "対象: ",
+      "exceptPrefix": "以下を除く: ",
+      "feature": {
+        "global": {
+          "label": "すべての機能",
+          "description": "ボット全体の基本ルール。個別設定のある機能が優先されます。"
+        },
+        "commands": {
+          "label": "すべてのコマンド",
+          "admin": {
+            "label": "コマンド: 管理",
+            "description": "管理者コマンド。"
+          },
+          "moderation": {
+            "label": "コマンド: モデレーション",
+            "description": "モデレーターコマンド。"
+          },
+          "economy": {
+            "label": "コマンド: 経済",
+            "description": "経済とショップのコマンド。"
+          },
+          "fun": {
+            "label": "コマンド: 娯楽",
+            "description": "娯楽とゲームのコマンド。"
+          },
+          "utility": {
+            "label": "コマンド: ツール",
+            "description": "便利で情報系のコマンド。"
+          },
+          "description": "すべてのスラッシュコマンドの基本ルール。"
+        },
+        "leveling": {
+          "label": "Leveling / XP",
+          "description": "メッセージによる経験値獲得とレベルアップ通知。"
+        },
+        "economy": {
+          "label": "経済",
+          "description": "メッセージによる通貨の獲得。"
+        },
+        "messageStats": {
+          "label": "メッセージ統計",
+          "description": "統計とランキングのためのメッセージ集計。"
+        },
+        "autoResponse": {
+          "label": "自動応答",
+          "description": "キーワードへのボットの応答。"
+        },
+        "afk": {
+          "label": "AFK システム",
+          "description": "AFK 状態と復帰のお知らせ。"
+        },
+        "sticky": {
+          "label": "スティッキーメッセージ",
+          "description": "チャンネル最下部に固定され続けるメッセージ。"
+        },
+        "reputation": {
+          "label": "評判",
+          "description": "評判ポイントの付与。"
+        },
+        "confessions": {
+          "label": "告白",
+          "description": "匿名の告白。"
+        },
+        "suggestions": {
+          "label": "提案",
+          "description": "提案と投票のシステム。"
+        },
+        "birthday": {
+          "label": "誕生日",
+          "description": "誕生日のお知らせ。"
+        },
+        "automod": {
+          "label": "AutoMod",
+          "description": "チャットの自動モデレーション（スパム、リンク、大文字など）。"
+        },
+        "filter": {
+          "label": "ワードフィルター",
+          "description": "禁止ワードのブロック。"
+        },
+        "antiAd": {
+          "label": "広告対策",
+          "description": "招待リンクと宣伝リンクのブロック。"
+        },
+        "antiRaid": {
+          "label": "Anti-Raid",
+          "description": "大量参加からの保護。"
+        },
+        "counting": {
+          "label": "カウント",
+          "description": "数字を順番に数えるゲーム。"
+        },
+        "starboard": {
+          "label": "Starboard",
+          "description": "スターボードに載る対象となるチャンネル。"
+        },
+        "giveaways": {
+          "label": "プレゼント企画",
+          "description": "景品のプレゼント企画。"
+        },
+        "polls": {
+          "label": "投票",
+          "description": "投票とアンケート。"
+        },
+        "games": {
+          "label": "ゲーム",
+          "description": "すべてのゲーム共通のルール。個別のゲームが優先されます。"
+        },
+        "voiceStats": {
+          "label": "ボイス統計",
+          "description": "ボイスチャンネルでの滞在時間の集計。"
+        },
+        "tempChannels": {
+          "label": "一時チャンネル",
+          "description": "ボイスチャンネルの自動作成。"
+        },
+        "logs": {
+          "label": "ログ",
+          "description": "イベントが記録される対象のチャンネル。"
+        },
+        "gameScope": {
+          "description": "このゲームを開始できるチャンネル。"
+        }
+      }
+    },
+    "games": {
+      "title": "ゲーム",
+      "subtitle": "ゲームごとに個別にオンにでき、チャンネルを限定できます。",
+      "enabledOf": "{b} 件中 {a} 件がオン",
+      "list": "ゲーム一覧",
+      "configure": "設定する",
+      "hideCfg": "隠す",
+      "where": "プレイできる場所",
+      "inherits": "すべてのゲーム共通の設定が適用されます。",
+      "multiplayer": "マルチプレイ",
+      "sharedHint": "個別設定のないゲームは、チャンネル欄の共通「ゲーム」設定に従います。",
+      "emptyWarning": "まだチャンネルがありません。選ぶまで、ゲームはすべての場所で動作します。"
+    },
+    "home": {
+      "running": "ボットは稼働中",
+      "offline": "ボットはオフライン",
+      "updateAvailable": "アップデートあり: v{version}",
+      "noHeartbeat": "応答がありません。ボットのプロセスが動作しており、data/json フォルダにアクセスできるか確認してください。",
+      "servers": "サーバー",
+      "users": "ユーザー",
+      "ping": "応答速度",
+      "uptime": "稼働時間",
+      "cpu": "CPU",
+      "ram": "メモリ",
+      "commands": "コマンド",
+      "refreshes": "更新",
+      "auto": "自動的に",
+      "cores": "{n} コア · 負荷 {load}",
+      "ofTotal": "{total} MB 中 {p}%",
+      "yourServers": "あなたのサーバー",
+      "selectServer": "管理するサーバーを選んでください",
+      "botAdded": "ボット追加済み",
+      "botMissing": "ボット未追加",
+      "noServers": "サーバーなし",
+      "noServersHint": "「サーバー管理」権限を持つサーバーが見つかりません。ボットを追加したばかりなら、一度サインアウトして入り直してください。Discord は一覧を少しの間キャッシュします。",
+      "addBot": "ボットをサーバーに追加",
+      "loadFailed": "サーバーを読み込めませんでした",
+      "signOut": "サインアウト",
+      "relogin": "もう一度サインイン",
+      "apiUnreachable": "ダッシュボードが自身の API に接続できませんでした。"
+    },
+    "lp": {
+      "signIn": "サインイン",
+      "dashboard": "ダッシュボード",
+      "openDashboard": "ダッシュボードを開く",
+      "getStarted": "はじめる",
+      "addToServer": "サーバーに追加",
+      "loading": "読み込み中...",
+      "eyebrow": "85+ コマンド · 30+ モジュール",
+      "version": "バージョン {version}",
+      "subtitle": "Discord コミュニティ運営のための強力でモジュール式のボット。高度なモデレーション、レベリング、経済、チケット、プレゼント企画、ログ、ソーシャルフィード、そして本格的な Web ダッシュボードを備えています。制作：{author}。",
+      "stat": {
+        "commands": "コマンド",
+        "modules": "モジュール",
+        "languages": "言語",
+        "uptime": "稼働率"
+      },
+      "f": {
+        "moderation": {
+          "t": "モデレーション",
+          "d": "BAN、キック、ミュート、タイムアウト、ソフトBAN、警告、モデレーターメモ、そして完全な履歴。"
+        },
+        "automod": {
+          "t": "自動モデレーション",
+          "d": "スパム対策、レイド対策、リンクや招待のブロック、大文字の制限、大量メンション防止、禁止ワードフィルター。"
+        },
+        "logging": {
+          "t": "ログ",
+          "d": "メッセージの編集と削除、ロールとチャンネルの変更、参加と退出、ボイスの利用状況。"
+        },
+        "welcome": {
+          "t": "ようこそとロール",
+          "d": "入退室メッセージ、自動ロール、リアクションロール、認証。"
+        },
+        "leveling": {
+          "t": "レベリング",
+          "d": "活動に応じた経験値、レベル報酬、ランクカード、ランキング、ボイス経験値。"
+        },
+        "economy": {
+          "t": "経済",
+          "d": "通貨、デイリー報酬、ショップ、インベントリ、仕事、ギャンブルゲーム。"
+        },
+        "ticket": {
+          "t": "チケット",
+          "d": "サポートチケット、バグ報告、応募フォーム。ログの書き出しとカテゴリ分けに対応。"
+        },
+        "gift": {
+          "t": "プレゼント企画",
+          "d": "複数当選、ボーナス応募、ロール条件に対応したプレゼント企画。"
+        },
+        "feed": {
+          "t": "ソーシャルフィード",
+          "d": "YouTube、Twitch、RSS の通知と予約投稿。"
+        },
+        "crypto": {
+          "t": "統計と暗号資産",
+          "d": "メンバー・メッセージ・ボイスの統計、サーバー分析、暗号資産の価格。"
+        },
+        "link": {
+          "t": "便利なリンク",
+          "d": "サーバーごとのリンク集を /links で表示。ダッシュボードから管理できます。"
+        },
+        "globe": {
+          "t": "ダッシュボード",
+          "d": "複数サーバー対応の Web ダッシュボード。Discord のコマンドなしで全モジュールを設定できます。"
+        }
+      }
+    },
+    "automod": {
+      "action": {
+        "delete": "メッセージを削除",
+        "warn": "削除して警告",
+        "timeout": "削除してタイムアウト",
+        "kick": "キック",
+        "ban": "BAN"
+      },
+      "field": {
+        "action": "対応",
+        "duration": "タイムアウト (秒)",
+        "durationHint": "タイムアウト対応のときだけ有効です。"
+      },
+      "spam": {
+        "label": "💬 スパムと連投",
+        "desc": "1人が一定時間に送れるメッセージ数。",
+        "maxMessages": "最大メッセージ数",
+        "interval": "時間あたり (ms)",
+        "intervalHint": "5000 = 5 秒"
+      },
+      "links": {
+        "label": "🔗 ウェブサイトのリンク",
+        "desc": "許可ドメイン以外のリンクをブロックします。"
+      },
+      "invites": {
+        "label": "📨 他サーバーの招待",
+        "desc": "discord.gg などのリンクをブロックします。"
+      },
+      "caps": {
+        "label": "🔠 大文字の連続",
+        "desc": "大部分が大文字のメッセージ。",
+        "percentage": "大文字の割合 (%)",
+        "minLength": "対象とする文字数"
+      },
+      "mentions": {
+        "label": "📢 大量メンション",
+        "desc": "1メッセージ内のメンション数。",
+        "maxMentions": "最大メンション数"
+      },
+      "repeat": {
+        "label": "🔁 繰り返し",
+        "desc": "同じメッセージや文字の連続。",
+        "maxRepeats": "最大繰り返し数"
+      },
+      "emojis": {
+        "label": "😀 絵文字が多すぎる",
+        "desc": "Unicode 絵文字とサーバー絵文字の合計。",
+        "maxEmojis": "最大絵文字数"
+      },
+      "spoilers": {
+        "label": "⬛ ネタバレタグが多すぎる",
+        "desc": "1メッセージ内の隠しブロック。",
+        "maxSpoilers": "最大ネタバレ数"
+      },
+      "zalgo": {
+        "label": "🌀 ザルゴテキスト",
+        "desc": "発音記号を重ねた読めない文字。"
+      },
+      "phishing": {
+        "label": "🎣 フィッシング",
+        "desc": "Discord や Steam を装ったドメイン。"
+      },
+      "fakeNitro": {
+        "label": "🎁 偽の Nitro",
+        "desc": "リンク付きの無料 Nitro の勧誘。"
+      },
+      "cryptoScam": {
+        "label": "🪙 暗号資産詐欺",
+        "desc": "エアドロップや利益保証をうたう勧誘。"
+      },
+      "massMention": {
+        "label": "👥 厳密な大量メンション",
+        "desc": "文字数ではなく、実際の人数とロール数を数えます。",
+        "maxMentions": "最大対象数",
+        "countEveryone": "@everyone を数える"
+      },
+      "ghostPing": {
+        "label": "👻 ゴーストピング",
+        "desc": "メンション直後にメッセージを削除。",
+        "maxAgeSeconds": "送信後 (秒) 以内"
+      },
+      "exemptRoles": "対象外のロール",
+      "exemptChannels": "対象外のチャンネル"
+    },
+    "welcome": {
+      "memberPreview": "{server} の {count} 人目のメンバー"
+    },
+    "auth": {
+      "notSignedIn": "サインインしていません。",
+      "expired": "Discord のサインインの有効期限が切れました。サインアウトして入り直してください。",
+      "rejected": "Discord がサインインを拒否しました。サインアウトして入り直してください。",
+      "unexpected": "Discord から予期しない応答が返りました。",
+      "unreachable": "Discord に接続できませんでした。サーバーのネットワークとファイアウォールを確認してください。"
+    },
+    "tickets": {
+      "welcomeMessage": "ようこそメッセージ"
+    },
+    "help": {
+      "tempban": "メンバーを一定期間BANし、あとでボットが自動解除します",
+      "timedrole": "一定時間後に自動で外れるロール",
+      "voicemute": "ボイスチャンネルでのミュートとスピーカーミュート",
+      "antinuke": "サーバーを大規模な破壊行為から守ります",
+      "channels": "ボットの各機能を動かすチャンネルを設定します",
+      "texts": "ボットの文言を自分好みに書き換えます"
+    },
+    "modules": {
+      "group": {
+        "security": "モデレーションと安全",
+        "members": "メンバー",
+        "engagement": "エンゲージメント",
+        "economy": "経済とゲーム",
+        "content": "コンテンツ",
+        "tools": "ツール"
+      },
+      "moderation": {
+        "label": "モデレーション",
+        "description": "BAN、キック、警告、タイムアウト、隔離、対応履歴。"
+      },
+      "automod": {
+        "label": "AutoMod",
+        "description": "スパム、リンク、フィッシング、偽 Nitro、正規表現ルール。"
+      },
+      "antinuke": {
+        "label": "Anti-Nuke",
+        "description": "サーバーの大規模な破壊行為からの保護。"
+      },
+      "antiRaid": {
+        "label": "Anti-Raid",
+        "description": "参加の急増を検知し、アカウント作成日を確認します。"
+      },
+      "logs": {
+        "label": "ログ",
+        "description": "メッセージ、メンバー、ロール、チャンネル、スレッド、ブースト。"
+      },
+      "appeals": {
+        "label": "異議申し立て",
+        "description": "処分の取り消し申請。"
+      },
+      "verification": {
+        "label": "認証",
+        "description": "新しいメンバーを入場前に認証します。"
+      },
+      "welcome": {
+        "label": "ようこそ",
+        "description": "ようこそメッセージと画像カード。"
+      },
+      "goodbye": {
+        "label": "お別れ",
+        "description": "メンバーが退出したときのメッセージ。"
+      },
+      "joinRoles": {
+        "label": "自動ロール",
+        "description": "参加直後に付与されるロール。"
+      },
+      "reactionroles": {
+        "label": "リアクションロール",
+        "description": "ロールを選ぶボタンとメニュー。"
+      },
+      "persist": {
+        "label": "ロールの保持",
+        "description": "戻ってきたメンバーにロールを戻します。"
+      },
+      "invites": {
+        "label": "招待の追跡",
+        "description": "誰が誰を招待したかと、招待ランキング。"
+      },
+      "namehistory": {
+        "label": "名前の履歴",
+        "description": "ニックネームとユーザー名の変更履歴。"
+      },
+      "leveling": {
+        "label": "Leveling / XP",
+        "description": "メッセージとボイスの経験値、ランクカード、報酬ロール。"
+      },
+      "starboard": {
+        "label": "Starboard",
+        "description": "リアクション数が多い人気メッセージ。"
+      },
+      "suggestions": {
+        "label": "提案",
+        "description": "投票とステータス付きの提案。"
+      },
+      "reputation": {
+        "label": "評判",
+        "description": "他の人を助けるともらえるポイント。"
+      },
+      "counting": {
+        "label": "カウント",
+        "description": "チャンネルで数字を順番に数えます。"
+      },
+      "birthday": {
+        "label": "誕生日",
+        "description": "誕生日のお知らせとロール。"
+      },
+      "confessions": {
+        "label": "告白",
+        "description": "匿名の投稿。"
+      },
+      "afk": {
+        "label": "AFK",
+        "description": "メンバーが離席中であることを知らせます。"
+      },
+      "polls": {
+        "label": "投票",
+        "description": "ボタンで投票。"
+      },
+      "economy": {
+        "label": "経済",
+        "description": "コイン、銀行、ショップ、仕事、強盗、カジノ。"
+      },
+      "games": {
+        "label": "ゲーム",
+        "description": "三目並べ、クイズ、サイコロなど。個別に設定できます。"
+      },
+      "giveaways": {
+        "label": "プレゼント企画",
+        "description": "複数当選と参加条件に対応したプレゼント企画。"
+      },
+      "quests": {
+        "label": "クエスト",
+        "description": "報酬付きのデイリー・ウィークリークエスト。"
+      },
+      "streaks": {
+        "label": "連続記録",
+        "description": "継続的な活動に対する報酬。"
+      },
+      "tickets": {
+        "label": "チケット",
+        "description": "サポートパネル、担当、ログの書き出し。"
+      },
+      "applications": {
+        "label": "応募",
+        "description": "スタッフ募集用のフォーム。"
+      },
+      "autoResponse": {
+        "label": "自動応答",
+        "description": "キーワードと FAQ への自動返信。"
+      },
+      "sticky": {
+        "label": "スティッキーメッセージ",
+        "description": "チャンネルの最下部に残り続けるメッセージ。"
+      },
+      "tags": {
+        "label": "タグ",
+        "description": "呼び出せる定型返信。"
+      },
+      "feeds": {
+        "label": "RSS フィード",
+        "description": "RSS のニュースを Discord へ。"
+      },
+      "socials": {
+        "label": "ソーシャルメディア",
+        "description": "ソーシャルメディアのアカウントを追跡。"
+      },
+      "reminders": {
+        "label": "リマインダー",
+        "description": "予約したリマインダー。"
+      },
+      "tempChannels": {
+        "label": "一時チャンネル",
+        "description": "必要なときに作られるボイスルーム。"
+      },
+      "voiceStats": {
+        "label": "ボイス統計",
+        "description": "ボイスチャンネルでの滞在時間。"
+      },
+      "messageStats": {
+        "label": "メッセージ統計",
+        "description": "メッセージ数とランキング。"
+      },
+      "serverStatus": {
+        "label": "サーバー状態",
+        "description": "ゲームサーバーの監視。"
+      },
+      "crypto": {
+        "label": "暗号資産と NFT",
+        "description": "価格、恐怖指数、NFT。"
+      },
+      "backup": {
+        "label": "バックアップ",
+        "description": "サーバー設定のバックアップと復元。"
+      },
+      "webhooks": {
+        "label": "Webhook",
+        "description": "イベントを自分の URL に送信します。"
+      },
+      "prefixCommands": {
+        "label": "プレフィックスコマンド",
+        "description": "テキストのプレフィックスでコマンドを実行。"
+      }
+    },
+    "scopeGroup": {
+      "global": "全体",
+      "chat": "チャット",
+      "moderation": "モデレーション",
+      "fun": "娯楽",
+      "voice": "ボイス",
+      "logs": "ログ",
+      "commands": "コマンド"
+    },
+    "gameDefs": {
+      "tictactoe": {
+        "label": "三目並べ",
+        "description": "他のプレイヤーかボットと対戦する定番の三目並べ。"
+      },
+      "connect4": {
+        "label": "コネクトフォー",
+        "description": "落ちるコマを4つ先に並べた方が勝ち。"
+      },
+      "rps": {
+        "label": "じゃんけん",
+        "description": "1ラウンドの早い勝負。"
+      },
+      "trivia": {
+        "label": "クイズ",
+        "description": "選択肢と採点付きの問題。"
+      },
+      "dice": {
+        "label": "サイコロ",
+        "description": "サイコロを振ります。"
+      },
+      "coinflip": {
+        "label": "コイントス",
+        "description": "表か裏か。"
+      },
+      "eightball": {
+        "label": "マジック8ボール",
+        "description": "はい/いいえの質問に答えます。"
+      },
+      "matchmaking": {
+        "label": "仲間探し",
+        "description": "特定のゲームの仲間を募集します。"
+      },
+      "quest": {
+        "label": "クエスト",
+        "description": "報酬付きのデイリー・ウィークリークエスト。"
+      },
+      "gamestats": {
+        "label": "ゲーム統計",
+        "description": "勝敗の概要。"
+      }
+    },
+    "gameOpts": {
+      "turnTimeout": "手番の制限時間",
+      "answerTimeout": "回答時間",
+      "correctReward": "正解時の報酬",
+      "cooldownHint": "プレイヤーが次の挑戦まで待つ時間",
+      "maxOpenLobbies": "1人あたりの募集上限",
+      "dailyQuests": "デイリークエストの数"
+    },
+    "customText": {
+      "group": {
+        "basic": "基本"
+      },
+      "noPermission": "ユーザーに権限がない",
+      "botNoPermission": "ボットに権限がない",
+      "ownerOnly": "ボット所有者のみ",
+      "guildOnly": "サーバー専用、DM 不可",
+      "cooldown": "コマンド間の待機 - {time}",
+      "wrongChannel": "このチャンネルでは使用できないコマンド",
+      "unknownError": "不明なエラー",
+      "invalidUser": "無効なユーザー",
+      "invalidChannel": "無効なチャンネル",
+      "invalidRole": "無効なロール"
+    },
+    "sx": {
+      "settings": {
+        "tab": {
+          "general": "一般",
+          "channels": "チャンネル",
+          "links": "リンク",
+          "analytics": "アナリティクス",
+          "welcome": "ウェルカム",
+          "sticky": "固定メッセージ",
+          "birthday": "誕生日",
+          "confessions": "告白",
+          "embed": "埋め込みメッセージ",
+          "automod": "AutoMod",
+          "logging": "ログ",
+          "leveling": "レベル",
+          "economy": "経済",
+          "tickets": "チケット",
+          "appeals": "異議申し立て",
+          "applications": "応募",
+          "giveaways": "プレゼント企画",
+          "reactionroles": "リアクションロール",
+          "tempchannels": "一時チャンネル",
+          "verification": "認証",
+          "starboard": "スターボード",
+          "games": "ゲーム",
+          "serverstatus": "サーバーステータス",
+          "crypto": "暗号資産とNFT",
+          "socials": "ソーシャル",
+          "suggestions": "提案",
+          "reputation": "評判",
+          "counting": "カウント",
+          "autoresponse": "自動応答",
+          "feeds": "RSSフィード",
+          "reminders": "リマインダー",
+          "tags": "タグ",
+          "warnings": "警告",
+          "backup": "バックアップ",
+          "webhooks": "Webhook",
+          "apikeys": "APIアクセス",
+          "audit": "監査ログ",
+          "help": "コマンド",
+          "plugins": "プラグイン"
+        },
+        "saveFailed": "❌ 保存に失敗しました: {error}",
+        "saved": "✅ 設定を保存しました！",
+        "saveError": "❌ 保存エラー - 接続を確認して、もう一度お試しください。",
+        "imageUploaded": "✅ 画像をアップロードしました！",
+        "uploadError": "❌ アップロードエラー",
+        "backupCreating": "バックアップを作成中...",
+        "backupCreated": "✅ バックアップを作成しました: {filename}",
+        "error": "❌ エラー",
+        "panelSent": "✅ {type}を送信しました！",
+        "sendError": "送信エラー",
+        "sentMessage": "送信済みメッセージ",
+        "untitledMessage": "無題のメッセージ",
+        "selectChannel": "チャンネルを選択してください！",
+        "embedName": "埋め込み",
+        "nothingToSaveMessage": "保存する内容がありません - 先にメッセージを入力してください。",
+        "draftSaved": "💾 保存しました！",
+        "messageNoChannel": "このメッセージにはチャンネルがありません - 読み込み、チャンネルを選択してから送信してください。",
+        "sentPanel": "送信済みパネル",
+        "untitledPanel": "無題のパネル",
+        "addButton": "ボタンを少なくとも1つ追加してください！",
+        "reactionRolesSent": "✅ リアクションロールを送信しました！",
+        "noPanelEditing": "編集中のパネルがありません - 先に送信済みパネルを読み込んでください。",
+        "panelUpdated": "✅ パネルを更新しました！",
+        "nothingToSavePanel": "保存する内容がありません - 先にパネルを設定してください。",
+        "panelNoChannel": "このパネルにはチャンネルがありません - 読み込み、チャンネルを選択してから送信してください。",
+        "plainText": "💬 プレーンテキスト",
+        "embedBtn": "📋 埋め込み",
+        "embedTitle": "タイトル",
+        "embedColor": "色",
+        "embedDescription": "説明 ({vars})",
+        "embedImageUrl": "画像URL ({avatar} 対応)",
+        "embedThumbnailUrl": "サムネイルURL (メンバーのアバターには {avatar})",
+        "embedFooter": "フッター",
+        "addTimestamp": "タイムスタンプを追加",
+        "savedToLibrary": "💾 メッセージライブラリに保存しました！",
+        "loadSaved": "📥 保存済みメッセージから読み込む…",
+        "untitled": "無題",
+        "saveAsMessage": "💾 メッセージとして保存",
+        "stickyIncomplete": "先にチャンネルを選択し、メッセージを入力してください。",
+        "back": "← 戻る",
+        "server": "サーバー",
+        "lockDashboard": "🔒 ダッシュボードをロック",
+        "refresh": "🔄 更新",
+        "save": "保存"
+      },
+      "common": {
+        "loading": "読み込み中…"
+      },
+      "audit": {
+        "title": "監査ログ",
+        "subtitle": "最近のモデレーション操作とダッシュボードの変更 (新しい順)。",
+        "filter": {
+          "all": "すべて",
+          "moderation": "モデレーション",
+          "dashboard": "ダッシュボード"
+        },
+        "empty": "まだ記録がありません。"
+      },
+      "apikeys": {
+        "createFailed": "キーの作成に失敗しました ({status})",
+        "networkError": "❌ ネットワークエラー - 接続を確認して、もう一度お試しください。",
+        "revokeConfirm": "このAPIキーを無効にしますか？使用しているものはすべて直ちに動作しなくなります。",
+        "revokeFailed": "キーの無効化に失敗しました ({status})",
+        "title": "APIアクセス",
+        "description": "自分のアプリからこのサーバーの統計を読み取るためのキーを作成します。Bearerトークンとして送信してください。キーはハッシュ化して保存されるため、完全なキーは作成直後の一度しか表示されません。",
+        "namePlaceholder": "キー名 (例: 自分のウェブサイト)",
+        "creating": "作成中…",
+        "create": "キーを作成",
+        "copyNow": "このキーを今すぐコピーしてください - 二度と表示されません:",
+        "yourKeys": "あなたのキー",
+        "empty": "APIキーはまだありません。",
+        "lastUsed": "最終使用 {date}",
+        "neverUsed": "未使用",
+        "revoke": "無効化",
+        "example": "例"
+      },
+      "analytics": {
+        "dow": {
+          "sun": "日",
+          "mon": "月",
+          "tue": "火",
+          "wed": "水",
+          "thu": "木",
+          "fri": "金",
+          "sat": "土"
+        },
+        "heatTooltip": "{day} {hour}:00 - {count} 件",
+        "noData": "データはまだありません。",
+        "noRoleSnapshot": "ロールのスナップショットはまだありません - ボットが1日に数回更新します。",
+        "loading": "アナリティクスを読み込み中…",
+        "loadError": "現在アナリティクスを読み込めません。",
+        "noDataCollected": "まだアナリティクスが収集されていません。ボットは今からアクティビティの記録を開始します - 意味のあるグラフは1〜2日後にご確認ください。",
+        "messages30d": "メッセージ (30日)",
+        "netMembers30d": "純増メンバー (30日)",
+        "voiceHours30d": "ボイス時間 (30日)",
+        "commands30d": "コマンド (30日)",
+        "healthScores": "ヘルススコア",
+        "heuristic": "(ヒューリスティックな推定値)",
+        "activity": "アクティビティ",
+        "consistency": "継続性 (アクティブな日)",
+        "growthHealth": "成長の健全性",
+        "growthForecast": "成長予測",
+        "trendProjection": "(トレンド予測)",
+        "avgNetPerDay": "1日あたりの平均純増",
+        "projected7": "7日後の予測",
+        "projected30": "30日後の予測",
+        "msgTrend7d": "メッセージの傾向 (7日)",
+        "forecastNote": "過去30日間からの単純な直線推定です - おおよその目安であり、保証ではありません。",
+        "messagesPerDay": "1日あたりのメッセージ数",
+        "joinsVsLeaves": "参加と退出",
+        "joinsVsLeavesLegend": "(緑の上向き = 参加、赤の下向き = 退出)",
+        "heatmap": "アクティビティヒートマップ",
+        "heatmapHint": "(曜日・時間帯別のメッセージ数)",
+        "topChannels": "人気のチャンネル",
+        "topMembers": "上位メンバー",
+        "topCommands": "よく使われるコマンド",
+        "membersByRole": "ロール別メンバー",
+        "membersTotal": "(メンバー合計 {count} 人)",
+        "moderationActions": "モデレーション操作",
+        "totalActions": "操作の合計",
+        "warningsOnRecord": "記録された警告",
+        "topReasons": "BAN・処罰の主な理由",
+        "supportTickets": "サポートチケット",
+        "ticketsTotal": "合計",
+        "ticketsOpen": "オープン",
+        "ticketsClosed": "クローズ",
+        "avgResolution": "平均解決時間"
+      }
+    },
+    "tabsA": {
+      "common": {
+        "none": "-- なし --",
+        "select": "-- 選択 --"
+      },
+      "appeals": {
+        "title": "🛡️ 異議申し立て",
+        "intro": "{command} コマンドおよび公開異議申し立てページからの申し立てが届くチャンネルです。BANまたはミュートされたユーザーがここに書き込みます。",
+        "channel": "異議申し立てチャンネル",
+        "instructions": "異議申し立ての案内(ユーザーに表示されます)",
+        "instructionsPlaceholder": "処罰が不当だと考える理由を書いてください。具体的かつ丁寧にお願いします。",
+        "enablePublic": "公開異議申し立てページを有効にする"
+      },
+      "applications": {
+        "title": "📝 応募",
+        "channel": "応募チャンネル",
+        "reviewChannel": "審査チャンネル(スタッフ用)",
+        "approvedRole": "承認後のロール",
+        "questions": "質問(1行につき1つ)",
+        "questionsPlaceholder": "何歳ですか?\nなぜ参加したいですか?\n経験はありますか?"
+      },
+      "autoresponse": {
+        "title": "💬 自動返信",
+        "intro": "キーワードに対する自動返信です。",
+        "trigger": "トリガー",
+        "answer": "返信",
+        "add": "+ 追加"
+      },
+      "backup": {
+        "title": "💾 サーバーのバックアップ",
+        "intro": "サーバー設定の完全なバックアップを作成します。",
+        "create": "💾 バックアップを作成",
+        "savedTitle": "保存されたバックアップ",
+        "pathHint": "バックアップファイルはサーバー上の次の場所に保存されます:",
+        "empty": "バックアップはまだありません。",
+        "stats": "ロール{roles}個、チャンネル{channels}個",
+        "restoring": "復元中…",
+        "restoreMode": {
+          "full": "完全復元",
+          "server": "サーバーのみ",
+          "bot": "ボット設定のみ"
+        },
+        "restoreConfirm": {
+          "full": "完全復元: 同じ名前のロール、チャンネル、サーバー設定が更新され（ないものは再作成）、このサーバーのVorqulボット設定はバックアップの内容に置き換えられます。既存のものは削除されません。",
+          "server": "Discordサーバーのみ（ロール、チャンネル、サーバー設定）を同じ名前で復元します。ないものは再作成されます。既存のものは削除されません。Vorqulボットの設定は変更されません。",
+          "bot": "このサーバーのVorqulボット設定（automod、welcome、levelingなど）のみをバックアップから復元します。Discordサーバー自体（ロール・チャンネル）は変更されません。"
+        },
+        "restoreDone": "復元しました: ロール{roles}個、チャンネル{channels}個を処理{errors}",
+        "restoreDoneBot": "ボット設定を復元しました{errors}",
+        "restoreDoneBotSuffix": "、ボット設定も復元",
+        "restoreErrorsSuffix": "、エラー{n}件",
+        "restoreError": "バックアップを復元できませんでした。",
+        "refresh": "🔄 一覧を更新"
+      },
+      "birthday": {
+        "title": "🎂 誕生日システム",
+        "enable": "毎日の誕生日通知を有効にする(サーバー時間 08:00)",
+        "channel": "通知チャンネル",
+        "role": "誕生日ロール(任意、当日のみ付与)",
+        "message": "メッセージ({user}, {username}, {age}, {server})",
+        "messagePlaceholder": "🎉 {user} さん、お誕生日おめでとう! 🎂",
+        "messageType": "メッセージの種類",
+        "plainText": "💬 プレーンテキスト",
+        "embed": "📋 埋め込み",
+        "embedColor": "埋め込みの色",
+        "help": "メンバーは {set} で自分の誕生日を設定し、{view} で確認、{list} で今後の誕生日を確認できます。"
+      },
+      "confessions": {
+        "title": "🤫 告白",
+        "enable": "匿名の告白を有効にする({command})",
+        "channel": "告白チャンネル",
+        "logChannel": "スタッフ用ログチャンネル(任意 - モデレーション用に匿名化されていないコピーを保存)",
+        "allowReplies": "匿名での返信を許可(各告白の下に返信ボタンを追加)",
+        "minAccountAge": "アカウントの最低経過日数(日)- スパム対策、0 = オフ",
+        "help": "告白はボットが連番付きで投稿するため、チャンネル上では投稿者は分かりません。スタッフ用ログチャンネルを設定すると、モデレーターは誰が書いたかを確認でき、悪用の防止に役立ちます。番号と投稿者の記録はボットが非公開で保存します。"
+      },
+      "counting": {
+        "title": "🔢 カウント",
+        "enable": "カウントゲームを有効にする",
+        "channel": "カウントチャンネル",
+        "allowSameUser": "同じユーザーの連続カウントを許可する",
+        "deleteWrong": "間違ったメッセージや数字以外のメッセージを削除する",
+        "goal": "目標(通知 + 報酬、0 = オフ)",
+        "goalRole": "目標達成報酬のロール(任意)",
+        "currentCount": "現在のカウント",
+        "countAndBest": "{count} · 最高: {best}"
+      },
+      "crypto": {
+        "title": "₿ 暗号資産とNFT",
+        "trackedTitle": "💰 追跡する通貨",
+        "coins": "コイン(BTC、ETH など)",
+        "currency": "通貨",
+        "nftTitle": "🖼️ NFTコレクション",
+        "nftEnable": "NFTの追跡を有効にする",
+        "collections": "コレクション(OpenSea スラッグ)"
+      },
+      "economy": {
+        "title": "💰 経済",
+        "currencyName": "通貨名",
+        "emoji": "絵文字",
+        "startingBalance": "初期残高",
+        "daily": "デイリー",
+        "streakBonus": "連続ボーナス %",
+        "maxStreakBonus": "連続ボーナスの上限",
+        "workMin": "仕事の最小報酬",
+        "workMax": "仕事の最大報酬",
+        "workCooldown": "仕事のクールダウン(秒)",
+        "gamblingTitle": "🎰 ギャンブル",
+        "game": {
+          "coinflip": "コイントス",
+          "slots": "スロット",
+          "roulette": "ルーレット",
+          "blackjack": "ブラックジャック",
+          "dice": "サイコロ",
+          "crash": "クラッシュ",
+          "rps": "じゃんけん"
+        },
+        "minBet": "最小ベット",
+        "maxBet": "最大ベット",
+        "bankTitle": "🏦 銀行",
+        "enableBank": "銀行を有効にする",
+        "dailyInterest": "日利 %"
+      },
+      "embed": {
+        "title": "📨 埋め込みビルダー",
+        "modeEmbed": "📋 埋め込み",
+        "modePlain": "💬 プレーンテキスト",
+        "channel": "チャンネル",
+        "color": "色",
+        "senderName": "送信者名(任意)",
+        "senderNamePlaceholder": "このメッセージのボット名",
+        "senderAvatar": "送信者のアバターURL(任意)",
+        "webhookNote": "送信者名またはアバターを設定すると、メッセージはWebhook経由で送信されます。そのチャンネルでボットに「ウェブフックの管理」権限が必要です。埋め込みにもプレーンテキストにも使えます。",
+        "messageText": "メッセージ(テキスト)",
+        "textOutside": "埋め込み外のテキスト(メンション)",
+        "messagePlaceholder": "メッセージを入力... (@everyone、@here、ロールメンションに対応)",
+        "outsidePlaceholder": "例: @everyone またはロールメンション",
+        "selectRole": "-- ロールを選択 --",
+        "addRoleMention": "+ ロールメンション",
+        "roleMentionNote": "ロールメンションは {format} として埋め込み上のテキストに挿入され、ロールに通知されます。",
+        "author": "作成者",
+        "titleField": "タイトル",
+        "description": "説明",
+        "image": "画像",
+        "imagePlaceholder": "https://... またはアップロード",
+        "upload": "アップロード",
+        "preview": "プレビュー",
+        "thumbnailUrl": "サムネイルURL",
+        "footer": "フッター",
+        "addTimestamp": "タイムスタンプを追加",
+        "sending": "送信中…",
+        "sendMessage": "メッセージを送信",
+        "sendEmbed": "埋め込みを送信",
+        "saveDraft": "💾 下書きを保存",
+        "savedTitle": "💾 保存済み・送信済みメッセージ",
+        "savedIntro": "送信したメッセージはすべてここに保存されます。編集してビルダーに読み込み直したり、複製して新しいメッセージにしたり、再送信や削除ができます。",
+        "savedEmpty": "保存済みのメッセージはまだありません - 上でメッセージを送信または保存してください。",
+        "untitled": "無題",
+        "statusSent": "📤 送信済み",
+        "statusDraft": "📝 下書き",
+        "edit": "✏️ 編集",
+        "duplicate": "📋 複製",
+        "resend": "📤 再送信"
+      },
+      "feeds": {
+        "title": "📰 RSSフィード",
+        "intro": "RSSフィードを自動投稿します。",
+        "urlPlaceholder": "RSS URL",
+        "channel": "チャンネル",
+        "force": "今すぐ送信",
+        "forceHint": "スケジュールを待たずに今すぐフィードを確認し、最新のアイテムを投稿します。",
+        "forceSent": "送信しました: {title}",
+        "forceError": "フィードを送信できませんでした。"
+      },
+      "games": {
+        "title": "🎮 ゲーム",
+        "intro": "ゲームは専用ページで設定します。1つずつ有効化し、動作するチャンネル、制限時間、報酬を設定できます。",
+        "open": "ゲーム設定を開く"
+      },
+      "giveaways": {
+        "howToTitle": "ℹ️ プレゼント企画の始め方",
+        "howToIntro": "プレゼント企画はサーバー内で {command} コマンドを使って開始します。内容はそこで入力します:",
+        "optPrize": "配る賞品",
+        "optDuration": "例: 1h、30m、2d",
+        "optWinners": "当選者数",
+        "optOptional": "任意",
+        "howToOutro": "メンバーは 🎉 ボタンを押して参加し、タイマー終了時にボットが自動で当選者を選びます。実行中の企画は {end}、{reroll}、{list} で管理できます。以下の項目はモジュールの既定値です。",
+        "title": "🎉 プレゼント企画",
+        "channel": "チャンネル",
+        "any": "-- 指定なし --",
+        "emoji": "絵文字",
+        "color": "色",
+        "managerRole": "管理ロール",
+        "dmWinners": "当選者にDMを送る",
+        "requireRole": "参加にロールを必須にする"
+      },
+      "general": {
+        "basicTitle": "基本設定",
+        "prefix": "プレフィックス",
+        "botLanguage": "ボットの言語",
+        "botLanguageHint": "ボットの返信に反映されます。",
+        "botNickname": "このサーバーでのボット名",
+        "botNicknamePlaceholder": "空欄の場合は共通のボット名を使用します",
+        "botNicknameHint": "このサーバーにのみ適用されます。他のサーバーではボット名は異なります。最大32文字。ボットに「ニックネームの変更」権限が必要です。反映まで数分かかります。",
+        "perServerNote": "言語と名前はサーバーごとに個別に適用され、ボットを再起動せずに反映されます。",
+        "managerRole": "マネージャーロール",
+        "managerRoleHint": "このロールを持つメンバーはこのサーバーの設定を開いて編集できますが、プラグインのインストール・有効化・無効化・設定はできません。",
+        "modulesEnabled": "{total}個中{on}個が有効",
+        "modulesIntro": "全モジュールの一覧です。無効にしたモジュールは、そのコマンドも含めて動作しなくなります。"
+      },
+      "automod": {
+        "ignoreAdmins": "管理者をチェックしない",
+        "exemptTitle": "🪪 除外するロールとチャンネル",
+        "searchRole": "ロールを検索...",
+        "noExemptRole": "除外されたロールはありません",
+        "searchChannel": "チャンネルを検索...",
+        "allChannels": "AutoModはすべてのチャンネルで動作します",
+        "bannedWords": "🚫 禁止ワード",
+        "bannedWordsPlaceholder": "禁止語1, 禁止語2, 禁止語3",
+        "bannedWordsHint": "カンマで区切ります。改行も使えます。大文字と小文字は区別されません。",
+        "allowedDomains": "✅ 許可するドメイン",
+        "allowedDomainsHint": "カンマで区切ります。リンクフィルターが有効なときに適用され、これらのドメインへのリンクは通過します。",
+        "filters": "⚙️ フィルター"
+      }
+    },
+    "tabsB": {
+      "common": {
+        "select": "-- 選択 --",
+        "none": "-- なし --",
+        "disabledOpt": "-- 無効 --",
+        "channel": "チャンネル",
+        "title": "タイトル",
+        "color": "色",
+        "description": "説明",
+        "add": "+ 追加",
+        "messageType": "メッセージの種類",
+        "role": "ロール",
+        "emoji": "絵文字",
+        "sending": "送信中…",
+        "searchRole": "ロールを検索...",
+        "searchChannel": "チャンネルを検索...",
+        "upload": "アップロード",
+        "buttonText": "ボタンのテキスト",
+        "message": "メッセージ",
+        "supportRole": "サポートロール",
+        "save": "保存"
+      },
+      "help": {
+        "title": "💬 コマンド",
+        "intro": "{total} 個のコマンド。プレフィックスコマンドモジュールが有効な場合、プレフィックスでも実行できます。",
+        "group": {
+          "moderation": "🔨 モデレーション",
+          "administration": "⚙️ 管理",
+          "utility": "🧰 ユーティリティ",
+          "fun": "🎮 お楽しみ・ゲーム"
+        },
+        "cmd": {
+          "altcheck": "メンバーのサブアカウントをヒューリスティックに判定（アカウント年齢・アバター・ロール）",
+          "appeal": "警告・ミュートなどのモデレーション措置に対して異議を申し立てる",
+          "ban": "メンバーをサーバーからBANする",
+          "case": "IDでモデレーションケースを検索する",
+          "cleanup": "サーバー整理ツール",
+          "clear": "複数のメッセージを削除する",
+          "jail": "メンバーを隔離する：ロールを外し、解除するまで隔離します",
+          "kick": "メンバーをサーバーからキックする",
+          "lock": "チャンネルをロックする（メンバーはメッセージを送信できなくなります）",
+          "lockdown": "サーバーのすべてのテキストチャンネルを一括でロック／解除する",
+          "massnick": "多数のメンバーのニックネームを一括で設定／リセットする",
+          "massrole": "多数のメンバーにロールを一括で付与／削除する",
+          "mute": "メンバーをミュートする（設定済みのミュートロール、なければタイムアウトを使用）",
+          "nick": "メンバーのニックネームを変更／リセットする",
+          "note": "ユーザーに非公開のモデレーターメモを追加する",
+          "notes": "ユーザーのモデレーターメモとモデレーション履歴を表示する",
+          "permcheck": "権限の確認とプレビュー",
+          "role": "メンバーにロールを付与／削除する",
+          "shadowmute": "シャドウミュート：本人に通知せずメッセージを静かに削除します",
+          "slowmode": "チャンネルのスローモード（投稿間隔の制限）を設定する",
+          "softban": "ソフトBAN（BAN後すぐ解除して、そのメンバーのメッセージを削除）",
+          "timeout": "メンバーをタイムアウトする",
+          "unban": "IDでユーザーのBANを解除する",
+          "unjail": "隔離を解除し、以前のロールを復元する",
+          "unlock": "チャンネルのロックを解除する（再びメッセージを送信できます）",
+          "unmute": "メンバーのミュートを解除する（ミュートロールやタイムアウトを解除）",
+          "unshadowmute": "メンバーのシャドウミュートを解除する",
+          "untimeout": "メンバーのタイムアウトを解除する",
+          "warn": "メンバーに警告する",
+          "persist": "メンバーが再参加したときにロールとニックネームを復元する",
+          "premium": "プレミアムティアの管理（ボットオーナー専用）",
+          "afk": "AFKステータスを設定する",
+          "apply": "応募システム",
+          "autoresponse": "自動応答を管理する",
+          "birthday": "誕生日を登録して、サーバーでお祝いしてもらう",
+          "coinflip": "コインを投げる",
+          "confess": "匿名の告白をサーバーに送る",
+          "connect4": "四目並べで遊ぶ！",
+          "digest": "サーバーの週次ダイジェスト",
+          "feed": "SNSフィードを管理する",
+          "filter": "禁止ワードフィルターを管理する",
+          "gamestats": "ゲーム統計を表示する",
+          "help": "利用可能なコマンドをすべて表示する",
+          "invites": "招待を管理・確認する",
+          "leaderboard": "サーバーのランキングを見る",
+          "levelroles": "レベルロールを管理する",
+          "logs": "ログシステムを設定する",
+          "msgtop": "最も発言の多いメンバーのランキング",
+          "rank": "自分または他のユーザーのランクを確認する",
+          "reactionroles": "リアクションロールを管理する",
+          "referral": "紹介システム",
+          "rep": "評判システム",
+          "rolemenu": "ロールメニューを作成する",
+          "rps": "じゃんけんで遊ぶ",
+          "settings": "サーバー設定",
+          "streak": "アクティビティの連続記録を見る",
+          "suggest": "提案システム",
+          "tempchannel": "自分の一時ボイスチャンネルを管理する",
+          "ticket": "チケットサポートシステム",
+          "tictactoe": "三目並べで遊ぶ！",
+          "vctop": "ボイスで最もアクティブなメンバーのランキング",
+          "verify": "サーバーで認証する",
+          "whatdidimiss": "不在中に起きたことの要約を表示する",
+          "whywasibanned": "自分のモデレーション履歴と異議申し立ての情報を確認する",
+          "8ball": "マジック8ボールに質問する",
+          "dice": "サイコロを振る",
+          "giveaway": "プレゼント企画を作成・管理する",
+          "matchmaking": "ゲームのマッチメイキングシステム",
+          "poll": "投票を作成する",
+          "quest": "サーバークエストとチャレンジ",
+          "trivia": "クイズに答えて報酬を獲得する"
+        }
+      },
+      "leveling": {
+        "title": "⭐ レベリング",
+        "xpMin": "XP 最小",
+        "xpMax": "XP 最大",
+        "cooldown": "クールダウン（秒）",
+        "voiceXpPerMin": "ボイスXP/分",
+        "multiplier": "XP倍率",
+        "maxLevel": "最大レベル",
+        "levelUpChannel": "レベルアップ通知チャンネル",
+        "sameChannel": "同じチャンネル",
+        "dm": "DM",
+        "disabled": "無効",
+        "levelUpMessage": "レベルアップメッセージ ({user}, {level}, {xp})",
+        "levelUpPlaceholder": "🎉 {user} がレベル {level} に到達しました！",
+        "voiceXp": "ボイスXP",
+        "stackRoles": "ロール報酬を重ねて付与",
+        "roleRewards": "🏆 ロール報酬",
+        "levelCol": "レベル",
+        "lvlPlaceholder": "Lv",
+        "xpExceptions": "🚫 XPの除外設定",
+        "noXpRole": "XPを獲得できないロール",
+        "noXpRoleEmpty": "全員がXPを獲得します",
+        "noXpChannels": "XPを獲得できないチャンネル",
+        "noXpChannelsEmpty": "すべてのチャンネルでXPを獲得します"
+      },
+      "logging": {
+        "title": "📝 ログ",
+        "categoryHint": "専用チャンネルのないカテゴリは「サーバー」チャンネルに記録されます。",
+        "disabled": "無効",
+        "events": "🔔 イベント",
+        "eventsHint": "無効にしたイベントは、カテゴリにチャンネルが設定されていても記録されません。",
+        "ignoredChannels": "🚫 無視するチャンネル",
+        "ignoredHint": "これらのチャンネルでの出来事は記録されません",
+        "loggedEverywhere": "すべてのチャンネルで記録",
+        "cat": {
+          "moderation": {
+            "label": "🛡️ モデレーション",
+            "desc": "BAN・キック・警告・ミュート"
+          },
+          "messages": {
+            "label": "💬 メッセージ",
+            "desc": "編集・削除"
+          },
+          "members": {
+            "label": "👥 メンバー",
+            "desc": "参加・退出・ニックネーム・アバター"
+          },
+          "server": {
+            "label": "⚙️ サーバー",
+            "desc": "サーバー設定"
+          },
+          "voice": {
+            "label": "🔊 ボイス",
+            "desc": "参加・退出・移動"
+          },
+          "roles": {
+            "label": "🎭 ロール",
+            "desc": "メンバーのロール変更"
+          },
+          "channels": {
+            "label": "📁 チャンネル",
+            "desc": "作成・削除・更新"
+          },
+          "invites": {
+            "label": "🔗 招待",
+            "desc": "招待の作成・削除"
+          },
+          "threads": {
+            "label": "🧵 スレッド",
+            "desc": "スレッドの作成・削除・更新"
+          },
+          "emojis": {
+            "label": "😀 絵文字",
+            "desc": "絵文字とステッカーの変更"
+          },
+          "boosts": {
+            "label": "💎 ブースト",
+            "desc": "サーバーブースト"
+          }
+        },
+        "ev": {
+          "messageEdit": "メッセージ編集",
+          "messageDelete": "メッセージ削除",
+          "messageBulkDelete": "一括削除",
+          "memberJoin": "メンバー参加",
+          "memberLeave": "メンバー退出",
+          "voiceJoin": "ボイス参加",
+          "voiceLeave": "ボイス退出",
+          "voiceMove": "ボイス移動",
+          "roleCreate": "ロール作成",
+          "roleDelete": "ロール削除",
+          "channelCreate": "チャンネル作成",
+          "channelDelete": "チャンネル削除",
+          "threadCreate": "スレッド作成",
+          "threadDelete": "スレッド削除"
+        }
+      },
+      "rr": {
+        "colorBlue": "青",
+        "colorGrey": "グレー",
+        "colorGreen": "緑",
+        "colorRed": "赤",
+        "editing": "✏️ Discordに送信済みのパネルを編集中です（メッセージ {id}）。「パネルを更新」で元のメッセージが直接編集されます。",
+        "stopEditing": "✕ 編集を終了",
+        "title": "🎭 リアクションロール",
+        "titlePh": "🎭 ロールを選択してください",
+        "type": "タイプ",
+        "typeMultiple": "Multiple - 複数のロール",
+        "typeSingle": "Single - 1つのみ",
+        "senderName": "送信者名（任意）",
+        "senderNamePh": "このパネル用のボット名",
+        "senderAvatar": "送信者のアバターURL（任意）",
+        "webhookNote": "送信者名またはアバターを設定すると、パネルはWebhook経由で送信されます。そのチャンネルでボットに「ウェブフックの管理」権限が必要です。ボタンは通常どおり動作します。",
+        "buttons": "🔘 ボタン",
+        "buttonLabelPh": "テキスト",
+        "buttonColor": "ボタンの色",
+        "updatePanel": "パネルを更新",
+        "sendAsNew": "新規として送信",
+        "send": "送信",
+        "preview": "👁️ プレビュー",
+        "defaultDescription": "ボタンをクリックしてロールを付与／解除します。",
+        "footer": "Vorqul DS BOT • リアクションロール",
+        "noButtons": "ボタンがまだありません。上で追加してください。",
+        "singleMode": "Singleモード：ロールを選ぶと、このパネルの他のロールは外れます。",
+        "savedPanels": "💾 保存済み・送信済みのパネル",
+        "savedHint": "送信したパネルは自動的にここへ保存されます。読み込んで調整し、再送信できます。",
+        "noSaved": "保存済みのパネルはまだありません。",
+        "savedMeta": "ボタン {count} 個 · {status} · {date}",
+        "onDiscord": "Discord上",
+        "sent": "送信済み",
+        "draft": "下書き",
+        "load": "読み込む"
+      },
+      "reminders": {
+        "title": "⏰ リマインダー",
+        "hint": "/reminder コマンドの設定です。",
+        "maxPerUser": "ユーザーあたりの最大リマインダー数",
+        "maxDuration": "最大期間（日）"
+      },
+      "reputation": {
+        "title": "⭐ 評判",
+        "enable": "評判システムを有効にする",
+        "cooldown": "同じユーザーに評判を与える間隔（時間）",
+        "allowNegative": "マイナスの評判を許可する",
+        "rewardRole": "報酬ロール（評判がしきい値に達すると付与、任意）",
+        "threshold": "しきい値（評判）"
+      },
+      "socials": {
+        "intro": "各SNSは個別に設定します。必要なものだけ有効にしてください。",
+        "accYoutube": "YouTubeチャンネルID（1行に1つ）",
+        "accTwitch": "Twitchユーザー名（1行に1つ）",
+        "accReddit": "サブレディット（1行に1つ）",
+        "accRss": "RSSフィードのURL（1行に1つ）",
+        "notifChannel": "通知チャンネル",
+        "mentionRole": "メンションするロール（任意）",
+        "customMessage": "カスタムメッセージ（任意）",
+        "customPh": "🔴 新しい投稿！"
+      },
+      "starboard": {
+        "title": "⭐ スターボード",
+        "channel": "スターボードのチャンネル",
+        "minReactions": "最小リアクション数",
+        "selfStar": "自分のメッセージへのスターを許可",
+        "ignoredChannels": "無視するチャンネル",
+        "noneIgnored": "無視するチャンネルはありません"
+      },
+      "sticky": {
+        "title": "📌 固定メッセージ",
+        "intro": "固定メッセージは、誰かが発言するたびにチャンネルの最下部へ再投稿されるため、流れて見えなくなりません。ダッシュボードでの変更はそのチャンネルの次の発言で反映され、{cmd} は即時に反映されます。",
+        "messagePh": "このメッセージはチャンネルの最下部に固定されます。",
+        "plainText": "プレーンテキスト",
+        "embed": "埋め込み",
+        "embedTitle": "埋め込みのタイトル",
+        "addUpdate": "固定メッセージを追加／更新",
+        "active": "有効な固定メッセージ",
+        "none": "固定メッセージはまだありません。",
+        "kindEmbed": "埋め込み",
+        "kindText": "テキスト",
+        "saveHint": "変更を保存するには、上部の 💾 保存 をクリックしてください。"
+      },
+      "suggestions": {
+        "title": "💡 提案",
+        "channel": "提案チャンネル",
+        "upvote": "賛成の絵文字",
+        "downvote": "反対の絵文字",
+        "autoThread": "スレッドを自動作成する",
+        "anonymous": "匿名の提案を許可する"
+      },
+      "tags": {
+        "title": "🏷️ カスタムタグ",
+        "hint": "/tag でクイック返信できます。",
+        "namePh": "名前",
+        "contentPh": "内容"
+      },
+      "temp": {
+        "title": "🔊 一時チャンネル",
+        "hub": "Join to Create チャンネル",
+        "category": "カテゴリ",
+        "sameCategory": "-- 同じ --",
+        "nameFormat": "名前の形式 ({user}, {game})",
+        "nameFormatPh": "🎮 {user} のチャンネル",
+        "limit": "上限（0 = 無制限）",
+        "bitrate": "ビットレート（kbps）"
+      },
+      "tickets": {
+        "panelName": "チケットパネル",
+        "title": "🎫 チケット",
+        "panelChannel": "パネルのチャンネル",
+        "ticketCategory": "チケットのカテゴリ",
+        "noSupportRole": "サポートロールなし",
+        "transcriptChannel": "トランスクリプトのチャンネル",
+        "maxPerUser": "ユーザーあたりの最大チケット数",
+        "panel": "📋 パネル",
+        "panelTitlePh": "🎫 サポート",
+        "panelDescPh": "ボタンをクリックしてチケットを作成",
+        "buttonTextPh": "📩 チケットを作成",
+        "welcomeInTicket": "チケット内のウェルカムメッセージ",
+        "welcomePh": "ようこそ！問題の内容を教えてください...",
+        "categoriesTitle": "🎟️ チケットカテゴリ（任意）",
+        "categoriesHint": "カテゴリを追加すると、パネルにカテゴリごとのボタンが表示されます（専用のDiscordカテゴリ、サポートロール、ウェルカムメッセージ）。カテゴリがない場合は上の単一ボタンが使われます。",
+        "buttonName": "ボタン名",
+        "defaultCategoryLabel": "サポート",
+        "discordCategory": "Discordカテゴリ（親）",
+        "defaultOption": "-- デフォルト --",
+        "perMainSettings": "メイン設定に従う",
+        "removeCategory": "カテゴリを削除",
+        "addCategory": "+ カテゴリを追加",
+        "sendPanel": "パネルを送信"
+      },
+      "verification": {
+        "type": "タイプ",
+        "typeButton": "ボタン",
+        "typeReaction": "リアクション",
+        "typeCaptcha": "CAPTCHA",
+        "roleAfter": "認証後のロール",
+        "buttonTextPh": "✅ 認証する",
+        "send": "送信"
+      },
+      "warnings": {
+        "title": "⚠️ 自動アクション",
+        "hint": "警告数に達したときに実行されるアクションです。",
+        "warnsWithin": "回の警告（期間：",
+        "daysArrow": "日）→",
+        "mute": "ミュート",
+        "kick": "キック",
+        "tempban": "一時BAN",
+        "ban": "BAN",
+        "immunity": "🛡️ 免除ロール",
+        "noImmune": "免除ロールはありません"
+      },
+      "webhooks": {
+        "title": "🔗 送信Webhook",
+        "intro": "サーバーイベントを独自のエンドポイントにPOSTします。各リクエストには {sig} で署名が付くため、検証できます。",
+        "enable": "送信Webhookを有効にする",
+        "url": "WebhookのURL",
+        "secret": "署名シークレット（任意ですが推奨）",
+        "secretPh": "長いランダムな文字列",
+        "events": "送信するイベント",
+        "memberJoin": "メンバー参加",
+        "memberLeave": "メンバー退出",
+        "memberBan": "メンバーBAN",
+        "memberUnban": "メンバーBAN解除",
+        "dashboardLog": "ダッシュボードの変更",
+        "testSent": "テストを送信しました (HTTP {status})",
+        "failed": "失敗しました",
+        "requestFailed": "リクエストに失敗しました",
+        "sendTest": "テストイベントを送信",
+        "saveFirst": "先に変更を保存してください。テストは保存済みのWebhookに対して行われます。"
+      },
+      "welcome": {
+        "welcomeHeading": "👋 ウェルカムメッセージ",
+        "messageVars": "メッセージ ({user}, {server}, {memberCount})",
+        "messagePh": "{user} さん、{server} へようこそ！🎉",
+        "msgTypeHint": "プレーンテキストは上のメッセージをそのまま送信します。埋め込みは下の項目を使ったカードを送信します。",
+        "welcomeLabel": "ウェルカムメッセージ",
+        "titlePh": "ようこそ！",
+        "bannerImage": "バナー画像",
+        "imagePh": "https://... またはファイルをアップロード",
+        "preview": "プレビュー",
+        "thumbnail": "サムネイル（アバターは {avatar}）",
+        "footer": "フッター",
+        "goodbyeHeading": "👋 お別れメッセージ",
+        "goodbyeLabel": "お別れメッセージ",
+        "autoRole": "🎭 自動ロール",
+        "dmHeading": "📩 新規メンバーへのDM",
+        "sendDm": "新規メンバーにDMを送信する",
+        "dmPh": "サーバーへようこそ！ルールをお読みください...",
+        "dmLabel": "DMメッセージ"
+      }
+    },
+    "cfg": {
+      "common": {
+        "select": "- 選択 -",
+        "selectChannel": "- チャンネルを選択 -",
+        "saveFailed": "保存に失敗しました ({status})",
+        "networkError": "ネットワークエラー - 接続を確認してください。"
+      },
+      "games": {
+        "noteBefore": "ゲームに専用のチャンネル設定がない場合は、共通設定が適用されます:",
+        "noteLink": "「チャンネル」セクションのゲーム",
+        "noteAfter": "。個別のルールが優先されます。"
+      },
+      "serverstatus": {
+        "title": "サーバーステータス",
+        "subtitle": "MC/Bedrock サーバーの状態をチャンネルに自動更新で表示します。",
+        "serverCard": "サーバー",
+        "serverDesc": "監視するサーバーのアドレス。",
+        "type": "タイプ",
+        "host": "アドレス (ホスト)",
+        "port": "ポート",
+        "displayCard": "表示",
+        "displayDesc": "ステータスの表示場所と表示方法。1分ごとに自動更新されます。",
+        "channel": "チャンネル",
+        "colorOnline": "色 (オンライン)",
+        "online": "🟢 サーバーはオンラインです",
+        "address": "アドレス:",
+        "players": "プレイヤー:",
+        "version": "バージョン:"
+      },
+      "welcome": {
+        "title": "ウェルカム",
+        "subtitle": "新しいメンバーをメッセージとカードで歓迎します。",
+        "messageCard": "メッセージ",
+        "messageDesc": "メンバー参加時に送信されるチャンネルとテキスト。",
+        "channel": "チャンネル",
+        "channelHint": "ウェルカムメッセージの送信先",
+        "messageText": "メッセージ本文",
+        "variablesPlaceholder": "変数: {user} {username} {server} {count} {inviter}",
+        "variables": "変数:",
+        "sendEmbed": "埋め込みとして送信",
+        "dmCard": "ダイレクトメッセージ (DM)",
+        "dmDesc": "新しいメンバーへの任意のダイレクトメッセージ。",
+        "dmEnable": "DMを有効化",
+        "dmPlaceholder": "こんにちは {user}、{server} へようこそ!",
+        "cardCard": "ウェルカムカード",
+        "cardDesc": "アバターとテキスト付きの MEE6 風の画像。",
+        "cardEnable": "カードを有効化",
+        "cardTitle": "タイトル",
+        "cardTitlePlaceholder": "ようこそ、{username}!",
+        "cardSubtitle": "サブタイトル",
+        "accentColor": "アクセントカラー",
+        "textColor": "文字色",
+        "bgColor": "背景色",
+        "bgColorHint": "画像がない場合に使用されます",
+        "bgUrl": "背景URL (任意)",
+        "bgUrlPlaceholder": "https://…/background.png",
+        "upload": "アップロード",
+        "uploading": "アップロード中…",
+        "uploadError": "アップロードに失敗しました。もっと小さい画像を試すか、代わりにリンクを貼ってください。",
+        "bgUrlHint": "画像のリンクを貼るか、直接アップロードしてください（500KBまで）。"
+      },
+      "automod": {
+        "subtitle": "MEE6 風のチャット自動モデレーション。",
+        "spamTitle": "スパム対策",
+        "spamDesc": "短時間に多すぎるメッセージ。",
+        "repeatedTitle": "繰り返しテキスト",
+        "repeatedDesc": "同じメッセージや繰り返される文字。",
+        "invitesTitle": "Discord 招待",
+        "invitesDesc": "discord.gg のリンクをブロックします。",
+        "linksTitle": "外部リンク",
+        "linksDesc": "ホワイトリスト外の URL をブロックします。",
+        "whitelist": "ドメインのホワイトリスト (カンマ区切り)",
+        "attachmentsTitle": "画像 / 添付ファイル",
+        "attachmentsDesc": "上限を超える添付ファイル付きメッセージをブロックします。",
+        "maxAttachments": "添付の最大数 (0 = すべてブロック)",
+        "imagesOnly": "画像のみ",
+        "capsTitle": "大文字の使いすぎ",
+        "capsDesc": "大文字が多すぎます。",
+        "emojisTitle": "絵文字の使いすぎ",
+        "emojisDesc": "1つのメッセージに絵文字が多すぎます。",
+        "spoilersTitle": "スポイラーの使いすぎ",
+        "spoilersDesc": "||スポイラー|| ブロックが多すぎます。",
+        "mentionsTitle": "大量メンション",
+        "mentionsDesc": "一度に多すぎる @メンション。",
+        "zalgoDesc": "結合ダイアクリティカルマークの使いすぎ。",
+        "blacklistTitle": "禁止ワード",
+        "blacklistDesc": "カンマ区切りの単語リスト。一致したメッセージは削除されます。",
+        "blacklistPlaceholder": "単語1, 単語2, 単語3",
+        "exemptTitle": "例外",
+        "exemptDesc": "AutoMod が無視する対象と場所。",
+        "ignoreAdmins": "管理者を無視",
+        "escalationTitle": "処罰のエスカレーション",
+        "escalationDesc": "一定期間内に N 回違反すると自動で処置します (MEE6 風)。",
+        "escalationEnable": "エスカレーションを有効化",
+        "windowMinutes": "期間 (分)",
+        "after": "違反",
+        "infractions": "回で",
+        "secShort": "秒",
+        "addRule": "+ ルールを追加"
+      },
+      "modules": {
+        "toggleFailed": "モジュールの切り替えに失敗しました ({status})",
+        "networkError": "ネットワークエラー - 接続を確認して、もう一度お試しください。",
+        "title": "モジュール",
+        "detailed": "詳細設定",
+        "openPage": "ページを開く",
+        "openSettings": "設定を開く"
+      },
+      "links": {
+        "loading": "読み込み中…",
+        "back": "サーバーに戻る",
+        "title": "お役立ちリンク",
+        "moduleEnabled": "モジュール有効",
+        "descBefore": "これらのリンクはこのサーバーで",
+        "descAfter": "コマンドで表示されます。リンクはサーバーごとに独立しており、設定は完全に別々です。",
+        "namePlaceholder": "名前 (例: ウェブサイト)",
+        "descPlaceholder": "説明 (任意)",
+        "remove": "削除",
+        "empty": "リンクはまだありません。下から最初のリンクを追加してください。",
+        "add": "リンクを追加",
+        "max": "最大 25 件"
+      }
+    },
+    "app": {
+      "lp": {
+        "by": "制作:"
+      },
+      "common": {
+        "avatar": "アバター"
+      },
+      "login": {
+        "errSignin": "サインインエラーです。もう一度お試しください。",
+        "errCallbackProc": "認証の処理中にエラーが発生しました。",
+        "errCreate": "アカウントを作成できませんでした。",
+        "errCallback": "コールバックエラーです。",
+        "errDenied": "アクセスが拒否されました。",
+        "errUnexpected": "予期しないエラーが発生しました。",
+        "signInDiscord": "Discordでサインイン",
+        "redirectHint": "サインイン後、ダッシュボードに移動します",
+        "backHome": "ホームに戻る",
+        "loading": "読み込み中..."
+      },
+      "gate": {
+        "tooMany": "試行回数が多すぎます。1分ほど待ってからもう一度お試しください。",
+        "wrong": "パスワードが違います。もう一度お試しください。",
+        "network": "ネットワークエラー - 接続を確認してもう一度お試しください。",
+        "title": "続行するにはアクセスパスワードを入力してください",
+        "placeholder": "アクセスパスワード",
+        "checking": "確認中…",
+        "unlock": "ロック解除",
+        "note": "これはDiscordサインインの前に追加されるセキュリティ層です。"
+      },
+      "dash": {
+        "loadErr": "サーバーを読み込めませんでした ({status})。",
+        "loading": "サーバーを読み込み中...",
+        "botActive": "ボット有効",
+        "owner": "オーナー",
+        "admin": "管理者",
+        "add": "追加"
+      },
+      "multi": {
+        "remove": "{name} を削除",
+        "nothingMore": "選択できる項目はもうありません。"
+      },
+      "guild": {
+        "saveFailed": "保存に失敗しました ({status})",
+        "tab": {
+          "overview": "概要",
+          "modules": "モジュール",
+          "welcome": "ウェルカム",
+          "moderation": "モデレーション",
+          "leveling": "レベリング",
+          "logs": "ログ"
+        },
+        "back": "サーバー一覧に戻る",
+        "fullSettings": "すべての設定",
+        "links": "お役立ちリンク",
+        "overview": "サーバー概要",
+        "prefix": "プレフィックス",
+        "activeModules": "有効なモジュール",
+        "welcomeMsg": "ウェルカムメッセージ",
+        "welcomePh": "{server} へようこそ、{user}！",
+        "variables": "変数:",
+        "modTitle": "モデレーション設定",
+        "modDesc": "自動モデレーション、スパム対策、その他のモデレーション機能を設定します。",
+        "levTitle": "レベリング設定",
+        "levDesc": "XP獲得量、レベルアップメッセージ、ロール報酬を設定します。",
+        "logTitle": "ログチャンネル",
+        "log": {
+          "moderation": "モデレーションログ",
+          "messages": "メッセージログ",
+          "members": "メンバーログ",
+          "server": "サーバーログ"
+        },
+        "channelId": "チャンネルID"
+      },
+      "gm": {
+        "welcome": {
+          "name": "ウェルカムシステム",
+          "desc": "ウェルカム／お別れメッセージ"
+        },
+        "moderation": {
+          "name": "モデレーション",
+          "desc": "キック、BAN、タイムアウト、警告"
+        },
+        "logging": {
+          "name": "ログ記録",
+          "desc": "メッセージとメンバーのログ"
+        },
+        "leveling": {
+          "name": "レベリング",
+          "desc": "XPとレベル報酬"
+        },
+        "economy": {
+          "name": "エコノミー",
+          "desc": "仮想通貨システム"
+        },
+        "automod": {
+          "name": "オートモッド",
+          "desc": "自動モデレーション"
+        },
+        "antiraid": {
+          "name": "アンチレイド",
+          "desc": "レイド対策"
+        },
+        "starboard": {
+          "name": "スターボード",
+          "desc": "メッセージにスターを付ける"
+        },
+        "suggestions": {
+          "name": "提案",
+          "desc": "提案システム"
+        },
+        "crypto": {
+          "name": "暗号資産",
+          "desc": "暗号資産の追跡"
+        }
+      }
+    },
+    "plg": {
+      "title": "プラグイン",
+      "intro": "プラグインはボットにコマンドや機能を追加します。ボットが参加しているすべてのサーバーに適用されます。",
+      "ownerOnly": "プラグインのインストール、有効化、無効化、削除、設定ができるのはボットの所有者だけです。",
+      "ownerMissing": "プラグインを管理するには、ボットの Discord アプリケーションの所有者としてログインするか、ボットの .env の BOT_OWNER_ID に自分の Discord ユーザー ID を設定してください。",
+      "warning": "プラグインはボット内でファイルとトークンへの完全なアクセス権を持って動作します。信頼できるプラグインだけをインストールしてください。",
+      "statusUnknown": "ボットはまだプラグインの状態を報告していません。ボットを起動すると最新の状態が表示されます。",
+      "restartNeeded": "強調表示された変更は数秒以内に反映されます。",
+      "loading": "プラグインを読み込み中…",
+      "loadFailed": "プラグイン一覧を読み込めませんでした。",
+      "empty": "インストールされているプラグインはありません。",
+      "install": {
+        "title": "プラグインをインストール",
+        "hint": "プラグインを含む .zip（manifest.json とそのファイル）をアップロードしてください。新しいプラグインは無効の状態でインストールされるので、先に内容を確認できます。",
+        "choose": ".zip ファイルを選択",
+        "noFile": "ファイルが選択されていません",
+        "replace": "インストール済みなら置き換える（データは保持）",
+        "button": "インストール",
+        "installing": "インストール中…",
+        "done": "{name} v{version} をインストールしました。有効にするまで無効の状態です。",
+        "updated": "{name} を v{version} に更新しました。",
+        "deps": "このプラグインには依存関係があり、次回のボット起動時にインストールされます。"
+      },
+      "state": {
+        "running": "実行中",
+        "disabled": "無効",
+        "restart_enable": "有効、起動中…",
+        "restart_disable": "無効、停止中…",
+        "error": "エラー",
+        "invalid": "無効な構成",
+        "unknown": "有効"
+      },
+      "by": "作者: {author}",
+      "version": "v{version}",
+      "commands": "コマンド",
+      "events": "イベントハンドラ {n} 件",
+      "homepage": "ウェブサイト",
+      "source": "ソース",
+      "enable": "有効にする",
+      "disable": "無効にする",
+      "settings": "設定",
+      "settingsClose": "設定を閉じる",
+      "settingsHint": "プラグインは必要なときにこれらの設定を読み込むため、通常は再起動なしで反映されます。",
+      "save": "設定を保存",
+      "saving": "保存中…",
+      "saved": "設定を保存しました。",
+      "enabledDone": "{name} を有効にしました。ボットが数秒以内に読み込みます。",
+      "disabledDone": "{name} を無効にしました。ボットが数秒以内に停止します。",
+      "remove": "アンインストール",
+      "removeConfirm": "{name} をアンインストールしますか？ ファイルと保存データは完全に削除されます。",
+      "removed": "{name} をアンインストールしました。",
+      "err": {
+        "generic": "問題が発生しました（HTTP {status}）。",
+        "network": "ネットワークエラーです。もう一度お試しください。",
+        "no_file": "先に .zip ファイルを選択してください。",
+        "not_owner": "これを行えるのはボットの所有者だけです。",
+        "cross_origin": "ブロックしました：別のサイトからのリクエストです。",
+        "not_found": "プラグインが見つかりません。",
+        "exists": "同じ名前のプラグインが既にインストールされています。更新するには「置き換える」にチェックしてください。",
+        "not_zip": "このファイルは有効な .zip アーカイブではありません。",
+        "too_large": "アーカイブが大きすぎます（上限 15 MB、展開後 25 MB）。",
+        "file_too_large": "アーカイブ内のファイルが大きすぎます（上限 10 MB）。",
+        "too_many_files": "アーカイブに含まれるファイルが多すぎます（上限 500）。",
+        "no_manifest": "アーカイブ内に manifest.json が見つかりません。",
+        "bad_manifest": "プラグインの manifest.json が無効です。",
+        "missing_main": "manifest.json に記載されたメインファイルがアーカイブにありません。",
+        "bad_path": "アーカイブに安全でないファイルパスが含まれていたため拒否されました。",
+        "symlink": "アーカイブにシンボリックリンクが含まれていたため拒否されました。",
+        "encrypted": "パスワード付きアーカイブには対応していません。",
+        "corrupt": "アーカイブが破損しているか、内容が一致しません。",
+        "unsupported": "この種類の .zip には対応していません。一般的なzipツールで作り直してください。",
+        "invalid_settings": "値が不足しているか範囲外です。入力内容を確認してもう一度お試しください。",
+        "no_settings": "このプラグインには設定がありません。",
+        "channels_unavailable": "このサーバーのチャンネルを確認できませんでした。しばらくしてからもう一度お試しください。",
+        "bad_request": "リクエストが無効です。"
+      },
+      "guild": {
+        "open": "サーバー設定",
+        "close": "サーバー設定を閉じる",
+        "title": "このDiscordサーバーの設定",
+        "hint": "この設定はこのDiscordサーバーにのみ適用されます。実行中のプラグインが自動で変更を反映するため、再起動は不要です。",
+        "notRunning": "プラグインはまだ動作していないため、有効になるまで何も投稿されません。",
+        "noChannels": "このサーバーのチャンネルを読み込めませんでした。",
+        "chooseChannel": "- チャンネルを選択 -",
+        "noChannel": "- なし -",
+        "add": "+ 追加",
+        "removeItem": "削除",
+        "itemFallback": "項目 {n}",
+        "empty": "まだ何も追加されていません。",
+        "limit": "上限に達しました（{n}）。",
+        "save": "サーバー設定を保存",
+        "saved": "サーバー設定を保存しました。",
+        "hasErrors": "強調表示された項目を修正してもう一度お試しください。"
+      },
+      "fieldErr": {
+        "required": "この項目は必須です。",
+        "range": "値が許可された範囲外です。",
+        "length": "このテキストは長すぎます。",
+        "number": "数値を入力してください。",
+        "option": "選択肢から選んでください。",
+        "channel": "有効なチャンネルを選んでください。",
+        "string": "テキストを入力してください。",
+        "boolean": "はい／いいえを選んでください。",
+        "too_many": "このサーバーの項目が多すぎます。",
+        "list": "リストが無効です。",
+        "item": "この項目は無効です。",
+        "channel_not_found": "このサーバーにそのチャンネルは存在しません。",
+        "channel_kind": "この種類のチャンネルはここでは使用できません。"
+      }
+    }
+  },
+  "scopeDesc": {
+    "all": "すべての場所",
+    "only": "{list} のみ",
+    "except": "{list} を除くすべての場所"
+  },
+  "channels": {
+    "title": "チャンネルの範囲",
+    "nothingRestricted": "制限されている機能はありません。すべてがどこでも動作します。\n`/channels set` で設定できます。",
+    "unknownFeature": "不明な機能",
+    "unknownFeatureBody": "機能 `{key}` は存在しません。一覧から選んでください。",
+    "restored": "元に戻しました",
+    "restoredBody": "**{feature}** は再びすべての場所で動作します。",
+    "saved": "保存しました",
+    "savedEverywhere": "**{feature}** はすべての場所で動作します。",
+    "modeOnly": "選択したチャンネルのみ",
+    "modeExcept": "選択したチャンネルを除くすべての場所",
+    "noChannelYet": "まだチャンネルが選ばれていません。`/channels add` で追加してください。",
+    "alreadyListed": "すでに一覧にあります",
+    "alreadyListedBody": "<#{channel}> はすでに **{feature}** に設定されています。",
+    "notFound": "見つかりません",
+    "notFoundBody": "<#{channel}> は **{feature}** の一覧にありません。",
+    "categoryNote": "これはカテゴリです。中のすべてのチャンネルに適用されます。",
+    "added": "追加しました",
+    "removed": "削除しました",
+    "current": "現在: {scope}",
+    "modeSetTo": "**{feature}** のモードは次に設定されました: "
+  },
+  "texts": {
+    "langUnavailable": "利用できない言語",
+    "langUnavailableBody": "読み込まれた言語: {list}。",
+    "none": "なし",
+    "saved": "保存しました",
+    "overridden": "上書きしたテキスト",
+    "nothingOverridden": "まだ何も上書きしていません。ボットは既定の文言を使います。\n`/texts set` で変更できます。",
+    "originalLabel": "**元の文言:**",
+    "keyMissing": "_(このキーは翻訳にありません)_",
+    "yourWording": "**あなたの文言:**",
+    "notOverridden": "_(未変更)_",
+    "nothingToReset": "元に戻すものがありません",
+    "nothingToResetBody": "テキスト `{key}` は上書きされていません。",
+    "restored": "元に戻しました",
+    "tooLong": "長すぎます",
+    "tooLongBody": "テキストは最大 1900 文字です。",
+    "savedBody": "`{key}` は次のようになりました:\n{text}",
+    "langSet": "ボットの言語を **{lang}** に設定しました。",
+    "showTitle": "テキスト: {key}",
+    "restoredBody": "`{key}` は元の文言に戻りました:\n{text}",
+    "variablesUsed": "使用した変数: {list}",
+    "andMore": "…他 {count} 件"
+  },
+  "serverLogs": {
+    "type": {
+      "text": "テキスト",
+      "voice": "ボイス",
+      "category": "カテゴリ",
+      "announcement": "アナウンス",
+      "forum": "フォーラム"
+    },
+    "title": {
+      "threadCreated": "🧵 スレッド作成",
+      "threadUpdated": "🧵 スレッド更新",
+      "threadDeleted": "🧵 スレッド削除",
+      "channelCreated": "📁 チャンネル作成",
+      "channelUpdated": "📁 チャンネル更新",
+      "channelDeleted": "📁 チャンネル削除",
+      "roleCreated": "🎭 ロール作成",
+      "roleUpdated": "🎭 ロール更新",
+      "roleDeleted": "🎭 ロール削除",
+      "memberBanned": "🔨 メンバーをBAN",
+      "banRevoked": "🔓 BAN 解除",
+      "inviteCreated": "🔗 招待作成",
+      "inviteDeleted": "🔗 招待取り消し",
+      "emojiAdded": "😀 絵文字を追加",
+      "emojiRemoved": "😀 絵文字を削除",
+      "emojiRenamed": "😀 絵文字の名前変更",
+      "stickerAdded": "🏷️ スタンプを追加",
+      "stickerRemoved": "🏷️ スタンプを削除",
+      "stickerRenamed": "🏷️ スタンプの名前変更",
+      "boostStarted": "💜 新しいブースト",
+      "boostEnded": "💔 ブースト終了"
+    },
+    "field": {
+      "channel": "チャンネル",
+      "thread": "スレッド",
+      "parentChannel": "親チャンネル",
+      "name": "名前",
+      "user": "ユーザー",
+      "reason": "理由",
+      "code": "コード",
+      "expires": "有効期限",
+      "useLimit": "使用回数の上限",
+      "serverLevel": "サーバーレベル",
+      "mentionable": "メンション可能",
+      "topicChanged": "チャンネルのトピック変更",
+      "permsChanged": "権限が変更されました",
+      "markedNsfw": "NSFW に設定",
+      "unmarkedNsfw": "NSFW を解除",
+      "archived": "アーカイブ済み",
+      "unarchived": "アーカイブ解除",
+      "locked": "ロック済み",
+      "unlocked": "ロック解除",
+      "noLongerSeparate": "個別に表示されなくなりました",
+      "memberCountWas": "メンバー数",
+      "type": "種類",
+      "author": "作成者"
+    },
+    "value": {
+      "unknown": "不明",
+      "unknownLower": "不明",
+      "notSpecified": "未指定",
+      "none": "なし",
+      "never": "なし",
+      "noLimit": "制限なし"
+    },
+    "boostStartedBody": "{user} がサーバーをブーストしました。",
+    "boostEndedBody": "{user} がサーバーのブーストをやめました。",
+    "ghostPingBody": "{user} がメンションした直後にメッセージを削除しました。"
+  }
+}

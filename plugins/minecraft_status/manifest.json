@@ -1,0 +1,535 @@
+{
+  "name": "minecraft_status",
+  "version": "1.0.0",
+  "author": "Yamiru",
+  "description": "Live Minecraft server status panels: server name, online players and status, refreshed on a schedule you choose",
+  "main": "index.js",
+  "enabled": true,
+  "github": "https://github.com/Yamiru/Vorqul-DS-BOT",
+  "license": "Vorqul DS BOT License (proprietary)",
+  "settings": [
+    {
+      "key": "defaultInterval",
+      "type": "number",
+      "default": 10,
+      "min": 2,
+      "max": 1440,
+      "label": {
+        "en": "Default update interval (minutes)",
+        "sk": "Predvolený interval aktualizácie (minúty)",
+        "cs": "Výchozí interval aktualizace (minuty)",
+        "de": "Standard-Aktualisierungsintervall (Minuten)",
+        "pl": "Domyślny interwał aktualizacji (minuty)",
+        "ru": "Интервал обновления по умолчанию (минуты)",
+        "es": "Intervalo de actualización predeterminado (minutos)",
+        "ja": "既定の更新間隔（分）",
+        "tr": "Varsayılan güncelleme aralığı (dakika)"
+      },
+      "description": {
+        "en": "Used for a new server unless you choose a different interval.",
+        "sk": "Použije sa pre nový server, ak nezvolíš iný interval.",
+        "cs": "Použije se pro nový server, pokud nezvolíš jiný interval.",
+        "de": "Wird für einen neuen Server verwendet, sofern kein anderes Intervall gewählt wird.",
+        "pl": "Używany dla nowego serwera, dopóki nie wybierzesz innej częstotliwości.",
+        "ru": "Используется для нового сервера, пока не выбрана другая частота.",
+        "es": "Se usa para un servidor nuevo mientras no elijas otra frecuencia.",
+        "ja": "新しいサーバーで別の間隔を選ばない場合に使われます。",
+        "tr": "Yeni bir sunucu için başka bir aralık seçilmediğinde kullanılır."
+      }
+    },
+    {
+      "key": "minInterval",
+      "type": "number",
+      "default": 2,
+      "min": 1,
+      "max": 60,
+      "label": {
+        "en": "Shortest allowed interval (minutes)",
+        "sk": "Najkratší povolený interval (minúty)",
+        "cs": "Nejkratší povolený interval (minuty)",
+        "de": "Kürzestes erlaubtes Intervall (Minuten)",
+        "pl": "Najkrótszy dozwolony interwał (minuty)",
+        "ru": "Минимальный допустимый интервал (минуты)",
+        "es": "Intervalo mínimo permitido (minutos)",
+        "ja": "許可される最短間隔（分）",
+        "tr": "İzin verilen en kısa aralık (dakika)"
+      },
+      "description": {
+        "en": "Stops servers being pinged too often.",
+        "sk": "Zabráni príliš častému pingovaniu serverov.",
+        "cs": "Zabrání příliš častému pingování serverů.",
+        "de": "Verhindert zu häufige Abfragen der Server.",
+        "pl": "Zapobiega zbyt częstemu odpytywaniu serwerów.",
+        "ru": "Не даёт опрашивать серверы слишком часто.",
+        "es": "Evita consultar los servidores con demasiada frecuencia.",
+        "ja": "サーバーへの問い合わせが頻繁になりすぎるのを防ぎます。",
+        "tr": "Sunucuların çok sık sorgulanmasını engeller."
+      }
+    },
+    {
+      "key": "maxServersPerGuild",
+      "type": "number",
+      "default": 5,
+      "min": 1,
+      "max": 25,
+      "label": {
+        "en": "Servers per Discord server",
+        "sk": "Serverov na jeden Discord server",
+        "cs": "Serverů na jeden Discord server",
+        "de": "Server pro Discord-Server",
+        "pl": "Serwerów na serwer Discord",
+        "ru": "Серверов на один сервер Discord",
+        "es": "Servidores por servidor de Discord",
+        "ja": "Discordサーバーごとの最大数",
+        "tr": "Discord sunucusu başına sunucu sayısı"
+      },
+      "description": {
+        "en": "How many Minecraft servers one Discord server may track.",
+        "sk": "Koľko Minecraft serverov môže sledovať jeden Discord server.",
+        "cs": "Kolik Minecraft serverů může sledovat jeden Discord server.",
+        "de": "Wie viele Minecraft-Server ein Discord-Server überwachen darf.",
+        "pl": "Ile serwerów Minecraft może śledzić jeden serwer Discord.",
+        "ru": "Сколько серверов Minecraft может отслеживать один сервер Discord.",
+        "es": "Cuántos servidores de Minecraft puede seguir un servidor de Discord.",
+        "ja": "1つのDiscordサーバーが監視できるMinecraftサーバーの数。",
+        "tr": "Bir Discord sunucusunun izleyebileceği Minecraft sunucusu sayısı."
+      }
+    },
+    {
+      "key": "statRenameMinutes",
+      "type": "number",
+      "default": 5,
+      "min": 5,
+      "max": 120,
+      "label": {
+        "en": "Minutes between channel renames",
+        "sk": "Minúty medzi premenovaniami kanála",
+        "cs": "Minuty mezi přejmenováními kanálu",
+        "de": "Minuten zwischen Kanal-Umbenennungen",
+        "pl": "Minuty między zmianami nazwy kanału",
+        "ru": "Минут между переименованиями канала",
+        "es": "Minutos entre cambios de nombre del canal",
+        "ja": "チャンネル名変更の間隔（分）",
+        "tr": "Kanal yeniden adlandırmaları arasındaki dakika"
+      },
+      "description": {
+        "en": "Discord limits renames, so keep this at 5 or more.",
+        "sk": "Discord obmedzuje premenovania, drž to na 5 alebo viac.",
+        "cs": "Discord omezuje přejmenování, drž to na 5 nebo více.",
+        "de": "Discord begrenzt Umbenennungen, bleib bei 5 oder mehr.",
+        "pl": "Discord ogranicza zmiany nazw, zostaw 5 lub więcej.",
+        "ru": "Discord ограничивает переименования, оставьте 5 или больше.",
+        "es": "Discord limita los cambios de nombre; mantén 5 o más.",
+        "ja": "Discordは名前変更を制限しています。5以上にしてください。",
+        "tr": "Discord yeniden adlandırmayı sınırlar, 5 veya daha fazla tut."
+      }
+    },
+    {
+      "key": "defaultShowPlayers",
+      "type": "boolean",
+      "default": true,
+      "label": {
+        "en": "Show player names by default",
+        "sk": "Predvolene ukázať mená hráčov",
+        "cs": "Ve výchozím stavu zobrazit jména hráčů",
+        "de": "Spielernamen standardmäßig anzeigen",
+        "pl": "Domyślnie pokazuj nazwy graczy",
+        "ru": "Показывать имена игроков по умолчанию",
+        "es": "Mostrar nombres de jugadores por defecto",
+        "ja": "既定でプレイヤー名を表示",
+        "tr": "Oyuncu adlarını varsayılan olarak göster"
+      },
+      "description": {
+        "en": "Only works when the server shares its player list.",
+        "sk": "Funguje len ak server zdieľa zoznam hráčov.",
+        "cs": "Funguje jen pokud server sdílí seznam hráčů.",
+        "de": "Funktioniert nur, wenn der Server seine Spielerliste teilt.",
+        "pl": "Działa tylko, gdy serwer udostępnia listę graczy.",
+        "ru": "Работает, только если сервер отдаёт список игроков.",
+        "es": "Solo funciona si el servidor comparte su lista de jugadores.",
+        "ja": "サーバーがプレイヤー一覧を公開している場合のみ動作します。",
+        "tr": "Yalnızca sunucu oyuncu listesini paylaşıyorsa çalışır."
+      }
+    },
+    {
+      "key": "defaultNotify",
+      "type": "boolean",
+      "default": true,
+      "label": {
+        "en": "Announce offline/online by default",
+        "sk": "Predvolene oznamovať offline/online",
+        "cs": "Ve výchozím stavu oznamovat offline/online",
+        "de": "Offline/Online standardmäßig ankündigen",
+        "pl": "Domyślnie ogłaszaj offline/online",
+        "ru": "Оповещать об офлайне/онлайне по умолчанию",
+        "es": "Avisar desconexión/conexión por defecto",
+        "ja": "既定でオフライン／オンラインを通知",
+        "tr": "Çevrimdışı/çevrimiçi durumunu varsayılan olarak duyur"
+      },
+      "description": {
+        "en": "Post a message when a server goes down or comes back.",
+        "sk": "Pošle správu, keď server spadne alebo sa vráti.",
+        "cs": "Pošle zprávu, když server spadne nebo se vrátí.",
+        "de": "Sendet eine Nachricht, wenn ein Server ausfällt oder zurückkommt.",
+        "pl": "Wysyła wiadomość, gdy serwer przestaje działać lub wraca.",
+        "ru": "Отправляет сообщение, когда сервер падает или возвращается.",
+        "es": "Publica un mensaje cuando un servidor cae o vuelve.",
+        "ja": "サーバーが停止・復帰したときにメッセージを投稿します。",
+        "tr": "Bir sunucu kapandığında veya geri geldiğinde mesaj gönderir."
+      }
+    },
+    {
+      "key": "allowPrivateHosts",
+      "type": "boolean",
+      "default": false,
+      "label": {
+        "en": "Allow private and local addresses",
+        "sk": "Povoliť súkromné a lokálne adresy",
+        "cs": "Povolit soukromé a lokální adresy",
+        "de": "Private und lokale Adressen erlauben",
+        "pl": "Zezwalaj na adresy prywatne i lokalne",
+        "ru": "Разрешить частные и локальные адреса",
+        "es": "Permitir direcciones privadas y locales",
+        "ja": "プライベート／ローカルアドレスを許可",
+        "tr": "Özel ve yerel adreslere izin ver"
+      },
+      "description": {
+        "en": "Only turn this on if your Minecraft server is on the same private network as the bot. It lets server admins point the bot at internal addresses.",
+        "sk": "Zapni len ak je tvoj Minecraft server v tej istej privátnej sieti ako bot. Umožní správcom servera nasmerovať bota na interné adresy.",
+        "cs": "Zapni jen pokud je tvůj Minecraft server ve stejné privátní síti jako bot. Umožní správcům serveru nasměrovat bota na interní adresy.",
+        "de": "Nur aktivieren, wenn dein Minecraft-Server im selben privaten Netzwerk wie der Bot liegt. Server-Admins können den Bot dann auf interne Adressen richten.",
+        "pl": "Włącz tylko, gdy serwer Minecraft jest w tej samej sieci prywatnej co bot. Pozwala adminom kierować bota na adresy wewnętrzne.",
+        "ru": "Включайте, только если сервер Minecraft находится в той же частной сети, что и бот. Позволяет админам направлять бота на внутренние адреса.",
+        "es": "Actívalo solo si tu servidor de Minecraft está en la misma red privada que el bot. Permite a los admins apuntar el bot a direcciones internas.",
+        "ja": "Minecraftサーバーがボットと同じプライベートネットワークにある場合のみ有効にしてください。管理者がボットを内部アドレスに向けられるようになります。",
+        "tr": "Yalnızca Minecraft sunucun botla aynı özel ağdaysa aç. Sunucu yöneticilerinin botu iç adreslere yönlendirmesine izin verir."
+      }
+    }
+  ],
+  "guildSettings": [
+    {
+      "key": "servers",
+      "type": "list",
+      "maxItems": 25,
+      "maxItemsFrom": "maxServersPerGuild",
+      "itemTitleKey": "name",
+      "label": {
+        "en": "Minecraft servers",
+        "sk": "Minecraft servery",
+        "cs": "Minecraft servery",
+        "de": "Minecraft-Server",
+        "pl": "Serwery Minecraft",
+        "ru": "Серверы Minecraft",
+        "es": "Servidores de Minecraft",
+        "ja": "Minecraftサーバー",
+        "tr": "Minecraft sunucuları"
+      },
+      "description": {
+        "en": "Each server gets its own live status message. These settings are for this Discord server only.",
+        "sk": "Každý server dostane vlastnú živú stavovú správu. Tieto nastavenia platia len pre tento Discord server.",
+        "cs": "Každý server dostane vlastní živou stavovou zprávu. Tato nastavení platí jen pro tento Discord server.",
+        "de": "Jeder Server erhält eine eigene Live-Statusnachricht. Diese Einstellungen gelten nur für diesen Discord-Server.",
+        "pl": "Każdy serwer dostaje własną wiadomość ze statusem na żywo. Te ustawienia dotyczą tylko tego serwera Discord.",
+        "ru": "Каждый сервер получает своё сообщение со статусом. Эти настройки действуют только для этого сервера Discord.",
+        "es": "Cada servidor tiene su propio mensaje de estado en vivo. Estos ajustes son solo para este servidor de Discord.",
+        "ja": "各サーバーに専用のライブステータスメッセージが作られます。この設定はこのDiscordサーバーにのみ適用されます。",
+        "tr": "Her sunucunun kendi canlı durum mesajı olur. Bu ayarlar yalnızca bu Discord sunucusu içindir."
+      },
+      "fields": [
+        {
+          "key": "name",
+          "type": "string",
+          "default": "",
+          "required": true,
+          "maxLength": 40,
+          "label": {
+            "en": "Server name",
+            "sk": "Názov servera",
+            "cs": "Název serveru",
+            "de": "Servername",
+            "pl": "Nazwa serwera",
+            "ru": "Название сервера",
+            "es": "Nombre del servidor",
+            "ja": "サーバー名",
+            "tr": "Sunucu adı"
+          },
+          "description": {
+            "en": "Shown as the title of the status message.",
+            "sk": "Zobrazí sa ako nadpis stavovej správy.",
+            "cs": "Zobrazí se jako nadpis stavové zprávy.",
+            "de": "Wird als Titel der Statusnachricht angezeigt.",
+            "pl": "Wyświetlana jako tytuł wiadomości ze statusem.",
+            "ru": "Показывается как заголовок сообщения со статусом.",
+            "es": "Se muestra como título del mensaje de estado.",
+            "ja": "ステータスメッセージのタイトルとして表示されます。",
+            "tr": "Durum mesajının başlığı olarak gösterilir."
+          }
+        },
+        {
+          "key": "host",
+          "type": "string",
+          "default": "",
+          "required": true,
+          "maxLength": 253,
+          "label": {
+            "en": "Address",
+            "sk": "Adresa",
+            "cs": "Adresa",
+            "de": "Adresse",
+            "pl": "Adres",
+            "ru": "Адрес",
+            "es": "Dirección",
+            "ja": "アドレス",
+            "tr": "Adres"
+          },
+          "description": {
+            "en": "For example play.example.com",
+            "sk": "Napríklad play.example.com",
+            "cs": "Například play.example.com",
+            "de": "Zum Beispiel play.example.com",
+            "pl": "Na przykład play.example.com",
+            "ru": "Например, play.example.com",
+            "es": "Por ejemplo, play.example.com",
+            "ja": "例: play.example.com",
+            "tr": "Örneğin play.example.com"
+          }
+        },
+        {
+          "key": "port",
+          "type": "number",
+          "default": null,
+          "optional": true,
+          "min": 1,
+          "max": 65535,
+          "label": {
+            "en": "Port",
+            "sk": "Port",
+            "cs": "Port",
+            "de": "Port",
+            "pl": "Port",
+            "ru": "Порт",
+            "es": "Puerto",
+            "ja": "ポート",
+            "tr": "Port"
+          },
+          "description": {
+            "en": "Leave empty for the default (25565 for Java, 19132 for Bedrock).",
+            "sk": "Nechaj prázdne pre predvolený (25565 pre Java, 19132 pre Bedrock).",
+            "cs": "Nech prázdné pro výchozí (25565 pro Java, 19132 pro Bedrock).",
+            "de": "Leer lassen für den Standard (25565 bei Java, 19132 bei Bedrock).",
+            "pl": "Zostaw puste dla domyślnego (25565 dla Java, 19132 dla Bedrock).",
+            "ru": "Оставьте пустым для порта по умолчанию (25565 для Java, 19132 для Bedrock).",
+            "es": "Déjalo vacío para el predeterminado (25565 en Java, 19132 en Bedrock).",
+            "ja": "空欄の場合は既定値（Javaは25565、Bedrockは19132）を使います。",
+            "tr": "Varsayılan için boş bırak (Java 25565, Bedrock 19132)."
+          }
+        },
+        {
+          "key": "edition",
+          "type": "select",
+          "default": "java",
+          "label": {
+            "en": "Edition",
+            "sk": "Edícia",
+            "cs": "Edice",
+            "de": "Edition",
+            "pl": "Edycja",
+            "ru": "Издание",
+            "es": "Edición",
+            "ja": "エディション",
+            "tr": "Sürüm türü"
+          },
+          "options": [
+            {
+              "value": "java",
+              "label": "Java"
+            },
+            {
+              "value": "bedrock",
+              "label": "Bedrock"
+            }
+          ]
+        },
+        {
+          "key": "channel",
+          "type": "channel",
+          "kinds": [
+            "text"
+          ],
+          "required": true,
+          "label": {
+            "en": "Status channel",
+            "sk": "Kanál pre stav",
+            "cs": "Kanál pro stav",
+            "de": "Status-Kanal",
+            "pl": "Kanał ze statusem",
+            "ru": "Канал для статуса",
+            "es": "Canal del estado",
+            "ja": "ステータス用チャンネル",
+            "tr": "Durum kanalı"
+          },
+          "description": {
+            "en": "Where the live status message is posted and edited.",
+            "sk": "Kde sa zverejňuje a upravuje živá stavová správa.",
+            "cs": "Kde se zveřejňuje a upravuje živá stavová zpráva.",
+            "de": "Wo die Live-Statusnachricht gepostet und bearbeitet wird.",
+            "pl": "Gdzie publikowana i edytowana jest wiadomość ze statusem na żywo.",
+            "ru": "Где публикуется и редактируется сообщение со статусом.",
+            "es": "Donde se publica y edita el mensaje de estado en vivo.",
+            "ja": "ライブのステータスメッセージを投稿・編集するチャンネル。",
+            "tr": "Canlı durum mesajının gönderildiği ve düzenlendiği yer."
+          }
+        },
+        {
+          "key": "interval",
+          "type": "number",
+          "default": 10,
+          "min": 1,
+          "max": 1440,
+          "defaultFrom": "defaultInterval",
+          "minFrom": "minInterval",
+          "label": {
+            "en": "Update every (minutes)",
+            "sk": "Aktualizovať každých (minút)",
+            "cs": "Aktualizovat každých (minut)",
+            "de": "Aktualisieren alle (Minuten)",
+            "pl": "Aktualizuj co (minuty)",
+            "ru": "Обновлять каждые (минут)",
+            "es": "Actualizar cada (minutos)",
+            "ja": "更新間隔（分）",
+            "tr": "Güncelleme sıklığı (dakika)"
+          },
+          "description": {
+            "en": "How often the message is refreshed. The bot owner sets the shortest allowed value.",
+            "sk": "Ako často sa správa obnovuje. Najkratšiu povolenú hodnotu určuje majiteľ bota.",
+            "cs": "Jak často se zpráva obnovuje. Nejkratší povolenou hodnotu určuje vlastník bota.",
+            "de": "Wie oft die Nachricht aktualisiert wird. Den kürzesten erlaubten Wert legt der Bot-Besitzer fest.",
+            "pl": "Jak często wiadomość jest odświeżana. Najkrótszą dozwoloną wartość ustala właściciel bota.",
+            "ru": "Как часто сообщение обновляется. Минимальное значение задаёт владелец бота.",
+            "es": "Con qué frecuencia se actualiza el mensaje. El propietario del bot fija el valor mínimo.",
+            "ja": "メッセージを更新する頻度。最短値はボットの所有者が設定します。",
+            "tr": "Mesajın ne sıklıkla yenilendiği. En kısa değeri bot sahibi belirler."
+          }
+        },
+        {
+          "key": "statChannel",
+          "type": "channel",
+          "kinds": [
+            "voice",
+            "text"
+          ],
+          "label": {
+            "en": "Channel to rename (optional)",
+            "sk": "Kanál na premenovanie (voliteľné)",
+            "cs": "Kanál k přejmenování (volitelné)",
+            "de": "Kanal zum Umbenennen (optional)",
+            "pl": "Kanał do zmiany nazwy (opcjonalnie)",
+            "ru": "Канал для переименования (необязательно)",
+            "es": "Canal a renombrar (opcional)",
+            "ja": "名前を変更するチャンネル（任意）",
+            "tr": "Yeniden adlandırılacak kanal (isteğe bağlı)"
+          },
+          "description": {
+            "en": "Renamed to something like \"🟢 12/100 players\". A voice channel works well.",
+            "sk": "Premenuje sa napríklad na „🟢 12/100 hráčov“. Dobre funguje hlasový kanál.",
+            "cs": "Přejmenuje se například na „🟢 12/100 hráčů“. Dobře funguje hlasový kanál.",
+            "de": "Wird z. B. in „🟢 12/100 Spieler“ umbenannt. Ein Sprachkanal eignet sich gut.",
+            "pl": "Zmieni nazwę na np. „🟢 12/100 graczy”. Dobrze sprawdza się kanał głosowy.",
+            "ru": "Будет переименован, например, в «🟢 12/100 игроков». Хорошо подходит голосовой канал.",
+            "es": "Se renombra a algo como «🟢 12/100 jugadores». Un canal de voz funciona bien.",
+            "ja": "「🟢 12/100 人」のような名前に変更されます。ボイスチャンネルがおすすめです。",
+            "tr": "\"🟢 12/100 oyuncu\" gibi yeniden adlandırılır. Ses kanalı iyi çalışır."
+          }
+        },
+        {
+          "key": "showPlayers",
+          "type": "boolean",
+          "default": true,
+          "defaultFrom": "defaultShowPlayers",
+          "label": {
+            "en": "Show player names",
+            "sk": "Ukázať mená hráčov",
+            "cs": "Zobrazit jména hráčů",
+            "de": "Spielernamen anzeigen",
+            "pl": "Pokaż nazwy graczy",
+            "ru": "Показывать имена игроков",
+            "es": "Mostrar nombres de jugadores",
+            "ja": "プレイヤー名を表示",
+            "tr": "Oyuncu adlarını göster"
+          }
+        },
+        {
+          "key": "notify",
+          "type": "boolean",
+          "default": true,
+          "defaultFrom": "defaultNotify",
+          "label": {
+            "en": "Announce offline / online",
+            "sk": "Oznamovať offline / online",
+            "cs": "Oznamovat offline / online",
+            "de": "Offline / Online ankündigen",
+            "pl": "Ogłaszaj offline / online",
+            "ru": "Оповещать об офлайне / онлайне",
+            "es": "Avisar desconexión / conexión",
+            "ja": "オフライン／オンラインを通知",
+            "tr": "Çevrimdışı / çevrimiçi duyur"
+          }
+        },
+        {
+          "key": "language",
+          "type": "select",
+          "default": "en",
+          "label": {
+            "en": "Language of the message",
+            "sk": "Jazyk správy",
+            "cs": "Jazyk zprávy",
+            "de": "Sprache der Nachricht",
+            "pl": "Język wiadomości",
+            "ru": "Язык сообщения",
+            "es": "Idioma del mensaje",
+            "ja": "メッセージの言語",
+            "tr": "Mesajın dili"
+          },
+          "options": [
+            {
+              "value": "en",
+              "label": "English"
+            },
+            {
+              "value": "sk",
+              "label": "Slovenčina"
+            },
+            {
+              "value": "cs",
+              "label": "Čeština"
+            },
+            {
+              "value": "de",
+              "label": "Deutsch"
+            },
+            {
+              "value": "pl",
+              "label": "Polski"
+            },
+            {
+              "value": "ru",
+              "label": "Русский"
+            },
+            {
+              "value": "es",
+              "label": "Español"
+            },
+            {
+              "value": "ja",
+              "label": "日本語"
+            },
+            {
+              "value": "tr",
+              "label": "Türkçe"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

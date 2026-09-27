@@ -1,0 +1,146 @@
+{
+  "_meta": {
+    "name": "Vorqul DS BOT",
+    "author": "Yamiru",
+    "github": "https://github.com/Yamiru/Vorqul-DS-BOT",
+    "license": "Vorqul DS BOT License (proprietary) - see LICENSE"
+  },
+  "bot": {
+    "name": "Vorqul DS BOT",
+    "version": "1.0.0",
+    "author": "Yamiru",
+    "prefix": "!",
+    "defaultLanguage": "en",
+    "supportedLanguages": [
+      "en",
+      "sk",
+      "cs",
+      "de",
+      "pl",
+      "ru",
+      "es",
+      "ja",
+      "tr"
+    ],
+    "embedColor": "#5865F2",
+    "errorColor": "#ED4245",
+    "successColor": "#57F287",
+    "warningColor": "#FEE75C"
+  },
+  "modules": {
+    "welcome": true,
+    "moderation": true,
+    "logging": true,
+    "leveling": true,
+    "economy": true,
+    "automod": true,
+    "antiraid": true,
+    "verification": true,
+    "inviteTracker": true,
+    "starboard": true,
+    "suggestions": true,
+    "polls": true,
+    "reminders": true,
+    "serverStats": true,
+    "customCommands": true,
+    "announcements": true,
+    "embedBuilder": true,
+    "music": false,
+    "crypto": true,
+    "events": true
+  },
+  "automod": {
+    "spam": {
+      "enabled": true,
+      "maxMessages": 5,
+      "interval": 5000,
+      "action": "timeout",
+      "duration": 300000
+    },
+    "links": {
+      "enabled": true,
+      "whitelist": [],
+      "action": "delete"
+    },
+    "duplicates": {
+      "enabled": true,
+      "threshold": 3,
+      "action": "warn"
+    },
+    "caps": {
+      "enabled": true,
+      "percentage": 70,
+      "minLength": 10,
+      "action": "delete"
+    },
+    "invites": {
+      "enabled": true,
+      "action": "delete"
+    },
+    "mentions": {
+      "enabled": true,
+      "maxMentions": 5,
+      "action": "timeout"
+    }
+  },
+  "antiraid": {
+    "enabled": true,
+    "joinThreshold": 10,
+    "joinInterval": 10000,
+    "action": "lockdown",
+    "lockdownDuration": 300000
+  },
+  "leveling": {
+    "enabled": true,
+    "xpPerMessage": {
+      "min": 15,
+      "max": 25
+    },
+    "xpCooldown": 60000,
+    "levelUpChannel": null,
+    "roleRewards": {}
+  },
+  "economy": {
+    "enabled": true,
+    "currency": "💰",
+    "currencyName": "coins",
+    "dailyReward": {
+      "min": 100,
+      "max": 500
+    },
+    "startingBalance": 0
+  },
+  "crypto": {
+    "enabled": true,
+    "defaultCoins": [
+      "bitcoin",
+      "ethereum",
+      "dogecoin"
+    ],
+    "updateInterval": 300000,
+    "alertCooldown": 3600000
+  },
+  "dashboard": {
+    "port": 3000,
+    "sessionSecret": "change-this-in-production"
+  },
+  "logging": {
+    "channels": {
+      "moderation": null,
+      "messages": null,
+      "members": null,
+      "server": null
+    },
+    "events": {
+      "messageDelete": true,
+      "messageEdit": true,
+      "memberJoin": true,
+      "memberLeave": true,
+      "memberBan": true,
+      "memberUnban": true,
+      "roleChanges": true,
+      "channelChanges": true,
+      "modActions": true
+    }
+  }
+}

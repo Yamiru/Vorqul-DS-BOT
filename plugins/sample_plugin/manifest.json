@@ -1,0 +1,10 @@
+{
+  "name": "sample_plugin",
+  "version": "1.0.0",
+  "author": "Yamiru",
+  "description": "A minimal example plugin: one slash command, one event, one saved counter",
+  "main": "index.js",
+  "enabled": false,
+  "github": "https://github.com/Yamiru/Vorqul-DS-BOT",
+  "license": "Vorqul DS BOT License (proprietary)"
+}

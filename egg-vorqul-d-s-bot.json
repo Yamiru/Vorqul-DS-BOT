@@ -1,0 +1,193 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2026-06-14T07:04:58+00:00",
+    "name": "VorqulDSBot",
+    "author": "yamiru@yamiru.com",
+    "description": "Vorqul DS BOT - Discord Community Management Platform. Full-featured Discord bot with web dashboard, economy, leveling, moderation, crypto tracking and much more. https://vorqul.com | https://github.com/Yamiru/Vorqul-DS-BOT",
+    "features": null,
+    "docker_images": {
+        "Node.js 20": "ghcr.io/pterodactyl/yolks:nodejs_20",
+        "Node.js 18": "ghcr.io/pterodactyl/yolks:nodejs_18"
+    },
+    "file_denylist": [],
+    "startup": "npm start",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"Logged in as\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!/bin/bash\n# Vorqul DS BOT - Install Script\n# https://github.com/Yamiru/Vorqul-DS-BOT\n\ncd /mnt/server/\n\necho \"=========================================\"\necho \"  Vorqul DS BOT Installer\"\necho \"=========================================\"\n\necho \"Node.js version: $(node -v)\"\necho \"npm version: $(npm -v)\"\n\n# Prepare the data directory (settings, secrets, uploads)\nmkdir -p data/json data/secrets data/uploads\n\necho \"\"\necho \"=========================================\"\necho \"Installation completed!\"\necho \"1) Upload the bot files via SFTP to /home/container\"\necho \"2) Fill in the variables in the Startup tab (token, client id...)\"\necho \"3) The first start installs dependencies and compiles the code automatically.\"\necho \"=========================================\"",
+            "container": "ghcr.io/pterodactyl/yolks:nodejs_20",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Discord Bot Token",
+            "description": "Bot token from https://discord.com/developers/applications/ (Bot -> Reset Token).",
+            "env_variable": "DISCORD_TOKEN",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string",
+            "field_type": "text"
+        },
+        {
+            "name": "Discord Client ID",
+            "description": "Application (Client) ID. Needed for slash command registration and for dashboard login.",
+            "env_variable": "DISCORD_CLIENT_ID",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string",
+            "field_type": "text"
+        },
+        {
+            "name": "Discord Client Secret",
+            "description": "OAuth2 Client Secret (OAuth2 -> Reset Secret). Only needed when the dashboard is enabled.",
+            "env_variable": "DISCORD_CLIENT_SECRET",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "Bot Owner ID",
+            "description": "Discord ID of the bot owner (for commands marked as owner-only).",
+            "env_variable": "BOT_OWNER_ID",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "Database Type",
+            "description": "Database backend: json or mysql.",
+            "env_variable": "DATABASE_TYPE",
+            "default_value": "json",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|in:json,mysql,sqlite",
+            "field_type": "text"
+        },
+        {
+            "name": "Bot Prefix",
+            "description": "Prefix for legacy text commands.",
+            "env_variable": "BOT_PREFIX",
+            "default_value": "!",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "Bot Language",
+            "description": "Bot language: en, sk, cs, de, pl, ru, es, ja, tr.",
+            "env_variable": "BOT_LANGUAGE",
+            "default_value": "en",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|in:en,sk,cs,de,pl,ru,es,ja,tr",
+            "field_type": "text"
+        },
+        {
+            "name": "Dashboard Enabled",
+            "description": "Enable the web dashboard (true/false).",
+            "env_variable": "DASHBOARD_ENABLED",
+            "default_value": "false",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|in:true,false",
+            "field_type": "text"
+        },
+        {
+            "name": "Dashboard Port",
+            "description": "Dashboard port. Leave empty to use the server's allocated port (SERVER_PORT).",
+            "env_variable": "DASHBOARD_PORT",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "NextAuth URL",
+            "description": "Public dashboard URL for the OAuth redirect (e.g. https://dash.yourdomain.com). Leave empty to auto-detect from the request (works over http/https, IP or domain).",
+            "env_variable": "NEXTAUTH_URL",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "NextAuth Secret",
+            "description": "Random secret string used to sign sessions (e.g. output of 'openssl rand -hex 32'). If empty, a random one is generated into data/secrets/.",
+            "env_variable": "NEXTAUTH_SECRET",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "MySQL Host",
+            "description": "Only for DATABASE_TYPE=mysql.",
+            "env_variable": "DB_HOST",
+            "default_value": "localhost",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "MySQL Port",
+            "description": "Only for DATABASE_TYPE=mysql.",
+            "env_variable": "DB_PORT",
+            "default_value": "3306",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "MySQL Database",
+            "description": "Database name. Only for DATABASE_TYPE=mysql.",
+            "env_variable": "DB_NAME",
+            "default_value": "vorqul",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "MySQL User",
+            "description": "Only for DATABASE_TYPE=mysql.",
+            "env_variable": "DB_USER",
+            "default_value": "root",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "MySQL Password",
+            "description": "Only for DATABASE_TYPE=mysql.",
+            "env_variable": "DB_PASSWORD",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        }
+    ]
+}

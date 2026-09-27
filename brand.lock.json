@@ -1,0 +1,13 @@
+{
+  "note": "Integrity seal for the Vorqul DS BOT branding files. Do not edit; see LICENSE.",
+  "files": {
+    "LICENSE": "ddd67de4b3e59255324faae16d9998be78ba669ac55a4fda0fc216bc42d90a24",
+    "start.js": "5cfa1aa9ca996c6d09863acdb09204479afb0b8dba7164d36b28f6a355e4d280",
+    "src/shared/brand.ts": "1288a524b909ae3365892f0da3c2b66510e2e0847cc64713f925f52561b3b9c2",
+    "src/dashboard/lib/brand.ts": "a5309563108b4ecd492355d7c893ef363be1b06e769d90695000ea03be48fa89",
+    "src/utils/embedHelper.ts": "e4e86b57d5c5eeb64fbb94ebc5cb9d45a7265cfe2300e23010f39b9bed9c3baa",
+    "src/bot/commands/utility/help.ts": "c80c7facb35905aac661fae673f604af255f1a80c80b18d1475bcced2148e0d8",
+    "src/dashboard/app/layout.tsx": "883201645d7b9fb74feb0f3c30288aaf7125702cfb75cd584f3bcd241fc7f933",
+    "src/dashboard/app/page.tsx": "4b65e2fc59b8d23983b1e1ddb1988327bb6443dbe3b78951c8fa1297224ff24e"
+  }
+}

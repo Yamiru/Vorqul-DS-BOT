@@ -1,0 +1,2143 @@
+{
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "loading": "Loading...",
+    "refreshHint": "Refresh this data",
+    "clearCacheHint": "Clear local cache and reload",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "page": "Page",
+    "of": "of",
+    "noPermission": "You don't have permission to use this command.",
+    "botNoPermission": "I don't have permission to do that.",
+    "invalidUser": "Invalid user specified.",
+    "invalidChannel": "Invalid channel specified.",
+    "invalidRole": "Invalid role specified.",
+    "cooldown": "Please wait {time} before using this command again.",
+    "unknownError": "An unknown error occurred.",
+    "wrongChannel": "This command cannot be used in this channel."
+  },
+  "welcome": {
+    "title": "Welcome!",
+    "defaultMessage": "Welcome to **{server}**, {user}! 🎉",
+    "goodbyeMessage": "Goodbye **{user}**, we'll miss you!",
+    "memberCount": "You are member #{count}",
+    "joinedAt": "Account created {date}"
+  },
+  "moderation": {
+    "kick": {
+      "success": "**{user}** has been kicked.",
+      "reason": "Reason: {reason}",
+      "noReason": "No reason provided",
+      "dmNotify": "You have been kicked from **{server}**.",
+      "cannotKick": "I cannot kick this user.",
+      "higherRole": "You cannot kick someone with a higher or equal role."
+    },
+    "ban": {
+      "success": "**{user}** has been banned.",
+      "reason": "Reason: {reason}",
+      "noReason": "No reason provided",
+      "dmNotify": "You have been banned from **{server}**.",
+      "cannotBan": "I cannot ban this user.",
+      "higherRole": "You cannot ban someone with a higher or equal role."
+    },
+    "unban": {
+      "success": "**{user}** has been unbanned.",
+      "notBanned": "This user is not banned."
+    },
+    "mute": {
+      "success": "**{user}** has been muted for {duration}.",
+      "reason": "Reason: {reason}",
+      "dmNotify": "You have been muted in **{server}** for {duration}."
+    },
+    "unmute": {
+      "success": "**{user}** has been unmuted.",
+      "notMuted": "This user is not muted."
+    },
+    "timeout": {
+      "success": "**{user}** has been timed out for {duration}.",
+      "removed": "Timeout removed from **{user}**."
+    },
+    "warn": {
+      "success": "**{user}** has been warned.",
+      "count": "This is warning #{count}.",
+      "dmNotify": "You have been warned in **{server}**."
+    },
+    "clear": {
+      "success": "Deleted {count} messages.",
+      "tooMany": "Cannot delete more than 100 messages at once.",
+      "tooOld": "Cannot delete messages older than 14 days."
+    },
+    "slowmode": {
+      "set": "Slowmode set to {seconds} seconds.",
+      "disabled": "Slowmode has been disabled."
+    },
+    "lockdown": {
+      "enabled": "🔒 Channel is now locked.",
+      "disabled": "🔓 Channel has been unlocked."
+    }
+  },
+  "leveling": {
+    "levelUp": "🎉 Congratulations {user}! You reached **Level {level}**!",
+    "rank": "Rank",
+    "level": "Level",
+    "xp": "XP",
+    "progress": "Progress",
+    "leaderboard": "Leaderboard",
+    "noData": "No leveling data found."
+  },
+  "economy": {
+    "balance": "Balance",
+    "daily": {
+      "claimed": "You claimed your daily reward of {amount}!",
+      "cooldown": "You already claimed your daily reward. Come back in {time}."
+    },
+    "transfer": {
+      "success": "You transferred {amount} to {user}.",
+      "insufficient": "You don't have enough {currency}.",
+      "self": "You cannot transfer to yourself."
+    },
+    "shop": {
+      "title": "Shop",
+      "empty": "The shop is empty.",
+      "bought": "You bought **{item}** for {price}.",
+      "cantAfford": "You cannot afford this item."
+    },
+    "leaderboard": "Economy Leaderboard"
+  },
+  "crypto": {
+    "price": "Current price of **{coin}**: ${price}",
+    "change24h": "24h Change: {change}%",
+    "alertSet": "Price alert set for **{coin}** at ${price}.",
+    "alertTriggered": "🚨 **{coin}** has reached ${price}!",
+    "invalidCoin": "Invalid cryptocurrency specified.",
+    "apiError": "Failed to fetch crypto data."
+  },
+  "automod": {
+    "spam": "🛡️ Spam detected from {user}.",
+    "links": "🔗 Unauthorized link removed from {user}.",
+    "invites": "📨 Discord invite removed from {user}.",
+    "caps": "🔠 Excessive caps removed from {user}.",
+    "mentions": "📢 Mass mention blocked from {user}.",
+    "blacklist": "🚫 Blacklisted word detected from {user}.",
+    "repeatedText": "🔁 Repeated text removed from {user}.",
+    "emojis": "😀 Excessive emojis removed from {user}.",
+    "spoilers": "🙈 Excessive spoilers removed from {user}.",
+    "zalgo": "🌀 Zalgo text removed from {user}.",
+    "userWarning": "⚠️ {user}, your message was removed by AutoMod."
+  },
+  "verification": {
+    "title": "Verification Required",
+    "instructions": "Please complete the captcha below to gain access.",
+    "success": "✅ You have been verified!",
+    "failed": "❌ Verification failed. Please try again.",
+    "expired": "⏰ Verification expired. Please request a new one."
+  },
+  "logging": {
+    "messageDeleted": "Message Deleted",
+    "messageEdited": "Message Edited",
+    "memberJoined": "Member Joined",
+    "memberLeft": "Member Left",
+    "memberBanned": "Member Banned",
+    "memberUnbanned": "Member Unbanned",
+    "roleAdded": "Role Added",
+    "roleRemoved": "Role Removed",
+    "channelCreated": "Channel Created",
+    "channelDeleted": "Channel Deleted",
+    "moderatorAction": "Moderator Action"
+  },
+  "reminders": {
+    "set": "⏰ Reminder set for {time}.",
+    "triggered": "⏰ Reminder: {message}",
+    "list": "Your Reminders",
+    "noReminders": "You have no active reminders.",
+    "deleted": "Reminder deleted."
+  },
+  "polls": {
+    "created": "Poll created!",
+    "ended": "Poll ended.",
+    "results": "Poll Results",
+    "votes": "votes"
+  },
+  "suggestions": {
+    "submitted": "Your suggestion has been submitted!",
+    "approved": "✅ Suggestion approved",
+    "denied": "❌ Suggestion denied",
+    "implemented": "🎉 Suggestion implemented"
+  },
+  "starboard": {
+    "starred": "⭐ Message starred!"
+  },
+  "inviteTracker": {
+    "invite": "{user} joined using invite from {inviter}.",
+    "invites": "{user} now has {count} invites.",
+    "unknown": "Could not track invite source."
+  },
+  "music": {
+    "nowPlaying": "Now Playing",
+    "queued": "Added to queue",
+    "queue": "Queue",
+    "skipped": "Skipped current track.",
+    "stopped": "Playback stopped.",
+    "paused": "Playback paused.",
+    "resumed": "Playback resumed.",
+    "volume": "Volume set to {volume}%.",
+    "noResults": "No results found.",
+    "notInVoice": "You must be in a voice channel.",
+    "alreadyPlaying": "Already playing in another channel."
+  },
+  "events": {
+    "created": "Event created!",
+    "reminder": "📅 Event **{name}** starts in {time}!",
+    "rsvp": {
+      "going": "You're going to **{event}**!",
+      "maybe": "You marked maybe for **{event}**.",
+      "notGoing": "You're not going to **{event}**."
+    }
+  },
+  "dashboard": {
+    "title": "Vorqul DS BOT Dashboard",
+    "login": "Login with Discord",
+    "logout": "Logout",
+    "home": "Home",
+    "servers": "Your Servers",
+    "settings": "Settings",
+    "modules": "Modules",
+    "logs": "Logs",
+    "analytics": "Analytics",
+    "plugins": "Plugins",
+    "embedBuilder": "Embed Builder",
+    "noServers": "You don't manage any servers with the bot.",
+    "saveSuccess": "Settings saved successfully!",
+    "saveError": "Failed to save settings."
+  },
+  "giveaway": {
+    "title": "🎉 GIVEAWAY 🎉",
+    "endedTitle": "🎉 GIVEAWAY ENDED 🎉",
+    "activeTitle": "🎉 Active Giveaways",
+    "won": "🎉 Congratulations {winners}! You won **{prize}**!",
+    "rerolled": "🎉 New winner(s) for **{prize}**: {winners}! Congratulations!",
+    "noEntries": "Nobody entered the giveaway for **{prize}**.",
+    "prize": "Prize",
+    "winnersLabel": "Winners",
+    "endsAt": "Ends",
+    "hostedBy": "Hosted by",
+    "howToEnter": "Enter with the button below."
+  },
+  "ui": {
+    "nav": {
+      "back": "Back to servers",
+      "overview": "Overview",
+      "modules": "Modules",
+      "welcome": "Welcome",
+      "automod": "AutoMod",
+      "serverstatus": "Server status",
+      "channels": "Channels",
+      "games": "Games",
+      "settings": "Settings",
+      "links": "Links",
+      "menu": "Open menu",
+      "menuClose": "Close menu",
+      "config": "Configuration"
+    },
+    "common": {
+      "save": "Save changes",
+      "saving": "Saving…",
+      "saved": "Saved",
+      "enabled": "On",
+      "disabled": "Off",
+      "search": "Search…",
+      "retry": "Try again",
+      "selectAll": "Select all",
+      "clear": "Clear selection",
+      "language": "Language",
+      "unknown": "Unknown",
+      "searching": "Search...",
+      "nothingSelected": "Nothing selected"
+    },
+    "scope": {
+      "all": "Everywhere",
+      "only": "Only here",
+      "except": "All except",
+      "title": "Channels",
+      "subtitle": "Choose which channels each feature runs in.",
+      "hintModes": "Only here - the feature runs solely in the selected channels. All except - it runs everywhere but those.",
+      "hintCategory": "Picking a category covers every channel inside it. Threads inherit from their parent channel.",
+      "nothingRestricted": "Nothing restricted",
+      "restricted": "Restricted",
+      "pick": "Pick channels",
+      "hide": "Hide channels",
+      "categories": "Categories",
+      "channels": "Channels",
+      "emptyWarning": "No channel selected - the feature stays on everywhere until you add one.",
+      "noChannels": "No suitable channel found.",
+      "onlyPrefix": "Only: ",
+      "exceptPrefix": "All except: ",
+      "feature": {
+        "global": {
+          "label": "All features",
+          "description": "Base rule for the whole bot. A feature with its own setting overrides it."
+        },
+        "commands": {
+          "label": "All commands",
+          "admin": {
+            "label": "Commands: Admin",
+            "description": "Administrator commands."
+          },
+          "moderation": {
+            "label": "Commands: Moderation",
+            "description": "Moderator commands."
+          },
+          "economy": {
+            "label": "Commands: Economy",
+            "description": "Economy and shop commands."
+          },
+          "fun": {
+            "label": "Commands: Fun",
+            "description": "Fun and game commands."
+          },
+          "utility": {
+            "label": "Commands: Utility",
+            "description": "Useful and informational commands."
+          },
+          "description": "Base rule for all slash commands."
+        },
+        "leveling": {
+          "label": "Leveling / XP",
+          "description": "Earning XP for messages and level-up announcements."
+        },
+        "economy": {
+          "label": "Economy",
+          "description": "Earning currency for messages."
+        },
+        "messageStats": {
+          "label": "Message stats",
+          "description": "Counting messages towards stats and leaderboards."
+        },
+        "autoResponse": {
+          "label": "Auto responses",
+          "description": "Bot replies to keywords."
+        },
+        "afk": {
+          "label": "AFK system",
+          "description": "Announcing AFK status and returns."
+        },
+        "sticky": {
+          "label": "Sticky messages",
+          "description": "A message permanently pinned to the bottom of a channel."
+        },
+        "reputation": {
+          "label": "Reputation",
+          "description": "Awarding reputation points."
+        },
+        "confessions": {
+          "label": "Confessions",
+          "description": "Anonymous confessions."
+        },
+        "suggestions": {
+          "label": "Suggestions",
+          "description": "The suggestion and voting system."
+        },
+        "birthday": {
+          "label": "Birthdays",
+          "description": "Birthday announcements."
+        },
+        "automod": {
+          "label": "AutoMod",
+          "description": "Automatic chat moderation (spam, links, caps, ...)."
+        },
+        "filter": {
+          "label": "Word filter",
+          "description": "Blocking forbidden words."
+        },
+        "antiAd": {
+          "label": "Anti-ad",
+          "description": "Blocking invites and promotional links."
+        },
+        "antiRaid": {
+          "label": "Anti-Raid",
+          "description": "Protection against mass joins."
+        },
+        "counting": {
+          "label": "Counting",
+          "description": "The game of counting up one number at a time."
+        },
+        "starboard": {
+          "label": "Starboard",
+          "description": "Source channels whose messages can reach the starboard."
+        },
+        "giveaways": {
+          "label": "Giveaways",
+          "description": "Prize giveaways."
+        },
+        "polls": {
+          "label": "Polls",
+          "description": "Votes and polls."
+        },
+        "games": {
+          "label": "Games",
+          "description": "Shared rule for all games. An individual game overrides it."
+        },
+        "voiceStats": {
+          "label": "Voice stats",
+          "description": "Counting time spent in voice channels."
+        },
+        "tempChannels": {
+          "label": "Temporary channels",
+          "description": "Automatic creation of voice channels."
+        },
+        "logs": {
+          "label": "Logging",
+          "description": "Channels whose events are recorded."
+        },
+        "gameScope": {
+          "description": "Channels where this game can be started."
+        }
+      }
+    },
+    "games": {
+      "title": "Games",
+      "subtitle": "Every game switches on separately and can be limited to chosen channels.",
+      "enabledOf": "{a} of {b} on",
+      "list": "Game list",
+      "configure": "Configure",
+      "hideCfg": "Hide",
+      "where": "Where it can be played",
+      "inherits": "The shared rule for all games applies.",
+      "multiplayer": "multiplayer",
+      "sharedHint": "A game without its own rule follows the shared Games rule under Channels.",
+      "emptyWarning": "No channel yet - until you pick one, the game runs everywhere."
+    },
+    "home": {
+      "running": "Bot is running",
+      "offline": "Bot is offline",
+      "updateAvailable": "Update available: v{version}",
+      "noHeartbeat": "No heartbeat received. Check that the bot process is running and can reach the data/json folder.",
+      "servers": "Servers",
+      "users": "Users",
+      "ping": "Ping",
+      "uptime": "Uptime",
+      "cpu": "CPU",
+      "ram": "Memory",
+      "commands": "Commands",
+      "refreshes": "Refreshes",
+      "auto": "automatically",
+      "cores": "{n} cores · load {load}",
+      "ofTotal": "{p}% of {total} MB",
+      "yourServers": "Your servers",
+      "selectServer": "Pick a server to manage",
+      "botAdded": "Bot added",
+      "botMissing": "Bot not added",
+      "noServers": "No servers",
+      "noServersHint": "No server found where you have Manage Server. If you just added the bot, sign out and back in - Discord caches the list briefly.",
+      "addBot": "Add the bot to a server",
+      "loadFailed": "Servers did not load",
+      "signOut": "Sign out",
+      "relogin": "Sign in again",
+      "apiUnreachable": "The dashboard could not reach its own API."
+    },
+    "lp": {
+      "signIn": "Sign in",
+      "dashboard": "Dashboard",
+      "openDashboard": "Open Dashboard",
+      "getStarted": "Get started",
+      "addToServer": "Add to server",
+      "loading": "Loading...",
+      "eyebrow": "85+ commands · 30+ modules",
+      "version": "Version {version}",
+      "subtitle": "A powerful, modular Discord community management bot: advanced moderation, leveling, economy, tickets, giveaways, logging, social feeds and a full web dashboard. Built by {author}.",
+      "stat": {
+        "commands": "Commands",
+        "modules": "Modules",
+        "languages": "Languages",
+        "uptime": "Uptime"
+      },
+      "f": {
+        "moderation": {
+          "t": "Moderation",
+          "d": "Ban, kick, mute, timeout, softban, warns, mod notes and full mod history."
+        },
+        "automod": {
+          "t": "Auto-Mod",
+          "d": "Anti-spam, anti-raid, anti-link/invite, anti-caps, mass-mention protection and word filter."
+        },
+        "logging": {
+          "t": "Logging",
+          "d": "Message edits/deletes, role & channel changes, joins/leaves and voice activity."
+        },
+        "welcome": {
+          "t": "Welcome & Roles",
+          "d": "Welcome/goodbye messages, auto roles, reaction roles and verification."
+        },
+        "leveling": {
+          "t": "Leveling",
+          "d": "XP for activity, level rewards, rank cards, leaderboards and voice XP."
+        },
+        "economy": {
+          "t": "Economy",
+          "d": "Currency, daily rewards, shop, inventory, jobs and gambling games."
+        },
+        "ticket": {
+          "t": "Tickets",
+          "d": "Support tickets, bug reports and applications with transcripts and categories."
+        },
+        "gift": {
+          "t": "Giveaways",
+          "d": "Giveaways with multiple winners, bonus entries and role requirements."
+        },
+        "feed": {
+          "t": "Social Feeds",
+          "d": "YouTube, Twitch and RSS notifications plus scheduled announcements."
+        },
+        "crypto": {
+          "t": "Stats & Crypto",
+          "d": "Member/message/voice stats, server insights, and crypto prices."
+        },
+        "link": {
+          "t": "Useful Links",
+          "d": "Per-server link panel via /links, fully managed from the dashboard."
+        },
+        "globe": {
+          "t": "Dashboard",
+          "d": "Multi-server web dashboard to configure every module without Discord commands."
+        }
+      }
+    },
+    "automod": {
+      "action": {
+        "delete": "Delete message",
+        "warn": "Delete + warn",
+        "timeout": "Delete + timeout",
+        "kick": "Kick",
+        "ban": "Ban"
+      },
+      "field": {
+        "action": "Action",
+        "duration": "Timeout (s)",
+        "durationHint": "Only applies to the timeout action."
+      },
+      "spam": {
+        "label": "💬 Spam and typing speed",
+        "desc": "How many messages one person may send in a given time.",
+        "maxMessages": "Max messages",
+        "interval": "Per time (ms)",
+        "intervalHint": "5000 = 5 seconds"
+      },
+      "links": {
+        "label": "🔗 Website links",
+        "desc": "Blocks links outside the allowed domains."
+      },
+      "invites": {
+        "label": "📨 Invites to other servers",
+        "desc": "Blocks discord.gg and similar links."
+      },
+      "caps": {
+        "label": "🔠 CAPS LOCK",
+        "desc": "Messages written mostly in capitals.",
+        "percentage": "Capitals share (%)",
+        "minLength": "From message length"
+      },
+      "mentions": {
+        "label": "📢 Mass mentions",
+        "desc": "Number of mentions in one message.",
+        "maxMentions": "Max mentions"
+      },
+      "repeat": {
+        "label": "🔁 Repetition",
+        "desc": "The same message or character over and over.",
+        "maxRepeats": "Max repeats"
+      },
+      "emojis": {
+        "label": "😀 Too many emoji",
+        "desc": "Unicode and server emoji counted together.",
+        "maxEmojis": "Max emoji"
+      },
+      "spoilers": {
+        "label": "⬛ Too many spoilers",
+        "desc": "Hidden blocks in one message.",
+        "maxSpoilers": "Max spoilers"
+      },
+      "zalgo": {
+        "label": "🌀 Zalgo text",
+        "desc": "Unreadable characters buried in diacritics."
+      },
+      "phishing": {
+        "label": "🎣 Phishing",
+        "desc": "Domains posing as Discord, Steam and the like."
+      },
+      "fakeNitro": {
+        "label": "🎁 Fake Nitro",
+        "desc": "Free Nitro offers with a link."
+      },
+      "cryptoScam": {
+        "label": "🪙 Crypto scams",
+        "desc": "Airdrops and promises of guaranteed profit."
+      },
+      "massMention": {
+        "label": "👥 Precise mass mentions",
+        "desc": "Counts unique people and roles, not just characters.",
+        "maxMentions": "Max targets",
+        "countEveryone": "Count @everyone"
+      },
+      "ghostPing": {
+        "label": "👻 Ghost ping",
+        "desc": "Mention followed by an immediate delete.",
+        "maxAgeSeconds": "Within (s) of sending"
+      },
+      "exemptRoles": "Exempt roles",
+      "exemptChannels": "Exempt channels"
+    },
+    "welcome": {
+      "memberPreview": "Member #{count} of {server}"
+    },
+    "auth": {
+      "notSignedIn": "You are not signed in.",
+      "expired": "Your Discord sign-in expired. Sign out and sign in again.",
+      "rejected": "Discord rejected the sign-in. Sign out and sign in again.",
+      "unexpected": "Discord returned an unexpected response.",
+      "unreachable": "Could not reach Discord. Check the server network and firewall."
+    },
+    "tickets": {
+      "welcomeMessage": "Welcome message"
+    },
+    "help": {
+      "tempban": "Ban a member for a set time - the bot unbans them afterwards",
+      "timedrole": "A role that disappears on its own after a while",
+      "voicemute": "Mute and deafen in voice channels",
+      "antinuke": "Protects the server against mass destruction",
+      "channels": "Set which channels each bot feature runs in",
+      "texts": "Rewrite the bots wording to suit you"
+    },
+    "modules": {
+      "group": {
+        "security": "Moderation and safety",
+        "members": "Members",
+        "engagement": "Engagement",
+        "economy": "Economy and games",
+        "content": "Content",
+        "tools": "Tools"
+      },
+      "moderation": {
+        "label": "Moderation",
+        "description": "Ban, kick, warn, timeout, jail and case history."
+      },
+      "automod": {
+        "label": "AutoMod",
+        "description": "Spam, links, phishing, fake nitro, regex rules."
+      },
+      "antinuke": {
+        "label": "Anti-Nuke",
+        "description": "Protection against mass destruction of the server."
+      },
+      "antiRaid": {
+        "label": "Anti-Raid",
+        "description": "Detects join surges and checks account age."
+      },
+      "logs": {
+        "label": "Logging",
+        "description": "Messages, members, roles, channels, threads, boosts."
+      },
+      "appeals": {
+        "label": "Appeals",
+        "description": "Requests to lift a punishment."
+      },
+      "verification": {
+        "label": "Verification",
+        "description": "Verify new members before they get in."
+      },
+      "welcome": {
+        "label": "Welcome",
+        "description": "Welcome messages and image cards."
+      },
+      "goodbye": {
+        "label": "Goodbye",
+        "description": "Messages when a member leaves."
+      },
+      "joinRoles": {
+        "label": "Auto roles",
+        "description": "Roles handed out right after joining."
+      },
+      "reactionroles": {
+        "label": "Reaction roles",
+        "description": "Buttons and menus for picking roles."
+      },
+      "persist": {
+        "label": "Role persistence",
+        "description": "Gives roles back to a member who returns."
+      },
+      "invites": {
+        "label": "Invite tracking",
+        "description": "Who invited whom, plus an invite leaderboard."
+      },
+      "namehistory": {
+        "label": "Name history",
+        "description": "Changes to nicknames and usernames."
+      },
+      "leveling": {
+        "label": "Leveling / XP",
+        "description": "XP for messages and voice, rank cards, reward roles."
+      },
+      "starboard": {
+        "label": "Starboard",
+        "description": "The best messages by reaction count."
+      },
+      "suggestions": {
+        "label": "Suggestions",
+        "description": "Suggestions with voting and status."
+      },
+      "reputation": {
+        "label": "Reputation",
+        "description": "Points for helping others."
+      },
+      "counting": {
+        "label": "Counting",
+        "description": "Counting up in a channel, one number at a time."
+      },
+      "birthday": {
+        "label": "Birthdays",
+        "description": "Birthday announcements and roles."
+      },
+      "confessions": {
+        "label": "Confessions",
+        "description": "Anonymous posts."
+      },
+      "afk": {
+        "label": "AFK",
+        "description": "Lets people know a member is away."
+      },
+      "polls": {
+        "label": "Polls",
+        "description": "Votes with buttons."
+      },
+      "economy": {
+        "label": "Economy",
+        "description": "Coins, bank, shop, jobs, robberies, casino."
+      },
+      "games": {
+        "label": "Games",
+        "description": "Tic-tac-toe, quiz, dice and more, each set up separately."
+      },
+      "giveaways": {
+        "label": "Giveaways",
+        "description": "Giveaways with multiple winners and requirements."
+      },
+      "quests": {
+        "label": "Quests",
+        "description": "Daily and weekly quests with rewards."
+      },
+      "streaks": {
+        "label": "Streaks",
+        "description": "Rewards for showing up regularly."
+      },
+      "tickets": {
+        "label": "Tickets",
+        "description": "Support panels, claiming, transcripts."
+      },
+      "applications": {
+        "label": "Applications",
+        "description": "Forms for recruiting staff."
+      },
+      "autoResponse": {
+        "label": "Auto responses",
+        "description": "Replies to keywords and FAQs."
+      },
+      "sticky": {
+        "label": "Sticky messages",
+        "description": "A message that stays at the bottom of a channel."
+      },
+      "tags": {
+        "label": "Tags",
+        "description": "Saved replies you can call up."
+      },
+      "feeds": {
+        "label": "RSS feeds",
+        "description": "News from RSS into Discord."
+      },
+      "socials": {
+        "label": "Social networks",
+        "description": "Follow accounts on social networks."
+      },
+      "reminders": {
+        "label": "Reminders",
+        "description": "Scheduled reminders."
+      },
+      "tempChannels": {
+        "label": "Temporary channels",
+        "description": "Voice rooms created on demand."
+      },
+      "voiceStats": {
+        "label": "Voice stats",
+        "description": "Time spent in voice channels."
+      },
+      "messageStats": {
+        "label": "Message stats",
+        "description": "Message counts and leaderboards."
+      },
+      "serverStatus": {
+        "label": "Server status",
+        "description": "Monitoring of game servers."
+      },
+      "crypto": {
+        "label": "Crypto and NFT",
+        "description": "Prices, fear index, NFTs."
+      },
+      "backup": {
+        "label": "Backups",
+        "description": "Back up and restore the server settings."
+      },
+      "webhooks": {
+        "label": "Webhooks",
+        "description": "Send events to your own URL."
+      },
+      "prefixCommands": {
+        "label": "Prefix commands",
+        "description": "Run commands with a text prefix."
+      }
+    },
+    "scopeGroup": {
+      "global": "Global",
+      "chat": "Chat",
+      "moderation": "Moderation",
+      "fun": "Fun",
+      "voice": "Voice",
+      "logs": "Logs",
+      "commands": "Commands"
+    },
+    "gameDefs": {
+      "tictactoe": {
+        "label": "Tic-tac-toe",
+        "description": "Classic three in a row against another player or the bot."
+      },
+      "connect4": {
+        "label": "Connect Four",
+        "description": "Falling discs, first to line up four wins."
+      },
+      "rps": {
+        "label": "Rock, paper, scissors",
+        "description": "A quick one-round duel."
+      },
+      "trivia": {
+        "label": "Quiz",
+        "description": "Questions with options and scoring."
+      },
+      "dice": {
+        "label": "Dice",
+        "description": "A dice roll."
+      },
+      "coinflip": {
+        "label": "Coin flip",
+        "description": "Heads or tails."
+      },
+      "eightball": {
+        "label": "Magic 8-ball",
+        "description": "Answers to yes/no questions."
+      },
+      "matchmaking": {
+        "label": "Finding teammates",
+        "description": "Recruiting a group for a specific game."
+      },
+      "quest": {
+        "label": "Quests",
+        "description": "Daily and weekly quests with rewards."
+      },
+      "gamestats": {
+        "label": "Game stats",
+        "description": "An overview of wins and losses."
+      }
+    },
+    "gameOpts": {
+      "turnTimeout": "Turn time limit",
+      "answerTimeout": "Time to answer",
+      "correctReward": "Reward for a correct answer",
+      "cooldownHint": "How long a player must wait between attempts",
+      "maxOpenLobbies": "Max open lobbies per player",
+      "dailyQuests": "Number of daily quests"
+    },
+    "customText": {
+      "group": {
+        "basic": "Basics"
+      },
+      "noPermission": "The user lacks permission",
+      "botNoPermission": "The bot lacks permission",
+      "ownerOnly": "Bot owner only",
+      "guildOnly": "Server only, not in DMs",
+      "cooldown": "Wait between commands - {time}",
+      "wrongChannel": "Command not allowed in this channel",
+      "unknownError": "Unknown error",
+      "invalidUser": "Invalid user",
+      "invalidChannel": "Invalid channel",
+      "invalidRole": "Invalid role"
+    },
+    "sx": {
+      "settings": {
+        "tab": {
+          "general": "General",
+          "channels": "Channels",
+          "links": "Links",
+          "analytics": "Analytics",
+          "welcome": "Welcome",
+          "sticky": "Sticky",
+          "birthday": "Birthdays",
+          "confessions": "Confessions",
+          "embed": "Embed message",
+          "automod": "AutoMod",
+          "logging": "Logs",
+          "leveling": "Leveling",
+          "economy": "Economy",
+          "tickets": "Tickets",
+          "appeals": "Appeals",
+          "applications": "Applications",
+          "giveaways": "Giveaways",
+          "reactionroles": "Reaction Roles",
+          "tempchannels": "Temp channels",
+          "verification": "Verification",
+          "starboard": "Starboard",
+          "games": "Games",
+          "serverstatus": "Server status",
+          "crypto": "Crypto & NFT",
+          "socials": "Social",
+          "suggestions": "Suggestions",
+          "reputation": "Reputation",
+          "counting": "Counting",
+          "autoresponse": "Auto responses",
+          "feeds": "RSS Feeds",
+          "reminders": "Reminders",
+          "tags": "Tags",
+          "warnings": "Warnings",
+          "backup": "Backup",
+          "webhooks": "Webhooks",
+          "apikeys": "API access",
+          "audit": "Audit log",
+          "help": "Commands",
+          "plugins": "Plugins"
+        },
+        "saveFailed": "❌ Save failed: {error}",
+        "saved": "✅ Settings saved!",
+        "saveError": "❌ Save error - check your connection and try again.",
+        "imageUploaded": "✅ Image uploaded!",
+        "uploadError": "❌ Upload error",
+        "backupCreating": "Creating backup...",
+        "backupCreated": "✅ Backup created: {filename}",
+        "error": "❌ Error",
+        "panelSent": "✅ {type} sent!",
+        "sendError": "Send error",
+        "sentMessage": "Sent message",
+        "untitledMessage": "Untitled message",
+        "selectChannel": "Select a channel!",
+        "embedName": "Embed",
+        "nothingToSaveMessage": "Nothing to save - write a message first.",
+        "draftSaved": "💾 Saved!",
+        "messageNoChannel": "This message has no channel - load it, pick a channel, then send.",
+        "sentPanel": "Sent panel",
+        "untitledPanel": "Untitled panel",
+        "addButton": "Add at least one button!",
+        "reactionRolesSent": "✅ Reaction roles sent!",
+        "noPanelEditing": "No panel is being edited - load a sent panel first.",
+        "panelUpdated": "✅ Panel updated!",
+        "nothingToSavePanel": "Nothing to save - set up the panel first.",
+        "panelNoChannel": "This panel has no channel - load it, pick a channel, then send.",
+        "plainText": "💬 Plain text",
+        "embedBtn": "📋 Embed",
+        "embedTitle": "Title",
+        "embedColor": "Color",
+        "embedDescription": "Description ({vars})",
+        "embedImageUrl": "Image URL ({avatar} supported)",
+        "embedThumbnailUrl": "Thumbnail URL ({avatar} for the member avatar)",
+        "embedFooter": "Footer",
+        "addTimestamp": "Add timestamp",
+        "savedToLibrary": "💾 Saved to your message library!",
+        "loadSaved": "📥 Load from a saved message…",
+        "untitled": "Untitled",
+        "saveAsMessage": "💾 Save as message",
+        "stickyIncomplete": "Pick a channel and write the message first.",
+        "back": "← Back",
+        "server": "Server",
+        "lockDashboard": "🔒 Lock dashboard",
+        "refresh": "🔄 Refresh",
+        "save": "Save"
+      },
+      "common": {
+        "loading": "Loading…"
+      },
+      "audit": {
+        "title": "Audit log",
+        "subtitle": "Recent moderation actions and dashboard changes, newest first.",
+        "filter": {
+          "all": "all",
+          "moderation": "moderation",
+          "dashboard": "dashboard"
+        },
+        "empty": "Nothing recorded yet."
+      },
+      "apikeys": {
+        "createFailed": "Failed to create key ({status})",
+        "networkError": "❌ Network error - check your connection and try again.",
+        "revokeConfirm": "Revoke this API key? Anything using it will stop working immediately.",
+        "revokeFailed": "Failed to revoke key ({status})",
+        "title": "API access",
+        "description": "Create a key to read this server's stats from your own apps. Send it as a Bearer token. Keys are stored hashed - you can only see the full key once, right after creating it.",
+        "namePlaceholder": "Key name (e.g. My website)",
+        "creating": "Creating…",
+        "create": "Create key",
+        "copyNow": "Copy this key now - it won't be shown again:",
+        "yourKeys": "Your keys",
+        "empty": "No API keys yet.",
+        "lastUsed": "last used {date}",
+        "neverUsed": "never used",
+        "revoke": "Revoke",
+        "example": "Example"
+      },
+      "analytics": {
+        "dow": {
+          "sun": "Sun",
+          "mon": "Mon",
+          "tue": "Tue",
+          "wed": "Wed",
+          "thu": "Thu",
+          "fri": "Fri",
+          "sat": "Sat"
+        },
+        "heatTooltip": "{day} {hour}:00 - {count} msgs",
+        "noData": "No data yet.",
+        "noRoleSnapshot": "No role snapshot yet - the bot refreshes this a few times a day.",
+        "loading": "Loading analytics…",
+        "loadError": "Could not load analytics right now.",
+        "noDataCollected": "No analytics collected yet. The bot starts recording activity from now on - check back in a day or two for meaningful charts.",
+        "messages30d": "Messages (30d)",
+        "netMembers30d": "Net members (30d)",
+        "voiceHours30d": "Voice hours (30d)",
+        "commands30d": "Commands (30d)",
+        "healthScores": "Health scores",
+        "heuristic": "(heuristic estimates)",
+        "activity": "Activity",
+        "consistency": "Consistency (active days)",
+        "growthHealth": "Growth health",
+        "growthForecast": "Growth forecast",
+        "trendProjection": "(trend projection)",
+        "avgNetPerDay": "Avg net / day",
+        "projected7": "Projected +7 days",
+        "projected30": "Projected +30 days",
+        "msgTrend7d": "Message trend (7d)",
+        "forecastNote": "Straight-line estimate from the last 30 days - a rough guide, not a guarantee.",
+        "messagesPerDay": "Messages per day",
+        "joinsVsLeaves": "Joins vs leaves",
+        "joinsVsLeavesLegend": "(green up = joins, red down = leaves)",
+        "heatmap": "Activity heatmap",
+        "heatmapHint": "(messages by day & hour)",
+        "topChannels": "Top channels",
+        "topMembers": "Top members",
+        "topCommands": "Most used commands",
+        "membersByRole": "Members by role",
+        "membersTotal": "({count} members total)",
+        "moderationActions": "Moderation actions",
+        "totalActions": "Total actions",
+        "warningsOnRecord": "Warnings on record",
+        "topReasons": "Top ban / punishment reasons",
+        "supportTickets": "Support tickets",
+        "ticketsTotal": "Total",
+        "ticketsOpen": "Open",
+        "ticketsClosed": "Closed",
+        "avgResolution": "Avg resolution"
+      }
+    },
+    "tabsA": {
+      "common": {
+        "none": "-- None --",
+        "select": "-- Select --"
+      },
+      "appeals": {
+        "title": "🛡️ Appeals",
+        "intro": "Channel where appeals from the {command} command and from the public appeals page arrive. This is where users you banned or muted write to you.",
+        "channel": "Appeals channel",
+        "instructions": "Appeal instructions (shown to the user)",
+        "instructionsPlaceholder": "Explain why you think the punishment was unfair. Be specific and polite.",
+        "enablePublic": "Enable the public appeals page"
+      },
+      "applications": {
+        "title": "📝 Applications",
+        "channel": "Applications channel",
+        "reviewChannel": "Review channel (for staff)",
+        "approvedRole": "Role after approval",
+        "questions": "Questions (one per line)",
+        "questionsPlaceholder": "How old are you?\nWhy do you want to join?\nDo you have experience?"
+      },
+      "autoresponse": {
+        "title": "💬 Auto responses",
+        "intro": "Automatic replies to keywords.",
+        "trigger": "Trigger",
+        "answer": "Answer",
+        "add": "+ Add"
+      },
+      "backup": {
+        "title": "💾 Server backup",
+        "intro": "Create a full backup of the server settings.",
+        "create": "💾 Create backup",
+        "savedTitle": "Saved backups",
+        "pathHint": "Backup files are stored on the server at:",
+        "empty": "No backups yet.",
+        "stats": "{roles} roles, {channels} channels",
+        "restoring": "Restoring…",
+        "restoreMode": {
+          "full": "Full restore",
+          "server": "Server only",
+          "bot": "Bot settings only"
+        },
+        "restoreConfirm": {
+          "full": "Full restore: roles, channels and server settings matching a saved name will be updated (missing ones recreated), and the bot's Vorqul settings for this server will be replaced with the backup. Nothing existing is deleted.",
+          "server": "Restore the Discord server only (roles, channels, server settings) matching a saved name; missing ones are recreated. Nothing existing is deleted. The bot's Vorqul settings are left untouched.",
+          "bot": "Restore only the bot's Vorqul settings for this server (automod, welcome, leveling, and so on) from the backup. The Discord server itself (roles/channels) is left untouched."
+        },
+        "restoreDone": "Restored: {roles} role(s), {channels} channel(s) touched{errors}",
+        "restoreDoneBot": "Bot settings restored{errors}",
+        "restoreDoneBotSuffix": ", bot settings restored",
+        "restoreErrorsSuffix": ", {n} error(s)",
+        "restoreError": "Could not restore the backup.",
+        "refresh": "🔄 Refresh"
+      },
+      "birthday": {
+        "title": "🎂 Birthday system",
+        "enable": "Enable daily birthday announcements (08:00 server time)",
+        "channel": "Announcement channel",
+        "role": "Birthday role (optional, given for the day)",
+        "message": "Message ({user}, {username}, {age}, {server})",
+        "messagePlaceholder": "🎉 Happy birthday {user}! 🎂",
+        "messageType": "Message type",
+        "plainText": "💬 Plain text",
+        "embed": "📋 Embed",
+        "embedColor": "Embed color",
+        "help": "Members set their own birthday with {set}, view one with {view}, and see upcoming ones with {list}."
+      },
+      "confessions": {
+        "title": "🤫 Confessions",
+        "enable": "Enable anonymous confessions ({command})",
+        "channel": "Confession channel",
+        "logChannel": "Staff log channel (optional - keeps a de-anonymised copy for moderation)",
+        "allowReplies": "Allow anonymous replies (adds a Reply button under each confession)",
+        "minAccountAge": "Minimum account age (days) - anti-spam, 0 = off",
+        "help": "Confessions are posted by the bot with an incrementing number, so the author stays hidden in the channel. If you set a staff log channel, moderators can still see who wrote what - useful against abuse. Numbering and author records are stored privately by the bot."
+      },
+      "counting": {
+        "title": "🔢 Counting",
+        "enable": "Enable the counting game",
+        "channel": "Counting channel",
+        "allowSameUser": "Allow the same user to count twice in a row",
+        "deleteWrong": "Delete wrong / non-number messages",
+        "goal": "Goal (announce + reward, 0 = off)",
+        "goalRole": "Goal reward role (optional)",
+        "currentCount": "Current count",
+        "countAndBest": "{count} · best: {best}"
+      },
+      "crypto": {
+        "title": "₿ Crypto & NFT",
+        "trackedTitle": "💰 Tracked currencies",
+        "coins": "Coins (BTC, ETH...)",
+        "currency": "Currency",
+        "nftTitle": "🖼️ NFT Collections",
+        "nftEnable": "Enable NFT tracking",
+        "collections": "Collections (OpenSea slug)"
+      },
+      "economy": {
+        "title": "💰 Economy",
+        "currencyName": "Currency name",
+        "emoji": "Emoji",
+        "startingBalance": "Starting balance",
+        "daily": "Daily",
+        "streakBonus": "Streak bonus %",
+        "maxStreakBonus": "Max streak bonus",
+        "workMin": "Work min",
+        "workMax": "Work max",
+        "workCooldown": "Work cooldown (sec)",
+        "gamblingTitle": "🎰 Gambling",
+        "game": {
+          "coinflip": "Coin flip",
+          "slots": "Slots",
+          "roulette": "Roulette",
+          "blackjack": "Blackjack",
+          "dice": "Dice",
+          "crash": "Crash",
+          "rps": "Rock paper scissors"
+        },
+        "minBet": "Min bet",
+        "maxBet": "Max bet",
+        "bankTitle": "🏦 Bank",
+        "enableBank": "Enable bank",
+        "dailyInterest": "Daily interest %"
+      },
+      "embed": {
+        "title": "📨 Embed Builder",
+        "modeEmbed": "📋 Embed",
+        "modePlain": "💬 Plain text",
+        "channel": "Channel",
+        "color": "Color",
+        "senderName": "Sender name (optional)",
+        "senderNamePlaceholder": "Bot name for this message",
+        "senderAvatar": "Sender avatar URL (optional)",
+        "webhookNote": "When a sender name or avatar is set, the message is sent through a webhook - the bot needs the Manage Webhooks permission in that channel. Works for embeds and plain text alike.",
+        "messageText": "Message (text)",
+        "textOutside": "Text outside embed (mentions / pings)",
+        "messagePlaceholder": "Write your message... (supports @everyone, @here and role pings)",
+        "outsidePlaceholder": "e.g. @everyone or a role ping",
+        "selectRole": "-- Select role --",
+        "addRoleMention": "+ Role mention",
+        "roleMentionNote": "Role mentions are inserted as {format} into the text above the embed and will ping the role.",
+        "author": "Author",
+        "titleField": "Title",
+        "description": "Description",
+        "image": "Image",
+        "imagePlaceholder": "https://... or upload",
+        "upload": "Upload",
+        "preview": "Preview",
+        "thumbnailUrl": "Thumbnail URL",
+        "footer": "Footer",
+        "addTimestamp": "Add timestamp",
+        "sending": "Sending…",
+        "sendMessage": "Send message",
+        "sendEmbed": "Send embed",
+        "saveDraft": "💾 Save draft",
+        "savedTitle": "💾 Saved & sent messages",
+        "savedIntro": "Every message you send is kept here. Edit it to load it back into the builder, duplicate it into a new message, resend it, or delete it.",
+        "savedEmpty": "No saved messages yet - send or save a message above.",
+        "untitled": "Untitled",
+        "statusSent": "📤 Sent",
+        "statusDraft": "📝 Draft",
+        "edit": "✏️ Edit",
+        "duplicate": "📋 Duplicate",
+        "resend": "📤 Resend"
+      },
+      "feeds": {
+        "title": "📰 RSS Feeds",
+        "intro": "Automatic RSS feed posting.",
+        "urlPlaceholder": "RSS URL",
+        "channel": "Channel",
+        "force": "Send now",
+        "forceHint": "Fetch the feed right now and post its latest item, without waiting for the schedule.",
+        "forceSent": "Sent: {title}",
+        "forceError": "Could not send the feed."
+      },
+      "games": {
+        "title": "🎮 Games",
+        "intro": "Games are configured on their own page - switch them on one by one, choose the channels they work in, and set time limits and rewards.",
+        "open": "Open game settings"
+      },
+      "giveaways": {
+        "howToTitle": "ℹ️ How to start a giveaway",
+        "howToIntro": "Giveaways are launched in your server with the {command} command - that is where you write the content:",
+        "optPrize": "what you are giving away",
+        "optDuration": "e.g. 1h, 30m, 2d",
+        "optWinners": "number of winners",
+        "optOptional": "optional",
+        "howToOutro": "Members join by clicking the 🎉 button and the bot picks winners automatically when the timer ends. Manage running giveaways with {end}, {reroll} and {list}. The fields below are module defaults.",
+        "title": "🎉 Giveaways",
+        "channel": "Channel",
+        "any": "-- Any --",
+        "emoji": "Emoji",
+        "color": "Color",
+        "managerRole": "Manager role",
+        "dmWinners": "DM the winners",
+        "requireRole": "Require a role to enter"
+      },
+      "general": {
+        "basicTitle": "Basic settings",
+        "prefix": "Prefix",
+        "botLanguage": "Bot language",
+        "botLanguageHint": "Affects the bot's replies.",
+        "botNickname": "Bot name on this server",
+        "botNicknamePlaceholder": "Leave empty to use the global bot name",
+        "botNicknameHint": "Applies only here - the bot has a different name on other servers. Max 32 characters. The bot needs the “Change Nickname” permission. Takes effect within a few minutes.",
+        "perServerNote": "Language and name apply separately to each server and take effect without restarting the bot.",
+        "managerRole": "Manager role",
+        "managerRoleHint": "Members with this role can open and edit this server's settings, but cannot install, enable, disable or configure plugins.",
+        "modulesEnabled": "{on} of {total} enabled",
+        "modulesIntro": "Complete list. A disabled module stops working, along with its commands."
+      },
+      "automod": {
+        "ignoreAdmins": "Do not check administrators",
+        "exemptTitle": "🪪 Exempt roles and channels",
+        "searchRole": "Search roles...",
+        "noExemptRole": "No role is exempt",
+        "searchChannel": "Search channels...",
+        "allChannels": "AutoMod runs in all channels",
+        "bannedWords": "🚫 Banned words",
+        "bannedWordsPlaceholder": "badword1, badword2, badword3",
+        "bannedWordsHint": "Separate with commas. A new line works too. Matching ignores letter case.",
+        "allowedDomains": "✅ Allowed domains",
+        "allowedDomainsHint": "Separate with commas. Applies while the link filter is on - links to these domains pass through.",
+        "filters": "⚙️ Filters"
+      }
+    },
+    "tabsB": {
+      "common": {
+        "select": "-- Select --",
+        "none": "-- None --",
+        "disabledOpt": "-- Disabled --",
+        "channel": "Channel",
+        "title": "Title",
+        "color": "Color",
+        "description": "Description",
+        "add": "+ Add",
+        "messageType": "Message type",
+        "role": "Role",
+        "emoji": "Emoji",
+        "sending": "Sending…",
+        "searchRole": "Search role...",
+        "searchChannel": "Search channel...",
+        "upload": "Upload",
+        "buttonText": "Button text",
+        "message": "Message",
+        "supportRole": "Support role",
+        "save": "Save"
+      },
+      "help": {
+        "title": "💬 Commands",
+        "intro": "{total} commands. A command also works with a prefix if the Prefix commands module is enabled.",
+        "group": {
+          "moderation": "🔨 Moderation",
+          "administration": "⚙️ Administration",
+          "utility": "🧰 Utility",
+          "fun": "🎮 Fun & Games"
+        },
+        "cmd": {
+          "altcheck": "Heuristic alt-account check for a member (account age, avatar, roles)",
+          "appeal": "Submit an appeal for a warning, mute or other moderation action",
+          "ban": "Ban a member from the server",
+          "case": "Look up a moderation case by its ID",
+          "cleanup": "Server cleanup utilities",
+          "clear": "Delete multiple messages",
+          "jail": "Jail a member: remove their roles and isolate them until unjailed",
+          "kick": "Kick a member from the server",
+          "lock": "Lock a channel (members will not be able to send messages)",
+          "lockdown": "Lock or unlock every text channel on the server at once",
+          "massnick": "Set or reset the nickname for many members at once",
+          "massrole": "Add or remove a role from many members at once",
+          "mute": "Mute a member (uses the configured mute role, or a timeout as fallback)",
+          "nick": "Change or reset a member nickname",
+          "note": "Add a private moderator note to a user",
+          "notes": "Show moderator notes and moderation history for a user",
+          "permcheck": "Permission checking and preview",
+          "role": "Add or remove a role from a member",
+          "shadowmute": "Shadow-mute a member: their messages are silently removed without notifying them",
+          "slowmode": "Set slowmode (rate limit) in a channel",
+          "softban": "Softban a member (ban + instant unban to purge their messages)",
+          "timeout": "Timeout a member",
+          "unban": "Unban a user by their ID",
+          "unjail": "Release a member from jail and restore their previous roles",
+          "unlock": "Unlock a channel (members will be able to send messages again)",
+          "unmute": "Unmute a member (removes the mute role and/or timeout)",
+          "unshadowmute": "Remove a shadow-mute from a member",
+          "untimeout": "Remove a timeout from a member",
+          "warn": "Warn a member",
+          "persist": "Restore a member's roles and nickname when they rejoin the server",
+          "premium": "Manage premium tiers (bot owner only)",
+          "afk": "Set your AFK status",
+          "apply": "Application system",
+          "autoresponse": "Manage auto-responses",
+          "birthday": "Save your birthday and let the server celebrate it",
+          "coinflip": "Flip a coin",
+          "confess": "Send an anonymous confession to the server",
+          "connect4": "Play Connect 4!",
+          "digest": "Weekly server digest",
+          "feed": "Manage social media feeds",
+          "filter": "Manage the banned-word filter",
+          "gamestats": "Show game statistics",
+          "help": "Show all available commands",
+          "invites": "Manage and view invites",
+          "leaderboard": "View server leaderboards",
+          "levelroles": "Manage level roles",
+          "logs": "Configure the logging system",
+          "msgtop": "Leaderboard of the most active writers",
+          "rank": "Check your or another user's rank",
+          "reactionroles": "Manage reaction roles",
+          "referral": "Referral system",
+          "rep": "Reputation system",
+          "rolemenu": "Create a role menu",
+          "rps": "Play Rock Paper Scissors",
+          "settings": "Server settings",
+          "streak": "View your activity streak",
+          "suggest": "Suggestion system",
+          "tempchannel": "Manage your temporary voice channel",
+          "ticket": "Ticket support system",
+          "tictactoe": "Play Tic-Tac-Toe!",
+          "vctop": "Leaderboard of the most active voice users",
+          "verify": "Verify yourself on the server",
+          "whatdidimiss": "Get a summary of what happened while you were away",
+          "whywasibanned": "Check your moderation history and appeal info",
+          "8ball": "Ask the magic 8-ball a question",
+          "dice": "Roll dice",
+          "giveaway": "Create and manage giveaways",
+          "matchmaking": "Gaming matchmaking system",
+          "poll": "Create a poll",
+          "quest": "Server quests and challenges",
+          "trivia": "Answer trivia questions to earn rewards"
+        }
+      },
+      "leveling": {
+        "title": "⭐ Leveling",
+        "xpMin": "XP min",
+        "xpMax": "XP max",
+        "cooldown": "Cooldown (sec)",
+        "voiceXpPerMin": "Voice XP/min",
+        "multiplier": "XP multiplier",
+        "maxLevel": "Max level",
+        "levelUpChannel": "Level-up channel",
+        "sameChannel": "Same channel",
+        "dm": "DM",
+        "disabled": "Disabled",
+        "levelUpMessage": "Level-up message ({user}, {level}, {xp})",
+        "levelUpPlaceholder": "🎉 {user} reached level {level}!",
+        "voiceXp": "Voice XP",
+        "stackRoles": "Stack role rewards",
+        "roleRewards": "🏆 Role rewards",
+        "levelCol": "Level",
+        "lvlPlaceholder": "Lvl",
+        "xpExceptions": "🚫 XP exceptions",
+        "noXpRole": "No-XP roles",
+        "noXpRoleEmpty": "Everyone earns XP",
+        "noXpChannels": "No-XP channels",
+        "noXpChannelsEmpty": "XP is earned everywhere"
+      },
+      "logging": {
+        "title": "📝 Logging",
+        "categoryHint": "A category without its own channel is logged to the \"Server\" channel.",
+        "disabled": "Disabled",
+        "events": "🔔 Events",
+        "eventsHint": "A disabled event is not logged, even if its category has a channel set.",
+        "ignoredChannels": "🚫 Ignored channels",
+        "ignoredHint": "Activity in these channels is not logged",
+        "loggedEverywhere": "Logged everywhere",
+        "cat": {
+          "moderation": {
+            "label": "🛡️ Moderation",
+            "desc": "Ban, kick, warn, mute"
+          },
+          "messages": {
+            "label": "💬 Messages",
+            "desc": "Edit, delete"
+          },
+          "members": {
+            "label": "👥 Members",
+            "desc": "Join, leave, nick, avatar"
+          },
+          "server": {
+            "label": "⚙️ Server",
+            "desc": "Server settings"
+          },
+          "voice": {
+            "label": "🔊 Voice",
+            "desc": "Join, leave, move"
+          },
+          "roles": {
+            "label": "🎭 Roles",
+            "desc": "Member role changes"
+          },
+          "channels": {
+            "label": "📁 Channels",
+            "desc": "Create, delete, update"
+          },
+          "invites": {
+            "label": "🔗 Invites",
+            "desc": "Invite create, delete"
+          },
+          "threads": {
+            "label": "🧵 Threads",
+            "desc": "Thread create, delete, update"
+          },
+          "emojis": {
+            "label": "😀 Emojis",
+            "desc": "Emoji and sticker changes"
+          },
+          "boosts": {
+            "label": "💎 Boosts",
+            "desc": "Server boosts"
+          }
+        },
+        "ev": {
+          "messageEdit": "Message edited",
+          "messageDelete": "Message deleted",
+          "messageBulkDelete": "Bulk delete",
+          "memberJoin": "Member joined",
+          "memberLeave": "Member left",
+          "voiceJoin": "Voice join",
+          "voiceLeave": "Voice leave",
+          "voiceMove": "Voice move",
+          "roleCreate": "Role created",
+          "roleDelete": "Role deleted",
+          "channelCreate": "Channel created",
+          "channelDelete": "Channel deleted",
+          "threadCreate": "Thread created",
+          "threadDelete": "Thread deleted"
+        }
+      },
+      "rr": {
+        "colorBlue": "Blue",
+        "colorGrey": "Grey",
+        "colorGreen": "Green",
+        "colorRed": "Red",
+        "editing": "✏️ Editing a panel already sent to Discord (message {id}). \"Update panel\" edits the original message in place.",
+        "stopEditing": "✕ Stop editing",
+        "title": "🎭 Reaction Roles",
+        "titlePh": "🎭 Choose your role",
+        "type": "Type",
+        "typeMultiple": "Multiple - several roles",
+        "typeSingle": "Single - only one",
+        "senderName": "Sender name (optional)",
+        "senderNamePh": "Bot name for this panel",
+        "senderAvatar": "Sender avatar URL (optional)",
+        "webhookNote": "When a sender name or avatar is set, the panel is sent through a webhook - the bot needs the Manage Webhooks permission in that channel. Buttons keep working as usual.",
+        "buttons": "🔘 Buttons",
+        "buttonLabelPh": "Text",
+        "buttonColor": "Button color",
+        "updatePanel": "Update panel",
+        "sendAsNew": "Send as new",
+        "send": "Send",
+        "preview": "👁️ Preview",
+        "defaultDescription": "Click a button to add or remove a role.",
+        "footer": "Vorqul DS BOT • Reaction Roles",
+        "noButtons": "No buttons yet - add one above.",
+        "singleMode": "Single mode: picking a role removes the other roles of this panel.",
+        "savedPanels": "💾 Saved & sent panels",
+        "savedHint": "Every sent panel is saved here automatically, so you can load it back, tweak it and send it again.",
+        "noSaved": "No saved panels yet.",
+        "savedMeta": "{count} buttons · {status} · {date}",
+        "onDiscord": "on Discord",
+        "sent": "sent",
+        "draft": "draft",
+        "load": "Load"
+      },
+      "reminders": {
+        "title": "⏰ Reminders",
+        "hint": "Settings for the /reminder command.",
+        "maxPerUser": "Max reminders per user",
+        "maxDuration": "Max duration (days)"
+      },
+      "reputation": {
+        "title": "⭐ Reputation",
+        "enable": "Enable the reputation system",
+        "cooldown": "Cooldown between giving rep to the same user (hours)",
+        "allowNegative": "Allow negative reputation",
+        "rewardRole": "Reward role (given at a rep threshold, optional)",
+        "threshold": "Threshold (rep)"
+      },
+      "socials": {
+        "intro": "Each social network is configured independently. Enable only the ones you need.",
+        "accYoutube": "YouTube channel IDs (one per line)",
+        "accTwitch": "Twitch usernames (one per line)",
+        "accReddit": "Subreddits (one per line)",
+        "accRss": "RSS feed URLs (one per line)",
+        "notifChannel": "Notifications channel",
+        "mentionRole": "Mention role (optional)",
+        "customMessage": "Custom message (optional)",
+        "customPh": "🔴 New post!"
+      },
+      "starboard": {
+        "title": "⭐ Starboard",
+        "channel": "Starboard channel",
+        "minReactions": "Min reactions",
+        "selfStar": "Allow self-star",
+        "ignoredChannels": "Ignored channels",
+        "noneIgnored": "No channel is ignored"
+      },
+      "sticky": {
+        "title": "📌 Sticky messages",
+        "intro": "A sticky message is re-posted to the bottom of a channel whenever someone writes, so it never scrolls away. Dashboard changes apply on the next message in that channel; {cmd} applies instantly.",
+        "messagePh": "This message stays at the bottom of the channel.",
+        "plainText": "Plain text",
+        "embed": "Embed",
+        "embedTitle": "Embed title",
+        "addUpdate": "Add / update sticky",
+        "active": "Active stickies",
+        "none": "No sticky messages yet.",
+        "kindEmbed": "embed",
+        "kindText": "text",
+        "saveHint": "Click 💾 Save at the top to persist your changes."
+      },
+      "suggestions": {
+        "title": "💡 Suggestions",
+        "channel": "Suggestions channel",
+        "upvote": "Upvote emoji",
+        "downvote": "Downvote emoji",
+        "autoThread": "Automatically create a thread",
+        "anonymous": "Allow anonymous suggestions"
+      },
+      "tags": {
+        "title": "🏷️ Custom Tags",
+        "hint": "Quick replies via /tag.",
+        "namePh": "Name",
+        "contentPh": "Content"
+      },
+      "temp": {
+        "title": "🔊 Temporary channels",
+        "hub": "Join to Create channel",
+        "category": "Category",
+        "sameCategory": "-- Same --",
+        "nameFormat": "Name format ({user}, {game})",
+        "nameFormatPh": "🎮 {user}'s channel",
+        "limit": "Limit (0 = unlimited)",
+        "bitrate": "Bitrate (kbps)"
+      },
+      "tickets": {
+        "panelName": "Ticket panel",
+        "title": "🎫 Tickets",
+        "panelChannel": "Panel channel",
+        "ticketCategory": "Ticket category",
+        "noSupportRole": "No support role",
+        "transcriptChannel": "Transcript channel",
+        "maxPerUser": "Max tickets per user",
+        "panel": "📋 Panel",
+        "panelTitlePh": "🎫 Support",
+        "panelDescPh": "Click the button to create a ticket",
+        "buttonTextPh": "📩 Create a ticket",
+        "welcomeInTicket": "Welcome message in ticket",
+        "welcomePh": "Welcome! Describe your problem...",
+        "categoriesTitle": "🎟️ Ticket categories (optional)",
+        "categoriesHint": "If you add categories, the panel shows a button for each one (own Discord category, support role and welcome message). Without categories, the single button above is used.",
+        "buttonName": "Button name",
+        "defaultCategoryLabel": "Support",
+        "discordCategory": "Discord category (parent)",
+        "defaultOption": "-- default --",
+        "perMainSettings": "Per main settings",
+        "removeCategory": "Remove category",
+        "addCategory": "+ Add category",
+        "sendPanel": "Send panel"
+      },
+      "verification": {
+        "type": "Type",
+        "typeButton": "Button",
+        "typeReaction": "Reaction",
+        "typeCaptcha": "Captcha",
+        "roleAfter": "Role after verification",
+        "buttonTextPh": "✅ Verify",
+        "send": "Send"
+      },
+      "warnings": {
+        "title": "⚠️ Automatic actions",
+        "hint": "Actions taken after reaching the warn count.",
+        "warnsWithin": "warns in",
+        "daysArrow": "days →",
+        "mute": "Mute",
+        "kick": "Kick",
+        "tempban": "TempBan",
+        "ban": "Ban",
+        "immunity": "🛡️ Immunity roles",
+        "noImmune": "No role is immune"
+      },
+      "webhooks": {
+        "title": "🔗 Outgoing webhooks",
+        "intro": "POST server events to your own endpoint. Each request is signed with {sig} so you can verify it.",
+        "enable": "Enable outgoing webhooks",
+        "url": "Webhook URL",
+        "secret": "Signing secret (optional but recommended)",
+        "secretPh": "a long random string",
+        "events": "Events to send",
+        "memberJoin": "Member joined",
+        "memberLeave": "Member left",
+        "memberBan": "Member banned",
+        "memberUnban": "Member unbanned",
+        "dashboardLog": "Dashboard change",
+        "testSent": "Test sent (HTTP {status})",
+        "failed": "Failed",
+        "requestFailed": "Request failed",
+        "sendTest": "Send test event",
+        "saveFirst": "Save your changes first - this tests the saved webhook."
+      },
+      "welcome": {
+        "welcomeHeading": "👋 Welcome message",
+        "messageVars": "Message ({user}, {server}, {memberCount})",
+        "messagePh": "Welcome {user} to {server}! 🎉",
+        "msgTypeHint": "Plain text sends the message above as-is. Embed sends a rich card with the fields below.",
+        "welcomeLabel": "Welcome message",
+        "titlePh": "Welcome!",
+        "bannerImage": "Banner image",
+        "imagePh": "https://... or upload a file",
+        "preview": "Preview",
+        "thumbnail": "Thumbnail ({avatar} for avatar)",
+        "footer": "Footer",
+        "goodbyeHeading": "👋 Goodbye message",
+        "goodbyeLabel": "Goodbye message",
+        "autoRole": "🎭 Auto role",
+        "dmHeading": "📩 DM message to new members",
+        "sendDm": "Send DM to new members",
+        "dmPh": "Welcome to the server! Please read the rules...",
+        "dmLabel": "DM message"
+      }
+    },
+    "cfg": {
+      "common": {
+        "select": "- select -",
+        "selectChannel": "- select channel -",
+        "saveFailed": "Save failed ({status})",
+        "networkError": "Network error - check your connection."
+      },
+      "games": {
+        "noteBefore": "If a game has no channel rule of its own, the shared setting applies:",
+        "noteLink": "Games in the Channels section",
+        "noteAfter": ". A custom rule overrides it."
+      },
+      "serverstatus": {
+        "title": "Server Status",
+        "subtitle": "Auto-updating status of a Minecraft Java/Bedrock server in a channel.",
+        "serverCard": "Server",
+        "serverDesc": "Address of the server to monitor.",
+        "type": "Type",
+        "host": "Address (host)",
+        "port": "Port",
+        "displayCard": "Display",
+        "displayDesc": "Where and how the status is shown. Updates automatically every minute.",
+        "channel": "Channel",
+        "colorOnline": "Color (online)",
+        "online": "🟢 Server is online",
+        "address": "Address:",
+        "players": "Players:",
+        "version": "Version:"
+      },
+      "welcome": {
+        "title": "Welcome",
+        "subtitle": "Greet new members with a message and a card.",
+        "messageCard": "Message",
+        "messageDesc": "Channel and text sent when a member joins.",
+        "channel": "Channel",
+        "channelHint": "Where the welcome message is sent",
+        "messageText": "Message text",
+        "variablesPlaceholder": "Variables: {user} {username} {server} {count} {inviter}",
+        "variables": "Variables:",
+        "sendEmbed": "Send as embed",
+        "dmCard": "Private message (DM)",
+        "dmDesc": "Optional private message to the new member.",
+        "dmEnable": "Enable DM",
+        "dmPlaceholder": "Hi {user}, welcome to {server}!",
+        "cardCard": "Welcome card",
+        "cardDesc": "MEE6-style image with avatar and text.",
+        "cardEnable": "Enable card",
+        "cardTitle": "Title",
+        "cardTitlePlaceholder": "Welcome, {username}!",
+        "cardSubtitle": "Subtitle",
+        "accentColor": "Accent color",
+        "textColor": "Text color",
+        "bgColor": "Background color",
+        "bgColorHint": "Used when there is no image",
+        "bgUrl": "Background URL (optional)",
+        "bgUrlPlaceholder": "https://…/background.png",
+        "upload": "Upload",
+        "uploading": "Uploading…",
+        "uploadError": "Upload failed. Try a smaller image, or paste a link to one instead.",
+        "bgUrlHint": "Paste a link to an image, or upload one directly (up to 500 KB)."
+      },
+      "automod": {
+        "subtitle": "Automatic chat moderation, MEE6 style.",
+        "spamTitle": "Anti-spam",
+        "spamDesc": "Too many messages in a short time.",
+        "repeatedTitle": "Repeated text",
+        "repeatedDesc": "The same message or repeated characters.",
+        "invitesTitle": "Discord invites",
+        "invitesDesc": "Blocks discord.gg links.",
+        "linksTitle": "External links",
+        "linksDesc": "Blocks URLs outside the whitelist.",
+        "whitelist": "Domain whitelist (comma-separated)",
+        "attachmentsTitle": "Images / attachments",
+        "attachmentsDesc": "Blocks messages with attachments over the limit.",
+        "maxAttachments": "Max attachments (0 = block all)",
+        "imagesOnly": "Images only",
+        "capsTitle": "Excessive CAPS",
+        "capsDesc": "Too many capital letters.",
+        "emojisTitle": "Excessive emoji",
+        "emojisDesc": "Too many emoji in a message.",
+        "spoilersTitle": "Excessive spoilers",
+        "spoilersDesc": "Too many ||spoiler|| blocks.",
+        "mentionsTitle": "Mass mentions",
+        "mentionsDesc": "Too many @mentions at once.",
+        "zalgoDesc": "Excessive combining diacritical characters.",
+        "blacklistTitle": "Banned words",
+        "blacklistDesc": "Comma-separated list of words. A matching message is deleted.",
+        "blacklistPlaceholder": "word1, word2, word3",
+        "exemptTitle": "Exceptions",
+        "exemptDesc": "Who and where AutoMod ignores.",
+        "ignoreAdmins": "Ignore admins",
+        "escalationTitle": "Penalty escalation",
+        "escalationDesc": "Automatic action after N infractions within a period (MEE6 style).",
+        "escalationEnable": "Enable escalation",
+        "windowMinutes": "Window (minutes)",
+        "after": "after",
+        "infractions": "infractions",
+        "secShort": "sec.",
+        "addRule": "+ Add rule"
+      },
+      "modules": {
+        "toggleFailed": "Failed to toggle module ({status})",
+        "networkError": "Network error - check your connection and try again.",
+        "title": "Modules",
+        "detailed": "Detailed settings",
+        "openPage": "Open page",
+        "openSettings": "Open settings"
+      },
+      "links": {
+        "loading": "Loading…",
+        "back": "Back to server",
+        "title": "Useful links",
+        "moduleEnabled": "Module enabled",
+        "descBefore": "These links are shown by the",
+        "descAfter": "command on this server. Each server has its own links - settings are fully separate.",
+        "namePlaceholder": "Name (e.g. Website)",
+        "descPlaceholder": "Description (optional)",
+        "remove": "Remove",
+        "empty": "No links yet. Add your first one below.",
+        "add": "Add link",
+        "max": "Max 25 links"
+      }
+    },
+    "app": {
+      "lp": {
+        "by": "by"
+      },
+      "common": {
+        "avatar": "Avatar"
+      },
+      "login": {
+        "errSignin": "Sign-in error. Please try again.",
+        "errCallbackProc": "Authentication processing error.",
+        "errCreate": "Failed to create account.",
+        "errCallback": "Callback error.",
+        "errDenied": "Access denied.",
+        "errUnexpected": "An unexpected error occurred.",
+        "signInDiscord": "Sign in with Discord",
+        "redirectHint": "You'll be redirected to the dashboard after signing in",
+        "backHome": "Back to home",
+        "loading": "Loading..."
+      },
+      "gate": {
+        "tooMany": "Too many attempts. Please wait a minute and try again.",
+        "wrong": "Wrong password. Please try again.",
+        "network": "Network error - check your connection and try again.",
+        "title": "Enter the access password to continue",
+        "placeholder": "Access password",
+        "checking": "Checking…",
+        "unlock": "Unlock",
+        "note": "This is an extra layer in front of the Discord sign-in."
+      },
+      "dash": {
+        "loadErr": "Could not load servers ({status}).",
+        "loading": "Loading servers...",
+        "botActive": "Bot active",
+        "owner": "Owner",
+        "admin": "Admin",
+        "add": "Add"
+      },
+      "multi": {
+        "remove": "Remove {name}",
+        "nothingMore": "Nothing else to select."
+      },
+      "guild": {
+        "saveFailed": "Failed to save ({status})",
+        "tab": {
+          "overview": "Overview",
+          "modules": "Modules",
+          "welcome": "Welcome",
+          "moderation": "Moderation",
+          "leveling": "Leveling",
+          "logs": "Logs"
+        },
+        "back": "Back to Servers",
+        "fullSettings": "Full settings",
+        "links": "Useful links",
+        "overview": "Server Overview",
+        "prefix": "Prefix",
+        "activeModules": "Active Modules",
+        "welcomeMsg": "Welcome Message",
+        "welcomePh": "Welcome to {server}, {user}!",
+        "variables": "Variables:",
+        "modTitle": "Moderation Settings",
+        "modDesc": "Configure auto-moderation, anti-spam, and other moderation features.",
+        "levTitle": "Leveling Settings",
+        "levDesc": "Configure XP rates, level-up messages, and role rewards.",
+        "logTitle": "Log Channels",
+        "log": {
+          "moderation": "Moderation Logs",
+          "messages": "Messages Logs",
+          "members": "Members Logs",
+          "server": "Server Logs"
+        },
+        "channelId": "Channel ID"
+      },
+      "gm": {
+        "welcome": {
+          "name": "Welcome System",
+          "desc": "Welcome and goodbye messages"
+        },
+        "moderation": {
+          "name": "Moderation",
+          "desc": "Kick, ban, timeout, warnings"
+        },
+        "logging": {
+          "name": "Logging",
+          "desc": "Message and member logs"
+        },
+        "leveling": {
+          "name": "Leveling",
+          "desc": "XP and level rewards"
+        },
+        "economy": {
+          "name": "Economy",
+          "desc": "Virtual currency system"
+        },
+        "automod": {
+          "name": "Auto-Mod",
+          "desc": "Automatic moderation"
+        },
+        "antiraid": {
+          "name": "Anti-Raid",
+          "desc": "Raid protection"
+        },
+        "starboard": {
+          "name": "Starboard",
+          "desc": "Star messages"
+        },
+        "suggestions": {
+          "name": "Suggestions",
+          "desc": "Suggestion system"
+        },
+        "crypto": {
+          "name": "Crypto",
+          "desc": "Cryptocurrency tracking"
+        }
+      }
+    },
+    "plg": {
+      "title": "Plugins",
+      "intro": "Plugins add commands and features to the bot. They apply to every server the bot is in.",
+      "ownerOnly": "Only the bot owner can install, enable, disable, remove or configure plugins.",
+      "ownerMissing": "To manage plugins here, sign in as the owner of the bot's Discord application, or set BOT_OWNER_ID in the bot's .env file to your Discord user ID.",
+      "warning": "Plugins run inside the bot with full access to its files and token. Only install plugins you trust.",
+      "statusUnknown": "The bot has not reported its plugin status yet. Start the bot to see live states.",
+      "restartNeeded": "The highlighted changes apply within a few seconds.",
+      "loading": "Loading plugins…",
+      "loadFailed": "Could not load the plugin list.",
+      "empty": "No plugins are installed.",
+      "install": {
+        "title": "Install a plugin",
+        "hint": "Upload a .zip that contains the plugin (manifest.json and its files). New plugins are installed disabled, so you can review them first.",
+        "choose": "Choose .zip file",
+        "noFile": "No file chosen",
+        "replace": "Replace if already installed (keeps its data)",
+        "button": "Install",
+        "installing": "Installing…",
+        "done": "Installed {name} v{version}. It is disabled until you enable it.",
+        "updated": "Updated {name} to v{version}.",
+        "deps": "This plugin has dependencies, which are installed the next time the bot starts."
+      },
+      "state": {
+        "running": "Running",
+        "disabled": "Disabled",
+        "restart_enable": "Enabled, starting…",
+        "restart_disable": "Disabled, stopping…",
+        "error": "Error",
+        "invalid": "Invalid",
+        "unknown": "Enabled"
+      },
+      "by": "by {author}",
+      "version": "v{version}",
+      "commands": "Commands",
+      "events": "{n} event handlers",
+      "homepage": "Website",
+      "source": "Source",
+      "enable": "Enable",
+      "disable": "Disable",
+      "settings": "Settings",
+      "settingsClose": "Hide settings",
+      "settingsHint": "Plugins read these settings when they need them, so changes usually apply without a restart.",
+      "save": "Save settings",
+      "saving": "Saving…",
+      "saved": "Settings saved.",
+      "enabledDone": "{name} is enabled. The bot loads it within a few seconds.",
+      "disabledDone": "{name} is disabled. The bot stops it within a few seconds.",
+      "remove": "Uninstall",
+      "removeConfirm": "Uninstall {name}? Its files and saved data are deleted permanently.",
+      "removed": "Uninstalled {name}.",
+      "err": {
+        "generic": "Something went wrong (HTTP {status}).",
+        "network": "Network error. Try again.",
+        "no_file": "Choose a .zip file first.",
+        "not_owner": "Only the bot owner can do this.",
+        "cross_origin": "Blocked: the request came from another site.",
+        "not_found": "Plugin not found.",
+        "exists": "A plugin with this name is already installed. Tick \"Replace\" to update it.",
+        "not_zip": "That file is not a valid .zip archive.",
+        "too_large": "The archive is too large (limit 15 MB, 25 MB unpacked).",
+        "file_too_large": "A file inside the archive is too large (limit 10 MB).",
+        "too_many_files": "The archive contains too many files (limit 500).",
+        "no_manifest": "manifest.json was not found in the archive.",
+        "bad_manifest": "The plugin's manifest.json is invalid.",
+        "missing_main": "The main file named in manifest.json is not in the archive.",
+        "bad_path": "The archive contains an unsafe file path and was rejected.",
+        "symlink": "The archive contains a symbolic link and was rejected.",
+        "encrypted": "Password-protected archives are not supported.",
+        "corrupt": "The archive is damaged or its contents do not match.",
+        "unsupported": "This kind of .zip is not supported. Re-create it with a normal zip tool.",
+        "invalid_settings": "Some values are missing or out of range. Check the fields and try again.",
+        "no_settings": "This plugin has no settings.",
+        "channels_unavailable": "The channels of this server could not be checked. Try again in a moment.",
+        "bad_request": "The request was not valid."
+      },
+      "guild": {
+        "open": "Server settings",
+        "close": "Hide server settings",
+        "title": "Settings for this Discord server",
+        "hint": "These settings apply to this Discord server only. The running plugin picks up changes by itself, no restart needed.",
+        "notRunning": "The plugin is not running yet, so nothing is posted until it is enabled.",
+        "noChannels": "The channels of this server could not be loaded.",
+        "chooseChannel": "- choose a channel -",
+        "noChannel": "- none -",
+        "add": "+ Add",
+        "removeItem": "Remove",
+        "itemFallback": "Item {n}",
+        "empty": "Nothing added yet.",
+        "limit": "Limit reached ({n}).",
+        "save": "Save server settings",
+        "saved": "Server settings saved.",
+        "hasErrors": "Fix the highlighted fields and try again."
+      },
+      "fieldErr": {
+        "required": "This field is required.",
+        "range": "The value is outside the allowed range.",
+        "length": "This text is too long.",
+        "number": "Enter a number.",
+        "option": "Pick one of the options.",
+        "channel": "Pick a valid channel.",
+        "string": "Enter some text.",
+        "boolean": "Choose yes or no.",
+        "too_many": "There are too many entries for this server.",
+        "list": "The list is not valid.",
+        "item": "This entry is not valid.",
+        "channel_not_found": "That channel does not exist on this server.",
+        "channel_kind": "This kind of channel is not allowed here."
+      }
+    }
+  },
+  "scopeDesc": {
+    "all": "everywhere",
+    "only": "only in {list}",
+    "except": "everywhere except {list}"
+  },
+  "channels": {
+    "title": "Channel scope",
+    "nothingRestricted": "No feature is restricted - everything runs everywhere.\nSet it with `/channels set`.",
+    "unknownFeature": "Unknown feature",
+    "unknownFeatureBody": "Feature `{key}` does not exist. Pick one from the list.",
+    "restored": "Restored",
+    "restoredBody": "**{feature}** works everywhere again.",
+    "saved": "Saved",
+    "savedEverywhere": "**{feature}** works everywhere.",
+    "modeOnly": "only in the selected channels",
+    "modeExcept": "everywhere except the selected channels",
+    "noChannelYet": "No channel is selected yet - add one with `/channels add`.",
+    "alreadyListed": "Already in the list",
+    "alreadyListedBody": "<#{channel}> is already set for **{feature}**.",
+    "notFound": "Not found",
+    "notFoundBody": "<#{channel}> is not in the list for **{feature}**.",
+    "categoryNote": "This is a category - the setting applies to every channel inside it.",
+    "added": "Added",
+    "removed": "Removed",
+    "current": "Currently: {scope}",
+    "modeSetTo": "Mode for **{feature}** is set to "
+  },
+  "texts": {
+    "langUnavailable": "Language not available",
+    "langUnavailableBody": "Loaded languages: {list}.",
+    "none": "none",
+    "saved": "Saved",
+    "overridden": "Overridden texts",
+    "nothingOverridden": "You have not overridden anything yet - the bot uses its default wording.\nChange that with `/texts set`.",
+    "originalLabel": "**Original:**",
+    "keyMissing": "_(key does not exist in the translations)_",
+    "yourWording": "**Your wording:**",
+    "notOverridden": "_(not overridden)_",
+    "nothingToReset": "Nothing to reset",
+    "nothingToResetBody": "Text `{key}` is not overridden.",
+    "restored": "Restored",
+    "tooLong": "Too long",
+    "tooLongBody": "A text can be at most 1900 characters.",
+    "savedBody": "`{key}` now reads:\n{text}",
+    "langSet": "The bot language is set to **{lang}**.",
+    "showTitle": "Text: {key}",
+    "restoredBody": "`{key}` is back to its original wording:\n{text}",
+    "variablesUsed": "Variables used: {list}",
+    "andMore": "…and {count} more"
+  },
+  "serverLogs": {
+    "type": {
+      "text": "text",
+      "voice": "voice",
+      "category": "category",
+      "announcement": "announcement",
+      "forum": "forum"
+    },
+    "title": {
+      "threadCreated": "🧵 Thread created",
+      "threadUpdated": "🧵 Thread updated",
+      "threadDeleted": "🧵 Thread deleted",
+      "channelCreated": "📁 Channel created",
+      "channelUpdated": "📁 Channel updated",
+      "channelDeleted": "📁 Channel deleted",
+      "roleCreated": "🎭 Role created",
+      "roleUpdated": "🎭 Role updated",
+      "roleDeleted": "🎭 Role deleted",
+      "memberBanned": "🔨 Member banned",
+      "banRevoked": "🔓 Ban revoked",
+      "inviteCreated": "🔗 Invite created",
+      "inviteDeleted": "🔗 Invite revoked",
+      "emojiAdded": "😀 Emoji added",
+      "emojiRemoved": "😀 Emoji removed",
+      "emojiRenamed": "😀 Emoji renamed",
+      "stickerAdded": "🏷️ Sticker added",
+      "stickerRemoved": "🏷️ Sticker removed",
+      "stickerRenamed": "🏷️ Sticker renamed",
+      "boostStarted": "💜 New boost",
+      "boostEnded": "💔 Boost ended"
+    },
+    "field": {
+      "channel": "Channel",
+      "thread": "Thread",
+      "parentChannel": "Parent channel",
+      "name": "Name",
+      "user": "User",
+      "reason": "Reason",
+      "code": "Code",
+      "expires": "Expires",
+      "useLimit": "Use limit",
+      "serverLevel": "Server level",
+      "mentionable": "Mentionable",
+      "topicChanged": "Channel topic changed",
+      "permsChanged": "Permissions changed",
+      "markedNsfw": "Marked as NSFW",
+      "unmarkedNsfw": "NSFW removed",
+      "archived": "Archived",
+      "unarchived": "Unarchived",
+      "locked": "Locked",
+      "unlocked": "Unlocked",
+      "noLongerSeparate": "No longer shown separately",
+      "memberCountWas": "Members had",
+      "type": "Type",
+      "author": "Author"
+    },
+    "value": {
+      "unknown": "Unknown",
+      "unknownLower": "unknown",
+      "notSpecified": "not specified",
+      "none": "none",
+      "never": "never",
+      "noLimit": "no limit"
+    },
+    "boostStartedBody": "{user} just boosted the server.",
+    "boostEndedBody": "{user} stopped boosting the server.",
+    "ghostPingBody": "{user} mentioned someone and deleted the message straight away."
+  }
+}

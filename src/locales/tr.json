@@ -1,0 +1,2143 @@
+{
+  "common": {
+    "yes": "Evet",
+    "no": "Hayır",
+    "enabled": "Açık",
+    "disabled": "Kapalı",
+    "success": "Başarılı",
+    "error": "Hata",
+    "warning": "Uyarı",
+    "info": "Bilgi",
+    "loading": "Yükleniyor...",
+    "refreshHint": "Bu verileri yenile",
+    "clearCacheHint": "Yerel önbelleği temizle ve yeniden yükle",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "back": "Geri",
+    "next": "İleri",
+    "page": "Sayfa",
+    "of": "/",
+    "noPermission": "Bu komutu kullanma yetkin yok.",
+    "botNoPermission": "Bunu yapmak için yetkim yok.",
+    "invalidUser": "Geçersiz kullanıcı belirtildi.",
+    "invalidChannel": "Geçersiz kanal belirtildi.",
+    "invalidRole": "Geçersiz rol belirtildi.",
+    "cooldown": "Bu komutu tekrar kullanmadan önce {time} bekle.",
+    "unknownError": "Bilinmeyen bir hata oluştu.",
+    "wrongChannel": "Bu komut bu kanalda kullanılamaz."
+  },
+  "welcome": {
+    "title": "Hoş geldin!",
+    "defaultMessage": "**{server}** sunucusuna hoş geldin, {user}! 🎉",
+    "goodbyeMessage": "Hoşça kal **{user}**, seni özleyeceğiz!",
+    "memberCount": "{count}. üyesin",
+    "joinedAt": "Hesap oluşturulma: {date}"
+  },
+  "moderation": {
+    "kick": {
+      "success": "**{user}** sunucudan atıldı.",
+      "reason": "Sebep: {reason}",
+      "noReason": "Sebep belirtilmedi",
+      "dmNotify": "**{server}** sunucusundan atıldın.",
+      "cannotKick": "Bu kullanıcıyı atamıyorum.",
+      "higherRole": "Kendinle eşit veya üstün roldeki birini atamazsın."
+    },
+    "ban": {
+      "success": "**{user}** yasaklandı.",
+      "reason": "Sebep: {reason}",
+      "noReason": "Sebep belirtilmedi",
+      "dmNotify": "**{server}** sunucusundan yasaklandın.",
+      "cannotBan": "Bu kullanıcıyı yasaklayamıyorum.",
+      "higherRole": "Kendinle eşit veya üstün roldeki birini yasaklayamazsın."
+    },
+    "unban": {
+      "success": "**{user}** kullanıcısının yasağı kaldırıldı.",
+      "notBanned": "Bu kullanıcı yasaklı değil."
+    },
+    "mute": {
+      "success": "**{user}** {duration} süreyle susturuldu.",
+      "reason": "Sebep: {reason}",
+      "dmNotify": "**{server}** sunucusunda {duration} süreyle susturuldun."
+    },
+    "unmute": {
+      "success": "**{user}** kullanıcısının susturması kaldırıldı.",
+      "notMuted": "Bu kullanıcı susturulmuş değil."
+    },
+    "timeout": {
+      "success": "**{user}** {duration} süreyle zaman aşımına alındı.",
+      "removed": "**{user}** kullanıcısının zaman aşımı kaldırıldı."
+    },
+    "warn": {
+      "success": "**{user}** uyarıldı.",
+      "count": "Bu {count}. uyarı.",
+      "dmNotify": "**{server}** sunucusunda uyarıldın."
+    },
+    "clear": {
+      "success": "{count} mesaj silindi.",
+      "tooMany": "Tek seferde 100'den fazla mesaj silinemez.",
+      "tooOld": "14 günden eski mesajlar silinemez."
+    },
+    "slowmode": {
+      "set": "Yavaş mod {seconds} saniyeye ayarlandı.",
+      "disabled": "Yavaş mod kapatıldı."
+    },
+    "lockdown": {
+      "enabled": "🔒 Kanal kilitlendi.",
+      "disabled": "🔓 Kanalın kilidi açıldı."
+    }
+  },
+  "leveling": {
+    "levelUp": "🎉 Tebrikler {user}! **Seviye {level}** oldun!",
+    "rank": "Sıralama",
+    "level": "Seviye",
+    "xp": "XP",
+    "progress": "İlerleme",
+    "leaderboard": "Sıralama tablosu",
+    "noData": "Seviye verisi bulunamadı."
+  },
+  "economy": {
+    "balance": "Bakiye",
+    "daily": {
+      "claimed": "{amount} tutarındaki günlük ödülünü aldın!",
+      "cooldown": "Günlük ödülünü zaten aldın. {time} sonra tekrar gel."
+    },
+    "transfer": {
+      "success": "{user} kullanıcısına {amount} gönderdin.",
+      "insufficient": "Yeterli {currency} yok.",
+      "self": "Kendine transfer yapamazsın."
+    },
+    "shop": {
+      "title": "Mağaza",
+      "empty": "Mağaza boş.",
+      "bought": "**{item}** ürününü {price} karşılığında aldın.",
+      "cantAfford": "Bu ürünü almaya bakiyen yetmiyor."
+    },
+    "leaderboard": "Ekonomi sıralaması"
+  },
+  "crypto": {
+    "price": "**{coin}** güncel fiyatı: ${price}",
+    "change24h": "24 saatlik değişim: {change}%",
+    "alertSet": "**{coin}** için ${price} fiyat uyarısı kuruldu.",
+    "alertTriggered": "🚨 **{coin}** ${price} seviyesine ulaştı!",
+    "invalidCoin": "Geçersiz kripto para belirtildi.",
+    "apiError": "Kripto verileri alınamadı."
+  },
+  "automod": {
+    "spam": "🛡️ {user} kullanıcısından spam tespit edildi.",
+    "links": "🔗 {user} kullanıcısının izinsiz bağlantısı silindi.",
+    "invites": "📨 {user} kullanıcısının Discord daveti silindi.",
+    "caps": "🔠 {user} kullanıcısının aşırı büyük harf kullanımı silindi.",
+    "mentions": "📢 {user} kullanıcısının toplu etiketlemesi engellendi.",
+    "blacklist": "🚫 {user} kullanıcısında yasaklı kelime tespit edildi.",
+    "repeatedText": "🔁 {user} kullanıcısının tekrarlayan metni silindi.",
+    "emojis": "😀 {user} kullanıcısının aşırı emoji kullanımı silindi.",
+    "spoilers": "🙈 {user} kullanıcısının aşırı spoiler kullanımı silindi.",
+    "zalgo": "🌀 {user} kullanıcısının zalgo metni silindi.",
+    "userWarning": "⚠️ {user}, mesajın AutoMod tarafından silindi."
+  },
+  "verification": {
+    "title": "Doğrulama gerekli",
+    "instructions": "Erişim için aşağıdaki captcha'yı tamamla.",
+    "success": "✅ Doğrulandın!",
+    "failed": "❌ Doğrulama başarısız. Lütfen tekrar dene.",
+    "expired": "⏰ Doğrulama süresi doldu. Yenisini iste."
+  },
+  "logging": {
+    "messageDeleted": "Mesaj silindi",
+    "messageEdited": "Mesaj düzenlendi",
+    "memberJoined": "Üye katıldı",
+    "memberLeft": "Üye ayrıldı",
+    "memberBanned": "Üye yasaklandı",
+    "memberUnbanned": "Üye yasağı kaldırıldı",
+    "roleAdded": "Rol verildi",
+    "roleRemoved": "Rol alındı",
+    "channelCreated": "Kanal oluşturuldu",
+    "channelDeleted": "Kanal silindi",
+    "moderatorAction": "Moderatör işlemi"
+  },
+  "reminders": {
+    "set": "⏰ Hatırlatıcı {time} için kuruldu.",
+    "triggered": "⏰ Hatırlatma: {message}",
+    "list": "Hatırlatıcıların",
+    "noReminders": "Aktif hatırlatıcın yok.",
+    "deleted": "Hatırlatıcı silindi."
+  },
+  "polls": {
+    "created": "Anket oluşturuldu!",
+    "ended": "Anket sona erdi.",
+    "results": "Anket sonuçları",
+    "votes": "oy"
+  },
+  "suggestions": {
+    "submitted": "Önerin gönderildi!",
+    "approved": "✅ Öneri onaylandı",
+    "denied": "❌ Öneri reddedildi",
+    "implemented": "🎉 Öneri hayata geçirildi"
+  },
+  "starboard": {
+    "starred": "⭐ Mesaj yıldızlandı!"
+  },
+  "inviteTracker": {
+    "invite": "{user}, {inviter} kullanıcısının davetiyle katıldı.",
+    "invites": "{user} artık {count} davete sahip.",
+    "unknown": "Davet kaynağı belirlenemedi."
+  },
+  "music": {
+    "nowPlaying": "Şimdi çalıyor",
+    "queued": "Sıraya eklendi",
+    "queue": "Sıra",
+    "skipped": "Geçerli parça atlandı.",
+    "stopped": "Oynatma durduruldu.",
+    "paused": "Oynatma duraklatıldı.",
+    "resumed": "Oynatma devam ediyor.",
+    "volume": "Ses seviyesi {volume}% olarak ayarlandı.",
+    "noResults": "Sonuç bulunamadı.",
+    "notInVoice": "Bir ses kanalında olmalısın.",
+    "alreadyPlaying": "Başka bir kanalda zaten çalıyor."
+  },
+  "events": {
+    "created": "Etkinlik oluşturuldu!",
+    "reminder": "📅 **{name}** etkinliği {time} sonra başlıyor!",
+    "rsvp": {
+      "going": "**{event}** etkinliğine katılıyorsun!",
+      "maybe": "**{event}** için belki dedin.",
+      "notGoing": "**{event}** etkinliğine katılmıyorsun."
+    }
+  },
+  "dashboard": {
+    "title": "Vorqul DS BOT Paneli",
+    "login": "Discord ile giriş yap",
+    "logout": "Çıkış yap",
+    "home": "Ana sayfa",
+    "servers": "Sunucuların",
+    "settings": "Ayarlar",
+    "modules": "Modüller",
+    "logs": "Kayıtlar",
+    "analytics": "Analitik",
+    "plugins": "Eklentiler",
+    "embedBuilder": "Embed oluşturucu",
+    "noServers": "Botun bulunduğu, yönettiğin bir sunucu yok.",
+    "saveSuccess": "Ayarlar kaydedildi!",
+    "saveError": "Ayarlar kaydedilemedi."
+  },
+  "giveaway": {
+    "title": "🎉 ÇEKİLİŞ 🎉",
+    "endedTitle": "🎉 ÇEKİLİŞ SONA ERDİ 🎉",
+    "activeTitle": "🎉 Aktif çekilişler",
+    "won": "🎉 Tebrikler {winners}! **{prize}** kazandın!",
+    "rerolled": "🎉 **{prize}** için yeni kazanan(lar): {winners}! Tebrikler!",
+    "noEntries": "**{prize}** çekilişine kimse katılmadı.",
+    "prize": "Ödül",
+    "winnersLabel": "Kazananlar",
+    "endsAt": "Bitiş",
+    "hostedBy": "Düzenleyen",
+    "howToEnter": "Aşağıdaki butonla katıl."
+  },
+  "ui": {
+    "nav": {
+      "back": "Sunuculara dön",
+      "overview": "Genel bakış",
+      "modules": "Modüller",
+      "welcome": "Karşılama",
+      "automod": "AutoMod",
+      "serverstatus": "Sunucu durumu",
+      "channels": "Kanallar",
+      "games": "Oyunlar",
+      "settings": "Ayarlar",
+      "links": "Bağlantılar",
+      "menu": "Menüyü aç",
+      "menuClose": "Menüyü kapat",
+      "config": "Yapılandırma"
+    },
+    "common": {
+      "save": "Değişiklikleri kaydet",
+      "saving": "Kaydediliyor…",
+      "saved": "Kaydedildi",
+      "enabled": "Açık",
+      "disabled": "Kapalı",
+      "search": "Ara…",
+      "retry": "Tekrar dene",
+      "selectAll": "Tümünü seç",
+      "clear": "Seçimi temizle",
+      "language": "Dil",
+      "unknown": "Bilinmiyor",
+      "searching": "Ara...",
+      "nothingSelected": "Hiçbir şey seçilmedi"
+    },
+    "scope": {
+      "all": "Her yerde",
+      "only": "Sadece burada",
+      "except": "Bunlar hariç",
+      "title": "Kanallar",
+      "subtitle": "Her özelliğin hangi kanallarda çalışacağını seç.",
+      "hintModes": "Sadece burada - özellik yalnızca seçili kanallarda çalışır. Bunlar hariç - seçililer dışında her yerde çalışır.",
+      "hintCategory": "Bir kategori seçmek içindeki tüm kanalları kapsar. Konu başlıkları üst kanaldan devralır.",
+      "nothingRestricted": "Kısıtlama yok",
+      "restricted": "Kısıtlı",
+      "pick": "Kanal seç",
+      "hide": "Kanalları gizle",
+      "categories": "Kategoriler",
+      "channels": "Kanallar",
+      "emptyWarning": "Hiç kanal seçilmedi - biri eklenene kadar özellik her yerde açık kalır.",
+      "noChannels": "Uygun kanal bulunamadı.",
+      "onlyPrefix": "Sadece: ",
+      "exceptPrefix": "Şunlar hariç: ",
+      "feature": {
+        "global": {
+          "label": "Tüm özellikler",
+          "description": "Botun tamamı için temel kural. Kendi ayarı olan özellik bunu geçersiz kılar."
+        },
+        "commands": {
+          "label": "Tüm komutlar",
+          "admin": {
+            "label": "Komutlar: Yönetim",
+            "description": "Yönetici komutları."
+          },
+          "moderation": {
+            "label": "Komutlar: Moderasyon",
+            "description": "Moderatör komutları."
+          },
+          "economy": {
+            "label": "Komutlar: Ekonomi",
+            "description": "Ekonomi ve mağaza komutları."
+          },
+          "fun": {
+            "label": "Komutlar: Eğlence",
+            "description": "Eğlence ve oyun komutları."
+          },
+          "utility": {
+            "label": "Komutlar: Araçlar",
+            "description": "Faydalı ve bilgilendirici komutlar."
+          },
+          "description": "Tüm slash komutları için temel kural."
+        },
+        "leveling": {
+          "label": "Leveling / XP",
+          "description": "Mesajlardan XP kazanma ve seviye atlama duyuruları."
+        },
+        "economy": {
+          "label": "Ekonomi",
+          "description": "Mesajlardan para birimi kazanma."
+        },
+        "messageStats": {
+          "label": "Mesaj istatistikleri",
+          "description": "İstatistik ve sıralamalar için mesaj sayımı."
+        },
+        "autoResponse": {
+          "label": "Otomatik yanıtlar",
+          "description": "Botun anahtar kelimelere yanıtları."
+        },
+        "afk": {
+          "label": "AFK sistemi",
+          "description": "AFK durumu ve dönüş duyuruları."
+        },
+        "sticky": {
+          "label": "Sabit mesajlar",
+          "description": "Kanalın en altına kalıcı olarak sabitlenen mesaj."
+        },
+        "reputation": {
+          "label": "İtibar",
+          "description": "İtibar puanı verme."
+        },
+        "confessions": {
+          "label": "İtiraflar",
+          "description": "Anonim itiraflar."
+        },
+        "suggestions": {
+          "label": "Öneriler",
+          "description": "Öneri ve oylama sistemi."
+        },
+        "birthday": {
+          "label": "Doğum günleri",
+          "description": "Doğum günü duyuruları."
+        },
+        "automod": {
+          "label": "AutoMod",
+          "description": "Otomatik sohbet moderasyonu (spam, bağlantı, büyük harf, ...)."
+        },
+        "filter": {
+          "label": "Kelime filtresi",
+          "description": "Yasaklı kelimelerin engellenmesi."
+        },
+        "antiAd": {
+          "label": "Reklam engelleme",
+          "description": "Davet ve reklam bağlantılarının engellenmesi."
+        },
+        "antiRaid": {
+          "label": "Anti-Raid",
+          "description": "Toplu katılımlara karşı koruma."
+        },
+        "counting": {
+          "label": "Sayma",
+          "description": "Sırayla sayı sayma oyunu."
+        },
+        "starboard": {
+          "label": "Starboard",
+          "description": "Mesajları starboarda gidebilecek kaynak kanallar."
+        },
+        "giveaways": {
+          "label": "Çekilişler",
+          "description": "Ödüllü çekilişler."
+        },
+        "polls": {
+          "label": "Anketler",
+          "description": "Oylamalar ve anketler."
+        },
+        "games": {
+          "label": "Oyunlar",
+          "description": "Tüm oyunlar için ortak kural. Tek bir oyun bunu geçersiz kılar."
+        },
+        "voiceStats": {
+          "label": "Ses istatistikleri",
+          "description": "Ses kanallarında geçirilen sürenin sayımı."
+        },
+        "tempChannels": {
+          "label": "Geçici kanallar",
+          "description": "Ses kanallarının otomatik oluşturulması."
+        },
+        "logs": {
+          "label": "Kayıtlar",
+          "description": "Olayları kaydedilen kanallar."
+        },
+        "gameScope": {
+          "description": "Bu oyunun başlatılabileceği kanallar."
+        }
+      }
+    },
+    "games": {
+      "title": "Oyunlar",
+      "subtitle": "Her oyun ayrı açılır ve seçili kanallarla sınırlanabilir.",
+      "enabledOf": "{b} oyundan {a} tanesi açık",
+      "list": "Oyun listesi",
+      "configure": "Yapılandır",
+      "hideCfg": "Gizle",
+      "where": "Nerede oynanabilir",
+      "inherits": "Tüm oyunlar için ortak kural geçerli.",
+      "multiplayer": "çok oyunculu",
+      "sharedHint": "Kendi kuralı olmayan bir oyun, Kanallar bölümündeki ortak Oyunlar kuralını izler.",
+      "emptyWarning": "Henüz kanal yok - birini seçene kadar oyun her yerde çalışır."
+    },
+    "home": {
+      "running": "Bot çalışıyor",
+      "offline": "Bot çevrimdışı",
+      "updateAvailable": "Güncelleme mevcut: v{version}",
+      "noHeartbeat": "Sinyal alınmadı. Bot işleminin çalıştığını ve data/json klasörüne erişebildiğini kontrol et.",
+      "servers": "Sunucular",
+      "users": "Kullanıcılar",
+      "ping": "Ping",
+      "uptime": "Çalışma süresi",
+      "cpu": "İşlemci",
+      "ram": "Bellek",
+      "commands": "Komutlar",
+      "refreshes": "Yenileniyor",
+      "auto": "otomatik olarak",
+      "cores": "{n} çekirdek · yük {load}",
+      "ofTotal": "{total} MB içinde %{p}",
+      "yourServers": "Sunucuların",
+      "selectServer": "Yöneteceğin sunucuyu seç",
+      "botAdded": "Bot eklendi",
+      "botMissing": "Bot eklenmedi",
+      "noServers": "Sunucu yok",
+      "noServersHint": "Sunucuyu Yönet yetkine sahip olduğun bir sunucu bulunamadı. Botu az önce eklediysen çıkış yapıp tekrar gir - Discord listeyi kısa süre önbelleğe alır.",
+      "addBot": "Botu bir sunucuya ekle",
+      "loadFailed": "Sunucular yüklenemedi",
+      "signOut": "Çıkış yap",
+      "relogin": "Tekrar giriş yap",
+      "apiUnreachable": "Panel kendi APIsine bağlanamadı."
+    },
+    "lp": {
+      "signIn": "Giriş yap",
+      "dashboard": "Panel",
+      "openDashboard": "Paneli aç",
+      "getStarted": "Başla",
+      "addToServer": "Sunucuya ekle",
+      "loading": "Yükleniyor...",
+      "eyebrow": "85+ komut · 30+ modül",
+      "version": "Sürüm {version}",
+      "subtitle": "Discord topluluğunu yönetmek için güçlü ve modüler bir bot: gelişmiş moderasyon, seviye sistemi, ekonomi, destek talepleri, çekilişler, kayıtlar, sosyal akışlar ve eksiksiz bir web paneli. Geliştiren: {author}.",
+      "stat": {
+        "commands": "Komut",
+        "modules": "Modül",
+        "languages": "Dil",
+        "uptime": "Çalışma süresi"
+      },
+      "f": {
+        "moderation": {
+          "t": "Moderasyon",
+          "d": "Ban, kick, susturma, timeout, softban, uyarılar, moderatör notları ve tam moderasyon geçmişi."
+        },
+        "automod": {
+          "t": "Otomatik moderasyon",
+          "d": "Spam ve baskın koruması, bağlantı ve davet engelleme, büyük harf sınırı, toplu etiketleme koruması ve kelime filtresi."
+        },
+        "logging": {
+          "t": "Kayıtlar",
+          "d": "Mesaj düzenleme ve silme, rol ve kanal değişiklikleri, giriş ve çıkışlar, ses kanalı etkinliği."
+        },
+        "welcome": {
+          "t": "Karşılama ve roller",
+          "d": "Karşılama ve veda mesajları, otomatik roller, tepki rolleri ve doğrulama."
+        },
+        "leveling": {
+          "t": "Seviye sistemi",
+          "d": "Etkinlik için XP, seviye ödülleri, rütbe kartları, sıralamalar ve sesli sohbet XP."
+        },
+        "economy": {
+          "t": "Ekonomi",
+          "d": "Para birimi, günlük ödüller, mağaza, envanter, işler ve şans oyunları."
+        },
+        "ticket": {
+          "t": "Destek talepleri",
+          "d": "Destek talepleri, hata bildirimleri ve başvurular; dökümler ve kategorilerle birlikte."
+        },
+        "gift": {
+          "t": "Çekilişler",
+          "d": "Birden fazla kazananlı, ekstra katılım haklı ve rol koşullu çekilişler."
+        },
+        "feed": {
+          "t": "Sosyal akışlar",
+          "d": "YouTube, Twitch ve RSS bildirimleri ile zamanlanmış duyurular."
+        },
+        "crypto": {
+          "t": "İstatistik ve kripto",
+          "d": "Üye, mesaj ve ses istatistikleri, sunucu analizleri, ve kripto fiyatları."
+        },
+        "link": {
+          "t": "Faydalı bağlantılar",
+          "d": "/links ile sunucuya özel bağlantı paneli, panelden tamamen yönetilir."
+        },
+        "globe": {
+          "t": "Panel",
+          "d": "Çok sunuculu web paneli: her modülü Discord komutu olmadan yapılandır."
+        }
+      }
+    },
+    "automod": {
+      "action": {
+        "delete": "Mesajı sil",
+        "warn": "Sil + uyar",
+        "timeout": "Sil + timeout",
+        "kick": "At",
+        "ban": "Yasakla"
+      },
+      "field": {
+        "action": "İşlem",
+        "duration": "Timeout (sn)",
+        "durationHint": "Yalnızca timeout işleminde geçerlidir."
+      },
+      "spam": {
+        "label": "💬 Spam ve yazma hızı",
+        "desc": "Bir kişinin belirli sürede kaç mesaj gönderebileceği.",
+        "maxMessages": "Maks. mesaj",
+        "interval": "Süre başına (ms)",
+        "intervalHint": "5000 = 5 saniye"
+      },
+      "links": {
+        "label": "🔗 Web bağlantıları",
+        "desc": "İzin verilen alan adları dışındaki bağlantıları engeller."
+      },
+      "invites": {
+        "label": "📨 Diğer sunucu davetleri",
+        "desc": "discord.gg ve benzeri bağlantıları engeller."
+      },
+      "caps": {
+        "label": "🔠 CAPS LOCK",
+        "desc": "Çoğunlukla büyük harfle yazılan mesajlar.",
+        "percentage": "Büyük harf oranı (%)",
+        "minLength": "Mesaj uzunluğundan itibaren"
+      },
+      "mentions": {
+        "label": "📢 Toplu etiketleme",
+        "desc": "Tek mesajdaki etiket sayısı.",
+        "maxMentions": "Maks. etiket"
+      },
+      "repeat": {
+        "label": "🔁 Tekrar",
+        "desc": "Aynı mesaj veya karakterin tekrarı.",
+        "maxRepeats": "Maks. tekrar"
+      },
+      "emojis": {
+        "label": "😀 Çok fazla emoji",
+        "desc": "Unicode ve sunucu emojileri birlikte sayılır.",
+        "maxEmojis": "Maks. emoji"
+      },
+      "spoilers": {
+        "label": "⬛ Çok fazla spoiler",
+        "desc": "Tek mesajdaki gizli bloklar.",
+        "maxSpoilers": "Maks. spoiler"
+      },
+      "zalgo": {
+        "label": "🌀 Zalgo metni",
+        "desc": "Aksan işaretleriyle okunamaz hale gelen karakterler."
+      },
+      "phishing": {
+        "label": "🎣 Kimlik avı",
+        "desc": "Discord, Steam ve benzerlerini taklit eden alan adları."
+      },
+      "fakeNitro": {
+        "label": "🎁 Sahte Nitro",
+        "desc": "Bağlantılı bedava Nitro teklifleri."
+      },
+      "cryptoScam": {
+        "label": "🪙 Kripto dolandırıcılığı",
+        "desc": "Airdrop ve garantili kazanç vaatleri."
+      },
+      "massMention": {
+        "label": "👥 Hassas toplu etiketleme",
+        "desc": "Sadece karakterleri değil, benzersiz kişi ve rolleri sayar.",
+        "maxMentions": "Maks. hedef",
+        "countEveryone": "@everyone say"
+      },
+      "ghostPing": {
+        "label": "👻 Hayalet ping",
+        "desc": "Etiketleyip mesajı hemen silme.",
+        "maxAgeSeconds": "Gönderimden sonra (sn) içinde"
+      },
+      "exemptRoles": "Muaf roller",
+      "exemptChannels": "Muaf kanallar"
+    },
+    "welcome": {
+      "memberPreview": "{server} sunucusunun {count}. üyesi"
+    },
+    "auth": {
+      "notSignedIn": "Giriş yapmadın.",
+      "expired": "Discord girişinin süresi doldu. Çıkış yapıp tekrar gir.",
+      "rejected": "Discord girişi reddetti. Çıkış yapıp tekrar gir.",
+      "unexpected": "Discord beklenmeyen bir yanıt döndürdü.",
+      "unreachable": "Discord ile bağlantı kurulamadı. Sunucunun ağını ve güvenlik duvarını kontrol et."
+    },
+    "tickets": {
+      "welcomeMessage": "Karşılama mesajı"
+    },
+    "help": {
+      "tempban": "Bir üyeyi belirli süre yasakla - bot sonra kendisi kaldırır",
+      "timedrole": "Bir süre sonra kendiliğinden kaybolan rol",
+      "voicemute": "Ses kanallarında susturma ve sağırlaştırma",
+      "antinuke": "Sunucuyu toplu yıkıma karşı korur",
+      "channels": "Botun her özelliğinin hangi kanallarda çalışacağını ayarla",
+      "texts": "Botun ifadelerini kendine göre yeniden yaz"
+    },
+    "modules": {
+      "group": {
+        "security": "Moderasyon ve güvenlik",
+        "members": "Üyeler",
+        "engagement": "Katılım",
+        "economy": "Ekonomi ve oyunlar",
+        "content": "İçerik",
+        "tools": "Araçlar"
+      },
+      "moderation": {
+        "label": "Moderasyon",
+        "description": "Ban, kick, uyarı, timeout, jail ve vaka geçmişi."
+      },
+      "automod": {
+        "label": "AutoMod",
+        "description": "Spam, bağlantı, kimlik avı, sahte nitro, regex kuralları."
+      },
+      "antinuke": {
+        "label": "Anti-Nuke",
+        "description": "Sunucunun toplu yıkımına karşı koruma."
+      },
+      "antiRaid": {
+        "label": "Anti-Raid",
+        "description": "Ani katılım artışını algılar ve hesap yaşını kontrol eder."
+      },
+      "logs": {
+        "label": "Kayıtlar",
+        "description": "Mesajlar, üyeler, roller, kanallar, konular, boostlar."
+      },
+      "appeals": {
+        "label": "İtirazlar",
+        "description": "Ceza kaldırma talepleri."
+      },
+      "verification": {
+        "label": "Doğrulama",
+        "description": "Yeni üyeleri girmeden önce doğrula."
+      },
+      "welcome": {
+        "label": "Karşılama",
+        "description": "Karşılama mesajları ve görsel kartlar."
+      },
+      "goodbye": {
+        "label": "Veda",
+        "description": "Bir üye ayrıldığında gönderilen mesajlar."
+      },
+      "joinRoles": {
+        "label": "Otomatik roller",
+        "description": "Katılır katılmaz verilen roller."
+      },
+      "reactionroles": {
+        "label": "Tepki rolleri",
+        "description": "Rol seçmek için düğmeler ve menüler."
+      },
+      "persist": {
+        "label": "Rol hatırlama",
+        "description": "Geri dönen üyeye rollerini iade eder."
+      },
+      "invites": {
+        "label": "Davet takibi",
+        "description": "Kimin kimi davet ettiği ve davet sıralaması."
+      },
+      "namehistory": {
+        "label": "İsim geçmişi",
+        "description": "Takma ad ve kullanıcı adı değişiklikleri."
+      },
+      "leveling": {
+        "label": "Leveling / XP",
+        "description": "Mesaj ve ses için XP, rütbe kartları, ödül rolleri."
+      },
+      "starboard": {
+        "label": "Starboard",
+        "description": "Tepkilere göre en iyi mesajlar."
+      },
+      "suggestions": {
+        "label": "Öneriler",
+        "description": "Oylama ve durum bilgisi olan öneriler."
+      },
+      "reputation": {
+        "label": "İtibar",
+        "description": "Başkalarına yardım için puanlar."
+      },
+      "counting": {
+        "label": "Sayma",
+        "description": "Bir kanalda sırayla sayı sayma."
+      },
+      "birthday": {
+        "label": "Doğum günleri",
+        "description": "Doğum günü duyuruları ve roller."
+      },
+      "confessions": {
+        "label": "İtiraflar",
+        "description": "Anonim gönderiler."
+      },
+      "afk": {
+        "label": "AFK",
+        "description": "Bir üyenin uzakta olduğunu bildirir."
+      },
+      "polls": {
+        "label": "Anketler",
+        "description": "Düğmelerle oylama."
+      },
+      "economy": {
+        "label": "Ekonomi",
+        "description": "Jeton, banka, mağaza, iş, soygun, kumarhane."
+      },
+      "games": {
+        "label": "Oyunlar",
+        "description": "Tic-tac-toe, quiz, zar ve daha fazlası, her biri ayrı ayarlanır."
+      },
+      "giveaways": {
+        "label": "Çekilişler",
+        "description": "Birden fazla kazananlı ve koşullu çekilişler."
+      },
+      "quests": {
+        "label": "Görevler",
+        "description": "Ödüllü günlük ve haftalık görevler."
+      },
+      "streaks": {
+        "label": "Seriler",
+        "description": "Düzenli aktiflik için ödüller."
+      },
+      "tickets": {
+        "label": "Destek talepleri",
+        "description": "Destek panelleri, üstlenme, dökümler."
+      },
+      "applications": {
+        "label": "Başvurular",
+        "description": "Ekibe alım için formlar."
+      },
+      "autoResponse": {
+        "label": "Otomatik yanıtlar",
+        "description": "Anahtar kelimelere ve SSSye yanıtlar."
+      },
+      "sticky": {
+        "label": "Sabit mesajlar",
+        "description": "Kanalın en altında kalan bir mesaj."
+      },
+      "tags": {
+        "label": "Etiketler",
+        "description": "Çağırabileceğin kayıtlı yanıtlar."
+      },
+      "feeds": {
+        "label": "RSS akışları",
+        "description": "RSS haberlerini Discorda taşır."
+      },
+      "socials": {
+        "label": "Sosyal ağlar",
+        "description": "Sosyal ağlardaki hesapları takip et."
+      },
+      "reminders": {
+        "label": "Hatırlatıcılar",
+        "description": "Zamanlanmış hatırlatıcılar."
+      },
+      "tempChannels": {
+        "label": "Geçici kanallar",
+        "description": "İstendiğinde oluşturulan ses odaları."
+      },
+      "voiceStats": {
+        "label": "Ses istatistikleri",
+        "description": "Ses kanallarında geçirilen süre."
+      },
+      "messageStats": {
+        "label": "Mesaj istatistikleri",
+        "description": "Mesaj sayıları ve sıralamalar."
+      },
+      "serverStatus": {
+        "label": "Sunucu durumu",
+        "description": "Oyun sunucularının izlenmesi."
+      },
+      "crypto": {
+        "label": "Kripto ve NFT",
+        "description": "Fiyatlar, korku endeksi, NFT."
+      },
+      "backup": {
+        "label": "Yedekler",
+        "description": "Sunucu ayarlarının yedeklenmesi ve geri yüklenmesi."
+      },
+      "webhooks": {
+        "label": "Webhook",
+        "description": "Olayları kendi URLne gönder."
+      },
+      "prefixCommands": {
+        "label": "Ön ekli komutlar",
+        "description": "Metin ön ekiyle komut çalıştırma."
+      }
+    },
+    "scopeGroup": {
+      "global": "Genel",
+      "chat": "Sohbet",
+      "moderation": "Moderasyon",
+      "fun": "Eğlence",
+      "voice": "Ses",
+      "logs": "Kayıtlar",
+      "commands": "Komutlar"
+    },
+    "gameDefs": {
+      "tictactoe": {
+        "label": "Tic-tac-toe",
+        "description": "Başka bir oyuncuya veya bota karşı klasik üçlü dizme."
+      },
+      "connect4": {
+        "label": "Dört Taş",
+        "description": "Düşen pullar, dördü ilk sıralayan kazanır."
+      },
+      "rps": {
+        "label": "Taş, kağıt, makas",
+        "description": "Tek turluk hızlı düello."
+      },
+      "trivia": {
+        "label": "Bilgi yarışması",
+        "description": "Seçenekli ve puanlı sorular."
+      },
+      "dice": {
+        "label": "Zar",
+        "description": "Zar atma."
+      },
+      "coinflip": {
+        "label": "Yazı tura",
+        "description": "Yazı mı tura mı."
+      },
+      "eightball": {
+        "label": "Sihirli küre",
+        "description": "Evet/hayır sorularına yanıtlar."
+      },
+      "matchmaking": {
+        "label": "Takım arkadaşı bulma",
+        "description": "Belirli bir oyun için ekip toplama."
+      },
+      "quest": {
+        "label": "Görevler",
+        "description": "Ödüllü günlük ve haftalık görevler."
+      },
+      "gamestats": {
+        "label": "Oyun istatistikleri",
+        "description": "Galibiyet ve mağlubiyet özeti."
+      }
+    },
+    "gameOpts": {
+      "turnTimeout": "Hamle süre sınırı",
+      "answerTimeout": "Cevap süresi",
+      "correctReward": "Doğru cevap ödülü",
+      "cooldownHint": "Oyuncunun denemeler arasında bekleme süresi",
+      "maxOpenLobbies": "Oyuncu başına maks. açık lobi",
+      "dailyQuests": "Günlük görev sayısı"
+    },
+    "customText": {
+      "group": {
+        "basic": "Temel"
+      },
+      "noPermission": "Kullanıcının yetkisi yok",
+      "botNoPermission": "Botun yetkisi yok",
+      "ownerOnly": "Yalnızca bot sahibi",
+      "guildOnly": "Yalnızca sunucuda, DMde değil",
+      "cooldown": "Komutlar arası bekleme - {time}",
+      "wrongChannel": "Bu kanalda komuta izin verilmiyor",
+      "unknownError": "Bilinmeyen hata",
+      "invalidUser": "Geçersiz kullanıcı",
+      "invalidChannel": "Geçersiz kanal",
+      "invalidRole": "Geçersiz rol"
+    },
+    "sx": {
+      "settings": {
+        "tab": {
+          "general": "Genel",
+          "channels": "Kanallar",
+          "links": "Bağlantılar",
+          "analytics": "Analizler",
+          "welcome": "Karşılama",
+          "sticky": "Sabit mesajlar",
+          "birthday": "Doğum günleri",
+          "confessions": "İtiraflar",
+          "embed": "Embed mesajı",
+          "automod": "AutoMod",
+          "logging": "Kayıtlar",
+          "leveling": "Seviyeler",
+          "economy": "Ekonomi",
+          "tickets": "Destek talepleri",
+          "appeals": "İtirazlar",
+          "applications": "Başvurular",
+          "giveaways": "Çekilişler",
+          "reactionroles": "Tepki rolleri",
+          "tempchannels": "Geçici kanallar",
+          "verification": "Doğrulama",
+          "starboard": "Starboard",
+          "games": "Oyunlar",
+          "serverstatus": "Sunucu durumu",
+          "crypto": "Kripto ve NFT",
+          "socials": "Sosyal medya",
+          "suggestions": "Öneriler",
+          "reputation": "İtibar",
+          "counting": "Sayma",
+          "autoresponse": "Otomatik yanıtlar",
+          "feeds": "RSS akışları",
+          "reminders": "Hatırlatıcılar",
+          "tags": "Etiketler",
+          "warnings": "Uyarılar",
+          "backup": "Yedekleme",
+          "webhooks": "Webhook'lar",
+          "apikeys": "API erişimi",
+          "audit": "Denetim kaydı",
+          "help": "Komutlar",
+          "plugins": "Eklentiler"
+        },
+        "saveFailed": "❌ Kaydetme başarısız: {error}",
+        "saved": "✅ Ayarlar kaydedildi!",
+        "saveError": "❌ Kaydetme hatası - bağlantınızı kontrol edip tekrar deneyin.",
+        "imageUploaded": "✅ Görsel yüklendi!",
+        "uploadError": "❌ Yükleme hatası",
+        "backupCreating": "Yedek oluşturuluyor...",
+        "backupCreated": "✅ Yedek oluşturuldu: {filename}",
+        "error": "❌ Hata",
+        "panelSent": "✅ {type} gönderildi!",
+        "sendError": "Gönderme hatası",
+        "sentMessage": "Gönderilen mesaj",
+        "untitledMessage": "Başlıksız mesaj",
+        "selectChannel": "Bir kanal seçin!",
+        "embedName": "Embed",
+        "nothingToSaveMessage": "Kaydedilecek bir şey yok - önce bir mesaj yazın.",
+        "draftSaved": "💾 Kaydedildi!",
+        "messageNoChannel": "Bu mesajın kanalı yok - yükleyin, bir kanal seçin ve ardından gönderin.",
+        "sentPanel": "Gönderilen panel",
+        "untitledPanel": "Başlıksız panel",
+        "addButton": "En az bir düğme ekleyin!",
+        "reactionRolesSent": "✅ Tepki rolleri gönderildi!",
+        "noPanelEditing": "Düzenlenen bir panel yok - önce gönderilmiş bir paneli yükleyin.",
+        "panelUpdated": "✅ Panel güncellendi!",
+        "nothingToSavePanel": "Kaydedilecek bir şey yok - önce paneli ayarlayın.",
+        "panelNoChannel": "Bu panelin kanalı yok - yükleyin, bir kanal seçin ve ardından gönderin.",
+        "plainText": "💬 Düz metin",
+        "embedBtn": "📋 Embed",
+        "embedTitle": "Başlık",
+        "embedColor": "Renk",
+        "embedDescription": "Açıklama ({vars})",
+        "embedImageUrl": "Görsel URL'si ({avatar} desteklenir)",
+        "embedThumbnailUrl": "Küçük resim URL'si (üye avatarı için {avatar})",
+        "embedFooter": "Alt bilgi",
+        "addTimestamp": "Zaman damgası ekle",
+        "savedToLibrary": "💾 Mesaj kitaplığınıza kaydedildi!",
+        "loadSaved": "📥 Kayıtlı mesajdan yükle…",
+        "untitled": "Başlıksız",
+        "saveAsMessage": "💾 Mesaj olarak kaydet",
+        "stickyIncomplete": "Önce bir kanal seçin ve mesajı yazın.",
+        "back": "← Geri",
+        "server": "Sunucu",
+        "lockDashboard": "🔒 Panoyu kilitle",
+        "refresh": "🔄 Yenile",
+        "save": "Kaydet"
+      },
+      "common": {
+        "loading": "Yükleniyor…"
+      },
+      "audit": {
+        "title": "Denetim kaydı",
+        "subtitle": "Son moderasyon işlemleri ve panel değişiklikleri, en yeniler önce.",
+        "filter": {
+          "all": "tümü",
+          "moderation": "moderasyon",
+          "dashboard": "panel"
+        },
+        "empty": "Henüz kayıt yok."
+      },
+      "apikeys": {
+        "createFailed": "Anahtar oluşturulamadı ({status})",
+        "networkError": "❌ Ağ hatası - bağlantınızı kontrol edip tekrar deneyin.",
+        "revokeConfirm": "Bu API anahtarı iptal edilsin mi? Onu kullanan her şey hemen çalışmayı durduracak.",
+        "revokeFailed": "Anahtar iptal edilemedi ({status})",
+        "title": "API erişimi",
+        "description": "Kendi uygulamalarınızdan bu sunucunun istatistiklerini okumak için bir anahtar oluşturun. Bearer token olarak gönderin. Anahtarlar özetlenmiş (hash) olarak saklanır - anahtarın tamamını yalnızca oluşturduktan hemen sonra bir kez görebilirsiniz.",
+        "namePlaceholder": "Anahtar adı (ör. Web sitem)",
+        "creating": "Oluşturuluyor…",
+        "create": "Anahtar oluştur",
+        "copyNow": "Bu anahtarı şimdi kopyalayın - bir daha gösterilmeyecek:",
+        "yourKeys": "Anahtarlarınız",
+        "empty": "Henüz API anahtarı yok.",
+        "lastUsed": "son kullanım {date}",
+        "neverUsed": "hiç kullanılmadı",
+        "revoke": "İptal et",
+        "example": "Örnek"
+      },
+      "analytics": {
+        "dow": {
+          "sun": "Paz",
+          "mon": "Pzt",
+          "tue": "Sal",
+          "wed": "Çar",
+          "thu": "Per",
+          "fri": "Cum",
+          "sat": "Cmt"
+        },
+        "heatTooltip": "{day} {hour}:00 - {count} mesaj",
+        "noData": "Henüz veri yok.",
+        "noRoleSnapshot": "Henüz rol anlık görüntüsü yok - bot bunu günde birkaç kez yeniler.",
+        "loading": "Analizler yükleniyor…",
+        "loadError": "Analizler şu anda yüklenemedi.",
+        "noDataCollected": "Henüz analiz verisi toplanmadı. Bot etkinliği şu andan itibaren kaydetmeye başlar - anlamlı grafikler için bir iki gün sonra tekrar bakın.",
+        "messages30d": "Mesajlar (30 g)",
+        "netMembers30d": "Net üye (30 g)",
+        "voiceHours30d": "Ses saatleri (30 g)",
+        "commands30d": "Komutlar (30 g)",
+        "healthScores": "Sağlık puanları",
+        "heuristic": "(sezgisel tahminler)",
+        "activity": "Etkinlik",
+        "consistency": "Tutarlılık (aktif günler)",
+        "growthHealth": "Büyüme sağlığı",
+        "growthForecast": "Büyüme tahmini",
+        "trendProjection": "(trend projeksiyonu)",
+        "avgNetPerDay": "Ort. net / gün",
+        "projected7": "Tahmin +7 gün",
+        "projected30": "Tahmin +30 gün",
+        "msgTrend7d": "Mesaj trendi (7 g)",
+        "forecastNote": "Son 30 günden doğrusal tahmin - kaba bir rehberdir, garanti değildir.",
+        "messagesPerDay": "Günlük mesajlar",
+        "joinsVsLeaves": "Katılanlar ve ayrılanlar",
+        "joinsVsLeavesLegend": "(yukarı yeşil = katılanlar, aşağı kırmızı = ayrılanlar)",
+        "heatmap": "Etkinlik ısı haritası",
+        "heatmapHint": "(güne ve saate göre mesajlar)",
+        "topChannels": "En çok kullanılan kanallar",
+        "topMembers": "En aktif üyeler",
+        "topCommands": "En çok kullanılan komutlar",
+        "membersByRole": "Role göre üyeler",
+        "membersTotal": "(toplam {count} üye)",
+        "moderationActions": "Moderasyon işlemleri",
+        "totalActions": "Toplam işlem",
+        "warningsOnRecord": "Kayıtlı uyarılar",
+        "topReasons": "En sık ban / ceza nedenleri",
+        "supportTickets": "Destek talepleri",
+        "ticketsTotal": "Toplam",
+        "ticketsOpen": "Açık",
+        "ticketsClosed": "Kapalı",
+        "avgResolution": "Ort. çözüm süresi"
+      }
+    },
+    "tabsA": {
+      "common": {
+        "none": "-- Yok --",
+        "select": "-- Seç --"
+      },
+      "appeals": {
+        "title": "🛡️ İtirazlar",
+        "intro": "{command} komutundan ve herkese açık itiraz sayfasından gelen itirazların düşeceği kanal. Banladığınız veya susturduğunuz kullanıcılar buraya yazar.",
+        "channel": "İtiraz kanalı",
+        "instructions": "İtiraz talimatları (kullanıcıya gösterilir)",
+        "instructionsPlaceholder": "Cezanın neden haksız olduğunu düşündüğünü yaz. Somut ve nazik ol.",
+        "enablePublic": "Herkese açık itiraz sayfasını etkinleştir"
+      },
+      "applications": {
+        "title": "📝 Başvurular",
+        "channel": "Başvuru kanalı",
+        "reviewChannel": "İnceleme kanalı (yetkililer için)",
+        "approvedRole": "Onaydan sonra verilecek rol",
+        "questions": "Sorular (her satıra bir tane)",
+        "questionsPlaceholder": "Kaç yaşındasın?\nNeden katılmak istiyorsun?\nDeneyimin var mı?"
+      },
+      "autoresponse": {
+        "title": "💬 Otomatik yanıtlar",
+        "intro": "Anahtar kelimelere otomatik yanıtlar.",
+        "trigger": "Tetikleyici",
+        "answer": "Yanıt",
+        "add": "+ Ekle"
+      },
+      "backup": {
+        "title": "💾 Sunucu yedeği",
+        "intro": "Sunucu ayarlarının tam yedeğini oluştur.",
+        "create": "💾 Yedek oluştur",
+        "savedTitle": "Kayıtlı yedekler",
+        "pathHint": "Yedek dosyaları sunucuda şu konumda saklanır:",
+        "empty": "Henüz yedek yok.",
+        "stats": "{roles} rol, {channels} kanal",
+        "restoring": "Geri yükleniyor…",
+        "restoreMode": {
+          "full": "Tam geri yükleme",
+          "server": "Yalnızca sunucu",
+          "bot": "Yalnızca bot ayarları"
+        },
+        "restoreConfirm": {
+          "full": "Tam geri yükleme: adı eşleşen roller, kanallar ve sunucu ayarları güncellenir (eksik olanlar yeniden oluşturulur) ve bu sunucu için botun Vorqul ayarları yedekle değiştirilir. Var olan hiçbir şey silinmez.",
+          "server": "Yalnızca Discord sunucusunu (roller, kanallar, sunucu ayarları) adı eşleşenlerle geri yükle; eksik olanlar yeniden oluşturulur. Var olan hiçbir şey silinmez. Botun Vorqul ayarlarına dokunulmaz.",
+          "bot": "Yalnızca bu sunucu için botun Vorqul ayarlarını (automod, welcome, leveling vb.) yedekten geri yükle. Discord sunucusunun kendisine (roller/kanallar) dokunulmaz."
+        },
+        "restoreDone": "Geri yüklendi: {roles} rol, {channels} kanal etkilendi{errors}",
+        "restoreDoneBot": "Bot ayarları geri yüklendi{errors}",
+        "restoreDoneBotSuffix": ", bot ayarları da geri yüklendi",
+        "restoreErrorsSuffix": ", {n} hata",
+        "restoreError": "Yedek geri yüklenemedi.",
+        "refresh": "🔄 Listeyi yenile"
+      },
+      "birthday": {
+        "title": "🎂 Doğum günü sistemi",
+        "enable": "Günlük doğum günü duyurularını etkinleştir (sunucu saatiyle 08:00)",
+        "channel": "Duyuru kanalı",
+        "role": "Doğum günü rolü (isteğe bağlı, gün boyunca verilir)",
+        "message": "Mesaj ({user}, {username}, {age}, {server})",
+        "messagePlaceholder": "🎉 Doğum günün kutlu olsun {user}! 🎂",
+        "messageType": "Mesaj türü",
+        "plainText": "💬 Düz metin",
+        "embed": "📋 Embed",
+        "embedColor": "Embed rengi",
+        "help": "Üyeler doğum günlerini {set} ile ayarlar, {view} ile görüntüler ve yaklaşanları {list} ile görür."
+      },
+      "confessions": {
+        "title": "🤫 İtiraflar",
+        "enable": "Anonim itirafları etkinleştir ({command})",
+        "channel": "İtiraf kanalı",
+        "logChannel": "Yetkili log kanalı (isteğe bağlı - moderasyon için anonimliği kaldırılmış bir kopya tutar)",
+        "allowReplies": "Anonim yanıtlara izin ver (her itirafın altına Yanıtla düğmesi ekler)",
+        "minAccountAge": "Minimum hesap yaşı (gün) - spam koruması, 0 = kapalı",
+        "help": "İtiraflar bot tarafından artan numarayla paylaşılır, bu yüzden yazar kanalda gizli kalır. Bir yetkili log kanalı belirlerseniz moderatörler kimin ne yazdığını yine görebilir - kötüye kullanıma karşı işe yarar. Numaralandırma ve yazar kayıtları bot tarafından gizli tutulur."
+      },
+      "counting": {
+        "title": "🔢 Sayma",
+        "enable": "Sayma oyununu etkinleştir",
+        "channel": "Sayma kanalı",
+        "allowSameUser": "Aynı kullanıcının art arda iki kez saymasına izin ver",
+        "deleteWrong": "Yanlış veya sayı içermeyen mesajları sil",
+        "goal": "Hedef (duyuru + ödül, 0 = kapalı)",
+        "goalRole": "Hedef ödül rolü (isteğe bağlı)",
+        "currentCount": "Mevcut sayı",
+        "countAndBest": "{count} · rekor: {best}"
+      },
+      "crypto": {
+        "title": "₿ Kripto ve NFT",
+        "trackedTitle": "💰 Takip edilen para birimleri",
+        "coins": "Coinler (BTC, ETH...)",
+        "currency": "Para birimi",
+        "nftTitle": "🖼️ NFT koleksiyonları",
+        "nftEnable": "NFT takibini etkinleştir",
+        "collections": "Koleksiyonlar (OpenSea slug)"
+      },
+      "economy": {
+        "title": "💰 Ekonomi",
+        "currencyName": "Para birimi adı",
+        "emoji": "Emoji",
+        "startingBalance": "Başlangıç bakiyesi",
+        "daily": "Günlük",
+        "streakBonus": "Seri bonusu %",
+        "maxStreakBonus": "Maksimum seri bonusu",
+        "workMin": "Çalışma min.",
+        "workMax": "Çalışma maks.",
+        "workCooldown": "Çalışma bekleme süresi (sn)",
+        "gamblingTitle": "🎰 Kumar",
+        "game": {
+          "coinflip": "Yazı tura",
+          "slots": "Slot",
+          "roulette": "Rulet",
+          "blackjack": "Blackjack",
+          "dice": "Zar",
+          "crash": "Crash",
+          "rps": "Taş kağıt makas"
+        },
+        "minBet": "Minimum bahis",
+        "maxBet": "Maksimum bahis",
+        "bankTitle": "🏦 Banka",
+        "enableBank": "Bankayı etkinleştir",
+        "dailyInterest": "Günlük faiz %"
+      },
+      "embed": {
+        "title": "📨 Embed oluşturucu",
+        "modeEmbed": "📋 Embed",
+        "modePlain": "💬 Düz metin",
+        "channel": "Kanal",
+        "color": "Renk",
+        "senderName": "Gönderen adı (isteğe bağlı)",
+        "senderNamePlaceholder": "Bu mesaj için bot adı",
+        "senderAvatar": "Gönderen avatar URL'si (isteğe bağlı)",
+        "webhookNote": "Gönderen adı veya avatarı ayarlandığında mesaj bir webhook üzerinden gönderilir - botun o kanalda Webhook'ları Yönet izni olmalıdır. Hem embed hem düz metin için çalışır.",
+        "messageText": "Mesaj (metin)",
+        "textOutside": "Embed dışındaki metin (bahsetmeler / pingler)",
+        "messagePlaceholder": "Mesajını yaz... (@everyone, @here ve rol etiketlerini destekler)",
+        "outsidePlaceholder": "örn. @everyone veya bir rol etiketi",
+        "selectRole": "-- Rol seç --",
+        "addRoleMention": "+ Rol etiketi",
+        "roleMentionNote": "Rol etiketleri {format} olarak embed üzerindeki metne eklenir ve rolü etiketler.",
+        "author": "Yazar",
+        "titleField": "Başlık",
+        "description": "Açıklama",
+        "image": "Görsel",
+        "imagePlaceholder": "https://... veya yükle",
+        "upload": "Yükle",
+        "preview": "Önizleme",
+        "thumbnailUrl": "Küçük resim URL'si",
+        "footer": "Alt bilgi",
+        "addTimestamp": "Zaman damgası ekle",
+        "sending": "Gönderiliyor…",
+        "sendMessage": "Mesajı gönder",
+        "sendEmbed": "Embed'i gönder",
+        "saveDraft": "💾 Taslağı kaydet",
+        "savedTitle": "💾 Kaydedilen ve gönderilen mesajlar",
+        "savedIntro": "Gönderdiğin her mesaj burada saklanır. Düzenleyerek oluşturucuya geri yükleyebilir, yeni bir mesaja kopyalayabilir, yeniden gönderebilir veya silebilirsin.",
+        "savedEmpty": "Henüz kayıtlı mesaj yok - yukarıdan bir mesaj gönderin veya kaydedin.",
+        "untitled": "Başlıksız",
+        "statusSent": "📤 Gönderildi",
+        "statusDraft": "📝 Taslak",
+        "edit": "✏️ Düzenle",
+        "duplicate": "📋 Çoğalt",
+        "resend": "📤 Yeniden gönder"
+      },
+      "feeds": {
+        "title": "📰 RSS akışları",
+        "intro": "RSS akışlarının otomatik paylaşımı.",
+        "urlPlaceholder": "RSS URL'si",
+        "channel": "Kanal",
+        "force": "Şimdi gönder",
+        "forceHint": "Zamanlamayı beklemeden akışı hemen kontrol eder ve en son öğeyi paylaşır.",
+        "forceSent": "Gönderildi: {title}",
+        "forceError": "Akış gönderilemedi."
+      },
+      "games": {
+        "title": "🎮 Oyunlar",
+        "intro": "Oyunlar kendi sayfalarında ayarlanır - tek tek açma, çalıştıkları kanallar, süre sınırları ve ödüller.",
+        "open": "Oyun ayarlarını aç"
+      },
+      "giveaways": {
+        "howToTitle": "ℹ️ Çekiliş nasıl başlatılır",
+        "howToIntro": "Çekilişler sunucunuzda {command} komutuyla başlatılır - içeriği orada yazarsınız:",
+        "optPrize": "neyi dağıttığın",
+        "optDuration": "örn. 1h, 30m, 2d",
+        "optWinners": "kazanan sayısı",
+        "optOptional": "isteğe bağlı",
+        "howToOutro": "Üyeler 🎉 düğmesine tıklayarak katılır ve süre bitince bot kazananları otomatik seçer. Devam eden çekilişleri {end}, {reroll} ve {list} ile yönetebilirsiniz. Aşağıdaki alanlar modül varsayılanlarıdır.",
+        "title": "🎉 Çekilişler",
+        "channel": "Kanal",
+        "any": "-- Herhangi --",
+        "emoji": "Emoji",
+        "color": "Renk",
+        "managerRole": "Yönetici rolü",
+        "dmWinners": "Kazananlara DM gönder",
+        "requireRole": "Katılmak için rol iste"
+      },
+      "general": {
+        "basicTitle": "Temel ayarlar",
+        "prefix": "Önek",
+        "botLanguage": "Bot dili",
+        "botLanguageHint": "Botun yanıtlarını etkiler.",
+        "botNickname": "Bu sunucudaki bot adı",
+        "botNicknamePlaceholder": "Genel bot adını kullanmak için boş bırakın",
+        "botNicknameHint": "Yalnızca burada geçerlidir - diğer sunucularda botun adı farklıdır. En fazla 32 karakter. Botun “Takma Adı Değiştir” izni olmalıdır. Birkaç dakika içinde uygulanır.",
+        "perServerNote": "Dil ve ad her sunucu için ayrı ayrı geçerlidir ve botu yeniden başlatmadan uygulanır.",
+        "managerRole": "Yönetici rolü",
+        "managerRoleHint": "Bu role sahip üyeler bu sunucunun ayarlarını açıp düzenleyebilir, ancak eklenti yükleyemez, etkinleştiremez, devre dışı bırakamaz veya yapılandıramaz.",
+        "modulesEnabled": "{total} modülden {on} tanesi açık",
+        "modulesIntro": "Tam liste. Kapatılan bir modül, komutlarıyla birlikte çalışmayı durdurur."
+      },
+      "automod": {
+        "ignoreAdmins": "Yöneticileri denetleme",
+        "exemptTitle": "🪪 Muaf roller ve kanallar",
+        "searchRole": "Rol ara...",
+        "noExemptRole": "Muaf rol yok",
+        "searchChannel": "Kanal ara...",
+        "allChannels": "AutoMod tüm kanallarda çalışır",
+        "bannedWords": "🚫 Yasaklı kelimeler",
+        "bannedWordsPlaceholder": "kelime1, kelime2, kelime3",
+        "bannedWordsHint": "Virgülle ayırın. Yeni satır da çalışır. Büyük/küçük harf ayrımı yapılmaz.",
+        "allowedDomains": "✅ İzin verilen alan adları",
+        "allowedDomainsHint": "Virgülle ayırın. Bağlantı filtresi açıkken geçerlidir - bu alan adlarına giden bağlantılar geçer.",
+        "filters": "⚙️ Filtreler"
+      }
+    },
+    "tabsB": {
+      "common": {
+        "select": "-- Seç --",
+        "none": "-- Yok --",
+        "disabledOpt": "-- Devre dışı --",
+        "channel": "Kanal",
+        "title": "Başlık",
+        "color": "Renk",
+        "description": "Açıklama",
+        "add": "+ Ekle",
+        "messageType": "Mesaj türü",
+        "role": "Rol",
+        "emoji": "Emoji",
+        "sending": "Gönderiliyor…",
+        "searchRole": "Rol ara...",
+        "searchChannel": "Kanal ara...",
+        "upload": "Yükle",
+        "buttonText": "Düğme metni",
+        "message": "Mesaj",
+        "supportRole": "Destek rolü",
+        "save": "Kaydet"
+      },
+      "help": {
+        "title": "💬 Komutlar",
+        "intro": "{total} komut. Ön ek komutları modülü açıksa komut ön ekle de çalışır.",
+        "group": {
+          "moderation": "🔨 Moderasyon",
+          "administration": "⚙️ Yönetim",
+          "utility": "🧰 Araçlar",
+          "fun": "🎮 Eğlence ve oyunlar"
+        },
+        "cmd": {
+          "altcheck": "Bir üyenin alternatif hesap olup olmadığını sezgisel olarak denetler (hesap yaşı, avatar, roller)",
+          "appeal": "Bir uyarı, susturma veya başka bir moderasyon işlemi için itiraz gönderir",
+          "ban": "Bir üyeyi sunucudan yasaklar",
+          "case": "Bir moderasyon kaydını kimliğine göre arar",
+          "cleanup": "Sunucu temizleme araçları",
+          "clear": "Birden fazla mesajı siler",
+          "jail": "Bir üyeyi hapseder: rollerini alır ve serbest bırakılana kadar izole eder",
+          "kick": "Bir üyeyi sunucudan atar",
+          "lock": "Bir kanalı kilitler (üyeler mesaj gönderemez)",
+          "lockdown": "Sunucudaki tüm metin kanallarını tek seferde kilitler veya kilidini açar",
+          "massnick": "Birçok üyenin takma adını tek seferde ayarlar veya sıfırlar",
+          "massrole": "Birçok üyeye tek seferde rol ekler veya rolü kaldırır",
+          "mute": "Bir üyeyi susturur (ayarlı susturma rolünü, yoksa zaman aşımını kullanır)",
+          "nick": "Bir üyenin takma adını değiştirir veya sıfırlar",
+          "note": "Bir kullanıcıya özel moderatör notu ekler",
+          "notes": "Bir kullanıcının moderatör notlarını ve moderasyon geçmişini gösterir",
+          "permcheck": "İzin denetimi ve önizleme",
+          "role": "Bir üyeye rol ekler veya rolünü kaldırır",
+          "shadowmute": "Bir üyeyi gizlice susturur: mesajları haber verilmeden silinir",
+          "slowmode": "Bir kanalda yavaş modu (hız sınırı) ayarlar",
+          "softban": "Bir üyeye softban uygular (mesajlarını silmek için yasakla ve hemen kaldır)",
+          "timeout": "Bir üyeye zaman aşımı uygular",
+          "unban": "Bir kullanıcının yasağını kimliğiyle kaldırır",
+          "unjail": "Bir üyeyi hapisten çıkarır ve önceki rollerini geri verir",
+          "unlock": "Bir kanalın kilidini açar (üyeler yine mesaj gönderebilir)",
+          "unmute": "Bir üyenin susturmasını kaldırır (susturma rolünü ve/veya zaman aşımını kaldırır)",
+          "unshadowmute": "Bir üyenin gizli susturmasını kaldırır",
+          "untimeout": "Bir üyenin zaman aşımını kaldırır",
+          "warn": "Bir üyeyi uyarır",
+          "persist": "Bir üye sunucuya tekrar katıldığında rollerini ve takma adını geri yükler",
+          "premium": "Premium kademelerini yönetir (yalnızca bot sahibi)",
+          "afk": "AFK durumunu ayarlar",
+          "apply": "Başvuru sistemi",
+          "autoresponse": "Otomatik yanıtları yönetir",
+          "birthday": "Doğum gününü kaydeder, sunucu da kutlar",
+          "coinflip": "Yazı tura atar",
+          "confess": "Sunucuya anonim bir itiraf gönderir",
+          "connect4": "Dörtlü oyunu oyna!",
+          "digest": "Haftalık sunucu özeti",
+          "feed": "Sosyal medya akışlarını yönetir",
+          "filter": "Yasaklı kelime filtresini yönetir",
+          "gamestats": "Oyun istatistiklerini gösterir",
+          "help": "Kullanılabilir tüm komutları gösterir",
+          "invites": "Davetleri yönetir ve görüntüler",
+          "leaderboard": "Sunucu sıralamalarını gösterir",
+          "levelroles": "Seviye rollerini yönetir",
+          "logs": "Günlük kaydı sistemini yapılandırır",
+          "msgtop": "En aktif yazanların sıralaması",
+          "rank": "Kendi veya başka bir kullanıcının sıralamasını gösterir",
+          "reactionroles": "Tepki rollerini yönetir",
+          "referral": "Referans sistemi",
+          "rep": "İtibar sistemi",
+          "rolemenu": "Rol menüsü oluşturur",
+          "rps": "Taş, kâğıt, makas oyna",
+          "settings": "Sunucu ayarları",
+          "streak": "Etkinlik serini gösterir",
+          "suggest": "Öneri sistemi",
+          "tempchannel": "Geçici ses kanalını yönetir",
+          "ticket": "Bilet destek sistemi",
+          "tictactoe": "XOX oyna!",
+          "vctop": "Ses kanallarında en aktif kullanıcıların sıralaması",
+          "verify": "Sunucuda kendini doğrular",
+          "whatdidimiss": "Sen yokken olanların özetini verir",
+          "whywasibanned": "Moderasyon geçmişini ve itiraz bilgisini gösterir",
+          "8ball": "Sihirli 8 topuna bir soru sor",
+          "dice": "Zar atar",
+          "giveaway": "Çekilişleri oluşturur ve yönetir",
+          "matchmaking": "Oyun eşleştirme sistemi",
+          "poll": "Anket oluşturur",
+          "quest": "Sunucu görevleri ve meydan okumalar",
+          "trivia": "Bilgi yarışması sorularını yanıtla, ödül kazan"
+        }
+      },
+      "leveling": {
+        "title": "⭐ Seviye sistemi",
+        "xpMin": "XP en az",
+        "xpMax": "XP en çok",
+        "cooldown": "Bekleme süresi (sn)",
+        "voiceXpPerMin": "Ses XP/dk",
+        "multiplier": "XP çarpanı",
+        "maxLevel": "Maksimum seviye",
+        "levelUpChannel": "Seviye atlama kanalı",
+        "sameChannel": "Aynı kanal",
+        "dm": "DM",
+        "disabled": "Devre dışı",
+        "levelUpMessage": "Seviye atlama mesajı ({user}, {level}, {xp})",
+        "levelUpPlaceholder": "🎉 {user} {level}. seviyeye ulaştı!",
+        "voiceXp": "Ses XP",
+        "stackRoles": "Rol ödüllerini biriktir",
+        "roleRewards": "🏆 Rol ödülleri",
+        "levelCol": "Seviye",
+        "lvlPlaceholder": "Sv.",
+        "xpExceptions": "🚫 XP istisnaları",
+        "noXpRole": "XP kazanmayan roller",
+        "noXpRoleEmpty": "Herkes XP kazanır",
+        "noXpChannels": "XP kazanılmayan kanallar",
+        "noXpChannelsEmpty": "XP her yerde kazanılır"
+      },
+      "logging": {
+        "title": "📝 Günlük kaydı",
+        "categoryHint": "Kendi kanalı olmayan kategori “Sunucu” kanalına kaydedilir.",
+        "disabled": "Devre dışı",
+        "events": "🔔 Olaylar",
+        "eventsHint": "Devre dışı bir olay, kategorisine kanal atanmış olsa bile kaydedilmez.",
+        "ignoredChannels": "🚫 Yok sayılan kanallar",
+        "ignoredHint": "Bu kanallardaki olaylar kaydedilmez",
+        "loggedEverywhere": "Her yerde kaydedilir",
+        "cat": {
+          "moderation": {
+            "label": "🛡️ Moderasyon",
+            "desc": "Yasak, atma, uyarı, susturma"
+          },
+          "messages": {
+            "label": "💬 Mesajlar",
+            "desc": "Düzenleme, silme"
+          },
+          "members": {
+            "label": "👥 Üyeler",
+            "desc": "Katılma, ayrılma, takma ad, avatar"
+          },
+          "server": {
+            "label": "⚙️ Sunucu",
+            "desc": "Sunucu ayarları"
+          },
+          "voice": {
+            "label": "🔊 Ses",
+            "desc": "Katılma, ayrılma, taşınma"
+          },
+          "roles": {
+            "label": "🎭 Roller",
+            "desc": "Üye rol değişiklikleri"
+          },
+          "channels": {
+            "label": "📁 Kanallar",
+            "desc": "Oluşturma, silme, güncelleme"
+          },
+          "invites": {
+            "label": "🔗 Davetler",
+            "desc": "Davet oluşturma, silme"
+          },
+          "threads": {
+            "label": "🧵 Konular",
+            "desc": "Konu oluşturma, silme, güncelleme"
+          },
+          "emojis": {
+            "label": "😀 Emojiler",
+            "desc": "Emoji ve çıkartma değişiklikleri"
+          },
+          "boosts": {
+            "label": "💎 Boostlar",
+            "desc": "Sunucu boostları"
+          }
+        },
+        "ev": {
+          "messageEdit": "Mesaj düzenlendi",
+          "messageDelete": "Mesaj silindi",
+          "messageBulkDelete": "Toplu silme",
+          "memberJoin": "Üye katıldı",
+          "memberLeave": "Üye ayrıldı",
+          "voiceJoin": "Sese katılma",
+          "voiceLeave": "Sesten ayrılma",
+          "voiceMove": "Ses kanalı değiştirme",
+          "roleCreate": "Rol oluşturuldu",
+          "roleDelete": "Rol silindi",
+          "channelCreate": "Kanal oluşturuldu",
+          "channelDelete": "Kanal silindi",
+          "threadCreate": "Konu oluşturuldu",
+          "threadDelete": "Konu silindi"
+        }
+      },
+      "rr": {
+        "colorBlue": "Mavi",
+        "colorGrey": "Gri",
+        "colorGreen": "Yeşil",
+        "colorRed": "Kırmızı",
+        "editing": "✏️ Discord’a zaten gönderilmiş bir paneli düzenliyorsun (mesaj {id}). “Paneli güncelle” asıl mesajı yerinde düzenler.",
+        "stopEditing": "✕ Düzenlemeyi bitir",
+        "title": "🎭 Tepki rolleri",
+        "titlePh": "🎭 Rolünü seç",
+        "type": "Tür",
+        "typeMultiple": "Multiple - birden fazla rol",
+        "typeSingle": "Single - yalnızca bir tane",
+        "senderName": "Gönderen adı (isteğe bağlı)",
+        "senderNamePh": "Bu panel için bot adı",
+        "senderAvatar": "Gönderen avatar URL’si (isteğe bağlı)",
+        "webhookNote": "Gönderen adı veya avatarı ayarlandığında panel bir webhook üzerinden gönderilir - botun o kanalda Webhook’ları Yönet izni olmalıdır. Düğmeler her zamanki gibi çalışır.",
+        "buttons": "🔘 Düğmeler",
+        "buttonLabelPh": "Metin",
+        "buttonColor": "Düğme rengi",
+        "updatePanel": "Paneli güncelle",
+        "sendAsNew": "Yeni olarak gönder",
+        "send": "Gönder",
+        "preview": "👁️ Önizleme",
+        "defaultDescription": "Rol eklemek veya kaldırmak için bir düğmeye tıkla.",
+        "footer": "Vorqul DS BOT • Tepki rolleri",
+        "noButtons": "Henüz düğme yok - yukarıdan bir tane ekle.",
+        "singleMode": "Single modu: bir rol seçmek bu panelin diğer rollerini kaldırır.",
+        "savedPanels": "💾 Kaydedilen ve gönderilen paneller",
+        "savedHint": "Gönderilen her panel buraya otomatik kaydedilir; geri yükleyip düzenleyebilir ve yeniden gönderebilirsin.",
+        "noSaved": "Henüz kayıtlı panel yok.",
+        "savedMeta": "{count} düğme · {status} · {date}",
+        "onDiscord": "Discord’da",
+        "sent": "gönderildi",
+        "draft": "taslak",
+        "load": "Yükle"
+      },
+      "reminders": {
+        "title": "⏰ Hatırlatıcılar",
+        "hint": "/reminder komutunun ayarları.",
+        "maxPerUser": "Kullanıcı başına en fazla hatırlatıcı",
+        "maxDuration": "En uzun süre (gün)"
+      },
+      "reputation": {
+        "title": "⭐ İtibar",
+        "enable": "İtibar sistemini etkinleştir",
+        "cooldown": "Aynı kullanıcıya itibar verme arasındaki bekleme (saat)",
+        "allowNegative": "Negatif itibara izin ver",
+        "rewardRole": "Ödül rolü (itibar eşiğine ulaşınca verilir, isteğe bağlı)",
+        "threshold": "Eşik (itibar)"
+      },
+      "socials": {
+        "intro": "Her sosyal ağ ayrı ayrı yapılandırılır. Yalnızca ihtiyacın olanları etkinleştir.",
+        "accYoutube": "YouTube kanal kimlikleri (her satıra bir tane)",
+        "accTwitch": "Twitch kullanıcı adları (her satıra bir tane)",
+        "accReddit": "Subreddit’ler (her satıra bir tane)",
+        "accRss": "RSS akış URL’leri (her satıra bir tane)",
+        "notifChannel": "Bildirim kanalı",
+        "mentionRole": "Etiketlenecek rol (isteğe bağlı)",
+        "customMessage": "Özel mesaj (isteğe bağlı)",
+        "customPh": "🔴 Yeni gönderi!"
+      },
+      "starboard": {
+        "title": "⭐ Starboard",
+        "channel": "Starboard kanalı",
+        "minReactions": "En az tepki",
+        "selfStar": "Kendi mesajına yıldız vermeye izin ver",
+        "ignoredChannels": "Yok sayılan kanallar",
+        "noneIgnored": "Hiçbir kanal yok sayılmıyor"
+      },
+      "sticky": {
+        "title": "📌 Sabit mesajlar",
+        "intro": "Sabit mesaj, biri yazdığında kanalın en altına yeniden gönderilir, böylece hiç kaybolmaz. Panelden yapılan değişiklikler o kanaldaki sonraki mesajda uygulanır; {cmd} anında uygulanır.",
+        "messagePh": "Bu mesaj kanalın en altında kalır.",
+        "plainText": "Düz metin",
+        "embed": "Embed",
+        "embedTitle": "Embed başlığı",
+        "addUpdate": "Sabit mesaj ekle / güncelle",
+        "active": "Etkin sabit mesajlar",
+        "none": "Henüz sabit mesaj yok.",
+        "kindEmbed": "embed",
+        "kindText": "metin",
+        "saveHint": "Değişiklikleri kalıcı yapmak için üstteki 💾 Kaydet’e tıkla."
+      },
+      "suggestions": {
+        "title": "💡 Öneriler",
+        "channel": "Öneri kanalı",
+        "upvote": "Olumlu emoji",
+        "downvote": "Olumsuz emoji",
+        "autoThread": "Otomatik konu oluştur",
+        "anonymous": "Anonim önerilere izin ver"
+      },
+      "tags": {
+        "title": "🏷️ Özel etiketler",
+        "hint": "/tag ile hızlı yanıtlar.",
+        "namePh": "Ad",
+        "contentPh": "İçerik"
+      },
+      "temp": {
+        "title": "🔊 Geçici kanallar",
+        "hub": "Join to Create kanalı",
+        "category": "Kategori",
+        "sameCategory": "-- Aynı --",
+        "nameFormat": "Ad biçimi ({user}, {game})",
+        "nameFormatPh": "🎮 {user} kanalı",
+        "limit": "Sınır (0 = sınırsız)",
+        "bitrate": "Bit hızı (kbps)"
+      },
+      "tickets": {
+        "panelName": "Bilet paneli",
+        "title": "🎫 Biletler",
+        "panelChannel": "Panel kanalı",
+        "ticketCategory": "Bilet kategorisi",
+        "noSupportRole": "Destek rolü yok",
+        "transcriptChannel": "Döküm kanalı",
+        "maxPerUser": "Kullanıcı başına en fazla bilet",
+        "panel": "📋 Panel",
+        "panelTitlePh": "🎫 Destek",
+        "panelDescPh": "Bilet oluşturmak için düğmeye tıkla",
+        "buttonTextPh": "📩 Bilet oluştur",
+        "welcomeInTicket": "Biletteki karşılama mesajı",
+        "welcomePh": "Hoş geldin! Sorununu anlat...",
+        "categoriesTitle": "🎟️ Bilet kategorileri (isteğe bağlı)",
+        "categoriesHint": "Kategori eklersen panelde her biri için bir düğme görünür (kendi Discord kategorisi, destek rolü ve karşılama mesajı). Kategori yoksa yukarıdaki tek düğme kullanılır.",
+        "buttonName": "Düğme adı",
+        "defaultCategoryLabel": "Destek",
+        "discordCategory": "Discord kategorisi (üst)",
+        "defaultOption": "-- varsayılan --",
+        "perMainSettings": "Ana ayarlara göre",
+        "removeCategory": "Kategoriyi kaldır",
+        "addCategory": "+ Kategori ekle",
+        "sendPanel": "Paneli gönder"
+      },
+      "verification": {
+        "type": "Tür",
+        "typeButton": "Düğme",
+        "typeReaction": "Tepki",
+        "typeCaptcha": "Captcha",
+        "roleAfter": "Doğrulama sonrası rol",
+        "buttonTextPh": "✅ Doğrula",
+        "send": "Gönder"
+      },
+      "warnings": {
+        "title": "⚠️ Otomatik işlemler",
+        "hint": "Uyarı sayısına ulaşıldığında yapılacak işlemler.",
+        "warnsWithin": "uyarı,",
+        "daysArrow": "gün içinde →",
+        "mute": "Sustur",
+        "kick": "At",
+        "tempban": "GeçiciBan",
+        "ban": "Yasakla",
+        "immunity": "🛡️ Dokunulmazlık rolleri",
+        "noImmune": "Hiçbir rol dokunulmaz değil"
+      },
+      "webhooks": {
+        "title": "🔗 Giden webhook’lar",
+        "intro": "Sunucu olaylarını kendi uç noktana POST ile gönderir. Her istek, doğrulayabilmen için {sig} ile imzalanır.",
+        "enable": "Giden webhook’ları etkinleştir",
+        "url": "Webhook URL’si",
+        "secret": "İmza anahtarı (isteğe bağlı ama önerilir)",
+        "secretPh": "uzun rastgele bir dizge",
+        "events": "Gönderilecek olaylar",
+        "memberJoin": "Üye katıldı",
+        "memberLeave": "Üye ayrıldı",
+        "memberBan": "Üye yasaklandı",
+        "memberUnban": "Üyenin yasağı kaldırıldı",
+        "dashboardLog": "Panel değişikliği",
+        "testSent": "Test gönderildi (HTTP {status})",
+        "failed": "Başarısız",
+        "requestFailed": "İstek başarısız oldu",
+        "sendTest": "Test olayı gönder",
+        "saveFirst": "Önce değişiklikleri kaydet - test, kayıtlı webhook’u dener."
+      },
+      "welcome": {
+        "welcomeHeading": "👋 Karşılama mesajı",
+        "messageVars": "Mesaj ({user}, {server}, {memberCount})",
+        "messagePh": "{user}, {server} sunucusuna hoş geldin! 🎉",
+        "msgTypeHint": "Düz metin yukarıdaki mesajı olduğu gibi gönderir. Embed, aşağıdaki alanlarla zengin bir kart gönderir.",
+        "welcomeLabel": "Karşılama mesajı",
+        "titlePh": "Hoş geldin!",
+        "bannerImage": "Afiş görseli",
+        "imagePh": "https://... veya bir dosya yükle",
+        "preview": "Önizleme",
+        "thumbnail": "Küçük resim (avatar için {avatar})",
+        "footer": "Alt bilgi",
+        "goodbyeHeading": "👋 Veda mesajı",
+        "goodbyeLabel": "Veda mesajı",
+        "autoRole": "🎭 Otomatik rol",
+        "dmHeading": "📩 Yeni üyelere DM mesajı",
+        "sendDm": "Yeni üyelere DM gönder",
+        "dmPh": "Sunucuya hoş geldin! Lütfen kuralları oku...",
+        "dmLabel": "DM mesajı"
+      }
+    },
+    "cfg": {
+      "common": {
+        "select": "- seç -",
+        "selectChannel": "- kanal seç -",
+        "saveFailed": "Kaydetme başarısız ({status})",
+        "networkError": "Ağ hatası - bağlantını kontrol et."
+      },
+      "games": {
+        "noteBefore": "Bir oyunun kendi kanal kuralı yoksa ortak ayar geçerlidir:",
+        "noteLink": "Kanallar bölümündeki Oyunlar",
+        "noteAfter": ". Özel kural bunu geçersiz kılar."
+      },
+      "serverstatus": {
+        "title": "Sunucu durumu",
+        "subtitle": "Bir kanalda otomatik güncellenen MC/Bedrock sunucu durumu.",
+        "serverCard": "Sunucu",
+        "serverDesc": "İzlenecek sunucunun adresi.",
+        "type": "Tür",
+        "host": "Adres (host)",
+        "port": "Port",
+        "displayCard": "Görünüm",
+        "displayDesc": "Durumun nerede ve nasıl gösterileceği. Her dakika otomatik güncellenir.",
+        "channel": "Kanal",
+        "colorOnline": "Renk (çevrimiçi)",
+        "online": "🟢 Sunucu çevrimiçi",
+        "address": "Adres:",
+        "players": "Oyuncular:",
+        "version": "Sürüm:"
+      },
+      "welcome": {
+        "title": "Karşılama",
+        "subtitle": "Yeni üyeleri bir mesaj ve kartla karşıla.",
+        "messageCard": "Mesaj",
+        "messageDesc": "Bir üye katıldığında gönderilecek kanal ve metin.",
+        "channel": "Kanal",
+        "channelHint": "Karşılama mesajının gönderileceği yer",
+        "messageText": "Mesaj metni",
+        "variablesPlaceholder": "Değişkenler: {user} {username} {server} {count} {inviter}",
+        "variables": "Değişkenler:",
+        "sendEmbed": "Embed olarak gönder",
+        "dmCard": "Özel mesaj (DM)",
+        "dmDesc": "Yeni üyeye gönderilecek isteğe bağlı özel mesaj.",
+        "dmEnable": "DM'yi etkinleştir",
+        "dmPlaceholder": "Merhaba {user}, {server} sunucusuna hoş geldin!",
+        "cardCard": "Karşılama kartı",
+        "cardDesc": "Avatar ve metin içeren MEE6 tarzı görsel.",
+        "cardEnable": "Kartı etkinleştir",
+        "cardTitle": "Başlık",
+        "cardTitlePlaceholder": "Hoş geldin, {username}!",
+        "cardSubtitle": "Alt başlık",
+        "accentColor": "Vurgu rengi",
+        "textColor": "Metin rengi",
+        "bgColor": "Arka plan rengi",
+        "bgColorHint": "Görsel yoksa kullanılır",
+        "bgUrl": "Arka plan URL'si (isteğe bağlı)",
+        "bgUrlPlaceholder": "https://…/arkaplan.png",
+        "upload": "Yükle",
+        "uploading": "Yükleniyor…",
+        "uploadError": "Yükleme başarısız oldu. Daha küçük bir görsel dene ya da bunun yerine bir bağlantı yapıştır.",
+        "bgUrlHint": "Bir görsel bağlantısı yapıştır ya da doğrudan yükle (500 KB’a kadar)."
+      },
+      "automod": {
+        "subtitle": "MEE6 tarzı otomatik sohbet moderasyonu.",
+        "spamTitle": "Spam koruması",
+        "spamDesc": "Kısa sürede çok fazla mesaj.",
+        "repeatedTitle": "Tekrarlanan metin",
+        "repeatedDesc": "Aynı mesaj veya tekrarlanan karakterler.",
+        "invitesTitle": "Discord davetleri",
+        "invitesDesc": "discord.gg bağlantılarını engeller.",
+        "linksTitle": "Harici bağlantılar",
+        "linksDesc": "Beyaz liste dışındaki URL'leri engeller.",
+        "whitelist": "Alan adı beyaz listesi (virgülle ayır)",
+        "attachmentsTitle": "Görseller / ekler",
+        "attachmentsDesc": "Sınırı aşan ekler içeren mesajları engeller.",
+        "maxAttachments": "En fazla ek (0 = tümünü engelle)",
+        "imagesOnly": "Yalnızca görseller",
+        "capsTitle": "Aşırı BÜYÜK HARF",
+        "capsDesc": "Çok fazla büyük harf.",
+        "emojisTitle": "Aşırı emoji",
+        "emojisDesc": "Bir mesajda çok fazla emoji.",
+        "spoilersTitle": "Aşırı spoiler",
+        "spoilersDesc": "Çok fazla ||spoiler|| bloğu.",
+        "mentionsTitle": "Toplu etiketler",
+        "mentionsDesc": "Bir anda çok fazla @etiket.",
+        "zalgoDesc": "Aşırı birleşik aksan işaretleri.",
+        "blacklistTitle": "Yasaklı kelimeler",
+        "blacklistDesc": "Virgülle ayrılmış kelime listesi. Eşleşen mesaj silinir.",
+        "blacklistPlaceholder": "kelime1, kelime2, kelime3",
+        "exemptTitle": "İstisnalar",
+        "exemptDesc": "AutoMod'un kimi ve nerede yok saydığı.",
+        "ignoreAdmins": "Yöneticileri yok say",
+        "escalationTitle": "Ceza kademelendirme",
+        "escalationDesc": "Belirli bir sürede N ihlal sonrası otomatik işlem (MEE6 tarzı).",
+        "escalationEnable": "Kademelendirmeyi etkinleştir",
+        "windowMinutes": "Süre penceresi (dakika)",
+        "after": "eşik:",
+        "infractions": "ihlal",
+        "secShort": "sn",
+        "addRule": "+ Kural ekle"
+      },
+      "modules": {
+        "toggleFailed": "Modül değiştirilemedi ({status})",
+        "networkError": "Ağ hatası - bağlantını kontrol edip tekrar dene.",
+        "title": "Modüller",
+        "detailed": "Ayrıntılı ayarlar",
+        "openPage": "Sayfayı aç",
+        "openSettings": "Ayarları aç"
+      },
+      "links": {
+        "loading": "Yükleniyor…",
+        "back": "Sunucuya dön",
+        "title": "Faydalı bağlantılar",
+        "moduleEnabled": "Modül etkin",
+        "descBefore": "Bu bağlantıları bu sunucuda",
+        "descAfter": "komutu gösterir. Her sunucunun kendi bağlantıları vardır - ayarlar tamamen ayrıdır.",
+        "namePlaceholder": "Ad (ör. Web sitesi)",
+        "descPlaceholder": "Açıklama (isteğe bağlı)",
+        "remove": "Kaldır",
+        "empty": "Henüz bağlantı yok. İlkini aşağıdan ekle.",
+        "add": "Bağlantı ekle",
+        "max": "En fazla 25 bağlantı"
+      }
+    },
+    "app": {
+      "lp": {
+        "by": "geliştiren:"
+      },
+      "common": {
+        "avatar": "Avatar"
+      },
+      "login": {
+        "errSignin": "Giriş hatası. Lütfen tekrar deneyin.",
+        "errCallbackProc": "Kimlik doğrulama işlenirken hata oluştu.",
+        "errCreate": "Hesap oluşturulamadı.",
+        "errCallback": "Geri çağrı hatası.",
+        "errDenied": "Erişim reddedildi.",
+        "errUnexpected": "Beklenmeyen bir hata oluştu.",
+        "signInDiscord": "Discord ile giriş yap",
+        "redirectHint": "Giriş yaptıktan sonra panele yönlendirileceksin",
+        "backHome": "Ana sayfaya dön",
+        "loading": "Yükleniyor..."
+      },
+      "gate": {
+        "tooMany": "Çok fazla deneme. Bir dakika bekleyip tekrar deneyin.",
+        "wrong": "Yanlış şifre. Lütfen tekrar deneyin.",
+        "network": "Ağ hatası - bağlantını kontrol edip tekrar dene.",
+        "title": "Devam etmek için erişim şifresini gir",
+        "placeholder": "Erişim şifresi",
+        "checking": "Kontrol ediliyor…",
+        "unlock": "Kilidi aç",
+        "note": "Bu, Discord girişinden önce ek bir güvenlik katmanıdır."
+      },
+      "dash": {
+        "loadErr": "Sunucular yüklenemedi ({status}).",
+        "loading": "Sunucular yükleniyor...",
+        "botActive": "Bot aktif",
+        "owner": "Sahip",
+        "admin": "Yönetici",
+        "add": "Ekle"
+      },
+      "multi": {
+        "remove": "{name} öğesini kaldır",
+        "nothingMore": "Seçilecek başka bir şey yok."
+      },
+      "guild": {
+        "saveFailed": "Kaydedilemedi ({status})",
+        "tab": {
+          "overview": "Genel bakış",
+          "modules": "Modüller",
+          "welcome": "Karşılama",
+          "moderation": "Moderasyon",
+          "leveling": "Seviye sistemi",
+          "logs": "Günlükler"
+        },
+        "back": "Sunuculara dön",
+        "fullSettings": "Tüm ayarlar",
+        "links": "Faydalı bağlantılar",
+        "overview": "Sunucu genel bakışı",
+        "prefix": "Önek",
+        "activeModules": "Aktif modüller",
+        "welcomeMsg": "Karşılama mesajı",
+        "welcomePh": "{server} sunucusuna hoş geldin, {user}!",
+        "variables": "Değişkenler:",
+        "modTitle": "Moderasyon ayarları",
+        "modDesc": "Otomatik moderasyonu, spam korumasını ve diğer moderasyon özelliklerini yapılandır.",
+        "levTitle": "Seviye sistemi ayarları",
+        "levDesc": "XP oranlarını, seviye atlama mesajlarını ve rol ödüllerini yapılandır.",
+        "logTitle": "Günlük kanalları",
+        "log": {
+          "moderation": "Moderasyon günlükleri",
+          "messages": "Mesaj günlükleri",
+          "members": "Üye günlükleri",
+          "server": "Sunucu günlükleri"
+        },
+        "channelId": "Kanal ID"
+      },
+      "gm": {
+        "welcome": {
+          "name": "Karşılama sistemi",
+          "desc": "Karşılama ve veda mesajları"
+        },
+        "moderation": {
+          "name": "Moderasyon",
+          "desc": "Atma, yasaklama, zaman aşımı, uyarılar"
+        },
+        "logging": {
+          "name": "Günlükleme",
+          "desc": "Mesaj ve üye günlükleri"
+        },
+        "leveling": {
+          "name": "Seviye sistemi",
+          "desc": "XP ve seviye ödülleri"
+        },
+        "economy": {
+          "name": "Ekonomi",
+          "desc": "Sanal para sistemi"
+        },
+        "automod": {
+          "name": "Otomod",
+          "desc": "Otomatik moderasyon"
+        },
+        "antiraid": {
+          "name": "Baskın koruması",
+          "desc": "Baskınlara karşı koruma"
+        },
+        "starboard": {
+          "name": "Starboard",
+          "desc": "Mesajlara yıldız ver"
+        },
+        "suggestions": {
+          "name": "Öneriler",
+          "desc": "Öneri sistemi"
+        },
+        "crypto": {
+          "name": "Kripto",
+          "desc": "Kripto para takibi"
+        }
+      }
+    },
+    "plg": {
+      "title": "Eklentiler",
+      "intro": "Eklentiler bota komutlar ve özellikler ekler. Botun bulunduğu tüm sunucularda geçerlidir.",
+      "ownerOnly": "Eklentileri yalnızca bot sahibi yükleyebilir, etkinleştirebilir, devre dışı bırakabilir, kaldırabilir veya yapılandırabilir.",
+      "ownerMissing": "Eklentileri yönetmek için botun Discord uygulamasının sahibi olarak giriş yapın veya botun .env dosyasında BOT_OWNER_ID değerini Discord kimliğinizle ayarlayın.",
+      "warning": "Eklentiler bot içinde, dosyalarına ve token'ına tam erişimle çalışır. Yalnızca güvendiğin eklentileri yükle.",
+      "statusUnknown": "Bot henüz eklenti durumunu bildirmedi. Canlı durumları görmek için botu başlat.",
+      "restartNeeded": "Vurgulanan değişiklikler birkaç saniye içinde uygulanır.",
+      "loading": "Eklentiler yükleniyor…",
+      "loadFailed": "Eklenti listesi yüklenemedi.",
+      "empty": "Yüklü eklenti yok.",
+      "install": {
+        "title": "Eklenti yükle",
+        "hint": "Eklentiyi içeren bir .zip yükle (manifest.json ve dosyaları). Yeni eklentiler önce incelenebilsin diye devre dışı yüklenir.",
+        "choose": ".zip dosyası seç",
+        "noFile": "Dosya seçilmedi",
+        "replace": "Zaten yüklüyse değiştir (verileri korunur)",
+        "button": "Yükle",
+        "installing": "Yükleniyor…",
+        "done": "{name} v{version} yüklendi. Sen etkinleştirene kadar devre dışıdır.",
+        "updated": "{name} v{version} sürümüne güncellendi.",
+        "deps": "Bu eklentinin bağımlılıkları var, bunlar botun bir sonraki başlatılışında yüklenir."
+      },
+      "state": {
+        "running": "Çalışıyor",
+        "disabled": "Devre dışı",
+        "restart_enable": "Etkin, başlatılıyor…",
+        "restart_disable": "Devre dışı, durduruluyor…",
+        "error": "Hata",
+        "invalid": "Geçersiz",
+        "unknown": "Etkin"
+      },
+      "by": "geliştiren: {author}",
+      "version": "v{version}",
+      "commands": "Komutlar",
+      "events": "{n} olay işleyicisi",
+      "homepage": "Web sitesi",
+      "source": "Kaynak",
+      "enable": "Etkinleştir",
+      "disable": "Devre dışı bırak",
+      "settings": "Ayarlar",
+      "settingsClose": "Ayarları gizle",
+      "settingsHint": "Eklentiler bu ayarları gerektiğinde okur, bu yüzden değişiklikler genellikle yeniden başlatmadan geçerli olur.",
+      "save": "Ayarları kaydet",
+      "saving": "Kaydediliyor…",
+      "saved": "Ayarlar kaydedildi.",
+      "enabledDone": "{name} etkinleştirildi. Bot birkaç saniye içinde yükler.",
+      "disabledDone": "{name} devre dışı bırakıldı. Bot birkaç saniye içinde durdurur.",
+      "remove": "Kaldır",
+      "removeConfirm": "{name} kaldırılsın mı? Dosyaları ve kayıtlı verileri kalıcı olarak silinir.",
+      "removed": "{name} kaldırıldı.",
+      "err": {
+        "generic": "Bir şeyler ters gitti (HTTP {status}).",
+        "network": "Ağ hatası. Tekrar dene.",
+        "no_file": "Önce bir .zip dosyası seç.",
+        "not_owner": "Bunu yalnızca bot sahibi yapabilir.",
+        "cross_origin": "Engellendi: istek başka bir siteden geldi.",
+        "not_found": "Eklenti bulunamadı.",
+        "exists": "Bu adla bir eklenti zaten yüklü. Güncellemek için \"Değiştir\" kutusunu işaretle.",
+        "not_zip": "Bu dosya geçerli bir .zip arşivi değil.",
+        "too_large": "Arşiv çok büyük (sınır 15 MB, açılmış 25 MB).",
+        "file_too_large": "Arşivdeki bir dosya çok büyük (sınır 10 MB).",
+        "too_many_files": "Arşivde çok fazla dosya var (sınır 500).",
+        "no_manifest": "Arşivde manifest.json bulunamadı.",
+        "bad_manifest": "Eklentinin manifest.json dosyası geçersiz.",
+        "missing_main": "manifest.json'da belirtilen ana dosya arşivde yok.",
+        "bad_path": "Arşivde güvensiz bir dosya yolu var ve reddedildi.",
+        "symlink": "Arşivde sembolik bağlantı var ve reddedildi.",
+        "encrypted": "Parola korumalı arşivler desteklenmiyor.",
+        "corrupt": "Arşiv bozuk veya içeriği eşleşmiyor.",
+        "unsupported": "Bu tür .zip desteklenmiyor. Normal bir zip aracıyla yeniden oluştur.",
+        "invalid_settings": "Bazı değerler eksik veya aralık dışında. Alanları kontrol edip tekrar dene.",
+        "no_settings": "Bu eklentinin ayarı yok.",
+        "channels_unavailable": "Bu sunucunun kanalları doğrulanamadı. Birazdan tekrar dene.",
+        "bad_request": "İstek geçerli değildi."
+      },
+      "guild": {
+        "open": "Sunucu ayarları",
+        "close": "Sunucu ayarlarını gizle",
+        "title": "Bu Discord sunucusunun ayarları",
+        "hint": "Bu ayarlar yalnızca bu Discord sunucusu için geçerlidir. Çalışan eklenti değişiklikleri kendiliğinden alır, yeniden başlatma gerekmez.",
+        "notRunning": "Eklenti henüz çalışmıyor, bu yüzden etkinleştirilene kadar hiçbir şey paylaşılmaz.",
+        "noChannels": "Bu sunucunun kanalları yüklenemedi.",
+        "chooseChannel": "- kanal seç -",
+        "noChannel": "- yok -",
+        "add": "+ Ekle",
+        "removeItem": "Kaldır",
+        "itemFallback": "Öğe {n}",
+        "empty": "Henüz bir şey eklenmedi.",
+        "limit": "Sınıra ulaşıldı ({n}).",
+        "save": "Sunucu ayarlarını kaydet",
+        "saved": "Sunucu ayarları kaydedildi.",
+        "hasErrors": "Vurgulanan alanları düzeltip tekrar dene."
+      },
+      "fieldErr": {
+        "required": "Bu alan zorunludur.",
+        "range": "Değer izin verilen aralığın dışında.",
+        "length": "Bu metin çok uzun.",
+        "number": "Bir sayı gir.",
+        "option": "Seçeneklerden birini seç.",
+        "channel": "Geçerli bir kanal seç.",
+        "string": "Bir metin gir.",
+        "boolean": "Evet veya hayır seç.",
+        "too_many": "Bu sunucu için çok fazla kayıt var.",
+        "list": "Liste geçerli değil.",
+        "item": "Bu kayıt geçerli değil.",
+        "channel_not_found": "Bu kanal bu sunucuda yok.",
+        "channel_kind": "Bu kanal türüne burada izin verilmiyor."
+      }
+    }
+  },
+  "scopeDesc": {
+    "all": "her yerde",
+    "only": "sadece {list} içinde",
+    "except": "{list} dışında her yerde"
+  },
+  "channels": {
+    "title": "Kanal kapsamı",
+    "nothingRestricted": "Hiçbir özellik kısıtlı değil - her şey her yerde çalışıyor.\n`/channels set` ile ayarla.",
+    "unknownFeature": "Bilinmeyen özellik",
+    "unknownFeatureBody": "`{key}` özelliği yok. Listeden seç.",
+    "restored": "Geri alındı",
+    "restoredBody": "**{feature}** yeniden her yerde çalışıyor.",
+    "saved": "Kaydedildi",
+    "savedEverywhere": "**{feature}** her yerde çalışıyor.",
+    "modeOnly": "sadece seçili kanallarda",
+    "modeExcept": "seçili kanallar dışında her yerde",
+    "noChannelYet": "Henüz kanal seçilmedi - `/channels add` ile ekle.",
+    "alreadyListed": "Zaten listede",
+    "alreadyListedBody": "<#{channel}> zaten **{feature}** için ayarlı.",
+    "notFound": "Bulunamadı",
+    "notFoundBody": "<#{channel}> **{feature}** listesinde değil.",
+    "categoryNote": "Bu bir kategori - ayar içindeki tüm kanallar için geçerli.",
+    "added": "Eklendi",
+    "removed": "Kaldırıldı",
+    "current": "Şu anda: {scope}",
+    "modeSetTo": "**{feature}** modu şuna ayarlandı: "
+  },
+  "texts": {
+    "langUnavailable": "Dil kullanılamıyor",
+    "langUnavailableBody": "Yüklenen diller: {list}.",
+    "none": "yok",
+    "saved": "Kaydedildi",
+    "overridden": "Değiştirilen metinler",
+    "nothingOverridden": "Henüz hiçbir şeyi değiştirmedin - bot varsayılan ifadeleri kullanıyor.\n`/texts set` ile değiştirebilirsin.",
+    "originalLabel": "**Orijinal:**",
+    "keyMissing": "_(anahtar çevirilerde yok)_",
+    "yourWording": "**Senin ifaden:**",
+    "notOverridden": "_(değiştirilmedi)_",
+    "nothingToReset": "Sıfırlanacak bir şey yok",
+    "nothingToResetBody": "`{key}` metni değiştirilmemiş.",
+    "restored": "Geri alındı",
+    "tooLong": "Çok uzun",
+    "tooLongBody": "Bir metin en fazla 1900 karakter olabilir.",
+    "savedBody": "`{key}` artık şöyle:\n{text}",
+    "langSet": "Bot dili **{lang}** olarak ayarlandı.",
+    "showTitle": "Metin: {key}",
+    "restoredBody": "`{key}` orijinal ifadesine döndü:\n{text}",
+    "variablesUsed": "Kullanılan değişkenler: {list}",
+    "andMore": "…ve {count} tane daha"
+  },
+  "serverLogs": {
+    "type": {
+      "text": "metin",
+      "voice": "ses",
+      "category": "kategori",
+      "announcement": "duyuru",
+      "forum": "forum"
+    },
+    "title": {
+      "threadCreated": "🧵 Konu oluşturuldu",
+      "threadUpdated": "🧵 Konu güncellendi",
+      "threadDeleted": "🧵 Konu silindi",
+      "channelCreated": "📁 Kanal oluşturuldu",
+      "channelUpdated": "📁 Kanal güncellendi",
+      "channelDeleted": "📁 Kanal silindi",
+      "roleCreated": "🎭 Rol oluşturuldu",
+      "roleUpdated": "🎭 Rol güncellendi",
+      "roleDeleted": "🎭 Rol silindi",
+      "memberBanned": "🔨 Üye yasaklandı",
+      "banRevoked": "🔓 Yasak kaldırıldı",
+      "inviteCreated": "🔗 Davet oluşturuldu",
+      "inviteDeleted": "🔗 Davet iptal edildi",
+      "emojiAdded": "😀 Emoji eklendi",
+      "emojiRemoved": "😀 Emoji kaldırıldı",
+      "emojiRenamed": "😀 Emoji yeniden adlandırıldı",
+      "stickerAdded": "🏷️ Çıkartma eklendi",
+      "stickerRemoved": "🏷️ Çıkartma kaldırıldı",
+      "stickerRenamed": "🏷️ Çıkartma yeniden adlandırıldı",
+      "boostStarted": "💜 Yeni boost",
+      "boostEnded": "💔 Boost sona erdi"
+    },
+    "field": {
+      "channel": "Kanal",
+      "thread": "Konu",
+      "parentChannel": "Üst kanal",
+      "name": "Ad",
+      "user": "Kullanıcı",
+      "reason": "Sebep",
+      "code": "Kod",
+      "expires": "Sona erme",
+      "useLimit": "Kullanım sınırı",
+      "serverLevel": "Sunucu seviyesi",
+      "mentionable": "Etiketlenebilir",
+      "topicChanged": "Kanal konusu değişti",
+      "permsChanged": "İzinler değişti",
+      "markedNsfw": "NSFW olarak işaretlendi",
+      "unmarkedNsfw": "NSFW kaldırıldı",
+      "archived": "Arşivlendi",
+      "unarchived": "Arşivden çıkarıldı",
+      "locked": "Kilitli",
+      "unlocked": "Kilit açıldı",
+      "noLongerSeparate": "Artık ayrı gösterilmiyor",
+      "memberCountWas": "Üye sayısı",
+      "type": "Tür",
+      "author": "Yazar"
+    },
+    "value": {
+      "unknown": "Bilinmiyor",
+      "unknownLower": "bilinmiyor",
+      "notSpecified": "belirtilmedi",
+      "none": "yok",
+      "never": "asla",
+      "noLimit": "sınırsız"
+    },
+    "boostStartedBody": "{user} sunucuyu boostladı.",
+    "boostEndedBody": "{user} sunucuyu boostlamayı bıraktı.",
+    "ghostPingBody": "{user} birini etiketleyip mesajı hemen sildi."
+  }
+}

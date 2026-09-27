@@ -1,0 +1,2143 @@
+{
+  "common": {
+    "yes": "Tak",
+    "no": "Nie",
+    "enabled": "Włączone",
+    "disabled": "Wyłączone",
+    "success": "Sukces",
+    "error": "Błąd",
+    "warning": "Ostrzeżenie",
+    "info": "Informacja",
+    "loading": "Ładowanie...",
+    "refreshHint": "Odśwież te dane",
+    "clearCacheHint": "Wyczyść lokalną pamięć podręczną i odśwież",
+    "cancel": "Anuluj",
+    "confirm": "Potwierdź",
+    "save": "Zapisz",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "page": "Strona",
+    "of": "z",
+    "noPermission": "Nie masz uprawnień do użycia tego polecenia.",
+    "botNoPermission": "Nie mam uprawnień, żeby to zrobić.",
+    "invalidUser": "Nieprawidłowy użytkownik.",
+    "invalidChannel": "Nieprawidłowy kanał.",
+    "invalidRole": "Nieprawidłowa rola.",
+    "cooldown": "Poczekaj {time} przed ponownym użyciem tego polecenia.",
+    "unknownError": "Wystąpił nieznany błąd.",
+    "wrongChannel": "Tej komendy nie można użyć na tym kanale."
+  },
+  "welcome": {
+    "title": "Witaj!",
+    "defaultMessage": "Witaj na **{server}**, {user}! 🎉",
+    "goodbyeMessage": "Żegnaj **{user}**, będziemy za tobą tęsknić!",
+    "memberCount": "Jesteś członkiem #{count}",
+    "joinedAt": "Konto utworzone {date}"
+  },
+  "moderation": {
+    "kick": {
+      "success": "**{user}** został wyrzucony.",
+      "reason": "Powód: {reason}",
+      "noReason": "Brak podanego powodu",
+      "dmNotify": "Zostałeś wyrzucony z **{server}**.",
+      "cannotKick": "Nie mogę wyrzucić tego użytkownika.",
+      "higherRole": "Nie możesz wyrzucić kogoś z wyższą lub równą rolą."
+    },
+    "ban": {
+      "success": "**{user}** został zbanowany.",
+      "reason": "Powód: {reason}",
+      "noReason": "Brak podanego powodu",
+      "dmNotify": "Zostałeś zbanowany na **{server}**.",
+      "cannotBan": "Nie mogę zbanować tego użytkownika.",
+      "higherRole": "Nie możesz zbanować kogoś z wyższą lub równą rolą."
+    },
+    "timeout": {
+      "success": "**{user}** dostał wyciszenie na {duration}.",
+      "removed": "Usunięto wyciszenie użytkownika **{user}**."
+    },
+    "warn": {
+      "success": "**{user}** został ostrzeżony.",
+      "count": "To jest ostrzeżenie #{count}.",
+      "dmNotify": "Otrzymałeś ostrzeżenie na **{server}**."
+    },
+    "clear": {
+      "success": "Usunięto {count} wiadomości.",
+      "tooMany": "Nie można usunąć więcej niż 100 wiadomości naraz.",
+      "tooOld": "Nie można usunąć wiadomości starszych niż 14 dni."
+    },
+    "unban": {
+      "success": "**{user}** został odbanowany.",
+      "notBanned": "Ten użytkownik nie jest zbanowany."
+    },
+    "mute": {
+      "success": "**{user}** został wyciszony na {duration}.",
+      "reason": "Powód: {reason}",
+      "dmNotify": "Zostałeś wyciszony na **{server}** na {duration}."
+    },
+    "unmute": {
+      "success": "**{user}** został odciszony.",
+      "notMuted": "Ten użytkownik nie jest wyciszony."
+    },
+    "slowmode": {
+      "set": "Tryb wolny ustawiony na {seconds} sekund.",
+      "disabled": "Tryb wolny został wyłączony."
+    },
+    "lockdown": {
+      "enabled": "🔒 Kanał jest teraz zablokowany.",
+      "disabled": "🔓 Kanał został odblokowany."
+    }
+  },
+  "leveling": {
+    "levelUp": "🎉 Gratulacje {user}! Osiągnąłeś **Poziom {level}**!",
+    "rank": "Ranga",
+    "level": "Poziom",
+    "xp": "XP",
+    "progress": "Postęp",
+    "leaderboard": "Ranking",
+    "noData": "Nie znaleziono danych o poziomach."
+  },
+  "economy": {
+    "balance": "Saldo",
+    "daily": {
+      "claimed": "Odebrałeś dzienną nagrodę {amount}!",
+      "cooldown": "Już odebrałeś dzienną nagrodę. Wróć za {time}."
+    },
+    "transfer": {
+      "success": "Przelałeś {amount} użytkownikowi {user}.",
+      "insufficient": "Nie masz wystarczająco {currency}.",
+      "self": "Nie możesz przelać sobie."
+    },
+    "shop": {
+      "title": "Sklep",
+      "empty": "Sklep jest pusty.",
+      "bought": "Kupiłeś **{item}** za {price}.",
+      "cantAfford": "Nie stać Cię na ten przedmiot."
+    },
+    "leaderboard": "Ranking ekonomii"
+  },
+  "dashboard": {
+    "title": "Panel Vorqul DS BOT",
+    "login": "Zaloguj przez Discord",
+    "logout": "Wyloguj",
+    "home": "Strona główna",
+    "servers": "Twoje serwery",
+    "settings": "Ustawienia",
+    "modules": "Moduły",
+    "saveSuccess": "Ustawienia zapisane pomyślnie!",
+    "saveError": "Błąd podczas zapisywania ustawień.",
+    "logs": "Logi",
+    "analytics": "Analityka",
+    "plugins": "Wtyczki",
+    "embedBuilder": "Kreator Embedów",
+    "noServers": "Nie zarządzasz żadnym serwerem z botem."
+  },
+  "automod": {
+    "repeatedText": "🔁 Powtarzający się tekst usunięty od {user}.",
+    "emojis": "😀 Nadmierna liczba emoji usunięta od {user}.",
+    "spoilers": "🙈 Nadmierne spoilery usunięte od {user}.",
+    "zalgo": "🌀 Tekst zalgo usunięty od {user}.",
+    "userWarning": "⚠️ {user}, twoja wiadomość została usunięta przez AutoMod.",
+    "spam": "🛡️ Wykryto spam od {user}.",
+    "links": "🔗 Usunięto nieautoryzowany link od {user}.",
+    "invites": "📨 Usunięto zaproszenie Discord od {user}.",
+    "caps": "🔠 Usunięto nadmiar wielkich liter od {user}.",
+    "mentions": "📢 Zablokowano masowe oznaczenie od {user}.",
+    "blacklist": "🚫 Wykryto zakazane słowo od {user}."
+  },
+  "crypto": {
+    "price": "Aktualna cena **{coin}**: ${price}",
+    "change24h": "Zmiana 24h: {change}%",
+    "alertSet": "Alert cenowy ustawiony dla **{coin}** przy ${price}.",
+    "alertTriggered": "🚨 **{coin}** osiągnął ${price}!",
+    "invalidCoin": "Podano nieprawidłową kryptowalutę.",
+    "apiError": "Nie udało się pobrać danych kryptowalut."
+  },
+  "verification": {
+    "title": "Wymagana weryfikacja",
+    "instructions": "Rozwiąż captchę poniżej, aby uzyskać dostęp.",
+    "success": "✅ Zostałeś zweryfikowany!",
+    "failed": "❌ Weryfikacja nie powiodła się. Spróbuj ponownie.",
+    "expired": "⏰ Weryfikacja wygasła. Poproś o nową."
+  },
+  "logging": {
+    "messageDeleted": "Wiadomość usunięta",
+    "messageEdited": "Wiadomość edytowana",
+    "memberJoined": "Członek dołączył",
+    "memberLeft": "Członek opuścił serwer",
+    "memberBanned": "Członek zbanowany",
+    "memberUnbanned": "Członek odbanowany",
+    "roleAdded": "Rola dodana",
+    "roleRemoved": "Rola usunięta",
+    "channelCreated": "Kanał utworzony",
+    "channelDeleted": "Kanał usunięty",
+    "moderatorAction": "Akcja moderatora"
+  },
+  "reminders": {
+    "set": "⏰ Przypomnienie ustawione na {time}.",
+    "triggered": "⏰ Przypomnienie: {message}",
+    "list": "Twoje przypomnienia",
+    "noReminders": "Nie masz aktywnych przypomnień.",
+    "deleted": "Przypomnienie usunięte."
+  },
+  "polls": {
+    "created": "Ankieta utworzona!",
+    "ended": "Ankieta zakończona.",
+    "results": "Wyniki ankiety",
+    "votes": "głosów"
+  },
+  "suggestions": {
+    "submitted": "Twoja sugestia została wysłana!",
+    "approved": "✅ Sugestia zatwierdzona",
+    "denied": "❌ Sugestia odrzucona",
+    "implemented": "🎉 Sugestia wdrożona"
+  },
+  "starboard": {
+    "starred": "⭐ Wiadomość oznaczona gwiazdką!"
+  },
+  "inviteTracker": {
+    "invite": "{user} dołączył przez zaproszenie od {inviter}.",
+    "invites": "{user} ma teraz {count} zaproszeń.",
+    "unknown": "Nie udało się ustalić źródła zaproszenia."
+  },
+  "music": {
+    "nowPlaying": "Teraz odtwarzane",
+    "queued": "Dodano do kolejki",
+    "queue": "Kolejka",
+    "skipped": "Pominięto bieżący utwór.",
+    "stopped": "Odtwarzanie zatrzymane.",
+    "paused": "Odtwarzanie wstrzymane.",
+    "resumed": "Odtwarzanie wznowione.",
+    "volume": "Głośność ustawiona na {volume}%.",
+    "noResults": "Nie znaleziono wyników.",
+    "notInVoice": "Musisz być na kanale głosowym.",
+    "alreadyPlaying": "Już odtwarzam na innym kanale."
+  },
+  "events": {
+    "created": "Wydarzenie utworzone!",
+    "reminder": "📅 Wydarzenie **{name}** zaczyna się za {time}!",
+    "rsvp": {
+      "going": "Wybierasz się na **{event}**!",
+      "maybe": "Oznaczyłeś „może“ dla **{event}**.",
+      "notGoing": "Nie wybierasz się na **{event}**."
+    }
+  },
+  "giveaway": {
+    "title": "🎉 KONKURS 🎉",
+    "endedTitle": "🎉 KONKURS ZAKOŃCZONY 🎉",
+    "activeTitle": "🎉 Trwające konkursy",
+    "won": "🎉 Gratulacje {winners}! Wygrałeś **{prize}**!",
+    "rerolled": "🎉 Nowi zwycięzcy **{prize}**: {winners}! Gratulacje!",
+    "noEntries": "Nikt nie wziął udziału w konkursie o **{prize}**.",
+    "prize": "Nagroda",
+    "winnersLabel": "Zwycięzcy",
+    "endsAt": "Kończy się",
+    "hostedBy": "Organizuje",
+    "howToEnter": "Dołącz przyciskiem poniżej."
+  },
+  "ui": {
+    "nav": {
+      "back": "Powrót do serwerów",
+      "overview": "Przegląd",
+      "modules": "Moduły",
+      "welcome": "Powitanie",
+      "automod": "AutoMod",
+      "serverstatus": "Status serwerów",
+      "channels": "Kanały",
+      "games": "Gry",
+      "settings": "Ustawienia",
+      "links": "Linki",
+      "menu": "Otwórz menu",
+      "menuClose": "Zamknij menu",
+      "config": "Konfiguracja"
+    },
+    "common": {
+      "save": "Zapisz zmiany",
+      "saving": "Zapisywanie…",
+      "saved": "Zapisano",
+      "enabled": "Włączone",
+      "disabled": "Wyłączone",
+      "search": "Szukaj…",
+      "retry": "Spróbuj ponownie",
+      "selectAll": "Zaznacz wszystkie",
+      "clear": "Wyczyść wybór",
+      "language": "Język",
+      "unknown": "Nieznany",
+      "searching": "Szukaj...",
+      "nothingSelected": "Nic nie wybrano"
+    },
+    "scope": {
+      "all": "Wszędzie",
+      "only": "Tylko tutaj",
+      "except": "Wszędzie oprócz",
+      "title": "Kanały",
+      "subtitle": "Wybierz, w których kanałach działa każda funkcja.",
+      "hintModes": "Tylko tutaj - funkcja działa wyłącznie w wybranych kanałach. Wszędzie oprócz - działa wszędzie poza nimi.",
+      "hintCategory": "Wybór kategorii obejmuje wszystkie kanały w środku. Wątki dziedziczą z kanału nadrzędnego.",
+      "nothingRestricted": "Nic nie ograniczone",
+      "restricted": "Ograniczone",
+      "pick": "Wybierz kanały",
+      "hide": "Ukryj kanały",
+      "categories": "Kategorie",
+      "channels": "Kanały",
+      "emptyWarning": "Nie wybrano kanału - funkcja działa wszędzie, dopóki go nie dodasz.",
+      "noChannels": "Nie znaleziono odpowiedniego kanału.",
+      "onlyPrefix": "Tylko: ",
+      "exceptPrefix": "Wszędzie oprócz: ",
+      "feature": {
+        "global": {
+          "label": "Wszystkie funkcje",
+          "description": "Podstawowa reguła dla całego bota. Funkcja z własnym ustawieniem ją nadpisuje."
+        },
+        "commands": {
+          "label": "Wszystkie komendy",
+          "admin": {
+            "label": "Komendy: Admin",
+            "description": "Komendy administratora."
+          },
+          "moderation": {
+            "label": "Komendy: Moderacja",
+            "description": "Komendy moderatora."
+          },
+          "economy": {
+            "label": "Komendy: Ekonomia",
+            "description": "Komendy ekonomii i sklepu."
+          },
+          "fun": {
+            "label": "Komendy: Rozrywka",
+            "description": "Komendy rozrywkowe i gier."
+          },
+          "utility": {
+            "label": "Komendy: Narzędzia",
+            "description": "Przydatne i informacyjne komendy."
+          },
+          "description": "Podstawowa reguła dla wszystkich komend slash."
+        },
+        "leveling": {
+          "label": "Leveling / XP",
+          "description": "Zdobywanie XP za wiadomości i ogłoszenia awansu."
+        },
+        "economy": {
+          "label": "Ekonomia",
+          "description": "Zdobywanie waluty za wiadomości."
+        },
+        "messageStats": {
+          "label": "Statystyki wiadomości",
+          "description": "Liczenie wiadomości do statystyk i rankingów."
+        },
+        "autoResponse": {
+          "label": "Automatyczne odpowiedzi",
+          "description": "Odpowiedzi bota na słowa kluczowe."
+        },
+        "afk": {
+          "label": "System AFK",
+          "description": "Ogłaszanie statusu AFK i powrotu."
+        },
+        "sticky": {
+          "label": "Wiadomości przyklejone",
+          "description": "Wiadomość trwale przypięta na dole kanału."
+        },
+        "reputation": {
+          "label": "Reputacja",
+          "description": "Przyznawanie punktów reputacji."
+        },
+        "confessions": {
+          "label": "Wyznania",
+          "description": "Anonimowe wyznania."
+        },
+        "suggestions": {
+          "label": "Sugestie",
+          "description": "System sugestii i głosowania."
+        },
+        "birthday": {
+          "label": "Urodziny",
+          "description": "Ogłoszenia urodzinowe."
+        },
+        "automod": {
+          "label": "AutoMod",
+          "description": "Automatyczna moderacja czatu (spam, linki, caps, ...)."
+        },
+        "filter": {
+          "label": "Filtr słów",
+          "description": "Blokowanie zakazanych słów."
+        },
+        "antiAd": {
+          "label": "Anty-reklama",
+          "description": "Blokowanie zaproszeń i linków reklamowych."
+        },
+        "antiRaid": {
+          "label": "Anti-Raid",
+          "description": "Ochrona przed masowymi dołączeniami."
+        },
+        "counting": {
+          "label": "Liczenie",
+          "description": "Gra w kolejne liczenie liczb."
+        },
+        "starboard": {
+          "label": "Starboard",
+          "description": "Kanały źródłowe, z których wiadomości trafiają na starboard."
+        },
+        "giveaways": {
+          "label": "Konkursy",
+          "description": "Konkursy z nagrodami."
+        },
+        "polls": {
+          "label": "Ankiety",
+          "description": "Głosowania i ankiety."
+        },
+        "games": {
+          "label": "Gry",
+          "description": "Wspólna reguła dla wszystkich gier. Pojedyncza gra ją nadpisuje."
+        },
+        "voiceStats": {
+          "label": "Statystyki głosowe",
+          "description": "Liczenie czasu spędzonego na kanałach głosowych."
+        },
+        "tempChannels": {
+          "label": "Kanały tymczasowe",
+          "description": "Automatyczne tworzenie kanałów głosowych."
+        },
+        "logs": {
+          "label": "Logi",
+          "description": "Kanały, z których zapisywane są zdarzenia."
+        },
+        "gameScope": {
+          "description": "Kanały, na których można uruchomić tę grę."
+        }
+      }
+    },
+    "games": {
+      "title": "Gry",
+      "subtitle": "Każdą grę włączasz osobno i możesz ograniczyć do wybranych kanałów.",
+      "enabledOf": "Włączone {a} z {b}",
+      "list": "Lista gier",
+      "configure": "Ustaw",
+      "hideCfg": "Ukryj",
+      "where": "Gdzie można grać",
+      "inherits": "Obowiązuje wspólna reguła dla wszystkich gier.",
+      "multiplayer": "wielu graczy",
+      "sharedHint": "Gra bez własnej reguły podlega wspólnej regule Gry w sekcji Kanały.",
+      "emptyWarning": "Brak kanału - dopóki go nie wybierzesz, gra działa wszędzie."
+    },
+    "home": {
+      "running": "Bot działa",
+      "offline": "Bot jest offline",
+      "updateAvailable": "Dostępna aktualizacja: v{version}",
+      "noHeartbeat": "Brak sygnału. Sprawdź, czy proces bota działa i ma dostęp do folderu data/json.",
+      "servers": "Serwery",
+      "users": "Użytkownicy",
+      "ping": "Ping",
+      "uptime": "Czas pracy",
+      "cpu": "Procesor",
+      "ram": "Pamięć",
+      "commands": "Komendy",
+      "refreshes": "Odświeża się",
+      "auto": "automatycznie",
+      "cores": "{n} rdzeni · obciążenie {load}",
+      "ofTotal": "{p} % z {total} MB",
+      "yourServers": "Twoje serwery",
+      "selectServer": "Wybierz serwer do zarządzania",
+      "botAdded": "Bot dodany",
+      "botMissing": "Brak bota",
+      "noServers": "Brak serwerów",
+      "noServersHint": "Nie znaleziono serwera z uprawnieniem Zarządzanie serwerem. Jeśli właśnie dodałeś bota, wyloguj się i zaloguj ponownie - Discord chwilę cachuje listę.",
+      "addBot": "Dodaj bota do serwera",
+      "loadFailed": "Serwery się nie wczytały",
+      "signOut": "Wyloguj",
+      "relogin": "Zaloguj się ponownie",
+      "apiUnreachable": "Panel nie mógł połączyć się z własnym API."
+    },
+    "lp": {
+      "signIn": "Zaloguj się",
+      "dashboard": "Panel",
+      "openDashboard": "Otwórz panel",
+      "getStarted": "Zacznij",
+      "addToServer": "Dodaj do serwera",
+      "loading": "Ładowanie...",
+      "eyebrow": "85+ komend · 30+ modułów",
+      "version": "Wersja {version}",
+      "subtitle": "Wydajny, modułowy bot do zarządzania społecznością Discord: zaawansowana moderacja, poziomy, ekonomia, zgłoszenia, konkursy, logi, kanały społecznościowe i pełny panel webowy. Autor: {author}.",
+      "stat": {
+        "commands": "Komendy",
+        "modules": "Moduły",
+        "languages": "Języki",
+        "uptime": "Dostępność"
+      },
+      "f": {
+        "moderation": {
+          "t": "Moderacja",
+          "d": "Ban, kick, wyciszenie, timeout, softban, ostrzeżenia, notatki i pełna historia moderacji."
+        },
+        "automod": {
+          "t": "Auto-Mod",
+          "d": "Anti-spam, anti-raid, blokada linków i zaproszeń, anti-caps, ochrona przed masowym oznaczaniem i filtr słów."
+        },
+        "logging": {
+          "t": "Logi",
+          "d": "Edycja i usuwanie wiadomości, zmiany ról i kanałów, wejścia i wyjścia oraz aktywność głosowa."
+        },
+        "welcome": {
+          "t": "Powitania i role",
+          "d": "Wiadomości powitalne i pożegnalne, automatyczne role, role za reakcje i weryfikacja."
+        },
+        "leveling": {
+          "t": "Poziomy",
+          "d": "XP za aktywność, nagrody za poziomy, karty rangi, rankingi i XP głosowe."
+        },
+        "economy": {
+          "t": "Ekonomia",
+          "d": "Waluta, dzienne nagrody, sklep, ekwipunek, prace i gry hazardowe."
+        },
+        "ticket": {
+          "t": "Zgłoszenia",
+          "d": "Zgłoszenia wsparcia, raporty błędów i aplikacje z transkryptami i kategoriami."
+        },
+        "gift": {
+          "t": "Konkursy",
+          "d": "Konkursy z wieloma zwycięzcami, dodatkowymi losami i wymaganiami rolowymi."
+        },
+        "feed": {
+          "t": "Kanały społecznościowe",
+          "d": "Powiadomienia z YouTube, Twitcha i RSS oraz zaplanowane ogłoszenia."
+        },
+        "crypto": {
+          "t": "Statystyki i krypto",
+          "d": "Statystyki członków, wiadomości i głosu, wgląd w serwer, i ceny krypto."
+        },
+        "link": {
+          "t": "Przydatne linki",
+          "d": "Panel linków dla każdego serwera przez /links, zarządzany z panelu."
+        },
+        "globe": {
+          "t": "Panel",
+          "d": "Panel webowy dla wielu serwerów, w którym skonfigurujesz każdy moduł bez komend Discorda."
+        }
+      }
+    },
+    "automod": {
+      "action": {
+        "delete": "Usuń wiadomość",
+        "warn": "Usuń + ostrzeżenie",
+        "timeout": "Usuń + timeout",
+        "kick": "Wyrzuć",
+        "ban": "Zbanuj"
+      },
+      "field": {
+        "action": "Akcja",
+        "duration": "Timeout (s)",
+        "durationHint": "Dotyczy tylko akcji timeout."
+      },
+      "spam": {
+        "label": "💬 Spam i szybkość pisania",
+        "desc": "Ile wiadomości jedna osoba może wysłać w danym czasie.",
+        "maxMessages": "Maks. wiadomości",
+        "interval": "Na czas (ms)",
+        "intervalHint": "5000 = 5 sekund"
+      },
+      "links": {
+        "label": "🔗 Linki do stron",
+        "desc": "Blokuje linki spoza dozwolonych domen."
+      },
+      "invites": {
+        "label": "📨 Zaproszenia na inne serwery",
+        "desc": "Blokuje discord.gg i podobne linki."
+      },
+      "caps": {
+        "label": "🔠 CAPS LOCK",
+        "desc": "Wiadomości pisane głównie wielkimi literami.",
+        "percentage": "Udział wielkich (%)",
+        "minLength": "Od długości wiadomości"
+      },
+      "mentions": {
+        "label": "📢 Masowe wzmianki",
+        "desc": "Liczba oznaczeń w jednej wiadomości.",
+        "maxMentions": "Maks. wzmianek"
+      },
+      "repeat": {
+        "label": "🔁 Powtórzenia",
+        "desc": "Ta sama wiadomość lub znak w kółko.",
+        "maxRepeats": "Maks. powtórzeń"
+      },
+      "emojis": {
+        "label": "😀 Za dużo emoji",
+        "desc": "Emoji unicode i serwerowe razem.",
+        "maxEmojis": "Maks. emoji"
+      },
+      "spoilers": {
+        "label": "⬛ Za dużo spoilerów",
+        "desc": "Ukryte bloki w jednej wiadomości.",
+        "maxSpoilers": "Maks. spoilerów"
+      },
+      "zalgo": {
+        "label": "🌀 Tekst zalgo",
+        "desc": "Nieczytelne znaki obłożone diakrytykami."
+      },
+      "phishing": {
+        "label": "🎣 Phishing",
+        "desc": "Domeny podszywające się pod Discord, Steam i podobne."
+      },
+      "fakeNitro": {
+        "label": "🎁 Fałszywe Nitro",
+        "desc": "Oferty darmowego Nitro z linkiem."
+      },
+      "cryptoScam": {
+        "label": "🪙 Oszustwa kryptowalutowe",
+        "desc": "Airdropy i obietnice gwarantowanego zysku."
+      },
+      "massMention": {
+        "label": "👥 Dokładne masowe oznaczanie",
+        "desc": "Liczy unikalne osoby i role, nie tylko znaki.",
+        "maxMentions": "Maks. celów",
+        "countEveryone": "Licz @everyone"
+      },
+      "ghostPing": {
+        "label": "👻 Ghost ping",
+        "desc": "Oznaczenie i natychmiastowe usunięcie wiadomości.",
+        "maxAgeSeconds": "Do (s) od wysłania"
+      },
+      "exemptRoles": "Role bez kontroli",
+      "exemptChannels": "Kanały bez kontroli"
+    },
+    "welcome": {
+      "memberPreview": "{count}. członek serwera {server}"
+    },
+    "auth": {
+      "notSignedIn": "Nie jesteś zalogowany.",
+      "expired": "Logowanie przez Discord wygasło. Wyloguj się i zaloguj ponownie.",
+      "rejected": "Discord odrzucił logowanie. Wyloguj się i zaloguj ponownie.",
+      "unexpected": "Discord zwrócił nieoczekiwaną odpowiedź.",
+      "unreachable": "Nie udało się połączyć z Discordem. Sprawdź sieć i zaporę serwera."
+    },
+    "tickets": {
+      "welcomeMessage": "Wiadomość powitalna"
+    },
+    "help": {
+      "tempban": "Zbanuj członka na określony czas - bot później sam go odbanuje",
+      "timedrole": "Rola, która po czasie sama znika",
+      "voicemute": "Wyciszenie i ogłuszenie na kanałach głosowych",
+      "antinuke": "Ochrona serwera przed masowym niszczeniem",
+      "channels": "Ustaw, w których kanałach działają poszczególne funkcje bota",
+      "texts": "Przepisz komunikaty bota po swojemu"
+    },
+    "modules": {
+      "group": {
+        "security": "Moderacja i bezpieczeństwo",
+        "members": "Członkowie",
+        "engagement": "Zaangażowanie",
+        "economy": "Ekonomia i gry",
+        "content": "Treści",
+        "tools": "Narzędzia"
+      },
+      "moderation": {
+        "label": "Moderacja",
+        "description": "Ban, kick, ostrzeżenia, timeout, jail i historia spraw."
+      },
+      "automod": {
+        "label": "AutoMod",
+        "description": "Spam, linki, phishing, fałszywe nitro, reguły regex."
+      },
+      "antinuke": {
+        "label": "Anti-Nuke",
+        "description": "Ochrona przed masowym niszczeniem serwera."
+      },
+      "antiRaid": {
+        "label": "Anti-Raid",
+        "description": "Wykrywa nagły napływ i sprawdza wiek konta."
+      },
+      "logs": {
+        "label": "Logi",
+        "description": "Wiadomości, członkowie, role, kanały, wątki, boosty."
+      },
+      "appeals": {
+        "label": "Odwołania",
+        "description": "Prośby o zniesienie kary."
+      },
+      "verification": {
+        "label": "Weryfikacja",
+        "description": "Weryfikacja nowych członków przed wejściem."
+      },
+      "welcome": {
+        "label": "Powitanie",
+        "description": "Wiadomości powitalne i karty graficzne."
+      },
+      "goodbye": {
+        "label": "Pożegnanie",
+        "description": "Wiadomości przy odejściu członka."
+      },
+      "joinRoles": {
+        "label": "Automatyczne role",
+        "description": "Role przyznawane zaraz po dołączeniu."
+      },
+      "reactionroles": {
+        "label": "Role za reakcje",
+        "description": "Przyciski i menu do wyboru ról."
+      },
+      "persist": {
+        "label": "Zapamiętywanie ról",
+        "description": "Przywraca role członkowi, który wraca."
+      },
+      "invites": {
+        "label": "Śledzenie zaproszeń",
+        "description": "Kto kogo zaprosił i ranking zaproszeń."
+      },
+      "namehistory": {
+        "label": "Historia nazw",
+        "description": "Zmiany pseudonimów i nazw użytkownika."
+      },
+      "leveling": {
+        "label": "Leveling / XP",
+        "description": "XP za wiadomości i głos, karty rangi, role nagród."
+      },
+      "starboard": {
+        "label": "Starboard",
+        "description": "Najlepsze wiadomości według reakcji."
+      },
+      "suggestions": {
+        "label": "Sugestie",
+        "description": "Sugestie z głosowaniem i statusem."
+      },
+      "reputation": {
+        "label": "Reputacja",
+        "description": "Punkty za pomaganie innym."
+      },
+      "counting": {
+        "label": "Liczenie",
+        "description": "Kolejne liczenie liczb na kanale."
+      },
+      "birthday": {
+        "label": "Urodziny",
+        "description": "Ogłoszenia urodzinowe i role."
+      },
+      "confessions": {
+        "label": "Wyznania",
+        "description": "Anonimowe posty."
+      },
+      "afk": {
+        "label": "AFK",
+        "description": "Informuje, że członek jest nieobecny."
+      },
+      "polls": {
+        "label": "Ankiety",
+        "description": "Głosowania z przyciskami."
+      },
+      "economy": {
+        "label": "Ekonomia",
+        "description": "Monety, bank, sklep, praca, napady, kasyno."
+      },
+      "games": {
+        "label": "Gry",
+        "description": "Kółko i krzyżyk, quiz, kości i inne - każda konfigurowana osobno."
+      },
+      "giveaways": {
+        "label": "Konkursy",
+        "description": "Konkursy z wieloma zwycięzcami i wymaganiami."
+      },
+      "quests": {
+        "label": "Zadania",
+        "description": "Dzienne i tygodniowe zadania z nagrodami."
+      },
+      "streaks": {
+        "label": "Serie",
+        "description": "Nagrody za regularną aktywność."
+      },
+      "tickets": {
+        "label": "Zgłoszenia",
+        "description": "Panele wsparcia, przejmowanie, transkrypty."
+      },
+      "applications": {
+        "label": "Aplikacje",
+        "description": "Formularze rekrutacyjne do zespołu."
+      },
+      "autoResponse": {
+        "label": "Automatyczne odpowiedzi",
+        "description": "Odpowiedzi na słowa kluczowe i FAQ."
+      },
+      "sticky": {
+        "label": "Wiadomości przyklejone",
+        "description": "Wiadomość, która zostaje na dole kanału."
+      },
+      "tags": {
+        "label": "Tagi",
+        "description": "Zapisane odpowiedzi na wywołanie."
+      },
+      "feeds": {
+        "label": "Kanały RSS",
+        "description": "Nowości z RSS na Discorda."
+      },
+      "socials": {
+        "label": "Media społecznościowe",
+        "description": "Śledzenie kont w mediach społecznościowych."
+      },
+      "reminders": {
+        "label": "Przypomnienia",
+        "description": "Zaplanowane przypomnienia."
+      },
+      "tempChannels": {
+        "label": "Kanały tymczasowe",
+        "description": "Pokoje głosowe tworzone na żądanie."
+      },
+      "voiceStats": {
+        "label": "Statystyki głosowe",
+        "description": "Czas spędzony na kanałach głosowych."
+      },
+      "messageStats": {
+        "label": "Statystyki wiadomości",
+        "description": "Liczba wiadomości i rankingi."
+      },
+      "serverStatus": {
+        "label": "Status serwerów",
+        "description": "Monitorowanie serwerów gier."
+      },
+      "crypto": {
+        "label": "Krypto i NFT",
+        "description": "Kursy, indeks strachu, NFT."
+      },
+      "backup": {
+        "label": "Kopie zapasowe",
+        "description": "Kopia zapasowa i przywracanie ustawień serwera."
+      },
+      "webhooks": {
+        "label": "Webhooki",
+        "description": "Wysyłanie zdarzeń na własny URL."
+      },
+      "prefixCommands": {
+        "label": "Komendy z prefiksem",
+        "description": "Uruchamianie komend przez prefiks tekstowy."
+      }
+    },
+    "scopeGroup": {
+      "global": "Globalne",
+      "chat": "Czat",
+      "moderation": "Moderacja",
+      "fun": "Rozrywka",
+      "voice": "Głos",
+      "logs": "Logi",
+      "commands": "Komendy"
+    },
+    "gameDefs": {
+      "tictactoe": {
+        "label": "Kółko i krzyżyk",
+        "description": "Klasyczne trzy w rzędzie przeciw innemu graczowi lub botowi."
+      },
+      "connect4": {
+        "label": "Czwórki",
+        "description": "Spadające żetony, kto pierwszy ułoży cztery."
+      },
+      "rps": {
+        "label": "Kamień, papier, nożyce",
+        "description": "Szybki pojedynek na jedną rundę."
+      },
+      "trivia": {
+        "label": "Quiz",
+        "description": "Pytania z opcjami i punktacją."
+      },
+      "dice": {
+        "label": "Kości",
+        "description": "Rzut kością."
+      },
+      "coinflip": {
+        "label": "Rzut monetą",
+        "description": "Orzeł czy reszka."
+      },
+      "eightball": {
+        "label": "Magiczna kula",
+        "description": "Odpowiedzi na pytania tak/nie."
+      },
+      "matchmaking": {
+        "label": "Szukanie współgraczy",
+        "description": "Nabór do ekipy na konkretną grę."
+      },
+      "quest": {
+        "label": "Zadania",
+        "description": "Dzienne i tygodniowe zadania z nagrodami."
+      },
+      "gamestats": {
+        "label": "Statystyki gier",
+        "description": "Przegląd wygranych i przegranych."
+      }
+    },
+    "gameOpts": {
+      "turnTimeout": "Limit czasu na ruch",
+      "answerTimeout": "Czas na odpowiedź",
+      "correctReward": "Nagroda za poprawną odpowiedź",
+      "cooldownHint": "Ile gracz musi czekać między próbami",
+      "maxOpenLobbies": "Maks. otwartych naborów na gracza",
+      "dailyQuests": "Liczba dziennych zadań"
+    },
+    "customText": {
+      "group": {
+        "basic": "Podstawowe"
+      },
+      "noPermission": "Użytkownik nie ma uprawnień",
+      "botNoPermission": "Bot nie ma uprawnień",
+      "ownerOnly": "Tylko dla właściciela bota",
+      "guildOnly": "Tylko na serwerze, nie w DM",
+      "cooldown": "Odczekanie między komendami - {time}",
+      "wrongChannel": "Komenda niedozwolona na tym kanale",
+      "unknownError": "Nieznany błąd",
+      "invalidUser": "Nieprawidłowy użytkownik",
+      "invalidChannel": "Nieprawidłowy kanał",
+      "invalidRole": "Nieprawidłowa rola"
+    },
+    "sx": {
+      "settings": {
+        "tab": {
+          "general": "Ogólne",
+          "channels": "Kanały",
+          "links": "Linki",
+          "analytics": "Analityka",
+          "welcome": "Powitania",
+          "sticky": "Przypięte",
+          "birthday": "Urodziny",
+          "confessions": "Wyznania",
+          "embed": "Wiadomość embed",
+          "automod": "AutoMod",
+          "logging": "Logi",
+          "leveling": "Poziomy",
+          "economy": "Ekonomia",
+          "tickets": "Zgłoszenia",
+          "appeals": "Odwołania",
+          "applications": "Podania",
+          "giveaways": "Konkursy",
+          "reactionroles": "Role reakcji",
+          "tempchannels": "Kanały tymczasowe",
+          "verification": "Weryfikacja",
+          "starboard": "Starboard",
+          "games": "Gry",
+          "serverstatus": "Status serwera",
+          "crypto": "Krypto i NFT",
+          "socials": "Media społecznościowe",
+          "suggestions": "Sugestie",
+          "reputation": "Reputacja",
+          "counting": "Liczenie",
+          "autoresponse": "Autoodpowiedzi",
+          "feeds": "Kanały RSS",
+          "reminders": "Przypomnienia",
+          "tags": "Tagi",
+          "warnings": "Ostrzeżenia",
+          "backup": "Kopia zapasowa",
+          "webhooks": "Webhooki",
+          "apikeys": "Dostęp do API",
+          "audit": "Dziennik audytu",
+          "help": "Komendy",
+          "plugins": "Wtyczki"
+        },
+        "saveFailed": "❌ Zapis nie powiódł się: {error}",
+        "saved": "✅ Ustawienia zapisane!",
+        "saveError": "❌ Błąd zapisu - sprawdź połączenie i spróbuj ponownie.",
+        "imageUploaded": "✅ Obraz przesłany!",
+        "uploadError": "❌ Błąd przesyłania",
+        "backupCreating": "Tworzenie kopii zapasowej...",
+        "backupCreated": "✅ Kopia zapasowa utworzona: {filename}",
+        "error": "❌ Błąd",
+        "panelSent": "✅ {type} wysłano!",
+        "sendError": "Błąd wysyłania",
+        "sentMessage": "Wysłana wiadomość",
+        "untitledMessage": "Wiadomość bez tytułu",
+        "selectChannel": "Wybierz kanał!",
+        "embedName": "Embed",
+        "nothingToSaveMessage": "Nie ma czego zapisać - najpierw napisz wiadomość.",
+        "draftSaved": "💾 Zapisano!",
+        "messageNoChannel": "Ta wiadomość nie ma kanału - wczytaj ją, wybierz kanał, a następnie wyślij.",
+        "sentPanel": "Wysłany panel",
+        "untitledPanel": "Panel bez tytułu",
+        "addButton": "Dodaj co najmniej jeden przycisk!",
+        "reactionRolesSent": "✅ Role reakcji wysłane!",
+        "noPanelEditing": "Żaden panel nie jest edytowany - najpierw wczytaj wysłany panel.",
+        "panelUpdated": "✅ Panel zaktualizowany!",
+        "nothingToSavePanel": "Nie ma czego zapisać - najpierw skonfiguruj panel.",
+        "panelNoChannel": "Ten panel nie ma kanału - wczytaj go, wybierz kanał, a następnie wyślij.",
+        "plainText": "💬 Zwykły tekst",
+        "embedBtn": "📋 Embed",
+        "embedTitle": "Tytuł",
+        "embedColor": "Kolor",
+        "embedDescription": "Opis ({vars})",
+        "embedImageUrl": "URL obrazu (obsługuje {avatar})",
+        "embedThumbnailUrl": "URL miniatury ({avatar} dla awatara członka)",
+        "embedFooter": "Stopka",
+        "addTimestamp": "Dodaj znacznik czasu",
+        "savedToLibrary": "💾 Zapisano w bibliotece wiadomości!",
+        "loadSaved": "📥 Wczytaj z zapisanej wiadomości…",
+        "untitled": "Bez tytułu",
+        "saveAsMessage": "💾 Zapisz jako wiadomość",
+        "stickyIncomplete": "Najpierw wybierz kanał i napisz wiadomość.",
+        "back": "← Wstecz",
+        "server": "Serwer",
+        "lockDashboard": "🔒 Zablokuj panel",
+        "refresh": "🔄 Odśwież",
+        "save": "Zapisz"
+      },
+      "common": {
+        "loading": "Ładowanie…"
+      },
+      "audit": {
+        "title": "Dziennik audytu",
+        "subtitle": "Ostatnie akcje moderacyjne i zmiany w panelu, od najnowszych.",
+        "filter": {
+          "all": "wszystko",
+          "moderation": "moderacja",
+          "dashboard": "panel"
+        },
+        "empty": "Nic jeszcze nie zapisano."
+      },
+      "apikeys": {
+        "createFailed": "Nie udało się utworzyć klucza ({status})",
+        "networkError": "❌ Błąd sieci - sprawdź połączenie i spróbuj ponownie.",
+        "revokeConfirm": "Unieważnić ten klucz API? Wszystko, co go używa, natychmiast przestanie działać.",
+        "revokeFailed": "Nie udało się unieważnić klucza ({status})",
+        "title": "Dostęp do API",
+        "description": "Utwórz klucz, aby odczytywać statystyki tego serwera we własnych aplikacjach. Wysyłaj go jako token Bearer. Klucze są przechowywane w postaci skrótu - pełny klucz zobaczysz tylko raz, zaraz po utworzeniu.",
+        "namePlaceholder": "Nazwa klucza (np. Moja strona)",
+        "creating": "Tworzenie…",
+        "create": "Utwórz klucz",
+        "copyNow": "Skopiuj ten klucz teraz - nie zostanie wyświetlony ponownie:",
+        "yourKeys": "Twoje klucze",
+        "empty": "Brak kluczy API.",
+        "lastUsed": "ostatnio użyty {date}",
+        "neverUsed": "nigdy nieużywany",
+        "revoke": "Unieważnij",
+        "example": "Przykład"
+      },
+      "analytics": {
+        "dow": {
+          "sun": "Nd",
+          "mon": "Pn",
+          "tue": "Wt",
+          "wed": "Śr",
+          "thu": "Cz",
+          "fri": "Pt",
+          "sat": "Sb"
+        },
+        "heatTooltip": "{day} {hour}:00 - {count} wiad.",
+        "noData": "Brak danych.",
+        "noRoleSnapshot": "Brak migawki ról - bot odświeża ją kilka razy dziennie.",
+        "loading": "Ładowanie analityki…",
+        "loadError": "Nie udało się teraz wczytać analityki.",
+        "noDataCollected": "Nie zebrano jeszcze danych analitycznych. Bot zaczyna rejestrować aktywność od teraz - wróć za dzień lub dwa, aby zobaczyć sensowne wykresy.",
+        "messages30d": "Wiadomości (30 dni)",
+        "netMembers30d": "Przyrost członków netto (30 dni)",
+        "voiceHours30d": "Godziny głosowe (30 dni)",
+        "commands30d": "Komendy (30 dni)",
+        "healthScores": "Wskaźniki kondycji",
+        "heuristic": "(szacunki heurystyczne)",
+        "activity": "Aktywność",
+        "consistency": "Regularność (aktywne dni)",
+        "growthHealth": "Kondycja wzrostu",
+        "growthForecast": "Prognoza wzrostu",
+        "trendProjection": "(projekcja trendu)",
+        "avgNetPerDay": "Śr. przyrost netto / dzień",
+        "projected7": "Prognoza +7 dni",
+        "projected30": "Prognoza +30 dni",
+        "msgTrend7d": "Trend wiadomości (7 dni)",
+        "forecastNote": "Liniowe oszacowanie z ostatnich 30 dni - orientacyjne, bez gwarancji.",
+        "messagesPerDay": "Wiadomości dziennie",
+        "joinsVsLeaves": "Dołączenia vs odejścia",
+        "joinsVsLeavesLegend": "(zielone w górę = dołączenia, czerwone w dół = odejścia)",
+        "heatmap": "Mapa cieplna aktywności",
+        "heatmapHint": "(wiadomości wg dnia i godziny)",
+        "topChannels": "Najpopularniejsze kanały",
+        "topMembers": "Najaktywniejsi członkowie",
+        "topCommands": "Najczęściej używane komendy",
+        "membersByRole": "Członkowie wg ról",
+        "membersTotal": "({count} członków łącznie)",
+        "moderationActions": "Akcje moderacyjne",
+        "totalActions": "Wszystkie akcje",
+        "warningsOnRecord": "Zapisane ostrzeżenia",
+        "topReasons": "Najczęstsze powody banów / kar",
+        "supportTickets": "Zgłoszenia do wsparcia",
+        "ticketsTotal": "Razem",
+        "ticketsOpen": "Otwarte",
+        "ticketsClosed": "Zamknięte",
+        "avgResolution": "Śr. czas rozwiązania"
+      }
+    },
+    "tabsA": {
+      "common": {
+        "none": "-- Brak --",
+        "select": "-- Wybierz --"
+      },
+      "appeals": {
+        "title": "🛡️ Odwołania",
+        "intro": "Kanał, na który trafiają odwołania z komendy {command} oraz z publicznej strony odwołań. Piszą tu użytkownicy, których zbanowano lub wyciszono.",
+        "channel": "Kanał odwołań",
+        "instructions": "Instrukcje dotyczące odwołania (widoczne dla użytkownika)",
+        "instructionsPlaceholder": "Napisz, dlaczego uważasz, że kara była niesprawiedliwa. Bądź konkretny i uprzejmy.",
+        "enablePublic": "Włącz publiczną stronę odwołań"
+      },
+      "applications": {
+        "title": "📝 Podania",
+        "channel": "Kanał podań",
+        "reviewChannel": "Kanał recenzji (dla załogi)",
+        "approvedRole": "Rola po zatwierdzeniu",
+        "questions": "Pytania (jedno na linię)",
+        "questionsPlaceholder": "Ile masz lat?\nDlaczego chcesz dołączyć?\nCzy masz doświadczenie?"
+      },
+      "autoresponse": {
+        "title": "💬 Automatyczne odpowiedzi",
+        "intro": "Automatyczne odpowiedzi na słowa kluczowe.",
+        "trigger": "Wyzwalacz",
+        "answer": "Odpowiedź",
+        "add": "+ Dodaj"
+      },
+      "backup": {
+        "title": "💾 Kopia zapasowa serwera",
+        "intro": "Utwórz pełną kopię zapasową ustawień serwera.",
+        "create": "💾 Utwórz kopię",
+        "savedTitle": "Zapisane kopie",
+        "pathHint": "Pliki kopii zapasowych są przechowywane na serwerze w:",
+        "empty": "Brak kopii zapasowych.",
+        "stats": "{roles} ról, {channels} kanałów",
+        "restoring": "Przywracanie…",
+        "restoreMode": {
+          "full": "Pełne przywrócenie",
+          "server": "Tylko serwer",
+          "bot": "Tylko ustawienia bota"
+        },
+        "restoreConfirm": {
+          "full": "Pełne przywrócenie: role, kanały i ustawienia serwera o zgodnej nazwie zostaną zaktualizowane (brakujące utworzone ponownie), a ustawienia Vorqul bota dla tego serwera zostaną zastąpione kopią. Nic istniejącego nie zostanie usunięte.",
+          "server": "Przywróć tylko serwer Discord (role, kanały, ustawienia serwera) o zgodnej nazwie; brakujące zostaną utworzone ponownie. Nic istniejącego nie zostanie usunięte. Ustawienia Vorqul bota pozostaną nietknięte.",
+          "bot": "Przywróć tylko ustawienia Vorqul bota dla tego serwera (automod, welcome, leveling itd.) z kopii. Sam serwer Discord (role/kanały) pozostanie nietknięty."
+        },
+        "restoreDone": "Przywrócono: {roles} rol(e), {channels} kanał(y) zmienionych{errors}",
+        "restoreDoneBot": "Ustawienia bota przywrócone{errors}",
+        "restoreDoneBotSuffix": ", ustawienia bota przywrócone",
+        "restoreErrorsSuffix": ", {n} błędów",
+        "restoreError": "Nie udało się przywrócić kopii.",
+        "refresh": "🔄 Odśwież listę"
+      },
+      "birthday": {
+        "title": "🎂 System urodzin",
+        "enable": "Włącz codzienne ogłoszenia urodzin (o 08:00 czasu serwera)",
+        "channel": "Kanał ogłoszeń",
+        "role": "Rola urodzinowa (opcjonalna, nadawana na jeden dzień)",
+        "message": "Wiadomość ({user}, {username}, {age}, {server})",
+        "messagePlaceholder": "🎉 Wszystkiego najlepszego, {user}! 🎂",
+        "messageType": "Typ wiadomości",
+        "plainText": "💬 Zwykły tekst",
+        "embed": "📋 Embed",
+        "embedColor": "Kolor embeda",
+        "help": "Członkowie ustawiają swoje urodziny komendą {set}, sprawdzają je przez {view}, a nadchodzące zobaczą przez {list}."
+      },
+      "confessions": {
+        "title": "🤫 Wyznania",
+        "enable": "Włącz anonimowe wyznania ({command})",
+        "channel": "Kanał wyznań",
+        "logChannel": "Kanał logów dla załogi (opcjonalny - przechowuje kopię z ujawnionym autorem na potrzeby moderacji)",
+        "allowReplies": "Zezwól na anonimowe odpowiedzi (dodaje przycisk Odpowiedz pod każdym wyznaniem)",
+        "minAccountAge": "Minimalny wiek konta (dni) - ochrona przed spamem, 0 = wyłączone",
+        "help": "Wyznania publikuje bot z rosnącym numerem, więc autor pozostaje ukryty na kanale. Jeśli ustawisz kanał logów dla załogi, moderatorzy nadal zobaczą, kto co napisał - przydatne przy nadużyciach. Numerację i dane autorów bot przechowuje prywatnie."
+      },
+      "counting": {
+        "title": "🔢 Liczenie",
+        "enable": "Włącz grę w liczenie",
+        "channel": "Kanał do liczenia",
+        "allowSameUser": "Zezwól temu samemu użytkownikowi liczyć dwa razy z rzędu",
+        "deleteWrong": "Usuwaj błędne wiadomości i wiadomości bez liczby",
+        "goal": "Cel (ogłoszenie + nagroda, 0 = wyłączone)",
+        "goalRole": "Rola nagrody za cel (opcjonalna)",
+        "currentCount": "Aktualny wynik",
+        "countAndBest": "{count} · rekord: {best}"
+      },
+      "crypto": {
+        "title": "₿ Krypto i NFT",
+        "trackedTitle": "💰 Śledzone waluty",
+        "coins": "Monety (BTC, ETH...)",
+        "currency": "Waluta",
+        "nftTitle": "🖼️ Kolekcje NFT",
+        "nftEnable": "Włącz śledzenie NFT",
+        "collections": "Kolekcje (slug OpenSea)"
+      },
+      "economy": {
+        "title": "💰 Ekonomia",
+        "currencyName": "Nazwa waluty",
+        "emoji": "Emoji",
+        "startingBalance": "Saldo początkowe",
+        "daily": "Nagroda dzienna",
+        "streakBonus": "Bonus za serię %",
+        "maxStreakBonus": "Maksymalny bonus za serię",
+        "workMin": "Praca min.",
+        "workMax": "Praca maks.",
+        "workCooldown": "Odczekanie pracy (s)",
+        "gamblingTitle": "🎰 Hazard",
+        "game": {
+          "coinflip": "Rzut monetą",
+          "slots": "Automaty",
+          "roulette": "Ruletka",
+          "blackjack": "Blackjack",
+          "dice": "Kości",
+          "crash": "Crash",
+          "rps": "Kamień, papier, nożyce"
+        },
+        "minBet": "Minimalny zakład",
+        "maxBet": "Maksymalny zakład",
+        "bankTitle": "🏦 Bank",
+        "enableBank": "Włącz bank",
+        "dailyInterest": "Dzienne odsetki %"
+      },
+      "embed": {
+        "title": "📨 Kreator embedów",
+        "modeEmbed": "📋 Embed",
+        "modePlain": "💬 Zwykły tekst",
+        "channel": "Kanał",
+        "color": "Kolor",
+        "senderName": "Nazwa nadawcy (opcjonalnie)",
+        "senderNamePlaceholder": "Nazwa bota dla tej wiadomości",
+        "senderAvatar": "URL awatara nadawcy (opcjonalnie)",
+        "webhookNote": "Gdy ustawiono nazwę lub awatar nadawcy, wiadomość jest wysyłana przez webhook - bot potrzebuje na tym kanale uprawnienia Zarządzanie webhookami. Działa zarówno dla embedów, jak i zwykłego tekstu.",
+        "messageText": "Wiadomość (tekst)",
+        "textOutside": "Tekst poza embedem (wzmianki / pingi)",
+        "messagePlaceholder": "Napisz wiadomość... (obsługuje @everyone, @here i pingi ról)",
+        "outsidePlaceholder": "np. @everyone lub ping roli",
+        "selectRole": "-- Wybierz rolę --",
+        "addRoleMention": "+ Wzmianka o roli",
+        "roleMentionNote": "Wzmianki o rolach są wstawiane jako {format} do tekstu nad embedem i spingują rolę.",
+        "author": "Autor",
+        "titleField": "Tytuł",
+        "description": "Opis",
+        "image": "Obraz",
+        "imagePlaceholder": "https://... lub prześlij",
+        "upload": "Prześlij",
+        "preview": "Podgląd",
+        "thumbnailUrl": "URL miniatury",
+        "footer": "Stopka",
+        "addTimestamp": "Dodaj znacznik czasu",
+        "sending": "Wysyłanie…",
+        "sendMessage": "Wyślij wiadomość",
+        "sendEmbed": "Wyślij embed",
+        "saveDraft": "💾 Zapisz szkic",
+        "savedTitle": "💾 Zapisane i wysłane wiadomości",
+        "savedIntro": "Każda wysłana wiadomość jest tu przechowywana. Możesz ją edytować (wczytuje się z powrotem do kreatora), powielić w nową wiadomość, wysłać ponownie lub usunąć.",
+        "savedEmpty": "Brak zapisanych wiadomości - wyślij lub zapisz wiadomość powyżej.",
+        "untitled": "Bez tytułu",
+        "statusSent": "📤 Wysłano",
+        "statusDraft": "📝 Szkic",
+        "edit": "✏️ Edytuj",
+        "duplicate": "📋 Powiel",
+        "resend": "📤 Wyślij ponownie"
+      },
+      "feeds": {
+        "title": "📰 Kanały RSS",
+        "intro": "Automatyczne publikowanie kanałów RSS.",
+        "urlPlaceholder": "URL RSS",
+        "channel": "Kanał",
+        "force": "Wyślij teraz",
+        "forceHint": "Sprawdza kanał od razu i publikuje najnowszy wpis, bez czekania na harmonogram.",
+        "forceSent": "Wysłano: {title}",
+        "forceError": "Nie udało się wysłać kanału."
+      },
+      "games": {
+        "title": "🎮 Gry",
+        "intro": "Gry konfiguruje się na osobnej stronie - włączanie pojedynczo, kanały, w których działają, limity czasu i nagrody.",
+        "open": "Otwórz ustawienia gier"
+      },
+      "giveaways": {
+        "howToTitle": "ℹ️ Jak rozpocząć giveaway",
+        "howToIntro": "Giveaway uruchamia się na serwerze komendą {command} - tam wpisujesz treść:",
+        "optPrize": "co rozdajesz",
+        "optDuration": "np. 1h, 30m, 2d",
+        "optWinners": "liczba zwycięzców",
+        "optOptional": "opcjonalne",
+        "howToOutro": "Członkowie dołączają, klikając przycisk 🎉, a bot automatycznie losuje zwycięzców po upływie czasu. Trwającymi giveaway zarządzasz przez {end}, {reroll} i {list}. Poniższe pola to domyślne wartości modułu.",
+        "title": "🎉 Giveaway",
+        "channel": "Kanał",
+        "any": "-- Dowolny --",
+        "emoji": "Emoji",
+        "color": "Kolor",
+        "managerRole": "Rola menedżera",
+        "dmWinners": "Wyślij zwycięzcom wiadomość prywatną",
+        "requireRole": "Wymagaj roli do udziału"
+      },
+      "general": {
+        "basicTitle": "Ustawienia podstawowe",
+        "prefix": "Prefiks",
+        "botLanguage": "Język bota",
+        "botLanguageHint": "Wpływa na odpowiedzi bota.",
+        "botNickname": "Nazwa bota na tym serwerze",
+        "botNicknamePlaceholder": "Zostaw puste, aby użyć globalnej nazwy bota",
+        "botNicknameHint": "Obowiązuje tylko tutaj - na innych serwerach bot ma inną nazwę. Maksymalnie 32 znaki. Bot potrzebuje uprawnienia „Zmiana pseudonimu”. Zmiana zadziała w ciągu kilku minut.",
+        "perServerNote": "Język i nazwa obowiązują osobno dla każdego serwera i działają bez restartu bota.",
+        "managerRole": "Rola menedżera",
+        "managerRoleHint": "Członkowie z tą rolą mogą otwierać i edytować ustawienia tego serwera, ale nie mogą instalować, włączać, wyłączać ani konfigurować pluginów.",
+        "modulesEnabled": "Włączono {on} z {total}",
+        "modulesIntro": "Pełna lista. Wyłączony moduł przestaje działać razem ze swoimi komendami."
+      },
+      "automod": {
+        "ignoreAdmins": "Nie sprawdzaj administratorów",
+        "exemptTitle": "🪪 Wyłączone role i kanały",
+        "searchRole": "Szukaj roli...",
+        "noExemptRole": "Żadna rola nie jest wyłączona",
+        "searchChannel": "Szukaj kanału...",
+        "allChannels": "AutoMod działa na wszystkich kanałach",
+        "bannedWords": "🚫 Zakazane słowa",
+        "bannedWordsPlaceholder": "brzydkie1, brzydkie2, brzydkie3",
+        "bannedWordsHint": "Oddzielaj przecinkami. Nowa linia też działa. Wielkość liter nie ma znaczenia.",
+        "allowedDomains": "✅ Dozwolone domeny",
+        "allowedDomainsHint": "Oddzielaj przecinkami. Obowiązuje, gdy filtr linków jest włączony - linki do tych domen przechodzą.",
+        "filters": "⚙️ Filtry"
+      }
+    },
+    "tabsB": {
+      "common": {
+        "select": "-- Wybierz --",
+        "none": "-- Brak --",
+        "disabledOpt": "-- Wyłączone --",
+        "channel": "Kanał",
+        "title": "Tytuł",
+        "color": "Kolor",
+        "description": "Opis",
+        "add": "+ Dodaj",
+        "messageType": "Typ wiadomości",
+        "role": "Rola",
+        "emoji": "Emoji",
+        "sending": "Wysyłanie…",
+        "searchRole": "Szukaj roli...",
+        "searchChannel": "Szukaj kanału...",
+        "upload": "Prześlij",
+        "buttonText": "Tekst przycisku",
+        "message": "Wiadomość",
+        "supportRole": "Rola supportu",
+        "save": "Zapisz"
+      },
+      "help": {
+        "title": "💬 Komendy",
+        "intro": "{total} komend. Komenda działa także z prefiksem, jeśli moduł Komendy z prefiksem jest włączony.",
+        "group": {
+          "moderation": "🔨 Moderacja",
+          "administration": "⚙️ Administracja",
+          "utility": "🧰 Narzędzia",
+          "fun": "🎮 Zabawa i gry"
+        },
+        "cmd": {
+          "altcheck": "Heurystyczne sprawdzenie konta alternatywnego członka (wiek konta, awatar, role)",
+          "appeal": "Złóż odwołanie od ostrzeżenia, wyciszenia lub innej akcji moderacyjnej",
+          "ban": "Banuje członka na serwerze",
+          "case": "Wyszukuje sprawę moderacyjną według ID",
+          "cleanup": "Narzędzia do porządkowania serwera",
+          "clear": "Usuwa wiele wiadomości",
+          "jail": "Wsadza członka do więzienia: zabiera role i izoluje do czasu uwolnienia",
+          "kick": "Wyrzuca członka z serwera",
+          "lock": "Blokuje kanał (członkowie nie będą mogli pisać wiadomości)",
+          "lockdown": "Blokuje lub odblokowuje wszystkie kanały tekstowe serwera naraz",
+          "massnick": "Ustawia lub resetuje pseudonim wielu członkom naraz",
+          "massrole": "Dodaje lub usuwa rolę wielu członkom naraz",
+          "mute": "Wycisza członka (używa skonfigurowanej roli mute lub timeoutu)",
+          "nick": "Zmienia lub resetuje pseudonim członka",
+          "note": "Dodaje prywatną notatkę moderatora o użytkowniku",
+          "notes": "Pokazuje notatki moderatorów i historię moderacji użytkownika",
+          "permcheck": "Sprawdzanie i podgląd uprawnień",
+          "role": "Dodaje lub usuwa rolę członkowi",
+          "shadowmute": "Ciche wyciszenie członka: jego wiadomości są usuwane bez powiadomienia",
+          "slowmode": "Ustawia tryb powolny (limit częstotliwości) na kanale",
+          "softban": "Softban członka (ban + natychmiastowy unban, by usunąć jego wiadomości)",
+          "timeout": "Nakłada timeout na członka",
+          "unban": "Odbanowuje użytkownika według ID",
+          "unjail": "Uwalnia członka z więzienia i przywraca jego dawne role",
+          "unlock": "Odblokowuje kanał (członkowie znów będą mogli pisać)",
+          "unmute": "Odcisza członka (usuwa rolę mute i/lub timeout)",
+          "unshadowmute": "Usuwa ciche wyciszenie członka",
+          "untimeout": "Zdejmuje timeout z członka",
+          "warn": "Ostrzega członka",
+          "persist": "Przywraca role i pseudonim członka, gdy wróci na serwer",
+          "premium": "Zarządzanie poziomami premium (tylko właściciel bota)",
+          "afk": "Ustawia twój status AFK",
+          "apply": "System podań",
+          "autoresponse": "Zarządzanie automatycznymi odpowiedziami",
+          "birthday": "Zapisuje twoje urodziny, aby serwer mógł je świętować",
+          "coinflip": "Rzuca monetą",
+          "confess": "Wysyła anonimowe wyznanie na serwer",
+          "connect4": "Zagraj w Czwórki!",
+          "digest": "Tygodniowe podsumowanie serwera",
+          "feed": "Zarządzanie kanałami z mediów społecznościowych",
+          "filter": "Zarządzanie filtrem zakazanych słów",
+          "gamestats": "Pokazuje statystyki gier",
+          "help": "Pokazuje wszystkie dostępne komendy",
+          "invites": "Zarządzanie zaproszeniami i ich podgląd",
+          "leaderboard": "Pokazuje rankingi serwera",
+          "levelroles": "Zarządzanie rolami za poziom",
+          "logs": "Konfiguruje system logowania",
+          "msgtop": "Ranking najbardziej aktywnych piszących",
+          "rank": "Sprawdza twoją lub cudzą pozycję w rankingu",
+          "reactionroles": "Zarządzanie rolami reakcji",
+          "referral": "System poleceń",
+          "rep": "System reputacji",
+          "rolemenu": "Tworzy menu ról",
+          "rps": "Zagraj w kamień, papier, nożyce",
+          "settings": "Ustawienia serwera",
+          "streak": "Pokazuje twoją serię aktywności",
+          "suggest": "System sugestii",
+          "tempchannel": "Zarządzanie twoim tymczasowym kanałem głosowym",
+          "ticket": "System wsparcia przez tickety",
+          "tictactoe": "Zagraj w kółko i krzyżyk!",
+          "vctop": "Ranking najbardziej aktywnych na kanałach głosowych",
+          "verify": "Zweryfikuj się na serwerze",
+          "whatdidimiss": "Podsumowanie tego, co się działo pod twoją nieobecność",
+          "whywasibanned": "Sprawdza twoją historię moderacji i informacje o odwołaniu",
+          "8ball": "Zadaj pytanie magicznej kuli 8",
+          "dice": "Rzuca kośćmi",
+          "giveaway": "Tworzy i zarządza giveawayami",
+          "matchmaking": "System wyszukiwania graczy",
+          "poll": "Tworzy ankietę",
+          "quest": "Zadania i wyzwania serwera",
+          "trivia": "Odpowiadaj na pytania z quizu i zdobywaj nagrody"
+        }
+      },
+      "leveling": {
+        "title": "⭐ Poziomy",
+        "xpMin": "XP min.",
+        "xpMax": "XP maks.",
+        "cooldown": "Cooldown (s)",
+        "voiceXpPerMin": "XP z głosowych/min",
+        "multiplier": "Mnożnik XP",
+        "maxLevel": "Maks. poziom",
+        "levelUpChannel": "Kanał awansów",
+        "sameChannel": "Ten sam kanał",
+        "dm": "DM",
+        "disabled": "Wyłączone",
+        "levelUpMessage": "Wiadomość o awansie ({user}, {level}, {xp})",
+        "levelUpPlaceholder": "🎉 {user} osiągnął poziom {level}!",
+        "voiceXp": "XP z kanałów głosowych",
+        "stackRoles": "Kumuluj nagrody w rolach",
+        "roleRewards": "🏆 Nagrody w rolach",
+        "levelCol": "Poziom",
+        "lvlPlaceholder": "Poz.",
+        "xpExceptions": "🚫 Wyjątki od XP",
+        "noXpRole": "Role bez XP",
+        "noXpRoleEmpty": "Wszyscy zdobywają XP",
+        "noXpChannels": "Kanały bez XP",
+        "noXpChannelsEmpty": "XP zdobywa się wszędzie"
+      },
+      "logging": {
+        "title": "📝 Logowanie",
+        "categoryHint": "Kategoria bez własnego kanału trafia do kanału „Serwer”.",
+        "disabled": "Wyłączone",
+        "events": "🔔 Zdarzenia",
+        "eventsHint": "Wyłączone zdarzenie nie jest zapisywane, nawet jeśli kategoria ma ustawiony kanał.",
+        "ignoredChannels": "🚫 Ignorowane kanały",
+        "ignoredHint": "Aktywność na tych kanałach nie jest logowana",
+        "loggedEverywhere": "Logowane wszędzie",
+        "cat": {
+          "moderation": {
+            "label": "🛡️ Moderacja",
+            "desc": "Ban, kick, ostrzeżenie, mute"
+          },
+          "messages": {
+            "label": "💬 Wiadomości",
+            "desc": "Edycja, usunięcie"
+          },
+          "members": {
+            "label": "👥 Członkowie",
+            "desc": "Dołączenie, wyjście, pseudonim, awatar"
+          },
+          "server": {
+            "label": "⚙️ Serwer",
+            "desc": "Ustawienia serwera"
+          },
+          "voice": {
+            "label": "🔊 Głos",
+            "desc": "Dołączenie, wyjście, przeniesienie"
+          },
+          "roles": {
+            "label": "🎭 Role",
+            "desc": "Zmiany ról członków"
+          },
+          "channels": {
+            "label": "📁 Kanały",
+            "desc": "Utworzenie, usunięcie, zmiana"
+          },
+          "invites": {
+            "label": "🔗 Zaproszenia",
+            "desc": "Tworzenie i usuwanie zaproszeń"
+          },
+          "threads": {
+            "label": "🧵 Wątki",
+            "desc": "Utworzenie, usunięcie, zmiana wątku"
+          },
+          "emojis": {
+            "label": "😀 Emoji",
+            "desc": "Zmiany emoji i naklejek"
+          },
+          "boosts": {
+            "label": "💎 Boosty",
+            "desc": "Boosty serwera"
+          }
+        },
+        "ev": {
+          "messageEdit": "Wiadomość edytowana",
+          "messageDelete": "Wiadomość usunięta",
+          "messageBulkDelete": "Masowe usuwanie",
+          "memberJoin": "Członek dołączył",
+          "memberLeave": "Członek wyszedł",
+          "voiceJoin": "Dołączenie do głosowego",
+          "voiceLeave": "Wyjście z głosowego",
+          "voiceMove": "Przeniesienie w głosowym",
+          "roleCreate": "Rola utworzona",
+          "roleDelete": "Rola usunięta",
+          "channelCreate": "Kanał utworzony",
+          "channelDelete": "Kanał usunięty",
+          "threadCreate": "Wątek utworzony",
+          "threadDelete": "Wątek usunięty"
+        }
+      },
+      "rr": {
+        "colorBlue": "Niebieski",
+        "colorGrey": "Szary",
+        "colorGreen": "Zielony",
+        "colorRed": "Czerwony",
+        "editing": "✏️ Edytujesz panel już wysłany na Discord (wiadomość {id}). „Zaktualizuj panel” edytuje oryginalną wiadomość.",
+        "stopEditing": "✕ Zakończ edycję",
+        "title": "🎭 Role reakcji",
+        "titlePh": "🎭 Wybierz swoją rolę",
+        "type": "Typ",
+        "typeMultiple": "Multiple - kilka ról",
+        "typeSingle": "Single - tylko jedna",
+        "senderName": "Nazwa nadawcy (opcjonalnie)",
+        "senderNamePh": "Nazwa bota dla tego panelu",
+        "senderAvatar": "URL awatara nadawcy (opcjonalnie)",
+        "webhookNote": "Gdy ustawiono nazwę lub awatar nadawcy, panel jest wysyłany przez webhook - bot potrzebuje na tym kanale uprawnienia Zarządzanie webhookami. Przyciski działają jak zwykle.",
+        "buttons": "🔘 Przyciski",
+        "buttonLabelPh": "Tekst",
+        "buttonColor": "Kolor przycisku",
+        "updatePanel": "Zaktualizuj panel",
+        "sendAsNew": "Wyślij jako nowy",
+        "send": "Wyślij",
+        "preview": "👁️ Podgląd",
+        "defaultDescription": "Kliknij przycisk, aby dodać lub usunąć rolę.",
+        "footer": "Vorqul DS BOT • Role reakcji",
+        "noButtons": "Brak przycisków - dodaj jakiś powyżej.",
+        "singleMode": "Tryb Single: wybór roli usuwa pozostałe role z tego panelu.",
+        "savedPanels": "💾 Zapisane i wysłane panele",
+        "savedHint": "Każdy wysłany panel jest tu zapisywany automatycznie, więc możesz go wczytać, zmienić i wysłać ponownie.",
+        "noSaved": "Brak zapisanych paneli.",
+        "savedMeta": "{count} przycisków · {status} · {date}",
+        "onDiscord": "na Discordzie",
+        "sent": "wysłany",
+        "draft": "szkic",
+        "load": "Wczytaj"
+      },
+      "reminders": {
+        "title": "⏰ Przypomnienia",
+        "hint": "Ustawienia komendy /reminder.",
+        "maxPerUser": "Maks. przypomnień na użytkownika",
+        "maxDuration": "Maks. czas (dni)"
+      },
+      "reputation": {
+        "title": "⭐ Reputacja",
+        "enable": "Włącz system reputacji",
+        "cooldown": "Odstęp między przyznawaniem reputacji temu samemu użytkownikowi (godziny)",
+        "allowNegative": "Zezwól na ujemną reputację",
+        "rewardRole": "Rola nagrody (przyznawana po osiągnięciu progu reputacji, opcjonalnie)",
+        "threshold": "Próg (rep)"
+      },
+      "socials": {
+        "intro": "Każda sieć społecznościowa jest konfigurowana osobno. Włącz tylko te, których potrzebujesz.",
+        "accYoutube": "ID kanałów YouTube (po jednym w linii)",
+        "accTwitch": "Nazwy użytkowników Twitch (po jednej w linii)",
+        "accReddit": "Subreddity (po jednym w linii)",
+        "accRss": "Adresy URL kanałów RSS (po jednym w linii)",
+        "notifChannel": "Kanał powiadomień",
+        "mentionRole": "Rola do oznaczenia (opcjonalnie)",
+        "customMessage": "Własna wiadomość (opcjonalnie)",
+        "customPh": "🔴 Nowy post!"
+      },
+      "starboard": {
+        "title": "⭐ Starboard",
+        "channel": "Kanał Starboard",
+        "minReactions": "Min. reakcji",
+        "selfStar": "Zezwól na gwiazdkę do własnej wiadomości",
+        "ignoredChannels": "Ignorowane kanały",
+        "noneIgnored": "Żaden kanał nie jest ignorowany"
+      },
+      "sticky": {
+        "title": "📌 Przypięte wiadomości",
+        "intro": "Przypięta wiadomość jest ponownie wysyłana na dół kanału, gdy ktoś coś napisze, więc nigdy nie znika z widoku. Zmiany z panelu obowiązują od następnej wiadomości na kanale; {cmd} działa natychmiast.",
+        "messagePh": "Ta wiadomość zostaje na dole kanału.",
+        "plainText": "Zwykły tekst",
+        "embed": "Embed",
+        "embedTitle": "Tytuł embeda",
+        "addUpdate": "Dodaj / zaktualizuj przypiętą wiadomość",
+        "active": "Aktywne przypięte wiadomości",
+        "none": "Brak przypiętych wiadomości.",
+        "kindEmbed": "embed",
+        "kindText": "tekst",
+        "saveHint": "Kliknij 💾 Zapisz u góry, aby zachować zmiany."
+      },
+      "suggestions": {
+        "title": "💡 Sugestie",
+        "channel": "Kanał sugestii",
+        "upvote": "Emoji za",
+        "downvote": "Emoji przeciw",
+        "autoThread": "Automatycznie twórz wątek",
+        "anonymous": "Zezwól na anonimowe sugestie"
+      },
+      "tags": {
+        "title": "🏷️ Własne tagi",
+        "hint": "Szybkie odpowiedzi przez /tag.",
+        "namePh": "Nazwa",
+        "contentPh": "Treść"
+      },
+      "temp": {
+        "title": "🔊 Kanały tymczasowe",
+        "hub": "Kanał Join to Create",
+        "category": "Kategoria",
+        "sameCategory": "-- Ta sama --",
+        "nameFormat": "Format nazwy ({user}, {game})",
+        "nameFormatPh": "🎮 Kanał użytkownika {user}",
+        "limit": "Limit (0 = bez limitu)",
+        "bitrate": "Bitrate (kbps)"
+      },
+      "tickets": {
+        "panelName": "Panel ticketów",
+        "title": "🎫 Tickety",
+        "panelChannel": "Kanał panelu",
+        "ticketCategory": "Kategoria ticketów",
+        "noSupportRole": "Brak roli supportu",
+        "transcriptChannel": "Kanał transkryptów",
+        "maxPerUser": "Maks. ticketów na użytkownika",
+        "panel": "📋 Panel",
+        "panelTitlePh": "🎫 Wsparcie",
+        "panelDescPh": "Kliknij przycisk, aby utworzyć ticket",
+        "buttonTextPh": "📩 Utwórz ticket",
+        "welcomeInTicket": "Wiadomość powitalna w tickecie",
+        "welcomePh": "Witaj! Opisz swój problem...",
+        "categoriesTitle": "🎟️ Kategorie ticketów (opcjonalnie)",
+        "categoriesHint": "Jeśli dodasz kategorie, panel pokaże przycisk dla każdej z nich (własna kategoria Discord, rola supportu i wiadomość powitalna). Bez kategorii używany jest pojedynczy przycisk powyżej.",
+        "buttonName": "Nazwa przycisku",
+        "defaultCategoryLabel": "Wsparcie",
+        "discordCategory": "Kategoria Discord (nadrzędna)",
+        "defaultOption": "-- domyślna --",
+        "perMainSettings": "Według ustawień głównych",
+        "removeCategory": "Usuń kategorię",
+        "addCategory": "+ Dodaj kategorię",
+        "sendPanel": "Wyślij panel"
+      },
+      "verification": {
+        "type": "Typ",
+        "typeButton": "Przycisk",
+        "typeReaction": "Reakcja",
+        "typeCaptcha": "Captcha",
+        "roleAfter": "Rola po weryfikacji",
+        "buttonTextPh": "✅ Zweryfikuj się",
+        "send": "Wyślij"
+      },
+      "warnings": {
+        "title": "⚠️ Akcje automatyczne",
+        "hint": "Akcje wykonywane po osiągnięciu liczby ostrzeżeń.",
+        "warnsWithin": "ostrzeżeń w ciągu",
+        "daysArrow": "dni →",
+        "mute": "Mute",
+        "kick": "Kick",
+        "tempban": "TempBan",
+        "ban": "Ban",
+        "immunity": "🛡️ Role odporne",
+        "noImmune": "Żadna rola nie jest odporna"
+      },
+      "webhooks": {
+        "title": "🔗 Wychodzące webhooki",
+        "intro": "Wysyła zdarzenia serwera metodą POST na twój własny endpoint. Każde żądanie jest podpisane nagłówkiem {sig}, abyś mógł je zweryfikować.",
+        "enable": "Włącz wychodzące webhooki",
+        "url": "URL webhooka",
+        "secret": "Klucz podpisu (opcjonalny, ale zalecany)",
+        "secretPh": "długi losowy ciąg znaków",
+        "events": "Zdarzenia do wysyłania",
+        "memberJoin": "Członek dołączył",
+        "memberLeave": "Członek wyszedł",
+        "memberBan": "Członek zbanowany",
+        "memberUnban": "Członek odbanowany",
+        "dashboardLog": "Zmiana w panelu",
+        "testSent": "Test wysłany (HTTP {status})",
+        "failed": "Niepowodzenie",
+        "requestFailed": "Żądanie nie powiodło się",
+        "sendTest": "Wyślij zdarzenie testowe",
+        "saveFirst": "Najpierw zapisz zmiany - test dotyczy zapisanego webhooka."
+      },
+      "welcome": {
+        "welcomeHeading": "👋 Wiadomość powitalna",
+        "messageVars": "Wiadomość ({user}, {server}, {memberCount})",
+        "messagePh": "Witaj {user} na serwerze {server}! 🎉",
+        "msgTypeHint": "Zwykły tekst wysyła powyższą wiadomość bez zmian. Embed wysyła kartę z polami poniżej.",
+        "welcomeLabel": "Wiadomość powitalna",
+        "titlePh": "Witaj!",
+        "bannerImage": "Obraz banera",
+        "imagePh": "https://... lub prześlij plik",
+        "preview": "Podgląd",
+        "thumbnail": "Miniatura ({avatar} dla awatara)",
+        "footer": "Stopka",
+        "goodbyeHeading": "👋 Wiadomość pożegnalna",
+        "goodbyeLabel": "Wiadomość pożegnalna",
+        "autoRole": "🎭 Rola automatyczna",
+        "dmHeading": "📩 Wiadomość prywatna do nowych członków",
+        "sendDm": "Wysyłaj wiadomość prywatną nowym członkom",
+        "dmPh": "Witaj na serwerze! Przeczytaj proszę regulamin...",
+        "dmLabel": "Wiadomość prywatna"
+      }
+    },
+    "cfg": {
+      "common": {
+        "select": "- wybierz -",
+        "selectChannel": "- wybierz kanał -",
+        "saveFailed": "Zapis nie powiódł się ({status})",
+        "networkError": "Błąd sieci - sprawdź połączenie."
+      },
+      "games": {
+        "noteBefore": "Jeśli gra nie ma własnej reguły dla kanałów, obowiązuje wspólne ustawienie",
+        "noteLink": "Gry w sekcji Kanały",
+        "noteAfter": ". Własna reguła je nadpisuje."
+      },
+      "serverstatus": {
+        "title": "Status serwera",
+        "subtitle": "Automatycznie aktualizowany status serwera MC/Bedrock na kanale.",
+        "serverCard": "Serwer",
+        "serverDesc": "Adres serwera, który ma być monitorowany.",
+        "type": "Typ",
+        "host": "Adres (host)",
+        "port": "Port",
+        "displayCard": "Wyświetlanie",
+        "displayDesc": "Gdzie i jak wyświetlany jest status. Aktualizuje się automatycznie co minutę.",
+        "channel": "Kanał",
+        "colorOnline": "Kolor (online)",
+        "online": "🟢 Serwer jest online",
+        "address": "Adres:",
+        "players": "Gracze:",
+        "version": "Wersja:"
+      },
+      "welcome": {
+        "title": "Powitanie",
+        "subtitle": "Powitaj nowych członków wiadomością i kartą.",
+        "messageCard": "Wiadomość",
+        "messageDesc": "Kanał i tekst wysyłany, gdy dołącza nowy członek.",
+        "channel": "Kanał",
+        "channelHint": "Dokąd zostanie wysłana wiadomość powitalna",
+        "messageText": "Treść wiadomości",
+        "variablesPlaceholder": "Zmienne: {user} {username} {server} {count} {inviter}",
+        "variables": "Zmienne:",
+        "sendEmbed": "Wyślij jako embed",
+        "dmCard": "Wiadomość prywatna (DM)",
+        "dmDesc": "Opcjonalna wiadomość prywatna dla nowego członka.",
+        "dmEnable": "Włącz DM",
+        "dmPlaceholder": "Cześć {user}, witaj na {server}!",
+        "cardCard": "Karta powitalna",
+        "cardDesc": "Obraz w stylu MEE6 z awatarem i tekstem.",
+        "cardEnable": "Włącz kartę",
+        "cardTitle": "Tytuł",
+        "cardTitlePlaceholder": "Witaj, {username}!",
+        "cardSubtitle": "Podtytuł",
+        "accentColor": "Kolor akcentu",
+        "textColor": "Kolor tekstu",
+        "bgColor": "Kolor tła",
+        "bgColorHint": "Używany, gdy nie ma obrazu",
+        "bgUrl": "URL tła (opcjonalnie)",
+        "bgUrlPlaceholder": "https://…/tlo.png",
+        "upload": "Wgraj",
+        "uploading": "Wgrywanie…",
+        "uploadError": "Wgrywanie nie powiodło się. Spróbuj mniejszego obrazu albo wklej link do niego.",
+        "bgUrlHint": "Wklej link do obrazu albo wgraj go bezpośrednio (do 500 KB)."
+      },
+      "automod": {
+        "subtitle": "Automatyczna moderacja czatu w stylu MEE6.",
+        "spamTitle": "Anty-spam",
+        "spamDesc": "Zbyt wiele wiadomości w krótkim czasie.",
+        "repeatedTitle": "Powtarzany tekst",
+        "repeatedDesc": "Ta sama wiadomość lub powtarzające się znaki.",
+        "invitesTitle": "Zaproszenia Discord",
+        "invitesDesc": "Blokuje linki discord.gg.",
+        "linksTitle": "Linki zewnętrzne",
+        "linksDesc": "Blokuje adresy URL spoza białej listy.",
+        "whitelist": "Biała lista domen (oddzielone przecinkami)",
+        "attachmentsTitle": "Obrazy / załączniki",
+        "attachmentsDesc": "Blokuje wiadomości z załącznikami ponad limit.",
+        "maxAttachments": "Maks. załączników (0 = blokuj wszystkie)",
+        "imagesOnly": "Tylko obrazy",
+        "capsTitle": "Nadmiar WIELKICH LITER",
+        "capsDesc": "Zbyt wiele wielkich liter.",
+        "emojisTitle": "Nadmiar emoji",
+        "emojisDesc": "Zbyt wiele emoji w wiadomości.",
+        "spoilersTitle": "Nadmiar spoilerów",
+        "spoilersDesc": "Zbyt wiele bloków ||spoiler||.",
+        "mentionsTitle": "Masowe wzmianki",
+        "mentionsDesc": "Zbyt wiele @wzmianek naraz.",
+        "zalgoDesc": "Nadmiar łączących znaków diakrytycznych.",
+        "blacklistTitle": "Zakazane słowa",
+        "blacklistDesc": "Lista słów oddzielonych przecinkami. Pasująca wiadomość zostanie usunięta.",
+        "blacklistPlaceholder": "słowo1, słowo2, słowo3",
+        "exemptTitle": "Wyjątki",
+        "exemptDesc": "Kogo i gdzie AutoMod ignoruje.",
+        "ignoreAdmins": "Ignoruj adminów",
+        "escalationTitle": "Eskalacja kar",
+        "escalationDesc": "Automatyczna akcja po N wykroczeniach w danym okresie (styl MEE6).",
+        "escalationEnable": "Włącz eskalację",
+        "windowMinutes": "Okno (minuty)",
+        "after": "po",
+        "infractions": "wykroczeniach",
+        "secShort": "s",
+        "addRule": "+ Dodaj regułę"
+      },
+      "modules": {
+        "toggleFailed": "Nie udało się przełączyć modułu ({status})",
+        "networkError": "Błąd sieci - sprawdź połączenie i spróbuj ponownie.",
+        "title": "Moduły",
+        "detailed": "Szczegółowe ustawienia",
+        "openPage": "Otwórz stronę",
+        "openSettings": "Otwórz ustawienia"
+      },
+      "links": {
+        "loading": "Ładowanie…",
+        "back": "Wróć do serwera",
+        "title": "Przydatne linki",
+        "moduleEnabled": "Moduł włączony",
+        "descBefore": "Te linki wyświetla polecenie",
+        "descAfter": "na tym serwerze. Każdy serwer ma własne linki - ustawienia są całkowicie oddzielne.",
+        "namePlaceholder": "Nazwa (np. Strona)",
+        "descPlaceholder": "Opis (opcjonalnie)",
+        "remove": "Usuń",
+        "empty": "Brak linków. Dodaj pierwszy poniżej.",
+        "add": "Dodaj link",
+        "max": "Maks. 25 linków"
+      }
+    },
+    "app": {
+      "lp": {
+        "by": "od"
+      },
+      "common": {
+        "avatar": "Awatar"
+      },
+      "login": {
+        "errSignin": "Błąd logowania. Spróbuj ponownie.",
+        "errCallbackProc": "Błąd przetwarzania uwierzytelnienia.",
+        "errCreate": "Nie udało się utworzyć konta.",
+        "errCallback": "Błąd wywołania zwrotnego.",
+        "errDenied": "Odmowa dostępu.",
+        "errUnexpected": "Wystąpił nieoczekiwany błąd.",
+        "signInDiscord": "Zaloguj się przez Discord",
+        "redirectHint": "Po zalogowaniu zostaniesz przekierowany do panelu",
+        "backHome": "Wróć do strony głównej",
+        "loading": "Ładowanie..."
+      },
+      "gate": {
+        "tooMany": "Zbyt wiele prób. Poczekaj minutę i spróbuj ponownie.",
+        "wrong": "Nieprawidłowe hasło. Spróbuj ponownie.",
+        "network": "Błąd sieci - sprawdź połączenie i spróbuj ponownie.",
+        "title": "Wpisz hasło dostępu, aby kontynuować",
+        "placeholder": "Hasło dostępu",
+        "checking": "Sprawdzanie…",
+        "unlock": "Odblokuj",
+        "note": "To dodatkowa warstwa przed logowaniem przez Discord."
+      },
+      "dash": {
+        "loadErr": "Nie udało się wczytać serwerów ({status}).",
+        "loading": "Wczytywanie serwerów...",
+        "botActive": "Bot aktywny",
+        "owner": "Właściciel",
+        "admin": "Admin",
+        "add": "Dodaj"
+      },
+      "multi": {
+        "remove": "Usuń {name}",
+        "nothingMore": "Nic więcej do wyboru."
+      },
+      "guild": {
+        "saveFailed": "Zapis nie powiódł się ({status})",
+        "tab": {
+          "overview": "Przegląd",
+          "modules": "Moduły",
+          "welcome": "Powitania",
+          "moderation": "Moderacja",
+          "leveling": "Poziomy",
+          "logs": "Logi"
+        },
+        "back": "Wróć do serwerów",
+        "fullSettings": "Wszystkie ustawienia",
+        "links": "Przydatne linki",
+        "overview": "Przegląd serwera",
+        "prefix": "Prefiks",
+        "activeModules": "Aktywne moduły",
+        "welcomeMsg": "Wiadomość powitalna",
+        "welcomePh": "Witaj na {server}, {user}!",
+        "variables": "Zmienne:",
+        "modTitle": "Ustawienia moderacji",
+        "modDesc": "Skonfiguruj automoderację, anty-spam i inne funkcje moderacji.",
+        "levTitle": "Ustawienia poziomów",
+        "levDesc": "Skonfiguruj tempo XP, wiadomości o awansie i nagrody w postaci ról.",
+        "logTitle": "Kanały logów",
+        "log": {
+          "moderation": "Logi moderacji",
+          "messages": "Logi wiadomości",
+          "members": "Logi członków",
+          "server": "Logi serwera"
+        },
+        "channelId": "ID kanału"
+      },
+      "gm": {
+        "welcome": {
+          "name": "System powitań",
+          "desc": "Wiadomości powitalne i pożegnalne"
+        },
+        "moderation": {
+          "name": "Moderacja",
+          "desc": "Kick, ban, timeout, ostrzeżenia"
+        },
+        "logging": {
+          "name": "Logowanie zdarzeń",
+          "desc": "Logi wiadomości i członków"
+        },
+        "leveling": {
+          "name": "Poziomy",
+          "desc": "XP i nagrody za poziomy"
+        },
+        "economy": {
+          "name": "Ekonomia",
+          "desc": "System wirtualnej waluty"
+        },
+        "automod": {
+          "name": "Automod",
+          "desc": "Automatyczna moderacja"
+        },
+        "antiraid": {
+          "name": "Anti-Raid",
+          "desc": "Ochrona przed rajdami"
+        },
+        "starboard": {
+          "name": "Starboard",
+          "desc": "Wyróżniaj wiadomości gwiazdkami"
+        },
+        "suggestions": {
+          "name": "Sugestie",
+          "desc": "System sugestii"
+        },
+        "crypto": {
+          "name": "Krypto",
+          "desc": "Śledzenie kryptowalut"
+        }
+      }
+    },
+    "plg": {
+      "title": "Wtyczki",
+      "intro": "Wtyczki dodają botowi polecenia i funkcje. Działają na każdym serwerze, na którym jest bot.",
+      "ownerOnly": "Tylko właściciel bota może instalować, włączać, wyłączać, usuwać i konfigurować wtyczki.",
+      "ownerMissing": "Aby zarządzać pluginami, zaloguj się jako właściciel aplikacji Discord bota lub ustaw BOT_OWNER_ID w pliku .env bota na swoje ID Discord.",
+      "warning": "Wtyczki działają wewnątrz bota z pełnym dostępem do jego plików i tokenu. Instaluj tylko wtyczki, którym ufasz.",
+      "statusUnknown": "Bot nie zgłosił jeszcze stanu wtyczek. Uruchom bota, aby zobaczyć aktualne stany.",
+      "restartNeeded": "Zaznaczone zmiany zadziałają w ciągu kilku sekund.",
+      "loading": "Ładowanie wtyczek…",
+      "loadFailed": "Nie udało się wczytać listy wtyczek.",
+      "empty": "Nie zainstalowano żadnych wtyczek.",
+      "install": {
+        "title": "Zainstaluj wtyczkę",
+        "hint": "Prześlij plik .zip z wtyczką (manifest.json i jej pliki). Nowe wtyczki są instalowane jako wyłączone, aby można je było najpierw sprawdzić.",
+        "choose": "Wybierz plik .zip",
+        "noFile": "Nie wybrano pliku",
+        "replace": "Zastąp, jeśli już zainstalowana (dane zostają)",
+        "button": "Zainstaluj",
+        "installing": "Instalowanie…",
+        "done": "Zainstalowano {name} v{version}. Jest wyłączona, dopóki jej nie włączysz.",
+        "updated": "Zaktualizowano {name} do v{version}.",
+        "deps": "Ta wtyczka ma zależności, które zostaną zainstalowane przy następnym uruchomieniu bota."
+      },
+      "state": {
+        "running": "Działa",
+        "disabled": "Wyłączona",
+        "restart_enable": "Włączony, uruchamia się…",
+        "restart_disable": "Wyłączony, zatrzymuje się…",
+        "error": "Błąd",
+        "invalid": "Nieprawidłowa",
+        "unknown": "Włączona"
+      },
+      "by": "autor: {author}",
+      "version": "v{version}",
+      "commands": "Polecenia",
+      "events": "{n} obsług zdarzeń",
+      "homepage": "Strona",
+      "source": "Źródło",
+      "enable": "Włącz",
+      "disable": "Wyłącz",
+      "settings": "Ustawienia",
+      "settingsClose": "Ukryj ustawienia",
+      "settingsHint": "Wtyczki odczytują te ustawienia, gdy ich potrzebują, więc zmiany zwykle działają bez restartu.",
+      "save": "Zapisz ustawienia",
+      "saving": "Zapisywanie…",
+      "saved": "Zapisano ustawienia.",
+      "enabledDone": "{name} jest włączony. Bot załaduje go w ciągu kilku sekund.",
+      "disabledDone": "{name} jest wyłączony. Bot zatrzyma go w ciągu kilku sekund.",
+      "remove": "Odinstaluj",
+      "removeConfirm": "Odinstalować {name}? Jego pliki i zapisane dane zostaną trwale usunięte.",
+      "removed": "Odinstalowano {name}.",
+      "err": {
+        "generic": "Coś poszło nie tak (HTTP {status}).",
+        "network": "Błąd sieci. Spróbuj ponownie.",
+        "no_file": "Najpierw wybierz plik .zip.",
+        "not_owner": "Może to zrobić tylko właściciel bota.",
+        "cross_origin": "Zablokowano: żądanie pochodziło z innej witryny.",
+        "not_found": "Nie znaleziono wtyczki.",
+        "exists": "Wtyczka o tej nazwie jest już zainstalowana. Zaznacz „Zastąp”, aby ją zaktualizować.",
+        "not_zip": "Ten plik nie jest prawidłowym archiwum .zip.",
+        "too_large": "Archiwum jest zbyt duże (limit 15 MB, 25 MB po rozpakowaniu).",
+        "file_too_large": "Plik w archiwum jest zbyt duży (limit 10 MB).",
+        "too_many_files": "Archiwum zawiera zbyt wiele plików (limit 500).",
+        "no_manifest": "W archiwum nie znaleziono manifest.json.",
+        "bad_manifest": "Plik manifest.json wtyczki jest nieprawidłowy.",
+        "missing_main": "Główny plik podany w manifest.json nie znajduje się w archiwum.",
+        "bad_path": "Archiwum zawiera niebezpieczną ścieżkę pliku i zostało odrzucone.",
+        "symlink": "Archiwum zawiera dowiązanie symboliczne i zostało odrzucone.",
+        "encrypted": "Archiwa chronione hasłem nie są obsługiwane.",
+        "corrupt": "Archiwum jest uszkodzone lub jego zawartość się nie zgadza.",
+        "unsupported": "Ten rodzaj pliku .zip nie jest obsługiwany. Utwórz go ponownie zwykłym narzędziem do zip.",
+        "invalid_settings": "Niektóre wartości brakują lub są poza zakresem. Sprawdź pola i spróbuj ponownie.",
+        "no_settings": "Ta wtyczka nie ma ustawień.",
+        "channels_unavailable": "Nie udało się sprawdzić kanałów tego serwera. Spróbuj za chwilę.",
+        "bad_request": "Żądanie było nieprawidłowe."
+      },
+      "guild": {
+        "open": "Ustawienia serwera",
+        "close": "Ukryj ustawienia serwera",
+        "title": "Ustawienia dla tego serwera Discord",
+        "hint": "Te ustawienia dotyczą tylko tego serwera Discord. Działająca wtyczka sama pobiera zmiany, restart nie jest potrzebny.",
+        "notRunning": "Plugin jeszcze nie działa, więc nic nie zostanie opublikowane, dopóki nie zostanie włączony.",
+        "noChannels": "Nie udało się wczytać kanałów tego serwera.",
+        "chooseChannel": "- wybierz kanał -",
+        "noChannel": "- brak -",
+        "add": "+ Dodaj",
+        "removeItem": "Usuń",
+        "itemFallback": "Pozycja {n}",
+        "empty": "Nic jeszcze nie dodano.",
+        "limit": "Osiągnięto limit ({n}).",
+        "save": "Zapisz ustawienia serwera",
+        "saved": "Zapisano ustawienia serwera.",
+        "hasErrors": "Popraw zaznaczone pola i spróbuj ponownie."
+      },
+      "fieldErr": {
+        "required": "To pole jest wymagane.",
+        "range": "Wartość jest poza dozwolonym zakresem.",
+        "length": "Ten tekst jest za długi.",
+        "number": "Wpisz liczbę.",
+        "option": "Wybierz jedną z opcji.",
+        "channel": "Wybierz prawidłowy kanał.",
+        "string": "Wpisz tekst.",
+        "boolean": "Wybierz tak lub nie.",
+        "too_many": "Dla tego serwera jest zbyt wiele wpisów.",
+        "list": "Lista jest nieprawidłowa.",
+        "item": "Ten wpis jest nieprawidłowy.",
+        "channel_not_found": "Ten kanał nie istnieje na tym serwerze.",
+        "channel_kind": "Ten rodzaj kanału nie jest tu dozwolony."
+      }
+    }
+  },
+  "scopeDesc": {
+    "all": "wszędzie",
+    "only": "tylko w {list}",
+    "except": "wszędzie oprócz {list}"
+  },
+  "channels": {
+    "title": "Zakres kanałów",
+    "nothingRestricted": "Żadna funkcja nie jest ograniczona - wszystko działa wszędzie.\nUstaw to komendą `/channels set`.",
+    "unknownFeature": "Nieznana funkcja",
+    "unknownFeatureBody": "Funkcja `{key}` nie istnieje. Wybierz ją z listy.",
+    "restored": "Przywrócono",
+    "restoredBody": "**{feature}** znów działa wszędzie.",
+    "saved": "Zapisano",
+    "savedEverywhere": "**{feature}** działa wszędzie.",
+    "modeOnly": "tylko w wybranych kanałach",
+    "modeExcept": "wszędzie oprócz wybranych kanałów",
+    "noChannelYet": "Nie wybrano jeszcze kanału - dodaj go komendą `/channels add`.",
+    "alreadyListed": "Już na liście",
+    "alreadyListedBody": "<#{channel}> jest już przy funkcji **{feature}**.",
+    "notFound": "Nie znaleziono",
+    "notFoundBody": "<#{channel}> nie ma na liście funkcji **{feature}**.",
+    "categoryNote": "To kategoria - ustawienie dotyczy wszystkich kanałów w niej.",
+    "added": "Dodano",
+    "removed": "Usunięto",
+    "current": "Obecnie: {scope}",
+    "modeSetTo": "Tryb dla **{feature}** ustawiono na "
+  },
+  "texts": {
+    "langUnavailable": "Język niedostępny",
+    "langUnavailableBody": "Wczytane języki: {list}.",
+    "none": "brak",
+    "saved": "Zapisano",
+    "overridden": "Nadpisane teksty",
+    "nothingOverridden": "Nic jeszcze nie nadpisano - bot używa domyślnych treści.\nZmienisz to komendą `/texts set`.",
+    "originalLabel": "**Oryginał:**",
+    "keyMissing": "_(klucz nie istnieje w tłumaczeniach)_",
+    "yourWording": "**Twoja treść:**",
+    "notOverridden": "_(nie nadpisano)_",
+    "nothingToReset": "Nic do przywrócenia",
+    "nothingToResetBody": "Tekst `{key}` nie jest nadpisany.",
+    "restored": "Przywrócono",
+    "tooLong": "Za długie",
+    "tooLongBody": "Tekst może mieć najwyżej 1900 znaków.",
+    "savedBody": "`{key}` ma teraz treść:\n{text}",
+    "langSet": "Język bota ustawiono na **{lang}**.",
+    "showTitle": "Tekst: {key}",
+    "restoredBody": "`{key}` wróciło do oryginalnej treści:\n{text}",
+    "variablesUsed": "Użyte zmienne: {list}",
+    "andMore": "…i jeszcze {count}"
+  },
+  "serverLogs": {
+    "type": {
+      "text": "tekstowy",
+      "voice": "głosowy",
+      "category": "kategoria",
+      "announcement": "ogłoszeniowy",
+      "forum": "forum"
+    },
+    "title": {
+      "threadCreated": "🧵 Wątek utworzony",
+      "threadUpdated": "🧵 Wątek zaktualizowany",
+      "threadDeleted": "🧵 Wątek usunięty",
+      "channelCreated": "📁 Kanał utworzony",
+      "channelUpdated": "📁 Kanał zaktualizowany",
+      "channelDeleted": "📁 Kanał usunięty",
+      "roleCreated": "🎭 Rola utworzona",
+      "roleUpdated": "🎭 Rola zaktualizowana",
+      "roleDeleted": "🎭 Rola usunięta",
+      "memberBanned": "🔨 Członek zbanowany",
+      "banRevoked": "🔓 Ban cofnięty",
+      "inviteCreated": "🔗 Zaproszenie utworzone",
+      "inviteDeleted": "🔗 Zaproszenie cofnięte",
+      "emojiAdded": "😀 Emoji dodane",
+      "emojiRemoved": "😀 Emoji usunięte",
+      "emojiRenamed": "😀 Emoji zmieniono nazwę",
+      "stickerAdded": "🏷️ Naklejka dodana",
+      "stickerRemoved": "🏷️ Naklejka usunięta",
+      "stickerRenamed": "🏷️ Naklejka zmieniono nazwę",
+      "boostStarted": "💜 Nowy boost",
+      "boostEnded": "💔 Boost zakończony"
+    },
+    "field": {
+      "channel": "Kanał",
+      "thread": "Wątek",
+      "parentChannel": "Kanał nadrzędny",
+      "name": "Nazwa",
+      "user": "Użytkownik",
+      "reason": "Powód",
+      "code": "Kod",
+      "expires": "Wygasa",
+      "useLimit": "Limit użyć",
+      "serverLevel": "Poziom serwera",
+      "mentionable": "Możliwość wzmianki",
+      "topicChanged": "Zmieniono temat kanału",
+      "permsChanged": "Zmieniono uprawnienia",
+      "markedNsfw": "Oznaczony jako NSFW",
+      "unmarkedNsfw": "NSFW usunięte",
+      "archived": "Zarchiwizowany",
+      "unarchived": "Odarchiwizowany",
+      "locked": "Zablokowany",
+      "unlocked": "Odblokowany",
+      "noLongerSeparate": "Nie jest już pokazywana osobno",
+      "memberCountWas": "Członków miało",
+      "type": "Typ",
+      "author": "Autor"
+    },
+    "value": {
+      "unknown": "Nieznany",
+      "unknownLower": "nieznany",
+      "notSpecified": "nie podano",
+      "none": "brak",
+      "never": "nigdy",
+      "noLimit": "bez limitu"
+    },
+    "boostStartedBody": "{user} właśnie zboostował serwer.",
+    "boostEndedBody": "{user} przestał boostować serwer.",
+    "ghostPingBody": "{user} oznaczył kogoś i od razu usunął wiadomość."
+  }
+}

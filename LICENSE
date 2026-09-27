@@ -1,0 +1,138 @@
+Vorqul DS BOT License (v1.1)
+https://github.com/Yamiru/Vorqul-DS-BOT
+
+Copyright (c) Yamiru. All rights reserved.
+
+This is a proprietary license. It is NOT an open-source license. The software
+known as "Vorqul DS BOT" together with its source code, assets, configuration,
+documentation and everything else in this repository (the "Software") is owned
+by Yamiru ("the Author"). The Author keeps all rights that are not expressly
+granted below.
+
+------------------------------------------------------------------------------
+1. How you may have received this Software
+------------------------------------------------------------------------------
+The Author may distribute the Software on different terms at different times,
+entirely at the Author's discretion. For example, the same Software may be
+offered free of charge to some users and sold to others, or offered free for a
+period and sold afterwards. The terms that apply to YOUR copy are the terms
+under which the Author handed that copy to you (free grant, purchase, or a
+separate written agreement). If no separate terms were given to you, the
+permissions in Section 2 apply.
+
+------------------------------------------------------------------------------
+2. What you are allowed to do
+------------------------------------------------------------------------------
+Subject to Section 3, the Author grants you a personal, non-exclusive,
+non-transferable, revocable license to:
+
+  (a) install and run one or more instances of the Software for your own
+      Discord servers or your organisation's Discord servers;
+  (b) modify the source code for the sole purpose of running, configuring and
+      integrating your own instances, provided that no such modification does
+      anything listed in Section 3;
+  (c) make backup copies for your own use.
+
+The Software contains features that are gated behind paid tiers or entitlements
+(the "Paid Features"). The license in this Section 2 covers only the tier or
+entitlement that the Author has actually granted to you. It does not grant any
+right to use, enable or access Paid Features outside that tier, and the presence
+of Paid Feature code in the Software you received is not a grant of the right to
+use it.
+
+------------------------------------------------------------------------------
+3. What you may NOT do without prior written permission from the Author
+------------------------------------------------------------------------------
+You may not:
+
+  (a) sell, rent, lease, sublicense, distribute, publish, mirror, or otherwise
+      make the Software (original or modified, in whole or in part) available
+      to any third party;
+  (b) remove, hide or alter any copyright notice, author credit, license
+      header, the "Vorqul DS BOT" product name, the vorqul.com website link
+      or the link to the official repository wherever the Software displays
+      them (bot messages, dashboard, console banner, documentation), or
+      tamper with the integrity check that protects them;
+  (c) present the Software, or a derivative of it, as your own product;
+  (d) use the Software to operate a paid "bot hosting" or "bot as a service"
+      offering for third parties;
+  (e) re-license the Software under any other license, including any
+      open-source license;
+  (f) remove, disable, bypass, patch out, spoof or otherwise circumvent any
+      license key check, entitlement check, premium or paid-tier check, feature
+      gate, usage limit or expiry check in the Software, or use, enable or
+      access any Paid Feature without a valid entitlement granted by the Author;
+  (g) share, resell, publish, lend or transfer any license key, entitlement,
+      credential or activation issued to you, or use any such item that was not
+      issued to you by the Author;
+  (h) distribute, publish or offer to any third party any patch, build,
+      configuration, fork, tool, instruction or service whose purpose or effect
+      is to do anything described in (f) or (g), whether or not you charge
+      for it;
+  (i) operate the Software, or any modified version of it, in a way that
+      knowingly reports false entitlement, tier or license status to the
+      Author's systems.
+
+The fact that you obtained a copy free of charge does NOT grant you any right
+to redistribute it or to pass it on to others for free or for money, nor any
+right to the Paid Features.
+
+Sections 3(f) to 3(i) apply to the Software as you received it and to every
+modified or derived version of it, and they survive any modification you make.
+They do not restrict anything that mandatory applicable law does not allow to
+be restricted; in particular, nothing in this license limits any right you have
+under Articles 5 and 6 of Directive 2009/24/EC, or its national implementation,
+to the extent those rights cannot be excluded by agreement.
+
+------------------------------------------------------------------------------
+4. Commercial licensing
+------------------------------------------------------------------------------
+Rights beyond those in Section 2 - for example Paid Features, resale rights,
+white-label rights, or a hosting/SaaS license - are available only through a
+purchase from the Author or a separate written commercial agreement with the
+Author. Contact: https://yamiru.com
+
+The Author may change which features are free and which are Paid Features in
+any future version, at the Author's discretion. That change applies to versions
+released after it; it does not retroactively withdraw an entitlement already
+granted to you for a version you already hold.
+
+------------------------------------------------------------------------------
+5. Ownership
+------------------------------------------------------------------------------
+The Software is licensed, not sold. The Author remains the sole owner of all
+intellectual property rights in the Software. Any modifications you make remain
+subject to this license.
+
+------------------------------------------------------------------------------
+6. Termination
+------------------------------------------------------------------------------
+This license ends automatically if you breach any of its terms. On termination
+you must stop using the Software and delete all copies in your possession. A
+breach of Section 3(f) to 3(i) also terminates any entitlement to Paid Features
+without refund.
+
+------------------------------------------------------------------------------
+7. No warranty
+------------------------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+------------------------------------------------------------------------------
+8. Limitation of liability
+------------------------------------------------------------------------------
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------------
+9. Governing law
+------------------------------------------------------------------------------
+This license is governed by the laws of the Slovak Republic, without regard to
+its conflict-of-law rules.
+
+For commercial terms, white-label or resale licensing, contact the Author at
+https://yamiru.com or open an issue at
+https://github.com/Yamiru/Vorqul-DS-BOT

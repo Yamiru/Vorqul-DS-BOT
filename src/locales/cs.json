@@ -1,0 +1,2143 @@
+{
+  "common": {
+    "yes": "Ano",
+    "no": "Ne",
+    "enabled": "Povoleno",
+    "disabled": "Zakázáno",
+    "success": "Úspěch",
+    "error": "Chyba",
+    "warning": "Varování",
+    "info": "Informace",
+    "loading": "Načítání...",
+    "refreshHint": "Obnovit tato data",
+    "clearCacheHint": "Vymazat lokální cache a znovu načíst",
+    "cancel": "Zrušit",
+    "confirm": "Potvrdit",
+    "save": "Uložit",
+    "delete": "Smazat",
+    "edit": "Upravit",
+    "back": "Zpět",
+    "next": "Další",
+    "page": "Stránka",
+    "of": "z",
+    "noPermission": "Nemáš oprávnění použít tento příkaz.",
+    "botNoPermission": "Nemám oprávnění provést tuto akci.",
+    "invalidUser": "Neplatný uživatel.",
+    "invalidChannel": "Neplatný kanál.",
+    "invalidRole": "Neplatná role.",
+    "cooldown": "Počkej prosím {time} než použiješ tento příkaz znovu.",
+    "unknownError": "Nastala neznámá chyba.",
+    "wrongChannel": "Tento příkaz nelze v tomto kanálu použít."
+  },
+  "welcome": {
+    "title": "Vítej!",
+    "defaultMessage": "Vítej na serveru **{server}**, {user}! 🎉",
+    "goodbyeMessage": "Sbohem **{user}**, budeš nám chybět!",
+    "memberCount": "Jsi {count}. člen",
+    "joinedAt": "Účet vytvořen {date}"
+  },
+  "moderation": {
+    "kick": {
+      "success": "**{user}** byl vyhozen.",
+      "reason": "Důvod: {reason}",
+      "noReason": "Bez udání důvodu",
+      "dmNotify": "Byl jsi vyhozen ze serveru **{server}**.",
+      "cannotKick": "Nemohu vyhodit tohoto uživatele.",
+      "higherRole": "Nemůžeš vyhodit někoho s vyšší nebo stejnou rolí."
+    },
+    "ban": {
+      "success": "**{user}** byl zabanován.",
+      "reason": "Důvod: {reason}",
+      "noReason": "Bez udání důvodu",
+      "dmNotify": "Byl jsi zabanován na serveru **{server}**.",
+      "cannotBan": "Nemohu zabanovat tohoto uživatele.",
+      "higherRole": "Nemůžeš zabanovat někoho s vyšší nebo stejnou rolí."
+    },
+    "unban": {
+      "success": "**{user}** byl odbanován.",
+      "notBanned": "Tento uživatel není zabanován."
+    },
+    "mute": {
+      "success": "**{user}** byl umlčen na {duration}.",
+      "reason": "Důvod: {reason}",
+      "dmNotify": "Byl jsi umlčen na serveru **{server}** na {duration}."
+    },
+    "unmute": {
+      "success": "**{user}** byl odmlčen.",
+      "notMuted": "Tento uživatel není umlčen."
+    },
+    "timeout": {
+      "success": "**{user}** dostal timeout na {duration}.",
+      "removed": "Timeout byl odebrán uživateli **{user}**."
+    },
+    "warn": {
+      "success": "**{user}** dostal varování.",
+      "count": "Toto je varování č. {count}.",
+      "dmNotify": "Dostal jsi varování na serveru **{server}**."
+    },
+    "clear": {
+      "success": "Smazáno {count} zpráv.",
+      "tooMany": "Nelze smazat více než 100 zpráv najednou.",
+      "tooOld": "Nelze smazat zprávy starší než 14 dní."
+    },
+    "slowmode": {
+      "set": "Slowmode nastaven na {seconds} sekund.",
+      "disabled": "Slowmode byl vypnut."
+    },
+    "lockdown": {
+      "enabled": "🔒 Kanál je nyní uzamčen.",
+      "disabled": "🔓 Kanál byl odemčen."
+    }
+  },
+  "leveling": {
+    "levelUp": "🎉 Gratulujeme {user}! Dosáhl jsi **Úrovně {level}**!",
+    "rank": "Pořadí",
+    "level": "Úroveň",
+    "xp": "XP",
+    "progress": "Postup",
+    "leaderboard": "Žebříček",
+    "noData": "Žádná data o úrovních nenalezena."
+  },
+  "economy": {
+    "balance": "Zůstatek",
+    "daily": {
+      "claimed": "Získal jsi denní odměnu {amount}!",
+      "cooldown": "Už jsi si vyzvedl denní odměnu. Vrať se za {time}."
+    },
+    "transfer": {
+      "success": "Převedl jsi {amount} uživateli {user}.",
+      "insufficient": "Nemáš dostatek {currency}.",
+      "self": "Nemůžeš převést sám sobě."
+    },
+    "shop": {
+      "title": "Obchod",
+      "empty": "Obchod je prázdný.",
+      "bought": "Koupil jsi **{item}** za {price}.",
+      "cantAfford": "Na toto nemáš."
+    },
+    "leaderboard": "Ekonomický žebříček"
+  },
+  "crypto": {
+    "price": "Aktuální cena **{coin}**: ${price}",
+    "change24h": "Změna za 24h: {change}%",
+    "alertSet": "Cenový alert nastaven pro **{coin}** na ${price}.",
+    "alertTriggered": "🚨 **{coin}** dosáhl ceny ${price}!",
+    "invalidCoin": "Neplatná kryptoměna.",
+    "apiError": "Nepodařilo se získat data o kryptoměnách."
+  },
+  "automod": {
+    "spam": "🛡️ Detekován spam od {user}.",
+    "links": "🔗 Nepovolený odkaz smazán od {user}.",
+    "invites": "📨 Discord pozvánka smazána od {user}.",
+    "caps": "🔠 Nadměrné velké písmena smazána od {user}.",
+    "mentions": "📢 Hromadná zmínka zablokována od {user}.",
+    "blacklist": "🚫 Zakázané slovo detekováno od {user}.",
+    "repeatedText": "🔁 Opakovaný text smazán od {user}.",
+    "emojis": "😀 Nadměrné množství emoji smazáno od {user}.",
+    "spoilers": "🙈 Nadměrné spoilery smazány od {user}.",
+    "zalgo": "🌀 Zalgo text smazán od {user}.",
+    "userWarning": "⚠️ {user}, tvoje zpráva byla odstraněna AutoModem."
+  },
+  "verification": {
+    "title": "Vyžadována verifikace",
+    "instructions": "Vyplň prosím captchu níže pro získání přístupu.",
+    "success": "✅ Byl jsi ověřen!",
+    "failed": "❌ Ověření selhalo. Zkus to znovu.",
+    "expired": "⏰ Ověření vypršelo. Vyžádej si nové."
+  },
+  "logging": {
+    "messageDeleted": "Zpráva smazána",
+    "messageEdited": "Zpráva upravena",
+    "memberJoined": "Člen se připojil",
+    "memberLeft": "Člen odešel",
+    "memberBanned": "Člen zabanován",
+    "memberUnbanned": "Člen odbanován",
+    "roleAdded": "Role přidána",
+    "roleRemoved": "Role odebrána",
+    "channelCreated": "Kanál vytvořen",
+    "channelDeleted": "Kanál smazán",
+    "moderatorAction": "Akce moderátora"
+  },
+  "reminders": {
+    "set": "⏰ Připomínka nastavena na {time}.",
+    "triggered": "⏰ Připomínka: {message}",
+    "list": "Tvoje připomínky",
+    "noReminders": "Nemáš žádné aktivní připomínky.",
+    "deleted": "Připomínka smazána."
+  },
+  "polls": {
+    "created": "Hlasování vytvořeno!",
+    "ended": "Hlasování ukončeno.",
+    "results": "Výsledky hlasování",
+    "votes": "hlasů"
+  },
+  "suggestions": {
+    "submitted": "Tvůj návrh byl odeslán!",
+    "approved": "✅ Návrh schválen",
+    "denied": "❌ Návrh zamítnut",
+    "implemented": "🎉 Návrh implementován"
+  },
+  "starboard": {
+    "starred": "⭐ Zpráva označena hvězdou!"
+  },
+  "inviteTracker": {
+    "invite": "{user} se připojil pomocí pozvánky od {inviter}.",
+    "invites": "{user} má nyní {count} pozvánek.",
+    "unknown": "Nelze sledovat zdroj pozvánky."
+  },
+  "music": {
+    "nowPlaying": "Právě hraje",
+    "queued": "Přidáno do fronty",
+    "queue": "Fronta",
+    "skipped": "Přeskočeno.",
+    "stopped": "Přehrávání zastaveno.",
+    "paused": "Přehrávání pozastaveno.",
+    "resumed": "Přehrávání obnoveno.",
+    "volume": "Hlasitost nastavena na {volume}%.",
+    "noResults": "Žádné výsledky.",
+    "notInVoice": "Musíš být v hlasovém kanálu.",
+    "alreadyPlaying": "Už hraji v jiném kanálu."
+  },
+  "events": {
+    "created": "Událost vytvořena!",
+    "reminder": "📅 Událost **{name}** začíná za {time}!",
+    "rsvp": {
+      "going": "Jdeš na **{event}**!",
+      "maybe": "Označil jsi možná pro **{event}**.",
+      "notGoing": "Nejdeš na **{event}**."
+    }
+  },
+  "dashboard": {
+    "title": "Vorqul DS BOT Dashboard",
+    "login": "Přihlásit přes Discord",
+    "logout": "Odhlásit",
+    "home": "Domů",
+    "servers": "Tvoje servery",
+    "settings": "Nastavení",
+    "modules": "Moduly",
+    "logs": "Logy",
+    "analytics": "Analytika",
+    "plugins": "Pluginy",
+    "embedBuilder": "Editor embedů",
+    "noServers": "Nespravuješ žádné servery s botem.",
+    "saveSuccess": "Nastavení úspěšně uloženo!",
+    "saveError": "Nepodařilo se uložit nastavení."
+  },
+  "giveaway": {
+    "title": "🎉 SOUTĚŽ 🎉",
+    "endedTitle": "🎉 SOUTĚŽ SKONČILA 🎉",
+    "activeTitle": "🎉 Probíhající soutěže",
+    "won": "🎉 Gratuluji {winners}! Vyhrál jsi **{prize}**!",
+    "rerolled": "🎉 Noví výherci pro **{prize}**: {winners}! Gratuluji!",
+    "noEntries": "Do soutěže o **{prize}** se nikdo nepřihlásil.",
+    "prize": "Cena",
+    "winnersLabel": "Výherci",
+    "endsAt": "Končí",
+    "hostedBy": "Pořádá",
+    "howToEnter": "Zapoj se tlačítkem níže."
+  },
+  "ui": {
+    "nav": {
+      "back": "Zpět na servery",
+      "overview": "Přehled",
+      "modules": "Moduly",
+      "welcome": "Uvítání",
+      "automod": "AutoMod",
+      "serverstatus": "Stav serverů",
+      "channels": "Kanály",
+      "games": "Hry",
+      "settings": "Nastavení",
+      "links": "Odkazy",
+      "menu": "Otevřít nabídku",
+      "menuClose": "Zavřít nabídku",
+      "config": "Konfigurace"
+    },
+    "common": {
+      "save": "Uložit změny",
+      "saving": "Ukládám…",
+      "saved": "Uloženo",
+      "enabled": "Zapnuto",
+      "disabled": "Vypnuto",
+      "search": "Hledat…",
+      "retry": "Zkusit znovu",
+      "selectAll": "Vybrat vše",
+      "clear": "Zrušit výběr",
+      "language": "Jazyk",
+      "unknown": "Neznámý",
+      "searching": "Hledat...",
+      "nothingSelected": "Nic není vybráno"
+    },
+    "scope": {
+      "all": "Všude",
+      "only": "Jen zde",
+      "except": "Všude kromě",
+      "title": "Kanály",
+      "subtitle": "Nastav, ve kterých kanálech má každá funkce fungovat.",
+      "hintModes": "Jen zde - funkce běží výhradně ve vybraných kanálech. Všude kromě - běží všude, jen ne ve vybraných.",
+      "hintCategory": "Pokud vybereš kategorii, platí to pro všechny kanály v ní. Vlákna dědí nastavení z rodičovského kanálu.",
+      "nothingRestricted": "Nic není omezeno",
+      "restricted": "Omezeno",
+      "pick": "Vybrat kanály",
+      "hide": "Skrýt kanály",
+      "categories": "Kategorie",
+      "channels": "Kanály",
+      "emptyWarning": "Není vybrán žádný kanál - funkce zůstane zapnutá všude, dokud nějaký nepřidáš.",
+      "noChannels": "Žádný vhodný kanál se nenašel.",
+      "onlyPrefix": "Jen: ",
+      "exceptPrefix": "Všude kromě: ",
+      "feature": {
+        "global": {
+          "label": "Všechny funkce",
+          "description": "Základní pravidlo pro celého bota. Funkce s vlastním nastavením ho přebije."
+        },
+        "commands": {
+          "label": "Všechny příkazy",
+          "admin": {
+            "label": "Příkazy: Admin",
+            "description": "Administrátorské příkazy."
+          },
+          "moderation": {
+            "label": "Příkazy: Moderace",
+            "description": "Moderátorské příkazy."
+          },
+          "economy": {
+            "label": "Příkazy: Ekonomika",
+            "description": "Příkazy ekonomiky a obchodu."
+          },
+          "fun": {
+            "label": "Příkazy: Zábava",
+            "description": "Zábavné a herní příkazy."
+          },
+          "utility": {
+            "label": "Příkazy: Nástroje",
+            "description": "Užitečné a informační příkazy."
+          },
+          "description": "Základní pravidlo pro všechny slash příkazy."
+        },
+        "leveling": {
+          "label": "Leveling / XP",
+          "description": "Sbírání XP za zprávy a oznámení o novém levelu."
+        },
+        "economy": {
+          "label": "Ekonomika",
+          "description": "Sbírání měny za zprávy."
+        },
+        "messageStats": {
+          "label": "Statistiky zpráv",
+          "description": "Počítání zpráv do statistik a žebříčků."
+        },
+        "autoResponse": {
+          "label": "Automatické odpovědi",
+          "description": "Reakce bota na klíčová slova."
+        },
+        "afk": {
+          "label": "AFK systém",
+          "description": "Oznamování AFK stavu a návratu."
+        },
+        "sticky": {
+          "label": "Sticky zprávy",
+          "description": "Trvale připnutá zpráva na konci kanálu."
+        },
+        "reputation": {
+          "label": "Reputace",
+          "description": "Udělování reputačních bodů."
+        },
+        "confessions": {
+          "label": "Přiznání",
+          "description": "Anonymní přiznání."
+        },
+        "suggestions": {
+          "label": "Návrhy",
+          "description": "Systém návrhů a hlasování."
+        },
+        "birthday": {
+          "label": "Narozeniny",
+          "description": "Narozeninová oznámení."
+        },
+        "automod": {
+          "label": "AutoMod",
+          "description": "Automatická moderace chatu (spam, odkazy, caps, ...)."
+        },
+        "filter": {
+          "label": "Filtr slov",
+          "description": "Blokování zakázaných slov."
+        },
+        "antiAd": {
+          "label": "Anti-reklama",
+          "description": "Blokování pozvánek a reklamních odkazů."
+        },
+        "antiRaid": {
+          "label": "Anti-Raid",
+          "description": "Ochrana proti hromadným příchodům."
+        },
+        "counting": {
+          "label": "Počítání",
+          "description": "Hra na postupné počítání čísel."
+        },
+        "starboard": {
+          "label": "Starboard",
+          "description": "Zdrojové kanály, ze kterých se zprávy dostanou na starboard."
+        },
+        "giveaways": {
+          "label": "Giveaways",
+          "description": "Soutěže o ceny."
+        },
+        "polls": {
+          "label": "Ankety",
+          "description": "Hlasování a ankety."
+        },
+        "games": {
+          "label": "Hry",
+          "description": "Společné pravidlo pro všechny hry. Jednotlivá hra ho přebije."
+        },
+        "voiceStats": {
+          "label": "Hlasové statistiky",
+          "description": "Počítání času stráveného v hlasových kanálech."
+        },
+        "tempChannels": {
+          "label": "Dočasné kanály",
+          "description": "Automatické vytváření hlasových kanálů."
+        },
+        "logs": {
+          "label": "Logování",
+          "description": "Kanály, ze kterých se zaznamenávají události."
+        },
+        "gameScope": {
+          "description": "Kanály, kde se dá spustit tato hra."
+        }
+      }
+    },
+    "games": {
+      "title": "Hry",
+      "subtitle": "Každá hra jde zapnout zvlášť a pustit jen ve vybraných kanálech.",
+      "enabledOf": "Zapnuto {a} z {b}",
+      "list": "Seznam her",
+      "configure": "Nastavit",
+      "hideCfg": "Skrýt",
+      "where": "Kde se dá hrát",
+      "inherits": "Platí společné nastavení pro všechny hry.",
+      "multiplayer": "více hráčů",
+      "sharedHint": "Pokud hra nemá vlastní pravidlo, platí pro ni společné nastavení Hry v sekci Kanály.",
+      "emptyWarning": "Zatím žádný kanál - dokud nějaký nevybereš, hra běží všude."
+    },
+    "home": {
+      "running": "Bot běží",
+      "offline": "Bot je offline",
+      "updateAvailable": "Dostupná aktualizace: v{version}",
+      "noHeartbeat": "Dashboard nedostal signál. Zkontroluj, jestli proces bota běží a má přístup ke složce data/json.",
+      "servers": "Servery",
+      "users": "Uživatelé",
+      "ping": "Odezva",
+      "uptime": "Běží už",
+      "cpu": "Procesor",
+      "ram": "Paměť",
+      "commands": "Příkazy",
+      "refreshes": "Obnovuje se",
+      "auto": "automaticky",
+      "cores": "{n} jader · zátěž {load}",
+      "ofTotal": "{p} % z {total} MB",
+      "yourServers": "Tvoje servery",
+      "selectServer": "Vyber server, který chceš spravovat",
+      "botAdded": "Bot je přidán",
+      "botMissing": "Bot chybí",
+      "noServers": "Žádné servery",
+      "noServersHint": "Nenašel se server, kde máš právo Spravovat server. Pokud jsi tam bota právě přidal, odhlas se a přihlas znovu - Discord seznam chvíli cachuje.",
+      "addBot": "Přidat bota na server",
+      "loadFailed": "Servery se nenačetly",
+      "signOut": "Odhlásit se",
+      "relogin": "Přihlásit se znovu",
+      "apiUnreachable": "Dashboard se nedokázal spojit s vlastním API."
+    },
+    "lp": {
+      "signIn": "Přihlásit se",
+      "dashboard": "Dashboard",
+      "openDashboard": "Otevřít dashboard",
+      "getStarted": "Začít",
+      "addToServer": "Přidat na server",
+      "loading": "Načítá se...",
+      "eyebrow": "85+ příkazů · 30+ modulů",
+      "version": "Verze {version}",
+      "subtitle": "Výkonný modulární bot pro správu Discord komunity: pokročilá moderace, levelování, ekonomika, tickety, giveaways, logování, sociální kanály a plnohodnotný web dashboard. Vytvořil {author}.",
+      "stat": {
+        "commands": "Příkazy",
+        "modules": "Moduly",
+        "languages": "Jazyky",
+        "uptime": "Dostupnost"
+      },
+      "f": {
+        "moderation": {
+          "t": "Moderace",
+          "d": "Ban, kick, mute, timeout, softban, varování, poznámky a kompletní historie zásahů."
+        },
+        "automod": {
+          "t": "Auto-Mod",
+          "d": "Anti-spam, anti-raid, blokování odkazů a pozvánek, anti-caps, ochrana před hromadným označováním a filtr slov."
+        },
+        "logging": {
+          "t": "Logování",
+          "d": "Úpravy a mazání zpráv, změny rolí a kanálů, příchody a odchody, aktivita v hlasových kanálech."
+        },
+        "welcome": {
+          "t": "Uvítání a role",
+          "d": "Uvítací a rozlučkové zprávy, automatické role, role přes reakce a ověřování."
+        },
+        "leveling": {
+          "t": "Levelování",
+          "d": "XP za aktivitu, odměny za úrovně, rank karty, žebříčky a XP z hlasových kanálů."
+        },
+        "economy": {
+          "t": "Ekonomika",
+          "d": "Měna, denní odměny, obchod, inventář, práce a hazardní hry."
+        },
+        "ticket": {
+          "t": "Tickety",
+          "d": "Podpora, hlášení chyb a přihlášky s přepisy a kategoriemi."
+        },
+        "gift": {
+          "t": "Giveaways",
+          "d": "Giveaways s více výherci, bonusovými vstupy a podmínkami na role."
+        },
+        "feed": {
+          "t": "Sociální kanály",
+          "d": "Notifikace z YouTube, Twitche a RSS plus naplánovaná oznámení."
+        },
+        "crypto": {
+          "t": "Statistiky a krypto",
+          "d": "Statistiky členů, zpráv a hlasu, přehledy serveru, a ceny kryptoměn."
+        },
+        "link": {
+          "t": "Užitečné odkazy",
+          "d": "Panel odkazů pro každý server přes /links, plně spravovaný z dashboardu."
+        },
+        "globe": {
+          "t": "Dashboard",
+          "d": "Webový dashboard pro více serverů, kde nastavíš každý modul bez Discord příkazů."
+        }
+      }
+    },
+    "automod": {
+      "action": {
+        "delete": "Smazat zprávu",
+        "warn": "Smazat + varování",
+        "timeout": "Smazat + timeout",
+        "kick": "Vyhodit",
+        "ban": "Zabanovat"
+      },
+      "field": {
+        "action": "Akce",
+        "duration": "Timeout (s)",
+        "durationHint": "Platí jen u akce timeout."
+      },
+      "spam": {
+        "label": "💬 Spam a rychlost psaní",
+        "desc": "Kolik zpráv smí člověk poslat za daný čas.",
+        "maxMessages": "Max. zpráv",
+        "interval": "Za čas (ms)",
+        "intervalHint": "5000 = 5 sekund"
+      },
+      "links": {
+        "label": "🔗 Odkazy na weby",
+        "desc": "Blokuje odkazy mimo povolených domén."
+      },
+      "invites": {
+        "label": "📨 Pozvánky na jiné servery",
+        "desc": "Blokuje discord.gg a podobné odkazy."
+      },
+      "caps": {
+        "label": "🔠 CAPS LOCK",
+        "desc": "Zprávy psané převážně velkými písmeny.",
+        "percentage": "Podíl velkých (%)",
+        "minLength": "Od délky zprávy"
+      },
+      "mentions": {
+        "label": "📢 Hromadné zmínky",
+        "desc": "Počet označení v jedné zprávě.",
+        "maxMentions": "Max. zmínek"
+      },
+      "repeat": {
+        "label": "🔁 Opakování",
+        "desc": "Ta samá zpráva nebo znak dokola.",
+        "maxRepeats": "Max. opakování"
+      },
+      "emojis": {
+        "label": "😀 Příliš emoji",
+        "desc": "Unicode i serverová emoji dohromady.",
+        "maxEmojis": "Max. emoji"
+      },
+      "spoilers": {
+        "label": "⬛ Příliš spoilerů",
+        "desc": "Skryté bloky v jedné zprávě.",
+        "maxSpoilers": "Max. spoilerů"
+      },
+      "zalgo": {
+        "label": "🌀 Zalgo text",
+        "desc": "Nečitelné znaky s nánosem diakritiky."
+      },
+      "phishing": {
+        "label": "🎣 Phishing",
+        "desc": "Domény, které se vydávají za Discord, Steam a podobně."
+      },
+      "fakeNitro": {
+        "label": "🎁 Falešné Nitro",
+        "desc": "Nabídky nitra zdarma s odkazem."
+      },
+      "cryptoScam": {
+        "label": "🪙 Krypto podvody",
+        "desc": "Airdropy a sliby zaručeného zisku."
+      },
+      "massMention": {
+        "label": "👥 Přesné hromadné označování",
+        "desc": "Počítá unikátní lidi a role, nejen znaky.",
+        "maxMentions": "Max. cílů",
+        "countEveryone": "Počítat @everyone"
+      },
+      "ghostPing": {
+        "label": "👻 Ghost ping",
+        "desc": "Označení a hned smazání zprávy.",
+        "maxAgeSeconds": "Do (s) od odeslání"
+      },
+      "exemptRoles": "Role bez kontroly",
+      "exemptChannels": "Kanály bez kontroly"
+    },
+    "welcome": {
+      "memberPreview": "{count}. člen serveru {server}"
+    },
+    "auth": {
+      "notSignedIn": "Nejsi přihlášen.",
+      "expired": "Přihlášení přes Discord vypršelo. Odhlas se a přihlas znovu.",
+      "rejected": "Discord odmítl přihlášení. Odhlas se a přihlas znovu.",
+      "unexpected": "Discord vrátil neočekávanou odpověď.",
+      "unreachable": "Nepodařilo se spojit s Discordem. Zkontroluj síť a firewall serveru."
+    },
+    "tickets": {
+      "welcomeMessage": "Uvítací zpráva"
+    },
+    "help": {
+      "tempban": "Zabanuj člena na určitou dobu - bot ho pak sám odbanuje",
+      "timedrole": "Role, která po čase sama zmizí",
+      "voicemute": "Ztlumení a ohlušení v hlasových kanálech",
+      "antinuke": "Ochrana serveru proti hromadnému ničení",
+      "channels": "Nastav, ve kterých kanálech mají jednotlivé funkce bota fungovat",
+      "texts": "Přepiš si znění hlášek bota podle sebe"
+    },
+    "modules": {
+      "group": {
+        "security": "Moderace a bezpečnost",
+        "members": "Členové",
+        "engagement": "Zapojení",
+        "economy": "Ekonomika a hry",
+        "content": "Obsah",
+        "tools": "Nástroje"
+      },
+      "moderation": {
+        "label": "Moderace",
+        "description": "Ban, kick, warn, timeout, jail a historie případů."
+      },
+      "automod": {
+        "label": "AutoMod",
+        "description": "Spam, odkazy, phishing, fake nitro, regexy."
+      },
+      "antinuke": {
+        "label": "Anti-Nuke",
+        "description": "Ochrana proti hromadnému ničení serveru."
+      },
+      "antiRaid": {
+        "label": "Anti-Raid",
+        "description": "Detekce náporu příchodů a stáří účtu."
+      },
+      "logs": {
+        "label": "Logování",
+        "description": "Zprávy, členové, role, kanály, vlákna, boosty."
+      },
+      "appeals": {
+        "label": "Odvolání",
+        "description": "Žádosti o zrušení trestu."
+      },
+      "verification": {
+        "label": "Ověření",
+        "description": "Ověření nových členů před vstupem."
+      },
+      "welcome": {
+        "label": "Uvítání",
+        "description": "Uvítací zprávy a obrázkové karty."
+      },
+      "goodbye": {
+        "label": "Rozloučení",
+        "description": "Zprávy při odchodu člena."
+      },
+      "joinRoles": {
+        "label": "Automatické role",
+        "description": "Role přidělené hned po příchodu."
+      },
+      "reactionroles": {
+        "label": "Role přes reakce",
+        "description": "Tlačítka a menu pro výběr rolí."
+      },
+      "persist": {
+        "label": "Zapamatování rolí",
+        "description": "Vrácení rolí členovi, který se vrátí."
+      },
+      "invites": {
+        "label": "Sledování pozvánek",
+        "description": "Kdo koho pozval a žebříček pozvánek."
+      },
+      "namehistory": {
+        "label": "Historie jmen",
+        "description": "Změny přezdívek a uživatelských jmen."
+      },
+      "leveling": {
+        "label": "Leveling / XP",
+        "description": "XP za zprávy a hlas, rank karty, odměnové role."
+      },
+      "starboard": {
+        "label": "Starboard",
+        "description": "Nejlepší zprávy podle reakcí."
+      },
+      "suggestions": {
+        "label": "Návrhy",
+        "description": "Návrhy s hlasováním a stavem."
+      },
+      "reputation": {
+        "label": "Reputace",
+        "description": "Body za pomoc ostatním."
+      },
+      "counting": {
+        "label": "Počítání",
+        "description": "Postupné počítání čísel v kanálu."
+      },
+      "birthday": {
+        "label": "Narozeniny",
+        "description": "Narozeninová oznámení a role."
+      },
+      "confessions": {
+        "label": "Přiznání",
+        "description": "Anonymní příspěvky."
+      },
+      "afk": {
+        "label": "AFK",
+        "description": "Oznámení, že je člen pryč."
+      },
+      "polls": {
+        "label": "Ankety",
+        "description": "Hlasování s tlačítky."
+      },
+      "economy": {
+        "label": "Ekonomika",
+        "description": "Mince, banka, obchod, práce, loupeže, kasino."
+      },
+      "games": {
+        "label": "Hry",
+        "description": "Piškvorky, kvíz, kostky a další - jednotlivě nastavitelné."
+      },
+      "giveaways": {
+        "label": "Giveaways",
+        "description": "Soutěže s více výherci a podmínkami."
+      },
+      "quests": {
+        "label": "Úkoly",
+        "description": "Denní a týdenní úkoly s odměnami."
+      },
+      "streaks": {
+        "label": "Série",
+        "description": "Odměny za pravidelnou aktivitu."
+      },
+      "tickets": {
+        "label": "Tickety",
+        "description": "Panely podpory, převzetí, přepisy."
+      },
+      "applications": {
+        "label": "Přihlášky",
+        "description": "Formuláře na nábor do týmu."
+      },
+      "autoResponse": {
+        "label": "Automatické odpovědi",
+        "description": "Reakce na klíčová slova a FAQ."
+      },
+      "sticky": {
+        "label": "Sticky zprávy",
+        "description": "Zpráva, která zůstává na konci kanálu."
+      },
+      "tags": {
+        "label": "Tagy",
+        "description": "Uložené odpovědi na zavolání."
+      },
+      "feeds": {
+        "label": "RSS kanály",
+        "description": "Novinky z RSS do Discordu."
+      },
+      "socials": {
+        "label": "Sociální sítě",
+        "description": "Sledování účtů na sítích."
+      },
+      "reminders": {
+        "label": "Připomínky",
+        "description": "Naplánované připomínky."
+      },
+      "tempChannels": {
+        "label": "Dočasné kanály",
+        "description": "Hlasové místnosti na požádání."
+      },
+      "voiceStats": {
+        "label": "Hlasové statistiky",
+        "description": "Čas strávený v hlasových kanálech."
+      },
+      "messageStats": {
+        "label": "Statistiky zpráv",
+        "description": "Počty zpráv a žebříčky."
+      },
+      "serverStatus": {
+        "label": "Stav serverů",
+        "description": "Sledování herních serverů."
+      },
+      "crypto": {
+        "label": "Krypto a NFT",
+        "description": "Kurzy, index strachu, NFT."
+      },
+      "backup": {
+        "label": "Zálohy",
+        "description": "Zálohování a obnova nastavení serveru."
+      },
+      "webhooks": {
+        "label": "Webhooky",
+        "description": "Odesílání událostí na vlastní URL."
+      },
+      "prefixCommands": {
+        "label": "Prefixové příkazy",
+        "description": "Spouštění příkazů přes textový prefix."
+      }
+    },
+    "scopeGroup": {
+      "global": "Globální",
+      "chat": "Chat",
+      "moderation": "Moderace",
+      "fun": "Zábava",
+      "voice": "Hlas",
+      "logs": "Logy",
+      "commands": "Příkazy"
+    },
+    "gameDefs": {
+      "tictactoe": {
+        "label": "Piškvorky",
+        "description": "Klasické tři v řadě proti jinému hráči nebo botovi."
+      },
+      "connect4": {
+        "label": "Čtyři v řadě",
+        "description": "Padající žetony, kdo první spojí čtyři."
+      },
+      "rps": {
+        "label": "Kámen, nůžky, papír",
+        "description": "Rychlý souboj na jedno kolo."
+      },
+      "trivia": {
+        "label": "Kvíz",
+        "description": "Otázky s možnostmi a bodováním."
+      },
+      "dice": {
+        "label": "Kostky",
+        "description": "Hod kostkou."
+      },
+      "coinflip": {
+        "label": "Hod mincí",
+        "description": "Panna nebo orel."
+      },
+      "eightball": {
+        "label": "Magická koule",
+        "description": "Odpovědi na ano/ne otázky."
+      },
+      "matchmaking": {
+        "label": "Hledání spoluhráčů",
+        "description": "Nábor do party na konkrétní hru."
+      },
+      "quest": {
+        "label": "Úkoly",
+        "description": "Denní a týdenní úkoly s odměnami."
+      },
+      "gamestats": {
+        "label": "Herní statistiky",
+        "description": "Přehled výher a proher."
+      }
+    },
+    "gameOpts": {
+      "turnTimeout": "Časový limit tahu",
+      "answerTimeout": "Čas na odpověď",
+      "correctReward": "Odměna za správnou odpověď",
+      "cooldownHint": "Jak dlouho musí hráč čekat mezi pokusy",
+      "maxOpenLobbies": "Max otevřených náborů na hráče",
+      "dailyQuests": "Počet denních úkolů"
+    },
+    "customText": {
+      "group": {
+        "basic": "Základní"
+      },
+      "noPermission": "Uživatel nemá oprávnění",
+      "botNoPermission": "Bot nemá oprávnění",
+      "ownerOnly": "Jen pro vlastníka bota",
+      "guildOnly": "Jen na serveru, ne v DM",
+      "cooldown": "Čekání mezi příkazy - {time}",
+      "wrongChannel": "Příkaz není povolen v kanálu",
+      "unknownError": "Neznámá chyba",
+      "invalidUser": "Neplatný uživatel",
+      "invalidChannel": "Neplatný kanál",
+      "invalidRole": "Neplatná role"
+    },
+    "sx": {
+      "settings": {
+        "tab": {
+          "general": "Obecné",
+          "channels": "Kanály",
+          "links": "Odkazy",
+          "analytics": "Analytika",
+          "welcome": "Uvítání",
+          "sticky": "Připnuté zprávy",
+          "birthday": "Narozeniny",
+          "confessions": "Přiznání",
+          "embed": "Embed zpráva",
+          "automod": "AutoMod",
+          "logging": "Logy",
+          "leveling": "Levely",
+          "economy": "Ekonomika",
+          "tickets": "Tikety",
+          "appeals": "Odvolání",
+          "applications": "Přihlášky",
+          "giveaways": "Soutěže",
+          "reactionroles": "Reakční role",
+          "tempchannels": "Dočasné kanály",
+          "verification": "Verifikace",
+          "starboard": "Starboard",
+          "games": "Hry",
+          "serverstatus": "Stav serveru",
+          "crypto": "Krypto a NFT",
+          "socials": "Sociální sítě",
+          "suggestions": "Návrhy",
+          "reputation": "Reputace",
+          "counting": "Počítání",
+          "autoresponse": "Automatické odpovědi",
+          "feeds": "RSS kanály",
+          "reminders": "Připomínky",
+          "tags": "Tagy",
+          "warnings": "Varování",
+          "backup": "Záloha",
+          "webhooks": "Webhooky",
+          "apikeys": "Přístup k API",
+          "audit": "Záznam auditu",
+          "help": "Příkazy",
+          "plugins": "Pluginy"
+        },
+        "saveFailed": "❌ Uložení selhalo: {error}",
+        "saved": "✅ Nastavení uložena!",
+        "saveError": "❌ Chyba při ukládání - zkontrolujte připojení a zkuste to znovu.",
+        "imageUploaded": "✅ Obrázek nahrán!",
+        "uploadError": "❌ Chyba při nahrávání",
+        "backupCreating": "Vytvářím zálohu...",
+        "backupCreated": "✅ Záloha vytvořena: {filename}",
+        "error": "❌ Chyba",
+        "panelSent": "✅ {type} odesláno!",
+        "sendError": "Chyba při odesílání",
+        "sentMessage": "Odeslaná zpráva",
+        "untitledMessage": "Zpráva bez názvu",
+        "selectChannel": "Vyberte kanál!",
+        "embedName": "Embed",
+        "nothingToSaveMessage": "Není co uložit - nejprve napište zprávu.",
+        "draftSaved": "💾 Uloženo!",
+        "messageNoChannel": "Tato zpráva nemá kanál - načtěte ji, vyberte kanál a poté odešlete.",
+        "sentPanel": "Odeslaný panel",
+        "untitledPanel": "Panel bez názvu",
+        "addButton": "Přidejte alespoň jedno tlačítko!",
+        "reactionRolesSent": "✅ Reakční role odeslány!",
+        "noPanelEditing": "Neupravuje se žádný panel - nejprve načtěte odeslaný panel.",
+        "panelUpdated": "✅ Panel aktualizován!",
+        "nothingToSavePanel": "Není co uložit - nejprve nastavte panel.",
+        "panelNoChannel": "Tento panel nemá kanál - načtěte ho, vyberte kanál a poté odešlete.",
+        "plainText": "💬 Prostý text",
+        "embedBtn": "📋 Embed",
+        "embedTitle": "Název",
+        "embedColor": "Barva",
+        "embedDescription": "Popis ({vars})",
+        "embedImageUrl": "URL obrázku (podporuje {avatar})",
+        "embedThumbnailUrl": "URL miniatury ({avatar} pro avatar člena)",
+        "embedFooter": "Zápatí",
+        "addTimestamp": "Přidat časové razítko",
+        "savedToLibrary": "💾 Uloženo do vaší knihovny zpráv!",
+        "loadSaved": "📥 Načíst z uložené zprávy…",
+        "untitled": "Bez názvu",
+        "saveAsMessage": "💾 Uložit jako zprávu",
+        "stickyIncomplete": "Nejprve vyberte kanál a napište zprávu.",
+        "back": "← Zpět",
+        "server": "Server",
+        "lockDashboard": "🔒 Zamknout dashboard",
+        "refresh": "🔄 Obnovit",
+        "save": "Uložit"
+      },
+      "common": {
+        "loading": "Načítá se…"
+      },
+      "audit": {
+        "title": "Záznam auditu",
+        "subtitle": "Nedávné moderátorské akce a změny v dashboardu, od nejnovějších.",
+        "filter": {
+          "all": "vše",
+          "moderation": "moderace",
+          "dashboard": "dashboard"
+        },
+        "empty": "Zatím nic nezaznamenáno."
+      },
+      "apikeys": {
+        "createFailed": "Vytvoření klíče selhalo ({status})",
+        "networkError": "❌ Chyba sítě - zkontrolujte připojení a zkuste to znovu.",
+        "revokeConfirm": "Zrušit tento API klíč? Vše, co jej používá, okamžitě přestane fungovat.",
+        "revokeFailed": "Zrušení klíče selhalo ({status})",
+        "title": "Přístup k API",
+        "description": "Vytvořte klíč pro čtení statistik tohoto serveru z vlastních aplikací. Odešlete jej jako Bearer token. Klíče se ukládají zahashované - celý klíč uvidíte pouze jednou, hned po vytvoření.",
+        "namePlaceholder": "Název klíče (např. Můj web)",
+        "creating": "Vytváří se…",
+        "create": "Vytvořit klíč",
+        "copyNow": "Zkopírujte tento klíč nyní - už se nezobrazí znovu:",
+        "yourKeys": "Vaše klíče",
+        "empty": "Zatím žádné API klíče.",
+        "lastUsed": "naposledy použit {date}",
+        "neverUsed": "nikdy nepoužit",
+        "revoke": "Zrušit",
+        "example": "Příklad"
+      },
+      "analytics": {
+        "dow": {
+          "sun": "Ne",
+          "mon": "Po",
+          "tue": "Út",
+          "wed": "St",
+          "thu": "Čt",
+          "fri": "Pá",
+          "sat": "So"
+        },
+        "heatTooltip": "{day} {hour}:00 - {count} zpráv",
+        "noData": "Zatím žádná data.",
+        "noRoleSnapshot": "Zatím žádný snímek rolí - bot jej obnovuje několikrát denně.",
+        "loading": "Načítá se analytika…",
+        "loadError": "Analytiku se momentálně nepodařilo načíst.",
+        "noDataCollected": "Zatím nebyla shromážděna žádná data. Bot začíná zaznamenávat aktivitu od teď - podívejte se za den či dva pro smysluplné grafy.",
+        "messages30d": "Zprávy (30 d)",
+        "netMembers30d": "Čistý přírůstek členů (30 d)",
+        "voiceHours30d": "Hodiny ve voice (30 d)",
+        "commands30d": "Příkazy (30 d)",
+        "healthScores": "Skóre zdraví",
+        "heuristic": "(heuristické odhady)",
+        "activity": "Aktivita",
+        "consistency": "Konzistence (aktivní dny)",
+        "growthHealth": "Zdraví růstu",
+        "growthForecast": "Prognóza růstu",
+        "trendProjection": "(projekce trendu)",
+        "avgNetPerDay": "Prům. čistý přírůstek / den",
+        "projected7": "Projekce +7 dní",
+        "projected30": "Projekce +30 dní",
+        "msgTrend7d": "Trend zpráv (7 d)",
+        "forecastNote": "Lineární odhad z posledních 30 dní - orientační údaj, nikoli záruka.",
+        "messagesPerDay": "Zprávy za den",
+        "joinsVsLeaves": "Příchody vs odchody",
+        "joinsVsLeavesLegend": "(zelená nahoře = příchody, červená dole = odchody)",
+        "heatmap": "Teplotní mapa aktivity",
+        "heatmapHint": "(zprávy podle dne a hodiny)",
+        "topChannels": "Top kanály",
+        "topMembers": "Top členové",
+        "topCommands": "Nejpoužívanější příkazy",
+        "membersByRole": "Členové podle rolí",
+        "membersTotal": "({count} členů celkem)",
+        "moderationActions": "Moderátorské akce",
+        "totalActions": "Akce celkem",
+        "warningsOnRecord": "Zaznamenaná varování",
+        "topReasons": "Nejčastější důvody banů / trestů",
+        "supportTickets": "Tikety podpory",
+        "ticketsTotal": "Celkem",
+        "ticketsOpen": "Otevřené",
+        "ticketsClosed": "Zavřené",
+        "avgResolution": "Prům. doba vyřešení"
+      }
+    },
+    "tabsA": {
+      "common": {
+        "none": "-- Žádná --",
+        "select": "-- Vybrat --"
+      },
+      "appeals": {
+        "title": "🛡️ Odvolání",
+        "intro": "Kanál, kam přijdou odvolání z příkazu {command} i z veřejné stránky odvolání. Sem píšou uživatelé, které jste zabanovali nebo umlčeli.",
+        "channel": "Kanál odvolání",
+        "instructions": "Pokyny k odvolání (zobrazí se uživateli)",
+        "instructionsPlaceholder": "Napište, proč si myslíte, že trest byl nespravedlivý. Buďte konkrétní a slušní.",
+        "enablePublic": "Povolit veřejnou stránku odvolání"
+      },
+      "applications": {
+        "title": "📝 Přihlášky",
+        "channel": "Kanál přihlášek",
+        "reviewChannel": "Kanál pro posouzení (pro tým)",
+        "approvedRole": "Role po schválení",
+        "questions": "Otázky (jedna na řádek)",
+        "questionsPlaceholder": "Kolik je vám let?\nProč se chcete přidat?\nMáte zkušenosti?"
+      },
+      "autoresponse": {
+        "title": "💬 Automatické odpovědi",
+        "intro": "Automatické odpovědi na klíčová slova.",
+        "trigger": "Spouštěč",
+        "answer": "Odpověď",
+        "add": "+ Přidat"
+      },
+      "backup": {
+        "title": "💾 Záloha serveru",
+        "intro": "Vytvořte úplnou zálohu nastavení serveru.",
+        "create": "💾 Vytvořit zálohu",
+        "savedTitle": "Uložené zálohy",
+        "pathHint": "Soubory záloh jsou na serveru uloženy v:",
+        "empty": "Zatím žádné zálohy.",
+        "stats": "{roles} rolí, {channels} kanálů",
+        "restoring": "Obnovuje se…",
+        "restoreMode": {
+          "full": "Kompletní restore",
+          "server": "Jen server",
+          "bot": "Jen nastavení bota"
+        },
+        "restoreConfirm": {
+          "full": "Kompletní restore: role, kanály a nastavení serveru se shodným názvem se aktualizují (chybějící se vytvoří znovu) a nastavení Vorqul bota pro tento server se nahradí zálohou. Nic existujícího se nesmaže.",
+          "server": "Obnovit jen Discord server (role, kanály, nastavení serveru) se shodným názvem; chybějící se vytvoří znovu. Nic existujícího se nesmaže. Nastavení Vorqul bota zůstanou nedotčena.",
+          "bot": "Obnovit jen nastavení Vorqul bota pro tento server (automod, welcome, leveling atd.) ze zálohy. Samotný Discord server (role/kanály) zůstane nedotčen."
+        },
+        "restoreDone": "Obnoveno: {roles} rolí, {channels} kanálů dotčeno{errors}",
+        "restoreDoneBot": "Nastavení bota obnovena{errors}",
+        "restoreDoneBotSuffix": ", nastavení bota obnovena",
+        "restoreErrorsSuffix": ", {n} chyb",
+        "restoreError": "Zálohu se nepodařilo obnovit.",
+        "refresh": "🔄 Obnovit seznam"
+      },
+      "birthday": {
+        "title": "🎂 Systém narozenin",
+        "enable": "Zapnout denní oznámení narozenin (v 08:00 času serveru)",
+        "channel": "Kanál pro oznámení",
+        "role": "Narozeninová role (volitelná, na jeden den)",
+        "message": "Zpráva ({user}, {username}, {age}, {server})",
+        "messagePlaceholder": "🎉 Všechno nejlepší, {user}! 🎂",
+        "messageType": "Typ zprávy",
+        "plainText": "💬 Prostý text",
+        "embed": "📋 Embed",
+        "embedColor": "Barva embedu",
+        "help": "Členové si nastaví narozeniny příkazem {set}, zobrazí je přes {view} a nadcházející uvidí přes {list}."
+      },
+      "confessions": {
+        "title": "🤫 Přiznání",
+        "enable": "Zapnout anonymní přiznání ({command})",
+        "channel": "Kanál přiznání",
+        "logChannel": "Logovací kanál pro tým (volitelný - uchovává kopii s odhalenými autory pro moderaci)",
+        "allowReplies": "Povolit anonymní odpovědi (pod každé přiznání přidá tlačítko Odpovědět)",
+        "minAccountAge": "Minimální stáří účtu (dny) - ochrana proti spamu, 0 = vypnuto",
+        "help": "Přiznání zveřejňuje bot s rostoucím číslem, takže autor zůstává v kanálu skrytý. Pokud nastavíte logovací kanál pro tým, moderátoři stále uvidí, kdo co napsal - užitečné proti zneužití. Číslování a záznamy o autorech bot ukládá soukromě."
+      },
+      "counting": {
+        "title": "🔢 Počítání",
+        "enable": "Zapnout hru na počítání",
+        "channel": "Kanál pro počítání",
+        "allowSameUser": "Povolit stejnému uživateli počítat dvakrát za sebou",
+        "deleteWrong": "Mazat nesprávné zprávy a zprávy bez čísla",
+        "goal": "Cíl (oznámení + odměna, 0 = vypnuto)",
+        "goalRole": "Role jako odměna za cíl (volitelná)",
+        "currentCount": "Aktuální počet",
+        "countAndBest": "{count} · rekord: {best}"
+      },
+      "crypto": {
+        "title": "₿ Krypto a NFT",
+        "trackedTitle": "💰 Sledované měny",
+        "coins": "Měny (BTC, ETH...)",
+        "currency": "Měna",
+        "nftTitle": "🖼️ NFT kolekce",
+        "nftEnable": "Zapnout sledování NFT",
+        "collections": "Kolekce (OpenSea slug)"
+      },
+      "economy": {
+        "title": "💰 Ekonomika",
+        "currencyName": "Název měny",
+        "emoji": "Emoji",
+        "startingBalance": "Počáteční zůstatek",
+        "daily": "Denní odměna",
+        "streakBonus": "Bonus za sérii %",
+        "maxStreakBonus": "Maximální bonus za sérii",
+        "workMin": "Práce min.",
+        "workMax": "Práce max.",
+        "workCooldown": "Odpočinek práce (s)",
+        "gamblingTitle": "🎰 Hazard",
+        "game": {
+          "coinflip": "Hod mincí",
+          "slots": "Automaty",
+          "roulette": "Ruleta",
+          "blackjack": "Blackjack",
+          "dice": "Kostky",
+          "crash": "Crash",
+          "rps": "Kámen, nůžky, papír"
+        },
+        "minBet": "Minimální sázka",
+        "maxBet": "Maximální sázka",
+        "bankTitle": "🏦 Banka",
+        "enableBank": "Zapnout banku",
+        "dailyInterest": "Denní úrok %"
+      },
+      "embed": {
+        "title": "📨 Tvůrce embedů",
+        "modeEmbed": "📋 Embed",
+        "modePlain": "💬 Prostý text",
+        "channel": "Kanál",
+        "color": "Barva",
+        "senderName": "Jméno odesílatele (volitelné)",
+        "senderNamePlaceholder": "Jméno bota pro tuto zprávu",
+        "senderAvatar": "URL avataru odesílatele (volitelné)",
+        "webhookNote": "Pokud je nastaveno jméno nebo avatar odesílatele, zpráva se odešle přes webhook - bot potřebuje v daném kanálu oprávnění Spravovat webhooky. Funguje pro embedy i prostý text.",
+        "messageText": "Zpráva (text)",
+        "textOutside": "Text mimo embed (zmínky / pingy)",
+        "messagePlaceholder": "Napište svou zprávu... (podporuje @everyone, @here a pingy rolí)",
+        "outsidePlaceholder": "např. @everyone nebo ping role",
+        "selectRole": "-- Vybrat roli --",
+        "addRoleMention": "+ Zmínka role",
+        "roleMentionNote": "Zmínky rolí se vkládají jako {format} do textu nad embedem a roli pingnou.",
+        "author": "Autor",
+        "titleField": "Nadpis",
+        "description": "Popis",
+        "image": "Obrázek",
+        "imagePlaceholder": "https://... nebo nahrajte",
+        "upload": "Nahrát",
+        "preview": "Náhled",
+        "thumbnailUrl": "URL náhledu",
+        "footer": "Patička",
+        "addTimestamp": "Přidat časové razítko",
+        "sending": "Odesílám…",
+        "sendMessage": "Odeslat zprávu",
+        "sendEmbed": "Odeslat embed",
+        "saveDraft": "💾 Uložit koncept",
+        "savedTitle": "💾 Uložené a odeslané zprávy",
+        "savedIntro": "Každá odeslaná zpráva se uchovává zde. Můžete ji upravit (načte se zpět do tvůrce), duplikovat do nové zprávy, odeslat znovu nebo smazat.",
+        "savedEmpty": "Zatím nemáte žádné uložené zprávy - odešlete nebo uložte zprávu výše.",
+        "untitled": "Bez názvu",
+        "statusSent": "📤 Odesláno",
+        "statusDraft": "📝 Koncept",
+        "edit": "✏️ Upravit",
+        "duplicate": "📋 Duplikovat",
+        "resend": "📤 Odeslat znovu"
+      },
+      "feeds": {
+        "title": "📰 RSS kanály",
+        "intro": "Automatické zveřejňování RSS kanálů.",
+        "urlPlaceholder": "RSS URL",
+        "channel": "Kanál",
+        "force": "Odeslat teď",
+        "forceHint": "Zkontroluje kanál hned teď a odešle jeho nejnovější položku bez čekání na plán.",
+        "forceSent": "Odesláno: {title}",
+        "forceError": "Kanál se nepodařilo odeslat."
+      },
+      "games": {
+        "title": "🎮 Hry",
+        "intro": "Hry se nastavují na vlastní stránce - zapnutí po jedné, kanály, ve kterých fungují, časové limity a odměny.",
+        "open": "Otevřít nastavení her"
+      },
+      "giveaways": {
+        "howToTitle": "ℹ️ Jak spustit giveaway",
+        "howToIntro": "Giveaway se spouštějí na vašem serveru příkazem {command} - tam napíšete obsah:",
+        "optPrize": "co rozdáváte",
+        "optDuration": "např. 1h, 30m, 2d",
+        "optWinners": "počet výherců",
+        "optOptional": "volitelné",
+        "howToOutro": "Členové se připojí kliknutím na tlačítko 🎉 a bot po skončení časovače automaticky vylosuje výherce. Běžící giveaway spravujete přes {end}, {reroll} a {list}. Pole níže jsou výchozí hodnoty modulu.",
+        "title": "🎉 Giveaway",
+        "channel": "Kanál",
+        "any": "-- Libovolný --",
+        "emoji": "Emoji",
+        "color": "Barva",
+        "managerRole": "Role správce",
+        "dmWinners": "Poslat výhercům DM",
+        "requireRole": "Vyžadovat roli pro účast"
+      },
+      "general": {
+        "basicTitle": "Základní nastavení",
+        "prefix": "Prefix",
+        "botLanguage": "Jazyk bota",
+        "botLanguageHint": "Ovlivňuje odpovědi bota.",
+        "botNickname": "Jméno bota na tomto serveru",
+        "botNicknamePlaceholder": "Nechte prázdné pro globální jméno bota",
+        "botNicknameHint": "Platí jen tady - na jiných serverech se bot jmenuje jinak. Nejvýše 32 znaků. Bot potřebuje oprávnění „Změnit přezdívku“. Projeví se do pár minut.",
+        "perServerNote": "Jazyk i jméno platí samostatně pro každý server a projeví se bez restartu bota.",
+        "managerRole": "Role správce",
+        "managerRoleHint": "Členové s touto rolí mohou otevírat a upravovat nastavení tohoto serveru, ale nemohou instalovat, zapínat, vypínat ani nastavovat pluginy.",
+        "modulesEnabled": "Zapnuto {on} z {total}",
+        "modulesIntro": "Kompletní seznam. Vypnutý modul přestane fungovat i se svými příkazy."
+      },
+      "automod": {
+        "ignoreAdmins": "Nekontrolovat administrátory",
+        "exemptTitle": "🪪 Imunní role a kanály",
+        "searchRole": "Hledat roli...",
+        "noExemptRole": "Žádná role není imunní",
+        "searchChannel": "Hledat kanál...",
+        "allChannels": "AutoMod běží ve všech kanálech",
+        "bannedWords": "🚫 Zakázaná slova",
+        "bannedWordsPlaceholder": "špatné1, špatné2, špatné3",
+        "bannedWordsHint": "Oddělujte čárkou. Nový řádek funguje také. Porovnává se bez ohledu na velikost písmen.",
+        "allowedDomains": "✅ Povolené domény",
+        "allowedDomainsHint": "Oddělujte čárkou. Platí, když je filtr odkazů zapnutý - odkazy na tyto domény projdou.",
+        "filters": "⚙️ Filtry"
+      }
+    },
+    "tabsB": {
+      "common": {
+        "select": "-- Vyberte --",
+        "none": "-- Žádné --",
+        "disabledOpt": "-- Vypnuto --",
+        "channel": "Kanál",
+        "title": "Název",
+        "color": "Barva",
+        "description": "Popis",
+        "add": "+ Přidat",
+        "messageType": "Typ zprávy",
+        "role": "Role",
+        "emoji": "Emoji",
+        "sending": "Odesílám…",
+        "searchRole": "Hledat roli...",
+        "searchChannel": "Hledat kanál...",
+        "upload": "Nahrát",
+        "buttonText": "Text tlačítka",
+        "message": "Zpráva",
+        "supportRole": "Podpůrná role",
+        "save": "Uložit"
+      },
+      "help": {
+        "title": "💬 Příkazy",
+        "intro": "{total} příkazů. Příkaz funguje i přes prefix, pokud je zapnutý modul Prefixové příkazy.",
+        "group": {
+          "moderation": "🔨 Moderace",
+          "administration": "⚙️ Administrace",
+          "utility": "🧰 Nástroje",
+          "fun": "🎮 Zábava a hry"
+        },
+        "cmd": {
+          "altcheck": "Heuristická kontrola alternativního účtu člena (stáří účtu, avatar, role)",
+          "appeal": "Podej odvolání proti varování, umlčení nebo jinému moderátorskému kroku",
+          "ban": "Zabanuje člena ze serveru",
+          "case": "Vyhledá moderátorský případ podle ID",
+          "cleanup": "Nástroje pro úklid serveru",
+          "clear": "Smaže více zpráv najednou",
+          "jail": "Uvězní člena: odebere mu role a izoluje ho, dokud ho nepropustíš",
+          "kick": "Vyhodí člena ze serveru",
+          "lock": "Zamkne kanál (členové nebudou moci psát zprávy)",
+          "lockdown": "Zamkne nebo odemkne všechny textové kanály serveru najednou",
+          "massnick": "Nastaví nebo resetuje přezdívku více členům najednou",
+          "massrole": "Přidá nebo odebere roli více členům najednou",
+          "mute": "Umlčí člena (použije nastavenou mute roli, jinak timeout)",
+          "nick": "Změní nebo resetuje přezdívku člena",
+          "note": "Přidá soukromou moderátorskou poznámku k uživateli",
+          "notes": "Zobrazí moderátorské poznámky a historii moderace uživatele",
+          "permcheck": "Kontrola a náhled oprávnění",
+          "role": "Přidá nebo odebere roli členovi",
+          "shadowmute": "Tichý mute člena: jeho zprávy se tiše mažou bez upozornění",
+          "slowmode": "Nastaví slowmode (omezení rychlosti) v kanálu",
+          "softban": "Softban člena (ban + okamžitý unban pro smazání jeho zpráv)",
+          "timeout": "Dá členovi timeout",
+          "unban": "Odbanuje uživatele podle ID",
+          "unjail": "Propustí člena z vězení a vrátí mu původní role",
+          "unlock": "Odemkne kanál (členové budou moci opět psát)",
+          "unmute": "Zruší umlčení člena (odebere mute roli a/nebo timeout)",
+          "unshadowmute": "Zruší tichý mute člena",
+          "untimeout": "Zruší členovi timeout",
+          "warn": "Varuje člena",
+          "persist": "Obnoví členovi role a přezdívku, když se vrátí na server",
+          "premium": "Správa premium úrovní (pouze vlastník bota)",
+          "afk": "Nastaví tvůj AFK status",
+          "apply": "Systém přihlášek",
+          "autoresponse": "Správa automatických odpovědí",
+          "birthday": "Uloží tvé narozeniny a server je oslaví",
+          "coinflip": "Hodí mincí",
+          "confess": "Pošle anonymní přiznání na server",
+          "connect4": "Zahraj si 4 v řadě!",
+          "digest": "Týdenní přehled serveru",
+          "feed": "Správa feedů ze sociálních sítí",
+          "filter": "Správa filtru zakázaných slov",
+          "gamestats": "Zobrazí statistiky her",
+          "help": "Zobrazí všechny dostupné příkazy",
+          "invites": "Správa a zobrazení pozvánek",
+          "leaderboard": "Zobrazí žebříčky serveru",
+          "levelroles": "Správa rolí za úroveň",
+          "logs": "Nastaví systém logování",
+          "msgtop": "Žebříček nejaktivnějších pisatelů",
+          "rank": "Zobrazí tvé nebo cizí pořadí",
+          "reactionroles": "Správa reakčních rolí",
+          "referral": "Doporučovací systém",
+          "rep": "Systém reputace",
+          "rolemenu": "Vytvoří menu rolí",
+          "rps": "Zahraj si kámen, nůžky, papír",
+          "settings": "Nastavení serveru",
+          "streak": "Zobrazí tvou sérii aktivity",
+          "suggest": "Systém návrhů",
+          "tempchannel": "Správa tvého dočasného hlasového kanálu",
+          "ticket": "Systém podpory přes tikety",
+          "tictactoe": "Zahraj si piškvorky!",
+          "vctop": "Žebříček nejaktivnějších ve voice kanálech",
+          "verify": "Ověř se na serveru",
+          "whatdidimiss": "Shrnutí toho, co se stalo, když jsi byl pryč",
+          "whywasibanned": "Zobrazí tvou historii moderace a informace o odvolání",
+          "8ball": "Zeptej se kouzelné 8-koule",
+          "dice": "Hodí kostkami",
+          "giveaway": "Vytváří a spravuje giveaway",
+          "matchmaking": "Systém hledání spoluhráčů",
+          "poll": "Vytvoří anketu",
+          "quest": "Questy a výzvy serveru",
+          "trivia": "Odpovídej na kvízové otázky a získej odměny"
+        }
+      },
+      "leveling": {
+        "title": "⭐ Levelování",
+        "xpMin": "XP min",
+        "xpMax": "XP max",
+        "cooldown": "Cooldown (s)",
+        "voiceXpPerMin": "Voice XP/min",
+        "multiplier": "Násobitel XP",
+        "maxLevel": "Max. úroveň",
+        "levelUpChannel": "Kanál pro level-up",
+        "sameChannel": "Stejný kanál",
+        "dm": "DM",
+        "disabled": "Vypnuto",
+        "levelUpMessage": "Zpráva při level-upu ({user}, {level}, {xp})",
+        "levelUpPlaceholder": "🎉 {user} dosáhl úrovně {level}!",
+        "voiceXp": "Voice XP",
+        "stackRoles": "Kumulovat odměny v rolích",
+        "roleRewards": "🏆 Odměny v rolích",
+        "levelCol": "Úroveň",
+        "lvlPlaceholder": "Úr.",
+        "xpExceptions": "🚫 Výjimky z XP",
+        "noXpRole": "Role bez XP",
+        "noXpRoleEmpty": "XP sbírají všichni",
+        "noXpChannels": "Kanály bez XP",
+        "noXpChannelsEmpty": "XP se sbírá všude"
+      },
+      "logging": {
+        "title": "📝 Logování",
+        "categoryHint": "Kategorie bez vlastního kanálu se zapíše do kanálu „Server“.",
+        "disabled": "Vypnuto",
+        "events": "🔔 Události",
+        "eventsHint": "Vypnutá událost se nezapíše, i když má kategorie nastavený kanál.",
+        "ignoredChannels": "🚫 Ignorované kanály",
+        "ignoredHint": "Dění v těchto kanálech se neloguje",
+        "loggedEverywhere": "Loguje se všude",
+        "cat": {
+          "moderation": {
+            "label": "🛡️ Moderace",
+            "desc": "Ban, kick, varování, mute"
+          },
+          "messages": {
+            "label": "💬 Zprávy",
+            "desc": "Úprava, smazání"
+          },
+          "members": {
+            "label": "👥 Členové",
+            "desc": "Příchod, odchod, přezdívka, avatar"
+          },
+          "server": {
+            "label": "⚙️ Server",
+            "desc": "Nastavení serveru"
+          },
+          "voice": {
+            "label": "🔊 Hlas",
+            "desc": "Připojení, odpojení, přesun"
+          },
+          "roles": {
+            "label": "🎭 Role",
+            "desc": "Změny rolí členů"
+          },
+          "channels": {
+            "label": "📁 Kanály",
+            "desc": "Vytvoření, smazání, úprava"
+          },
+          "invites": {
+            "label": "🔗 Pozvánky",
+            "desc": "Vytvoření a smazání pozvánek"
+          },
+          "threads": {
+            "label": "🧵 Vlákna",
+            "desc": "Vytvoření, smazání, úprava vlákna"
+          },
+          "emojis": {
+            "label": "😀 Emoji",
+            "desc": "Změny emoji a nálepek"
+          },
+          "boosts": {
+            "label": "💎 Boosty",
+            "desc": "Boosty serveru"
+          }
+        },
+        "ev": {
+          "messageEdit": "Zpráva upravena",
+          "messageDelete": "Zpráva smazána",
+          "messageBulkDelete": "Hromadné mazání",
+          "memberJoin": "Člen se připojil",
+          "memberLeave": "Člen odešel",
+          "voiceJoin": "Připojení do hlasu",
+          "voiceLeave": "Odpojení z hlasu",
+          "voiceMove": "Přesun v hlase",
+          "roleCreate": "Role vytvořena",
+          "roleDelete": "Role smazána",
+          "channelCreate": "Kanál vytvořen",
+          "channelDelete": "Kanál smazán",
+          "threadCreate": "Vlákno vytvořeno",
+          "threadDelete": "Vlákno smazáno"
+        }
+      },
+      "rr": {
+        "colorBlue": "Modrá",
+        "colorGrey": "Šedá",
+        "colorGreen": "Zelená",
+        "colorRed": "Červená",
+        "editing": "✏️ Upravuješ panel, který už byl odeslán na Discord (zpráva {id}). „Aktualizovat panel“ upraví původní zprávu.",
+        "stopEditing": "✕ Ukončit úpravy",
+        "title": "🎭 Reakční role",
+        "titlePh": "🎭 Vyber si svou roli",
+        "type": "Typ",
+        "typeMultiple": "Multiple - více rolí",
+        "typeSingle": "Single - jen jedna",
+        "senderName": "Jméno odesílatele (volitelné)",
+        "senderNamePh": "Jméno bota pro tento panel",
+        "senderAvatar": "URL avataru odesílatele (volitelné)",
+        "webhookNote": "Pokud je nastaveno jméno nebo avatar odesílatele, panel se odešle přes webhook - bot potřebuje v tom kanálu oprávnění Spravovat webhooky. Tlačítka fungují jako obvykle.",
+        "buttons": "🔘 Tlačítka",
+        "buttonLabelPh": "Text",
+        "buttonColor": "Barva tlačítka",
+        "updatePanel": "Aktualizovat panel",
+        "sendAsNew": "Odeslat jako nový",
+        "send": "Odeslat",
+        "preview": "👁️ Náhled",
+        "defaultDescription": "Kliknutím na tlačítko přidáš nebo odebereš roli.",
+        "footer": "Vorqul DS BOT • Reakční role",
+        "noButtons": "Zatím žádná tlačítka - přidej nějaké výše.",
+        "singleMode": "Režim Single: výběr role odebere ostatní role z tohoto panelu.",
+        "savedPanels": "💾 Uložené a odeslané panely",
+        "savedHint": "Každý odeslaný panel se sem uloží automaticky, takže ho můžeš načíst, upravit a poslat znovu.",
+        "noSaved": "Zatím žádné uložené panely.",
+        "savedMeta": "{count} tlačítek · {status} · {date}",
+        "onDiscord": "na Discordu",
+        "sent": "odeslaný",
+        "draft": "koncept",
+        "load": "Načíst"
+      },
+      "reminders": {
+        "title": "⏰ Připomínky",
+        "hint": "Nastavení příkazu /reminder.",
+        "maxPerUser": "Max. připomínek na uživatele",
+        "maxDuration": "Max. doba (dny)"
+      },
+      "reputation": {
+        "title": "⭐ Reputace",
+        "enable": "Zapnout systém reputace",
+        "cooldown": "Cooldown mezi udělením reputace stejnému uživateli (hodiny)",
+        "allowNegative": "Povolit zápornou reputaci",
+        "rewardRole": "Odměnová role (uděluje se při dosažení prahu reputace, volitelné)",
+        "threshold": "Práh (rep)"
+      },
+      "socials": {
+        "intro": "Každá sociální síť se nastavuje samostatně. Zapni jen ty, které potřebuješ.",
+        "accYoutube": "ID kanálů YouTube (jedno na řádek)",
+        "accTwitch": "Uživatelská jména na Twitchi (jedno na řádek)",
+        "accReddit": "Subreddity (jeden na řádek)",
+        "accRss": "URL adresy RSS feedů (jedna na řádek)",
+        "notifChannel": "Kanál pro oznámení",
+        "mentionRole": "Role k označení (volitelné)",
+        "customMessage": "Vlastní zpráva (volitelné)",
+        "customPh": "🔴 Nový příspěvek!"
+      },
+      "starboard": {
+        "title": "⭐ Starboard",
+        "channel": "Kanál Starboardu",
+        "minReactions": "Min. reakcí",
+        "selfStar": "Povolit hvězdičku vlastní zprávě",
+        "ignoredChannels": "Ignorované kanály",
+        "noneIgnored": "Žádný kanál není vynechán"
+      },
+      "sticky": {
+        "title": "📌 Připnuté zprávy",
+        "intro": "Připnutá zpráva se znovu odešle na konec kanálu pokaždé, když někdo napíše, takže nikdy nezmizí z dohledu. Změny z dashboardu se projeví při další zprávě v kanálu; {cmd} platí okamžitě.",
+        "messagePh": "Tato zpráva zůstane na konci kanálu.",
+        "plainText": "Prostý text",
+        "embed": "Embed",
+        "embedTitle": "Název embedu",
+        "addUpdate": "Přidat / aktualizovat připnutou zprávu",
+        "active": "Aktivní připnuté zprávy",
+        "none": "Zatím žádné připnuté zprávy.",
+        "kindEmbed": "embed",
+        "kindText": "text",
+        "saveHint": "Změny uložíš kliknutím na 💾 Uložit nahoře."
+      },
+      "suggestions": {
+        "title": "💡 Návrhy",
+        "channel": "Kanál pro návrhy",
+        "upvote": "Emoji pro souhlas",
+        "downvote": "Emoji pro nesouhlas",
+        "autoThread": "Automaticky vytvořit vlákno",
+        "anonymous": "Povolit anonymní návrhy"
+      },
+      "tags": {
+        "title": "🏷️ Vlastní tagy",
+        "hint": "Rychlé odpovědi přes /tag.",
+        "namePh": "Název",
+        "contentPh": "Obsah"
+      },
+      "temp": {
+        "title": "🔊 Dočasné kanály",
+        "hub": "Kanál Join to Create",
+        "category": "Kategorie",
+        "sameCategory": "-- Stejná --",
+        "nameFormat": "Formát názvu ({user}, {game})",
+        "nameFormatPh": "🎮 Kanál uživatele {user}",
+        "limit": "Limit (0 = bez limitu)",
+        "bitrate": "Bitrate (kbps)"
+      },
+      "tickets": {
+        "panelName": "Panel tiketů",
+        "title": "🎫 Tikety",
+        "panelChannel": "Kanál panelu",
+        "ticketCategory": "Kategorie tiketů",
+        "noSupportRole": "Žádná podpůrná role",
+        "transcriptChannel": "Kanál pro přepisy",
+        "maxPerUser": "Max. tiketů na uživatele",
+        "panel": "📋 Panel",
+        "panelTitlePh": "🎫 Podpora",
+        "panelDescPh": "Kliknutím na tlačítko vytvoříš tiket",
+        "buttonTextPh": "📩 Vytvořit tiket",
+        "welcomeInTicket": "Uvítací zpráva v tiketu",
+        "welcomePh": "Vítej! Popiš nám svůj problém...",
+        "categoriesTitle": "🎟️ Kategorie tiketů (volitelné)",
+        "categoriesHint": "Pokud přidáš kategorie, panel zobrazí tlačítko pro každou z nich (vlastní Discord kategorie, podpůrná role a uvítací zpráva). Bez kategorií se použije jedno tlačítko výše.",
+        "buttonName": "Název tlačítka",
+        "defaultCategoryLabel": "Podpora",
+        "discordCategory": "Discord kategorie (nadřazená)",
+        "defaultOption": "-- výchozí --",
+        "perMainSettings": "Podle hlavního nastavení",
+        "removeCategory": "Odstranit kategorii",
+        "addCategory": "+ Přidat kategorii",
+        "sendPanel": "Odeslat panel"
+      },
+      "verification": {
+        "type": "Typ",
+        "typeButton": "Tlačítko",
+        "typeReaction": "Reakce",
+        "typeCaptcha": "Captcha",
+        "roleAfter": "Role po ověření",
+        "buttonTextPh": "✅ Ověřit se",
+        "send": "Odeslat"
+      },
+      "warnings": {
+        "title": "⚠️ Automatické akce",
+        "hint": "Akce provedené po dosažení počtu varování.",
+        "warnsWithin": "varování za",
+        "daysArrow": "dní →",
+        "mute": "Mute",
+        "kick": "Kick",
+        "tempban": "TempBan",
+        "ban": "Ban",
+        "immunity": "🛡️ Imunitní role",
+        "noImmune": "Žádná role není imunní"
+      },
+      "webhooks": {
+        "title": "🔗 Odchozí webhooky",
+        "intro": "Odesílá události serveru metodou POST na tvůj vlastní endpoint. Každý požadavek je podepsán hlavičkou {sig}, abys ho mohl ověřit.",
+        "enable": "Zapnout odchozí webhooky",
+        "url": "URL webhooku",
+        "secret": "Podpisový klíč (volitelný, ale doporučený)",
+        "secretPh": "dlouhý náhodný řetězec",
+        "events": "Události k odesílání",
+        "memberJoin": "Člen se připojil",
+        "memberLeave": "Člen odešel",
+        "memberBan": "Člen zabanován",
+        "memberUnban": "Člen odbanován",
+        "dashboardLog": "Změna v dashboardu",
+        "testSent": "Test odeslán (HTTP {status})",
+        "failed": "Selhalo",
+        "requestFailed": "Požadavek selhal",
+        "sendTest": "Odeslat testovací událost",
+        "saveFirst": "Nejprve ulož změny - test používá uložený webhook."
+      },
+      "welcome": {
+        "welcomeHeading": "👋 Uvítací zpráva",
+        "messageVars": "Zpráva ({user}, {server}, {memberCount})",
+        "messagePh": "Vítej {user} na serveru {server}! 🎉",
+        "msgTypeHint": "Prostý text odešle zprávu výše tak, jak je. Embed odešle bohatou kartu s poli níže.",
+        "welcomeLabel": "Uvítací zpráva",
+        "titlePh": "Vítej!",
+        "bannerImage": "Banner",
+        "imagePh": "https://... nebo nahraj soubor",
+        "preview": "Náhled",
+        "thumbnail": "Miniatura ({avatar} pro avatar)",
+        "footer": "Patička",
+        "goodbyeHeading": "👋 Odchozí zpráva",
+        "goodbyeLabel": "Odchozí zpráva",
+        "autoRole": "🎭 Automatická role",
+        "dmHeading": "📩 DM zpráva pro nové členy",
+        "sendDm": "Poslat DM novým členům",
+        "dmPh": "Vítej na serveru! Přečti si prosím pravidla...",
+        "dmLabel": "DM zpráva"
+      }
+    },
+    "cfg": {
+      "common": {
+        "select": "- vyberte -",
+        "selectChannel": "- vyberte kanál -",
+        "saveFailed": "Uložení selhalo ({status})",
+        "networkError": "Chyba sítě - zkontrolujte připojení."
+      },
+      "games": {
+        "noteBefore": "Pokud hra nemá vlastní pravidlo pro kanály, platí pro ni společné nastavení",
+        "noteLink": "Hry v sekci Kanály",
+        "noteAfter": ". Vlastní pravidlo ho přebije."
+      },
+      "serverstatus": {
+        "title": "Stav serveru",
+        "subtitle": "Automaticky aktualizovaný stav MC/Bedrock serveru v kanálu.",
+        "serverCard": "Server",
+        "serverDesc": "Adresa serveru, který se má sledovat.",
+        "type": "Typ",
+        "host": "Adresa (host)",
+        "port": "Port",
+        "displayCard": "Zobrazení",
+        "displayDesc": "Kde a jak se stav zobrazí. Aktualizuje se automaticky každou minutu.",
+        "channel": "Kanál",
+        "colorOnline": "Barva (online)",
+        "online": "🟢 Server je online",
+        "address": "Adresa:",
+        "players": "Hráči:",
+        "version": "Verze:"
+      },
+      "welcome": {
+        "title": "Uvítání",
+        "subtitle": "Přivítejte nové členy zprávou a kartou.",
+        "messageCard": "Zpráva",
+        "messageDesc": "Kanál a text, který se odešle při příchodu člena.",
+        "channel": "Kanál",
+        "channelHint": "Kam se odešle uvítací zpráva",
+        "messageText": "Text zprávy",
+        "variablesPlaceholder": "Proměnné: {user} {username} {server} {count} {inviter}",
+        "variables": "Proměnné:",
+        "sendEmbed": "Odeslat jako embed",
+        "dmCard": "Soukromá zpráva (DM)",
+        "dmDesc": "Volitelná soukromá zpráva novému členovi.",
+        "dmEnable": "Zapnout DM",
+        "dmPlaceholder": "Ahoj {user}, vítej na {server}!",
+        "cardCard": "Uvítací karta",
+        "cardDesc": "Obrázek ve stylu MEE6 s avatarem a textem.",
+        "cardEnable": "Zapnout kartu",
+        "cardTitle": "Nadpis",
+        "cardTitlePlaceholder": "Vítej, {username}!",
+        "cardSubtitle": "Podnadpis",
+        "accentColor": "Akcentní barva",
+        "textColor": "Barva textu",
+        "bgColor": "Barva pozadí",
+        "bgColorHint": "Použije se, pokud není obrázek",
+        "bgUrl": "URL pozadí (volitelné)",
+        "bgUrlPlaceholder": "https://…/pozadi.png",
+        "upload": "Nahrát",
+        "uploading": "Nahrávám…",
+        "uploadError": "Nahrání selhalo. Zkus menší obrázek, nebo místo toho vlož odkaz na něj.",
+        "bgUrlHint": "Vlož odkaz na obrázek, nebo ho rovnou nahraj (do 500 KB)."
+      },
+      "automod": {
+        "subtitle": "Automatická moderace chatu ve stylu MEE6.",
+        "spamTitle": "Anti-spam",
+        "spamDesc": "Příliš mnoho zpráv za krátký čas.",
+        "repeatedTitle": "Opakovaný text",
+        "repeatedDesc": "Stejná zpráva nebo opakované znaky.",
+        "invitesTitle": "Discord pozvánky",
+        "invitesDesc": "Blokuje odkazy discord.gg.",
+        "linksTitle": "Externí odkazy",
+        "linksDesc": "Blokuje URL odkazy mimo whitelist.",
+        "whitelist": "Whitelist domén (oddělené čárkou)",
+        "attachmentsTitle": "Obrázky / přílohy",
+        "attachmentsDesc": "Blokuje zprávy s přílohami nad limit.",
+        "maxAttachments": "Max. příloh (0 = blokovat všechny)",
+        "imagesOnly": "Pouze obrázky",
+        "capsTitle": "Nadměrné CAPS",
+        "capsDesc": "Příliš mnoho velkých písmen.",
+        "emojisTitle": "Nadměrné emoji",
+        "emojisDesc": "Příliš mnoho emoji ve zprávě.",
+        "spoilersTitle": "Nadměrné spoilery",
+        "spoilersDesc": "Příliš mnoho ||spoiler|| bloků.",
+        "mentionsTitle": "Hromadné zmínky",
+        "mentionsDesc": "Příliš mnoho @zmínek najednou.",
+        "zalgoDesc": "Nadměrné kombinující diakritické znaky.",
+        "blacklistTitle": "Zakázaná slova",
+        "blacklistDesc": "Seznam slov oddělených čárkou. Při shodě se zpráva smaže.",
+        "blacklistPlaceholder": "slovo1, slovo2, slovo3",
+        "exemptTitle": "Výjimky",
+        "exemptDesc": "Koho a kde AutoMod ignoruje.",
+        "ignoreAdmins": "Ignorovat adminy",
+        "escalationTitle": "Eskalace trestů",
+        "escalationDesc": "Automatická akce po N přestupcích za dané období (styl MEE6).",
+        "escalationEnable": "Zapnout eskalaci",
+        "windowMinutes": "Okno (minuty)",
+        "after": "po",
+        "infractions": "přestupcích",
+        "secShort": "s",
+        "addRule": "+ Přidat pravidlo"
+      },
+      "modules": {
+        "toggleFailed": "Přepnutí modulu selhalo ({status})",
+        "networkError": "Chyba sítě - zkontrolujte připojení a zkuste to znovu.",
+        "title": "Moduly",
+        "detailed": "Podrobná nastavení",
+        "openPage": "Otevřít stránku",
+        "openSettings": "Otevřít nastavení"
+      },
+      "links": {
+        "loading": "Načítá se…",
+        "back": "Zpět na server",
+        "title": "Užitečné odkazy",
+        "moduleEnabled": "Modul zapnutý",
+        "descBefore": "Tyto odkazy zobrazuje příkaz",
+        "descAfter": "na tomto serveru. Každý server má vlastní odkazy - nastavení jsou zcela oddělená.",
+        "namePlaceholder": "Název (např. Web)",
+        "descPlaceholder": "Popis (volitelné)",
+        "remove": "Odebrat",
+        "empty": "Zatím žádné odkazy. Přidejte první níže.",
+        "add": "Přidat odkaz",
+        "max": "Max. 25 odkazů"
+      }
+    },
+    "app": {
+      "lp": {
+        "by": "od"
+      },
+      "common": {
+        "avatar": "Avatar"
+      },
+      "login": {
+        "errSignin": "Chyba při přihlášení. Zkus to prosím znovu.",
+        "errCallbackProc": "Chyba při zpracování ověření.",
+        "errCreate": "Nepodařilo se vytvořit účet.",
+        "errCallback": "Chyba při callbacku.",
+        "errDenied": "Přístup odepřen.",
+        "errUnexpected": "Došlo k neočekávané chybě.",
+        "signInDiscord": "Přihlásit se přes Discord",
+        "redirectHint": "Po přihlášení budeš přesměrován na dashboard",
+        "backHome": "Zpět na úvod",
+        "loading": "Načítá se..."
+      },
+      "gate": {
+        "tooMany": "Příliš mnoho pokusů. Počkej minutu a zkus to znovu.",
+        "wrong": "Nesprávné heslo. Zkus to znovu.",
+        "network": "Chyba sítě - zkontroluj připojení a zkus to znovu.",
+        "title": "Pro pokračování zadej přístupové heslo",
+        "placeholder": "Přístupové heslo",
+        "checking": "Ověřuje se…",
+        "unlock": "Odemknout",
+        "note": "Toto je další vrstva před přihlášením přes Discord."
+      },
+      "dash": {
+        "loadErr": "Nepodařilo se načíst servery ({status}).",
+        "loading": "Načítají se servery...",
+        "botActive": "Bot aktivní",
+        "owner": "Vlastník",
+        "admin": "Admin",
+        "add": "Přidat"
+      },
+      "multi": {
+        "remove": "Odebrat {name}",
+        "nothingMore": "Nic dalšího k výběru."
+      },
+      "guild": {
+        "saveFailed": "Uložení selhalo ({status})",
+        "tab": {
+          "overview": "Přehled",
+          "modules": "Moduly",
+          "welcome": "Uvítání",
+          "moderation": "Moderace",
+          "leveling": "Levelování",
+          "logs": "Logy"
+        },
+        "back": "Zpět na servery",
+        "fullSettings": "Všechna nastavení",
+        "links": "Užitečné odkazy",
+        "overview": "Přehled serveru",
+        "prefix": "Prefix",
+        "activeModules": "Aktivní moduly",
+        "welcomeMsg": "Uvítací zpráva",
+        "welcomePh": "Vítej na {server}, {user}!",
+        "variables": "Proměnné:",
+        "modTitle": "Nastavení moderace",
+        "modDesc": "Nastav automoderaci, anti-spam a další moderační funkce.",
+        "levTitle": "Nastavení levelování",
+        "levDesc": "Nastav rychlost XP, zprávy o postupu na vyšší level a odměny ve formě rolí.",
+        "logTitle": "Log kanály",
+        "log": {
+          "moderation": "Logy moderace",
+          "messages": "Logy zpráv",
+          "members": "Logy členů",
+          "server": "Logy serveru"
+        },
+        "channelId": "ID kanálu"
+      },
+      "gm": {
+        "welcome": {
+          "name": "Uvítací systém",
+          "desc": "Uvítací a rozlučkové zprávy"
+        },
+        "moderation": {
+          "name": "Moderace",
+          "desc": "Kick, ban, timeout, varování"
+        },
+        "logging": {
+          "name": "Logování",
+          "desc": "Logy zpráv a členů"
+        },
+        "leveling": {
+          "name": "Levelování",
+          "desc": "XP a odměny za levely"
+        },
+        "economy": {
+          "name": "Ekonomika",
+          "desc": "Systém virtuální měny"
+        },
+        "automod": {
+          "name": "Automod",
+          "desc": "Automatická moderace"
+        },
+        "antiraid": {
+          "name": "Anti-Raid",
+          "desc": "Ochrana před raidy"
+        },
+        "starboard": {
+          "name": "Starboard",
+          "desc": "Označuj zprávy hvězdičkou"
+        },
+        "suggestions": {
+          "name": "Návrhy",
+          "desc": "Systém návrhů"
+        },
+        "crypto": {
+          "name": "Krypto",
+          "desc": "Sledování kryptoměn"
+        }
+      }
+    },
+    "plg": {
+      "title": "Pluginy",
+      "intro": "Pluginy přidávají botovi příkazy a funkce. Platí na všech serverech, kde bot je.",
+      "ownerOnly": "Pluginy může instalovat, zapínat, vypínat, odstraňovat a nastavovat jen vlastník bota.",
+      "ownerMissing": "Ke správě pluginů se přihlas jako vlastník Discord aplikace bota, nebo nastav BOT_OWNER_ID v souboru .env bota na své Discord ID.",
+      "warning": "Pluginy běží přímo v botovi s plným přístupem k jeho souborům a tokenu. Instaluj jen pluginy, kterým důvěřuješ.",
+      "statusUnknown": "Bot zatím nenahlásil stav pluginů. Spusť bota, aby se zobrazily aktuální stavy.",
+      "restartNeeded": "Zvýrazněné změny se projeví během několika sekund.",
+      "loading": "Načítám pluginy…",
+      "loadFailed": "Seznam pluginů se nepodařilo načíst.",
+      "empty": "Nejsou nainstalovány žádné pluginy.",
+      "install": {
+        "title": "Nainstalovat plugin",
+        "hint": "Nahraj .zip s pluginem (manifest.json a jeho soubory). Nové pluginy se nainstalují vypnuté, aby sis je mohl nejdřív zkontrolovat.",
+        "choose": "Vybrat .zip soubor",
+        "noFile": "Není vybrán žádný soubor",
+        "replace": "Nahradit, pokud je už nainstalován (data zůstanou)",
+        "button": "Nainstalovat",
+        "installing": "Instaluji…",
+        "done": "Nainstalován {name} v{version}. Je vypnutý, dokud ho nezapneš.",
+        "updated": "{name} aktualizován na v{version}.",
+        "deps": "Tento plugin má závislosti, které se nainstalují při dalším startu bota."
+      },
+      "state": {
+        "running": "Běží",
+        "disabled": "Vypnutý",
+        "restart_enable": "Zapnutý, spouští se…",
+        "restart_disable": "Vypnutý, zastavuje se…",
+        "error": "Chyba",
+        "invalid": "Neplatný",
+        "unknown": "Zapnutý"
+      },
+      "by": "od {author}",
+      "version": "v{version}",
+      "commands": "Příkazy",
+      "events": "{n} obsluh událostí",
+      "homepage": "Web",
+      "source": "Zdroj",
+      "enable": "Zapnout",
+      "disable": "Vypnout",
+      "settings": "Nastavení",
+      "settingsClose": "Skrýt nastavení",
+      "settingsHint": "Pluginy čtou tato nastavení, když je potřebují, takže se změny obvykle projeví bez restartu.",
+      "save": "Uložit nastavení",
+      "saving": "Ukládám…",
+      "saved": "Nastavení uložena.",
+      "enabledDone": "{name} je zapnutý. Bot ho načte během několika sekund.",
+      "disabledDone": "{name} je vypnutý. Bot ho zastaví během několika sekund.",
+      "remove": "Odinstalovat",
+      "removeConfirm": "Odinstalovat {name}? Jeho soubory a uložená data se trvale smažou.",
+      "removed": "{name} byl odinstalován.",
+      "err": {
+        "generic": "Něco se pokazilo (HTTP {status}).",
+        "network": "Chyba sítě. Zkus to znovu.",
+        "no_file": "Nejdřív vyber .zip soubor.",
+        "not_owner": "Toto může udělat jen vlastník bota.",
+        "cross_origin": "Zablokováno: požadavek přišel z jiné stránky.",
+        "not_found": "Plugin nebyl nalezen.",
+        "exists": "Plugin s tímto názvem je už nainstalován. Zaškrtni „Nahradit“, chceš-li ho aktualizovat.",
+        "not_zip": "Tento soubor není platný .zip archiv.",
+        "too_large": "Archiv je příliš velký (limit 15 MB, 25 MB rozbalený).",
+        "file_too_large": "Soubor v archivu je příliš velký (limit 10 MB).",
+        "too_many_files": "Archiv obsahuje příliš mnoho souborů (limit 500).",
+        "no_manifest": "V archivu nebyl nalezen manifest.json.",
+        "bad_manifest": "Soubor manifest.json pluginu je neplatný.",
+        "missing_main": "Hlavní soubor uvedený v manifest.json není v archivu.",
+        "bad_path": "Archiv obsahuje nebezpečnou cestu k souboru a byl odmítnut.",
+        "symlink": "Archiv obsahuje symbolický odkaz a byl odmítnut.",
+        "encrypted": "Archivy chráněné heslem nejsou podporovány.",
+        "corrupt": "Archiv je poškozený nebo jeho obsah nesedí.",
+        "unsupported": "Tento typ .zip není podporován. Vytvoř ho znovu běžným nástrojem pro zipování.",
+        "invalid_settings": "Některé hodnoty chybí nebo jsou mimo rozsah. Zkontroluj pole a zkus to znovu.",
+        "no_settings": "Tento plugin nemá žádná nastavení.",
+        "channels_unavailable": "Kanály tohoto serveru se nepodařilo ověřit. Zkus to za chvíli znovu.",
+        "bad_request": "Požadavek nebyl platný."
+      },
+      "guild": {
+        "open": "Nastavení serveru",
+        "close": "Skrýt nastavení serveru",
+        "title": "Nastavení pro tento Discord server",
+        "hint": "Tato nastavení platí jen pro tento Discord server. Běžící plugin si změny načte sám, restart není potřeba.",
+        "notRunning": "Plugin ještě neběží, takže se nic nezveřejní, dokud není zapnutý.",
+        "noChannels": "Kanály tohoto serveru se nepodařilo načíst.",
+        "chooseChannel": "- vyber kanál -",
+        "noChannel": "- žádný -",
+        "add": "+ Přidat",
+        "removeItem": "Odstranit",
+        "itemFallback": "Položka {n}",
+        "empty": "Zatím nic nepřidáno.",
+        "limit": "Limit dosažen ({n}).",
+        "save": "Uložit nastavení serveru",
+        "saved": "Nastavení serveru uložena.",
+        "hasErrors": "Oprav zvýrazněná pole a zkus to znovu."
+      },
+      "fieldErr": {
+        "required": "Toto pole je povinné.",
+        "range": "Hodnota je mimo povolený rozsah.",
+        "length": "Tento text je příliš dlouhý.",
+        "number": "Zadej číslo.",
+        "option": "Vyber jednu z možností.",
+        "channel": "Vyber platný kanál.",
+        "string": "Zadej text.",
+        "boolean": "Vyber ano nebo ne.",
+        "too_many": "Pro tento server je příliš mnoho záznamů.",
+        "list": "Seznam není platný.",
+        "item": "Tento záznam není platný.",
+        "channel_not_found": "Tento kanál na tomto serveru neexistuje.",
+        "channel_kind": "Tento typ kanálu zde není povolen."
+      }
+    }
+  },
+  "scopeDesc": {
+    "all": "všude",
+    "only": "jen v {list}",
+    "except": "všude kromě {list}"
+  },
+  "channels": {
+    "title": "Rozsah kanálů",
+    "nothingRestricted": "Žádná funkce není omezená - všechno běží všude.\nNastav to příkazem `/channels set`.",
+    "unknownFeature": "Neznámá funkce",
+    "unknownFeatureBody": "Funkce `{key}` neexistuje. Vyber ji z nabídky.",
+    "restored": "Obnoveno",
+    "restoredBody": "**{feature}** teď zase funguje všude.",
+    "saved": "Uloženo",
+    "savedEverywhere": "**{feature}** funguje všude.",
+    "modeOnly": "jen ve vybraných kanálech",
+    "modeExcept": "všude kromě vybraných kanálů",
+    "noChannelYet": "Zatím není vybraný žádný kanál - přidej ho příkazem `/channels add`.",
+    "alreadyListed": "Už je v seznamu",
+    "alreadyListedBody": "<#{channel}> už je u funkce **{feature}**.",
+    "notFound": "Nenalezeno",
+    "notFoundBody": "<#{channel}> není v seznamu funkce **{feature}**.",
+    "categoryNote": "Jde o kategorii - nastavení platí pro všechny kanály v ní.",
+    "added": "Přidáno",
+    "removed": "Odebráno",
+    "current": "Aktuálně: {scope}",
+    "modeSetTo": "Režim pro **{feature}** je nastaven na "
+  },
+  "texts": {
+    "langUnavailable": "Nedostupný jazyk",
+    "langUnavailableBody": "Načtené jazyky: {list}.",
+    "none": "žádné",
+    "saved": "Uloženo",
+    "overridden": "Přepsané texty",
+    "nothingOverridden": "Zatím jsi nic nepřepsal - bot používá původní znění.\nZměníš to přes `/texts set`.",
+    "originalLabel": "**Původní:**",
+    "keyMissing": "_(klíč neexistuje v překladech)_",
+    "yourWording": "**Tvoje znění:**",
+    "notOverridden": "_(nepřepsané)_",
+    "nothingToReset": "Nic k vrácení",
+    "nothingToResetBody": "Text `{key}` není přepsaný.",
+    "restored": "Obnoveno",
+    "tooLong": "Příliš dlouhé",
+    "tooLongBody": "Text může mít nejvýše 1900 znaků.",
+    "savedBody": "`{key}` má teď znění:\n{text}",
+    "langSet": "Jazyk bota je nastaven na **{lang}**.",
+    "showTitle": "Text: {key}",
+    "restoredBody": "`{key}` je zpět na původním znění:\n{text}",
+    "variablesUsed": "Použité proměnné: {list}",
+    "andMore": "…a dalších {count}"
+  },
+  "serverLogs": {
+    "type": {
+      "text": "textový",
+      "voice": "hlasový",
+      "category": "kategorie",
+      "announcement": "oznamovací",
+      "forum": "fórum"
+    },
+    "title": {
+      "threadCreated": "🧵 Vlákno vytvořeno",
+      "threadUpdated": "🧵 Vlákno upraveno",
+      "threadDeleted": "🧵 Vlákno smazáno",
+      "channelCreated": "📁 Kanál vytvořen",
+      "channelUpdated": "📁 Kanál upraven",
+      "channelDeleted": "📁 Kanál smazán",
+      "roleCreated": "🎭 Role vytvořena",
+      "roleUpdated": "🎭 Role upravena",
+      "roleDeleted": "🎭 Role smazána",
+      "memberBanned": "🔨 Člen zabanován",
+      "banRevoked": "🔓 Ban zrušen",
+      "inviteCreated": "🔗 Pozvánka vytvořena",
+      "inviteDeleted": "🔗 Pozvánka zrušena",
+      "emojiAdded": "😀 Emoji přidáno",
+      "emojiRemoved": "😀 Emoji odstraněno",
+      "emojiRenamed": "😀 Emoji přejmenováno",
+      "stickerAdded": "🏷️ Nálepka přidána",
+      "stickerRemoved": "🏷️ Nálepka odstraněna",
+      "stickerRenamed": "🏷️ Nálepka přejmenována",
+      "boostStarted": "💜 Nový boost",
+      "boostEnded": "💔 Boost skončil"
+    },
+    "field": {
+      "channel": "Kanál",
+      "thread": "Vlákno",
+      "parentChannel": "Rodičovský kanál",
+      "name": "Název",
+      "user": "Uživatel",
+      "reason": "Důvod",
+      "code": "Kód",
+      "expires": "Vyprší",
+      "useLimit": "Limit použití",
+      "serverLevel": "Úroveň serveru",
+      "mentionable": "Označení",
+      "topicChanged": "Změněné téma kanálu",
+      "permsChanged": "Změněná oprávnění",
+      "markedNsfw": "Označen jako NSFW",
+      "unmarkedNsfw": "Zrušeno NSFW",
+      "archived": "Archivováno",
+      "unarchived": "Odarchivováno",
+      "locked": "Zamčeno",
+      "unlocked": "Odemčeno",
+      "noLongerSeparate": "Už se nezobrazuje samostatně",
+      "memberCountWas": "Členů mělo",
+      "type": "Typ",
+      "author": "Autor"
+    },
+    "value": {
+      "unknown": "Neznámý",
+      "unknownLower": "neznámý",
+      "notSpecified": "neuvedený",
+      "none": "žádný",
+      "never": "nikdy",
+      "noLimit": "bez limitu"
+    },
+    "boostStartedBody": "{user} právě boostnul server.",
+    "boostEndedBody": "{user} přestal server boostovat.",
+    "ghostPingBody": "{user} označil a hned smazal zprávu."
+  }
+}
