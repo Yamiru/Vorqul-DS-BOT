@@ -1,5 +1,12 @@
 # Vorqul DS BOT
 
+![License](https://img.shields.io/badge/license-Proprietary-orange.svg)
+![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-green.svg)
+![Discord.js](https://img.shields.io/badge/discord.js-v14-blue.svg)
+![Dashboard](https://img.shields.io/badge/dashboard-Next.js%2015-black.svg)
+
+> **Website:** https://vorqul.com
+
 <p align="center">
   <img src="https://i.imgur.com/aeEE972.png" width="200" alt="Vorqul DS BOT screenshot 1">
   <img src="https://i.imgur.com/YRCuAky.png" width="200" alt="Vorqul DS BOT screenshot 2">
@@ -7,24 +14,15 @@
   <img src="https://i.imgur.com/3mmC7zA.png" width="200" alt="Vorqul DS BOT screenshot 4">
 </p>
 
-A modular Discord bot with an optional web dashboard. It does the usual heavy
+A self-hosted Discord bot with an optional web dashboard. It does the usual heavy
 lifting: moderation, auto-mod, leveling, economy, tickets, welcome cards. But
 the thing I actually built it for is the **Server Health Score**, one number
 that tells you whether your community is growing, coasting, or quietly dying,
 based on activity, retention and member churn. Most bots show you stats. This
 one tells you what they mean.
 
-Website: **[vorqul.com](https://vorqul.com)**
-
-Built and maintained by **Yamiru**, [yamiru.com](https://yamiru.com).
-
-![License](https://img.shields.io/badge/license-Proprietary-orange.svg)
-![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-green.svg)
-![Discord.js](https://img.shields.io/badge/discord.js-v14-blue.svg)
-![Dashboard](https://img.shields.io/badge/dashboard-Next.js%2015-black.svg)
-
-> **Website:** https://vorqul.com
-> **Repository:** https://github.com/Yamiru/Vorqul-DS-BOT
+## Discord Demo and Support
+**[https://discord.gg/jNVwwcQ](https://discord.gg/jNVwwcQ)**
 
 ## Why this exists
 
